@@ -1,0 +1,106 @@
+object frmExceptionIgnoreList: TfrmExceptionIgnoreList
+  Left = 1023
+  Height = 240
+  Top = 214
+  Width = 335
+  Caption = 'Exception ignore list'
+  ClientHeight = 240
+  ClientWidth = 335
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  OnShow = FormShow
+  Position = poScreenCenter
+  LCLVersion = '2.0.6.0'
+  object Panel1: TPanel
+    Left = 0
+    Height = 225
+    Top = 15
+    Width = 335
+    Align = alClient
+    BevelOuter = bvNone
+    ClientHeight = 225
+    ClientWidth = 335
+    TabOrder = 0
+    object lbExceptionCodeList: TListBox
+      Left = 0
+      Height = 225
+      Top = 0
+      Width = 191
+      Align = alClient
+      ItemHeight = 0
+      OnDblClick = lbExceptionCodeListDblClick
+      PopupMenu = PopupMenu1
+      TabOrder = 0
+    end
+    object Panel2: TPanel
+      Left = 191
+      Height = 225
+      Top = 0
+      Width = 144
+      Align = alRight
+      AutoSize = True
+      ClientHeight = 225
+      ClientWidth = 144
+      TabOrder = 1
+      object edtExceptionCode: TEdit
+        AnchorSideLeft.Control = Label2
+        AnchorSideTop.Control = Label2
+        AnchorSideTop.Side = asrBottom
+        Left = 7
+        Height = 23
+        Top = 20
+        Width = 130
+        BorderSpacing.Right = 6
+        Constraints.MinWidth = 130
+        TabOrder = 0
+      end
+      object Label2: TLabel
+        AnchorSideLeft.Control = Panel2
+        AnchorSideTop.Control = Panel2
+        Left = 7
+        Height = 15
+        Top = 5
+        Width = 81
+        BorderSpacing.Left = 6
+        BorderSpacing.Top = 4
+        Caption = 'Exception code'
+        ParentColor = False
+      end
+      object btnAdd: TButton
+        AnchorSideLeft.Control = edtExceptionCode
+        AnchorSideLeft.Side = asrCenter
+        AnchorSideTop.Control = edtExceptionCode
+        AnchorSideTop.Side = asrBottom
+        Left = 19
+        Height = 25
+        Top = 48
+        Width = 106
+        AutoSize = True
+        BorderSpacing.Top = 5
+        Caption = 'Add Exception '
+        Constraints.MinWidth = 75
+        OnClick = btnAddClick
+        TabOrder = 1
+      end
+    end
+  end
+  object Label1: TLabel
+    Left = 0
+    Height = 15
+    Top = 0
+    Width = 335
+    Align = alTop
+    Caption = 'The following exceptions will be ignored'
+    ParentColor = False
+    WordWrap = True
+  end
+  object PopupMenu1: TPopupMenu
+    OnPopup = PopupMenu1Popup
+    Left = 54
+    Top = 53
+    object miDelete: TMenuItem
+      Caption = 'Delete'
+      OnClick = lbExceptionCodeListDblClick
+    end
+  end
+end

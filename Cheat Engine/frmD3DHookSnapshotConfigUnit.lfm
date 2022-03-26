@@ -1,0 +1,277 @@
+object frmD3DHookSnapshotConfig: TfrmD3DHookSnapshotConfig
+  Left = 471
+  Height = 323
+  Top = 175
+  Width = 424
+  AutoSize = True
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsSingle
+  Caption = 'D3DHook: Configure snapshot'
+  ClientHeight = 323
+  ClientWidth = 424
+  OnCreate = FormCreate
+  Position = poScreenCenter
+  LCLVersion = '2.0.6.0'
+  object dirSnapshot: TDirectoryEdit
+    AnchorSideLeft.Control = Label1
+    AnchorSideTop.Control = Label1
+    AnchorSideTop.Side = asrBottom
+    AnchorSideRight.Side = asrBottom
+    Left = 8
+    Height = 23
+    Top = 175
+    Width = 408
+    ShowHidden = False
+    ButtonWidth = 23
+    NumGlyphs = 1
+    Anchors = [akTop, akLeft, akRight]
+    MaxLength = 0
+    TabOrder = 2
+  end
+  object Label1: TLabel
+    AnchorSideLeft.Control = cbAlsoOutputPng
+    AnchorSideTop.Control = cbAlsoOutputPng
+    AnchorSideTop.Side = asrBottom
+    Left = 8
+    Height = 15
+    Top = 160
+    Width = 83
+    BorderSpacing.Top = 2
+    Caption = 'Snapshot folder'
+    ParentColor = False
+  end
+  object cbProgressive: TCheckBox
+    AnchorSideTop.Control = Panel2
+    AnchorSideTop.Side = asrBottom
+    Left = 8
+    Height = 19
+    Top = 39
+    Width = 278
+    Caption = 'Progressive snapshots (Do not clear background)'
+    OnChange = cbProgressiveChange
+    TabOrder = 0
+  end
+  object cbClearDepth: TCheckBox
+    AnchorSideLeft.Control = cbProgressive
+    AnchorSideTop.Control = cbProgressive
+    AnchorSideTop.Side = asrBottom
+    Left = 8
+    Height = 19
+    Top = 58
+    Width = 116
+    Caption = 'Clear depth buffer'
+    OnChange = cbClearDepthChange
+    TabOrder = 1
+  end
+  object cbAlsoOutputPng: TCheckBox
+    AnchorSideLeft.Control = gbPictureFormat
+    AnchorSideTop.Control = gbPictureFormat
+    AnchorSideTop.Side = asrBottom
+    Left = 8
+    Height = 19
+    Hint = 'Use this if you have a more efficient way of rendering .PNG''s to select the snapshot you wish'
+    Top = 139
+    Width = 219
+    BorderSpacing.Top = 2
+    Caption = 'Also save picture next to snapshot file'
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 3
+  end
+  object Panel1: TPanel
+    AnchorSideLeft.Control = Owner
+    AnchorSideLeft.Side = asrCenter
+    AnchorSideTop.Control = dirSnapshot
+    AnchorSideTop.Side = asrBottom
+    Left = 134
+    Height = 25
+    Top = 206
+    Width = 156
+    AutoSize = True
+    BorderSpacing.Around = 8
+    BevelOuter = bvNone
+    ClientHeight = 25
+    ClientWidth = 156
+    TabOrder = 4
+    object mbOk: TButton
+      AnchorSideLeft.Control = Panel1
+      AnchorSideTop.Control = Panel1
+      Left = 0
+      Height = 25
+      Top = 0
+      Width = 75
+      AutoSize = True
+      Caption = 'OK'
+      Constraints.MinWidth = 75
+      Default = True
+      ModalResult = 1
+      OnClick = mbOkClick
+      TabOrder = 0
+    end
+    object mbCancel: TButton
+      AnchorSideLeft.Control = mbOk
+      AnchorSideLeft.Side = asrBottom
+      AnchorSideTop.Control = Panel1
+      Left = 81
+      Height = 25
+      Top = 0
+      Width = 75
+      AutoSize = True
+      BorderSpacing.Left = 6
+      Cancel = True
+      Caption = 'Cancel'
+      Constraints.MinWidth = 75
+      ModalResult = 2
+      TabOrder = 1
+    end
+  end
+  object Panel2: TPanel
+    AnchorSideLeft.Control = Panel3
+    AnchorSideLeft.Side = asrBottom
+    AnchorSideTop.Control = Owner
+    Left = 139
+    Height = 39
+    Top = 0
+    Width = 144
+    AutoSize = True
+    BorderSpacing.Left = 3
+    BevelOuter = bvNone
+    ClientHeight = 39
+    ClientWidth = 144
+    TabOrder = 5
+    object Label2: TLabel
+      AnchorSideLeft.Control = Panel2
+      AnchorSideTop.Control = Panel2
+      Left = 0
+      Height = 15
+      Top = 0
+      Width = 91
+      Caption = 'Full snapshot key'
+      ParentColor = False
+    end
+    object edtFullSnapshot: TEdit
+      AnchorSideLeft.Control = Panel2
+      AnchorSideTop.Control = Label2
+      AnchorSideTop.Side = asrBottom
+      AnchorSideRight.Control = btnClearFullSnapshot
+      Left = 0
+      Height = 23
+      Hint = 'When this key is pressed all renders that occur will be stored'
+      Top = 15
+      Width = 80
+      Alignment = taCenter
+      OnKeyDown = edtFullSnapshotKeyDown
+      ParentShowHint = False
+      ReadOnly = True
+      ShowHint = True
+      TabOrder = 0
+    end
+    object btnClearFullSnapshot: TButton
+      AnchorSideLeft.Control = edtFullSnapshot
+      AnchorSideLeft.Side = asrBottom
+      AnchorSideTop.Control = edtFullSnapshot
+      AnchorSideTop.Side = asrCenter
+      AnchorSideRight.Side = asrBottom
+      Left = 83
+      Height = 25
+      Top = 14
+      Width = 53
+      AutoSize = True
+      BorderSpacing.Left = 3
+      BorderSpacing.Right = 8
+      Caption = 'Clear'
+      OnClick = btnClearFullSnapshotClick
+      TabOrder = 1
+    end
+  end
+  object Panel3: TPanel
+    AnchorSideLeft.Control = Owner
+    AnchorSideTop.Control = Owner
+    Left = 0
+    Height = 39
+    Top = 0
+    Width = 136
+    AutoSize = True
+    BevelOuter = bvNone
+    ClientHeight = 39
+    ClientWidth = 136
+    TabOrder = 6
+    object Label3: TLabel
+      AnchorSideLeft.Control = Panel3
+      AnchorSideTop.Control = Panel3
+      Left = 0
+      Height = 15
+      Top = 0
+      Width = 116
+      Caption = 'Focused snapshot key'
+      ParentColor = False
+    end
+    object edtSmallSnapshot: TEdit
+      AnchorSideLeft.Control = Panel3
+      AnchorSideTop.Control = Label3
+      AnchorSideTop.Side = asrBottom
+      Left = 0
+      Height = 23
+      Hint = 'When this key is pressed all renders that occur below the mouse cursor will be stored'
+      Top = 15
+      Width = 80
+      Alignment = taCenter
+      OnKeyDown = edtSmallSnapshotKeyDown
+      ParentShowHint = False
+      ReadOnly = True
+      ShowHint = True
+      TabOrder = 0
+    end
+    object btnClearSmallSnapshot: TButton
+      AnchorSideLeft.Control = edtSmallSnapshot
+      AnchorSideLeft.Side = asrBottom
+      AnchorSideTop.Control = edtSmallSnapshot
+      AnchorSideTop.Side = asrCenter
+      Left = 83
+      Height = 25
+      Top = 14
+      Width = 53
+      AutoSize = True
+      BorderSpacing.Left = 3
+      Caption = 'Clear'
+      OnClick = btnClearSmallSnapshotClick
+      TabOrder = 1
+    end
+  end
+  object gbPictureFormat: TGroupBox
+    AnchorSideLeft.Control = cbClearDepth
+    AnchorSideTop.Control = cbClearDepth
+    AnchorSideTop.Side = asrBottom
+    Left = 8
+    Height = 60
+    Top = 77
+    Width = 268
+    AutoSize = True
+    Caption = 'Picture Format'
+    ChildSizing.LeftRightSpacing = 6
+    ChildSizing.VerticalSpacing = 2
+    ChildSizing.Layout = cclLeftToRightThenTopToBottom
+    ChildSizing.ControlsPerLine = 1
+    ClientHeight = 40
+    ClientWidth = 264
+    TabOrder = 7
+    object rbFormatPNG: TRadioButton
+      Left = 6
+      Height = 19
+      Top = 0
+      Width = 252
+      Caption = 'PNG (Slow, small files)'
+      Checked = True
+      TabOrder = 1
+      TabStop = True
+    end
+    object rbFormatBMP: TRadioButton
+      Left = 6
+      Height = 19
+      Top = 21
+      Width = 252
+      Caption = 'BMP (Fast, but requires a gigantic harddisk) '
+      TabOrder = 0
+    end
+  end
+end

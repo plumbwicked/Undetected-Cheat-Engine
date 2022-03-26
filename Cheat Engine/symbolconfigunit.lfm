@@ -1,0 +1,298 @@
+object frmSymbolhandler: TfrmSymbolhandler
+  Left = 1056
+  Height = 432
+  Top = 135
+  Width = 497
+  Caption = 'Symbol config'
+  ClientHeight = 432
+  ClientWidth = 497
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  OnShow = FormShow
+  Position = poScreenCenter
+  LCLVersion = '2.0.6.0'
+  object Panel1: TPanel
+    Left = 371
+    Height = 432
+    Top = 0
+    Width = 126
+    Align = alRight
+    AutoSize = True
+    BevelOuter = bvNone
+    ClientHeight = 432
+    ClientWidth = 126
+    Constraints.MinHeight = 250
+    TabOrder = 0
+    object Label2: TLabel
+      AnchorSideLeft.Control = Panel1
+      AnchorSideTop.Control = edtSymbolname
+      AnchorSideTop.Side = asrBottom
+      AnchorSideRight.Control = Panel1
+      AnchorSideRight.Side = asrBottom
+      Left = 8
+      Height = 15
+      Top = 58
+      Width = 110
+      Alignment = taCenter
+      Anchors = [akTop, akLeft, akRight]
+      BorderSpacing.Left = 8
+      BorderSpacing.Top = 4
+      BorderSpacing.Right = 8
+      Caption = 'Address'
+      ParentColor = False
+    end
+    object edtAddress: TEdit
+      AnchorSideLeft.Control = Panel1
+      AnchorSideTop.Control = Label2
+      AnchorSideTop.Side = asrBottom
+      AnchorSideRight.Control = Panel1
+      AnchorSideRight.Side = asrBottom
+      Left = 8
+      Height = 23
+      Top = 73
+      Width = 110
+      Anchors = [akTop, akLeft, akRight]
+      BorderSpacing.Left = 8
+      BorderSpacing.Right = 8
+      TabOrder = 1
+    end
+    object Button1: TButton
+      AnchorSideLeft.Control = Panel1
+      AnchorSideLeft.Side = asrCenter
+      AnchorSideTop.Control = edtAddress
+      AnchorSideTop.Side = asrBottom
+      Left = 18
+      Height = 25
+      Top = 104
+      Width = 90
+      AutoSize = True
+      BorderSpacing.Top = 8
+      Caption = 'Add symbol'
+      OnClick = Button1Click
+      TabOrder = 2
+    end
+    object Panel3: TPanel
+      Left = 0
+      Height = 0
+      Top = 144
+      Width = 0
+      AutoSize = True
+      Caption = 'Panel3'
+      TabOrder = 3
+    end
+    object Label3: TLabel
+      AnchorSideLeft.Control = Panel1
+      AnchorSideTop.Control = Panel1
+      AnchorSideRight.Control = Panel1
+      AnchorSideRight.Side = asrBottom
+      Left = 8
+      Height = 15
+      Top = 16
+      Width = 110
+      Alignment = taCenter
+      Anchors = [akTop, akLeft, akRight]
+      BorderSpacing.Left = 8
+      BorderSpacing.Top = 16
+      BorderSpacing.Right = 8
+      Caption = 'Unique symbolname'
+      ParentColor = False
+    end
+    object edtSymbolname: TEdit
+      AnchorSideLeft.Control = Panel1
+      AnchorSideTop.Control = Label3
+      AnchorSideTop.Side = asrBottom
+      AnchorSideRight.Control = Panel1
+      AnchorSideRight.Side = asrBottom
+      Left = 8
+      Height = 23
+      Top = 31
+      Width = 110
+      Anchors = [akTop, akLeft, akRight]
+      BorderSpacing.Left = 8
+      BorderSpacing.Right = 8
+      OnChange = edtSymbolnameChange
+      TabOrder = 0
+    end
+  end
+  object Panel2: TPanel
+    Left = 0
+    Height = 432
+    Top = 0
+    Width = 371
+    Align = alClient
+    BevelOuter = bvNone
+    ClientHeight = 432
+    ClientWidth = 371
+    TabOrder = 1
+    object Label1: TLabel
+      Left = 0
+      Height = 15
+      Top = 0
+      Width = 371
+      Align = alTop
+      Caption = 'Userdefined symbols:'
+      ParentColor = False
+    end
+    object ListView1: TListView
+      Left = 0
+      Height = 238
+      Top = 15
+      Width = 371
+      Align = alTop
+      Columns = <      
+        item
+          Caption = 'Symbolname'
+          Width = 123
+        end      
+        item
+          Caption = 'Address'
+          Width = 98
+        end      
+        item
+          Caption = 'AllocSize'
+          Width = 74
+        end>
+      PopupMenu = PopupMenu1
+      ReadOnly = True
+      RowSelect = True
+      TabOrder = 0
+      ViewStyle = vsReport
+      OnClick = ListView1Click
+      OnDblClick = ListView1DblClick
+    end
+    object tvSymbolGroups: TTreeView
+      Left = 0
+      Height = 159
+      Top = 273
+      Width = 371
+      Align = alClient
+      PopupMenu = PopupMenu2
+      ReadOnly = True
+      TabOrder = 1
+      OnDblClick = tvSymbolGroupsDblClick
+      OnExpanding = tvSymbolGroupsExpanding
+      Options = [tvoAutoItemHeight, tvoHideSelection, tvoKeepCollapsedNodes, tvoReadOnly, tvoShowButtons, tvoShowLines, tvoShowRoot, tvoToolTips, tvoThemedDraw]
+    end
+    object Splitter1: TSplitter
+      Cursor = crVSplit
+      Left = 0
+      Height = 5
+      Top = 253
+      Width = 371
+      Align = alTop
+      ResizeAnchor = akTop
+    end
+    object Label4: TLabel
+      Left = 0
+      Height = 15
+      Top = 258
+      Width = 371
+      Align = alTop
+      Caption = 'Symbol groups:'
+      ParentColor = False
+    end
+  end
+  object PopupMenu1: TPopupMenu
+    Images = scImageList
+    Left = 72
+    Top = 80
+    object Delete1: TMenuItem
+      Caption = 'Delete'
+      Default = True
+      ImageIndex = 0
+      OnClick = Delete1Click
+    end
+    object MenuItem1: TMenuItem
+      Caption = 'Delete all'
+      ImageIndex = 1
+      OnClick = MenuItem1Click
+    end
+  end
+  object scImageList: TImageList
+    Left = 215
+    Top = 129
+    Bitmap = {
+      4C69020000001000000010000000FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00ECEBFF0D655D
+      FFA6DFDEFF1EFFFFFF00FFFFFF00FFFFFF00FFFFFF00DFDEFF1E655DFFA6ECEB
+      FF0DFFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00655DFFA63227
+      FFFF453BFFDEDFDEFF1EFFFFFF00FFFFFF00DFDEFF1E453BFFDE3227FFFF655D
+      FFA6FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00DFDEFF1E453B
+      FFDE3227FFFF453BFFDEDFDEFF1EDFDEFF1E453BFFDE3227FFFF453BFFDEDFDE
+      FF1EFFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00DFDE
+      FF1E453BFFDE3227FFFF453BFFDE453BFFDE3227FFFF453BFFDEDFDEFF1EFFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00DFDEFF1E453BFFDE3227FFFF3227FFFF453BFFDEDFDEFF1EFFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00DFDEFF1E453BFFDE3227FFFF3227FFFF453BFFDEDFDEFF1EFFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00DFDE
+      FF1E453BFFDE3227FFFF453BFFDE453BFFDE3227FFFF453BFFDEDFDEFF1EFFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00DFDEFF1E453B
+      FFDE3227FFFF453BFFDEDFDEFF1EDFDEFF1E453BFFDE3227FFFF453BFFDEDFDE
+      FF1EFFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00655DFFA63227
+      FFFF453BFFDEDFDEFF1EFFFFFF00FFFFFF00DFDEFF1E453BFFDE3227FFFF655D
+      FFA6FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00ECEBFF0D655D
+      FFA6DFDEFF1EFFFFFF00FFFFFF00FFFFFF00FFFFFF00DFDEFF1E655DFFA6ECEB
+      FF0DFFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00CDCD
+      F3327777DD994444D1DB3333CCFB3333CCFB4444D1DB7777DD99CDCDF332FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00F0F0FC097272DC9C3333
+      CCFF3333CCFF3838CEF35151D4CE5151D4CE3838CEF33333CCFF3333CCFF7272
+      DC9CF0F0FC09FFFFFF00FFFFFF00FFFFFF00F0F0FC095959D6C43333CCFF4C4C
+      D3D6B4B4ED51F8F8FE05FFFFFF00FFFFFF00F8F8FE05B4B4ED514C4CD3D63333
+      CCFF5959D6C4F0F0FC09FFFFFF00FFFFFF007272DC9C3333CCFF6868DAB2F3F3
+      FC09FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF009090E4733333
+      CCFF3333CCFF7272DC9CFFFFFF00CDCDF3323333CCFF4C4CD3D6F3F3FC09FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FDFDFF008686E1833333CCFF3A3A
+      CEED4747D1DD3333CCFFCDCDF3327777DD993333CCFFB4B4ED51FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00F8F8FE037474DD9C3333CCFF4242D0E2D5D5
+      F529B4B4ED513333CCFF7777DD994444D1DB3838CEF3F8F8FE05FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00F0F0FC096565D9B23333CCFF4C4CD3D4E1E1F81CFFFF
+      FF00F8F8FE053838CEF34444D1DB3333CCFB5151D4CEFFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00E6E6F9125959D6C53333CCFF5959D6C3EBEBFA10FFFFFF00FFFF
+      FF00FFFFFF005151D4CE3333CCFB3333CCFB5151D4CEFFFFFF00FFFFFF00FFFF
+      FF00DFDFF71D4C4CD3D63333CCFF6868DAAFF3F3FC08FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF005151D4CE3333CCFB4444D1DB3838CEF3F8F8FE05FFFFFF00D2D2
+      F42C4242D0E43333CCFF7979DE98F8F8FE02FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00F8F8FE053838CEF34444D1DB7777DD993333CCFFB4B4ED51C3C3F03D3A3A
+      CEEF3333CCFF8B8BE27FFDFDFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00B4B4ED513333CCFF7777DD99CDCDF3323333CCFF4444D1E13535CDF73333
+      CCFD9D9DE766FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00F3F3
+      FC094C4CD3D63333CCFFCDCDF332FFFFFF007272DC9C3333CCFF3333CCFFA4A4
+      E959FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00F3F3FC096868
+      DAB23333CCFF7272DC9CFFFFFF00FFFFFF00F0F0FC095959D6C43333CCFF4C4C
+      D3D6B4B4ED51F8F8FE05FFFFFF00FFFFFF00F8F8FE05B4B4ED514C4CD3D73333
+      CCFF5959D6C4F0F0FC09FFFFFF00FFFFFF00FFFFFF00F0F0FC097272DC9C3333
+      CCFF3333CCFF3838CEF35151D4CE5151D4CE3838CEF33333CCFF3333CCFF7272
+      DC9CF0F0FC09FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00CDCD
+      F3327777DD994444D1DB3333CCFB3333CCFB4444D1DB7777DD99CDCDF332FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00
+    }
+  end
+  object PopupMenu2: TPopupMenu
+    Images = scImageList
+    Left = 184
+    Top = 328
+    object miUnregister: TMenuItem
+      Caption = 'Unregister'
+      Default = True
+      ImageIndex = 0
+      OnClick = miUnregisterClick
+    end
+    object miUnregisterAll: TMenuItem
+      Caption = 'Unregister all'
+      ImageIndex = 1
+      OnClick = miUnregisterAllClick
+    end
+  end
+end

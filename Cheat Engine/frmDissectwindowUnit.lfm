@@ -1,0 +1,123 @@
+object frmdissectWindow: TfrmdissectWindow
+  Left = 835
+  Height = 296
+  Top = 444
+  Width = 314
+  AutoSize = True
+  Caption = 'Dissect Windows'
+  ClientHeight = 296
+  ClientWidth = 314
+  OnClose = FormClose
+  OnCreate = FormCreate
+  Position = poScreenCenter
+  LCLVersion = '2.0.6.0'
+  object TreeView1: TTreeView
+    Left = 0
+    Height = 222
+    Top = 0
+    Width = 314
+    Align = alClient
+    HideSelection = False
+    Indent = 19
+    ReadOnly = True
+    TabOrder = 0
+    Options = [tvoAutoItemHeight, tvoKeepCollapsedNodes, tvoReadOnly, tvoShowButtons, tvoShowLines, tvoShowRoot, tvoToolTips]
+  end
+  object Button1: TButton
+    Left = 296
+    Height = 25
+    Top = 224
+    Width = 75
+    Caption = 'More Info'
+    OnClick = Button1Click
+    TabOrder = 1
+    Visible = False
+  end
+  object Panel1: TPanel
+    Left = 0
+    Height = 74
+    Top = 222
+    Width = 314
+    Align = alBottom
+    AutoSize = True
+    BevelOuter = bvNone
+    ClientHeight = 74
+    ClientWidth = 314
+    TabOrder = 2
+    object Button2: TButton
+      AnchorSideLeft.Control = Panel1
+      AnchorSideTop.Control = Panel1
+      Left = 8
+      Height = 25
+      Top = 8
+      Width = 98
+      AutoSize = True
+      BorderSpacing.Left = 8
+      BorderSpacing.Top = 8
+      Caption = 'Toggle visible'
+      OnClick = Button2Click
+      TabOrder = 0
+    end
+    object Button3: TButton
+      AnchorSideLeft.Control = Button2
+      AnchorSideLeft.Side = asrBottom
+      AnchorSideTop.Control = Panel1
+      Left = 114
+      Height = 25
+      Top = 8
+      Width = 100
+      AutoSize = True
+      BorderSpacing.Left = 8
+      BorderSpacing.Top = 8
+      BorderSpacing.Right = 8
+      Caption = 'Close window'
+      OnClick = Button3Click
+      TabOrder = 1
+    end
+    object Button5: TButton
+      AnchorSideTop.Control = Button3
+      AnchorSideTop.Side = asrBottom
+      Left = 122
+      Height = 25
+      Top = 41
+      Width = 75
+      Anchors = [akTop]
+      AutoSize = True
+      BorderSpacing.Top = 8
+      BorderSpacing.Bottom = 8
+      Caption = 'OK'
+      Constraints.MinWidth = 75
+      ModalResult = 1
+      TabOrder = 2
+    end
+    object Button4: TButton
+      Left = 96
+      Height = 19
+      Top = 32
+      Width = 129
+      Anchors = [akTop]
+      Caption = 'Capture Timer Messages'
+      OnClick = Button4Click
+      TabOrder = 3
+      Visible = False
+    end
+    object Button6: TButton
+      AnchorSideLeft.Control = Button3
+      AnchorSideLeft.Side = asrBottom
+      AnchorSideTop.Control = Panel1
+      AnchorSideRight.Control = Panel1
+      AnchorSideRight.Side = asrBottom
+      Left = 222
+      Height = 25
+      Top = 8
+      Width = 90
+      AutoSize = True
+      BorderSpacing.Left = 8
+      BorderSpacing.Top = 8
+      BorderSpacing.Right = 8
+      Caption = 'Change text'
+      OnClick = Button6Click
+      TabOrder = 4
+    end
+  end
+end

@@ -1,0 +1,138 @@
+object frmProcessWatcher: TfrmProcessWatcher
+  Left = 1183
+  Height = 236
+  Top = 116
+  Width = 264
+  BorderIcons = [biSystemMenu]
+  Caption = 'Process watcher'
+  ClientHeight = 236
+  ClientWidth = 264
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  Position = poScreenCenter
+  LCLVersion = '2.0.0.4'
+  object tvProcesslist: TTreeView
+    Left = 0
+    Height = 165
+    Top = 0
+    Width = 264
+    Align = alClient
+    Indent = 19
+    PopupMenu = pmthreadid
+    ReadOnly = True
+    ShowRoot = False
+    TabOrder = 0
+    OnDblClick = tvProcesslistDblClick
+    Options = [tvoAutoItemHeight, tvoHideSelection, tvoKeepCollapsedNodes, tvoReadOnly, tvoShowButtons, tvoShowLines, tvoToolTips]
+  end
+  object Panel1: TPanel
+    Left = 0
+    Height = 71
+    Top = 165
+    Width = 264
+    Align = alBottom
+    AutoSize = True
+    BevelOuter = bvNone
+    ClientHeight = 71
+    ClientWidth = 264
+    TabOrder = 1
+    OnResize = Panel1Resize
+    object Panel2: TPanel
+      AnchorSideLeft.Control = Panel1
+      AnchorSideLeft.Side = asrCenter
+      AnchorSideTop.Control = Panel1
+      Left = 73
+      Height = 55
+      Top = 8
+      Width = 118
+      AutoSize = True
+      BorderSpacing.Top = 8
+      BorderSpacing.Bottom = 8
+      BevelOuter = bvNone
+      ClientHeight = 55
+      ClientWidth = 118
+      TabOrder = 0
+      object btnOpen: TButton
+        AnchorSideLeft.Control = Panel2
+        AnchorSideTop.Control = Panel2
+        AnchorSideRight.Control = Panel2
+        AnchorSideRight.Side = asrBottom
+        Left = 0
+        Height = 25
+        Top = 0
+        Width = 118
+        Anchors = [akTop, akLeft, akRight]
+        AutoSize = True
+        Caption = 'Open process'
+        OnClick = btnOpenClick
+        TabOrder = 0
+      end
+      object btnAttach: TButton
+        AnchorSideLeft.Control = Panel2
+        AnchorSideTop.Control = btnOpen
+        AnchorSideTop.Side = asrBottom
+        AnchorSideRight.Control = Panel2
+        AnchorSideRight.Side = asrBottom
+        Left = 0
+        Height = 25
+        Top = 30
+        Width = 118
+        Anchors = [akTop, akLeft, akRight]
+        AutoSize = True
+        BorderSpacing.Top = 5
+        Caption = 'Attach to process'
+        OnClick = btnAttachClick
+        TabOrder = 1
+      end
+    end
+  end
+  object pmthreadid: TPopupMenu
+    Images = pwImageList
+    left = 56
+    top = 48
+    object ShowThreadIDs1: TMenuItem
+      Caption = 'Show ThreadID''s'
+      ImageIndex = 0
+      OnClick = ShowThreadIDs1Click
+    end
+  end
+  object pwImageList: TImageList
+    left = 148
+    top = 87
+    Bitmap = {
+      4C69010000001000000010000000FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00BCBCBC45B3B3B350ECECEC07B3B3
+      B350B3B3B350B3B3B350B3B3B350B3B3B350B3B3B350B3B3B350B3B3B350B3B3
+      B350B3B3B350BCBCBC45FFFFFF00FFFFFF00636363B54C4C4CD0D3D3D3134C4C
+      4CD04C4C4CD04C4C4CD04C4C4CD04C4C4CD04C4C4CD04C4C4CD04C4C4CD04C4C
+      4CD04C4C4CD0636363B5FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00636363B54C4C4CD0D3D3D3134C4C
+      4CD04C4C4CD04C4C4CD04C4C4CD04C4C4CD04C4C4CD04C4C4CD04C4C4CD04C4C
+      4CD04C4C4CD0636363B5FFFFFF00FFFFFF00BCBCBC45B3B3B350ECECEC07B3B3
+      B350B3B3B350B3B3B350B3B3B350B3B3B350B3B3B350B3B3B350B3B3B350B3B3
+      B350B3B3B350BCBCBC45FFFFFF00FFFFFF00BCBCBC45B3B3B350ECECEC07B3B3
+      B350B3B3B350B3B3B350B3B3B350B3B3B350B3B3B350B3B3B350B3B3B350B3B3
+      B350B3B3B350BCBCBC45FFFFFF00FFFFFF00636363B54C4C4CD0D3D3D3134C4C
+      4CD04C4C4CD04C4C4CD04C4C4CD04C4C4CD04C4C4CD04C4C4CD04C4C4CD04C4C
+      4CD04C4C4CD0636363B5FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00636363B54C4C4CD0D3D3D3134C4C
+      4CD04C4C4CD04C4C4CD04C4C4CD04C4C4CD04C4C4CD04C4C4CD04C4C4CD04C4C
+      4CD04C4C4CD0636363B5FFFFFF00FFFFFF00BCBCBC45B3B3B350ECECEC07B3B3
+      B350B3B3B350B3B3B350B3B3B350B3B3B350B3B3B350B3B3B350B3B3B350B3B3
+      B350B3B3B350BCBCBC45FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00
+    }
+  end
+end

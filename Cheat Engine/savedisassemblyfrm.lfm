@@ -1,0 +1,183 @@
+object frmSavedisassembly: TfrmSavedisassembly
+  Left = 291
+  Height = 158
+  Top = 139
+  Width = 185
+  AutoSize = True
+  BorderStyle = bsDialog
+  Caption = 'Save disassembled output'
+  ClientHeight = 158
+  ClientWidth = 185
+  OnDestroy = FormDestroy
+  OnShow = FormShow
+  Position = poScreenCenter
+  LCLVersion = '2.0.0.4'
+  object Button1: TButton
+    AnchorSideLeft.Control = Owner
+    AnchorSideLeft.Side = asrCenter
+    AnchorSideTop.Control = Panel2
+    AnchorSideTop.Side = asrBottom
+    Left = 55
+    Height = 27
+    Top = 104
+    Width = 75
+    AutoSize = True
+    BorderSpacing.Top = 3
+    BorderSpacing.Bottom = 3
+    Caption = 'Save'
+    Constraints.MinWidth = 75
+    Default = True
+    OnClick = Button1Click
+    TabOrder = 0
+  end
+  object ProgressBar1: TProgressBar
+    AnchorSideLeft.Control = Owner
+    AnchorSideTop.Control = Button1
+    AnchorSideTop.Side = asrBottom
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    Left = 0
+    Height = 21
+    Top = 138
+    Width = 185
+    Anchors = [akTop, akLeft, akRight]
+    BorderSpacing.Top = 7
+    TabOrder = 1
+  end
+  object Panel1: TPanel
+    AnchorSideLeft.Control = Owner
+    AnchorSideTop.Control = Owner
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    Left = 5
+    Height = 42
+    Top = 3
+    Width = 175
+    Anchors = [akTop, akLeft, akRight]
+    AutoSize = True
+    BorderSpacing.Left = 5
+    BorderSpacing.Top = 3
+    BorderSpacing.Right = 5
+    BevelOuter = bvNone
+    ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+    ChildSizing.Layout = cclLeftToRightThenTopToBottom
+    ChildSizing.ControlsPerLine = 2
+    ClientHeight = 42
+    ClientWidth = 175
+    TabOrder = 2
+    object cbAddress: TCheckBox
+      Left = 0
+      Height = 21
+      Top = 0
+      Width = 84
+      Caption = 'Address'
+      Checked = True
+      State = cbChecked
+      TabOrder = 2
+    end
+    object cbBytes: TCheckBox
+      Left = 84
+      Height = 21
+      Top = 0
+      Width = 91
+      Caption = 'bytes'
+      Checked = True
+      State = cbChecked
+      TabOrder = 1
+    end
+    object cbOpcode: TCheckBox
+      Left = 0
+      Height = 21
+      Top = 21
+      Width = 84
+      Caption = 'opcode'
+      Checked = True
+      State = cbChecked
+      TabOrder = 0
+    end
+    object cbComment: TCheckBox
+      Left = 84
+      Height = 21
+      Top = 21
+      Width = 91
+      Caption = 'Comment'
+      Checked = True
+      State = cbChecked
+      TabOrder = 3
+    end
+  end
+  object Panel2: TPanel
+    AnchorSideLeft.Control = Owner
+    AnchorSideTop.Control = Panel1
+    AnchorSideTop.Side = asrBottom
+    Left = 3
+    Height = 53
+    Top = 48
+    Width = 179
+    AutoSize = True
+    BorderSpacing.Left = 3
+    BorderSpacing.Top = 3
+    BorderSpacing.Right = 3
+    BevelOuter = bvNone
+    ClientHeight = 53
+    ClientWidth = 179
+    TabOrder = 3
+    object Label1: TLabel
+      AnchorSideLeft.Control = Edit1
+      AnchorSideTop.Control = Edit1
+      AnchorSideTop.Side = asrCenter
+      AnchorSideRight.Control = Edit1
+      Left = 0
+      Height = 17
+      Top = 4
+      Width = 30
+      Anchors = [akTop, akRight]
+      Caption = 'From'
+      ParentColor = False
+    end
+    object Label2: TLabel
+      AnchorSideTop.Control = Edit2
+      AnchorSideTop.Side = asrCenter
+      AnchorSideRight.Control = Edit2
+      Left = 15
+      Height = 17
+      Top = 32
+      Width = 15
+      Anchors = [akTop, akRight]
+      Caption = 'To'
+      ParentColor = False
+    end
+    object Edit2: TEdit
+      AnchorSideLeft.Control = Edit1
+      AnchorSideTop.Control = Edit1
+      AnchorSideTop.Side = asrBottom
+      AnchorSideRight.Control = Edit1
+      AnchorSideRight.Side = asrBottom
+      Left = 30
+      Height = 25
+      Top = 28
+      Width = 149
+      Anchors = [akTop, akLeft, akRight]
+      BorderSpacing.Top = 3
+      TabOrder = 0
+    end
+    object Edit1: TEdit
+      AnchorSideTop.Control = Panel2
+      AnchorSideRight.Control = Panel2
+      AnchorSideRight.Side = asrBottom
+      Left = 30
+      Height = 25
+      Top = 0
+      Width = 149
+      Anchors = [akTop, akRight]
+      TabOrder = 1
+    end
+  end
+  object SaveDialog1: TSaveDialog
+    DefaultExt = '.txt'
+    Filter = 'textfiles (*.txt)|*.txt'
+    Options = [ofOverwritePrompt, ofHideReadOnly, ofEnableSizing]
+    left = 32
+    top = 128
+  end
+end

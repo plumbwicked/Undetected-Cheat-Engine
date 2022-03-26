@@ -1,0 +1,77 @@
+object Comments: TComments
+  Left = 1026
+  Height = 257
+  Top = 213
+  Width = 335
+  HelpContext = 11
+  BorderIcons = [biMaximize]
+  Caption = 'Comments'
+  ClientHeight = 257
+  ClientWidth = 335
+  OnClose = FormClose
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  OnShow = FormShow
+  Position = poScreenCenter
+  LCLVersion = '2.0.6.0'
+  object Panel1: TPanel
+    Left = 0
+    Height = 33
+    Top = 224
+    Width = 335
+    Align = alBottom
+    AutoSize = True
+    BevelOuter = bvNone
+    ClientHeight = 33
+    ClientWidth = 335
+    TabOrder = 0
+    OnResize = Panel1Resize
+    object Button1: TButton
+      AnchorSideLeft.Control = Panel1
+      AnchorSideLeft.Side = asrCenter
+      AnchorSideTop.Control = Panel1
+      Left = 125
+      Height = 25
+      Top = 4
+      Width = 85
+      AutoSize = True
+      BorderSpacing.Top = 4
+      BorderSpacing.Bottom = 4
+      Caption = 'Close'
+      Constraints.MinHeight = 25
+      Constraints.MinWidth = 85
+      OnClick = Button1Click
+      TabOrder = 0
+    end
+  end
+  object PageControl1: TPageControl
+    Left = 0
+    Height = 224
+    Top = 0
+    Width = 335
+    ActivePage = tsComment
+    Align = alClient
+    TabIndex = 0
+    TabOrder = 1
+    object tsComment: TTabSheet
+      Caption = 'Comments'
+      ClientHeight = 196
+      ClientWidth = 327
+      object Memo1: TMemo
+        Left = 0
+        Height = 196
+        Top = 0
+        Width = 327
+        Align = alClient
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -15
+        Font.Name = 'Courier New'
+        Font.Pitch = fpFixed
+        Font.Quality = fqDraft
+        ParentFont = False
+        ScrollBars = ssBoth
+        TabOrder = 0
+      end
+    end
+  end
+end

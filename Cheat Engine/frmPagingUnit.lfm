@@ -1,0 +1,157 @@
+object frmPaging: TfrmPaging
+  Left = 678
+  Height = 235
+  Top = 262
+  Width = 412
+  Caption = 'Paging'
+  ClientHeight = 235
+  ClientWidth = 412
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  LCLVersion = '2.0.10.0'
+  object tvPage: TTreeView
+    Left = 0
+    Height = 185
+    Top = 50
+    Width = 412
+    Align = alClient
+    PopupMenu = PopupMenu1
+    ReadOnly = True
+    TabOrder = 0
+    OnDblClick = tvPageDblClick
+    OnExpanding = tvPageExpanding
+    Options = [tvoAutoItemHeight, tvoHideSelection, tvoKeepCollapsedNodes, tvoReadOnly, tvoShowButtons, tvoShowLines, tvoShowRoot, tvoToolTips, tvoThemedDraw]
+  end
+  object frmPaging: TPanel
+    Left = 0
+    Height = 50
+    Top = 0
+    Width = 412
+    Align = alTop
+    AutoSize = True
+    BevelOuter = bvNone
+    ClientHeight = 50
+    ClientWidth = 412
+    TabOrder = 1
+    object edtCR3: TEdit
+      AnchorSideLeft.Control = Label1
+      AnchorSideRight.Control = Button1
+      Left = 5
+      Height = 23
+      Top = 24
+      Width = 222
+      Anchors = [akTop, akLeft, akRight]
+      BorderSpacing.Right = 4
+      BorderSpacing.Bottom = 2
+      TabOrder = 0
+    end
+    object Button1: TButton
+      AnchorSideTop.Control = edtCR3
+      AnchorSideTop.Side = asrCenter
+      AnchorSideRight.Control = Label1
+      AnchorSideRight.Side = asrBottom
+      Left = 231
+      Height = 25
+      Top = 23
+      Width = 75
+      Anchors = [akTop, akRight]
+      BorderSpacing.Bottom = 2
+      Caption = 'Go'
+      OnClick = Button1Click
+      TabOrder = 1
+    end
+    object Label1: TLabel
+      AnchorSideLeft.Control = frmPaging
+      AnchorSideTop.Control = frmPaging
+      Left = 5
+      Height = 15
+      Top = 3
+      Width = 301
+      BorderSpacing.Left = 5
+      BorderSpacing.Top = 3
+      Caption = 'Fill in the physical address of the paging base (or just cr3)'
+      ParentColor = False
+    end
+    object cb8byteentries: TCheckBox
+      AnchorSideLeft.Control = Label1
+      AnchorSideLeft.Side = asrBottom
+      AnchorSideTop.Control = Label1
+      Left = 310
+      Height = 19
+      Top = 3
+      Width = 92
+      BorderSpacing.Left = 4
+      Caption = '8-byte entries'
+      TabOrder = 2
+    end
+    object cb64bit: TCheckBox
+      AnchorSideLeft.Control = cb8byteentries
+      AnchorSideTop.Control = cb8byteentries
+      AnchorSideTop.Side = asrBottom
+      Left = 310
+      Height = 19
+      Top = 22
+      Width = 51
+      BorderSpacing.Bottom = 2
+      Caption = '64-bit'
+      OnChange = cb64bitChange
+      TabOrder = 3
+    end
+  end
+  object FindDialog1: TFindDialog
+    Options = [frDown, frHideMatchCase, frHideWholeWord, frHideUpDown, frDisableMatchCase, frDisableUpDown, frDisableWholeWord, frEntireScope]
+    OnFind = FindDialog1Find
+    Left = 49
+    Top = 114
+  end
+  object PopupMenu1: TPopupMenu
+    Images = pImageList
+    Left = 124
+    Top = 83
+    object MenuItem1: TMenuItem
+      Caption = 'Find'
+      ImageIndex = 0
+      ShortCut = 16454
+      OnClick = MenuItem1Click
+    end
+  end
+  object pImageList: TImageList
+    Left = 266
+    Top = 123
+    Bitmap = {
+      4C69010000001000000010000000FFFFFF00A0A0A060808080C0808080C08080
+      80C0808080C0808080C0808080C0808080C0808080C0808080C0747474BFBCBC
+      BC35FFFFFF00FFFFFF00FFFFFF00FFFFFF0080808080FFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF6767
+      67E6D8D8D81BFFFFFF00FFFFFF00FFFFFF0080808080FFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF6F6
+      F6FF5C5C5CCCF0F0F009FFFFFF00FFFFFF0080808080FFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFBABABAFF888888FF8C8C8CFF888888FFB7B7B7FFFFFFFFFFFFFF
+      FFFFE5E5E5FF84848476FFFFFF00FFFFFF0080808080FFFFFFFFFFFFFFFFF7F7
+      F7FF7D7D7DFFC3C3C3FFFFFFFFFFFFFFFFFFFFFFFFFFC6C6C6FF7B7B7BFFF6F6
+      F6FFFFFFFFFF80808080FFFFFF00FFFFFF0080808080FFFFFFFFFFFFFFFF8787
+      87FFE7E7E7FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEAEAEAFF8484
+      84FFFFFFFFFF80808080FFFFFF00FFFFFF0080808080FFFFFFFFE4E4E4FF9C9C
+      9CFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFA2A2
+      A2FFDFDFDFFF80808080FFFFFF00FFFFFF0080808080FFFFFFFFAEAEAEFFDCDC
+      DCFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFE2E2
+      E2FFA7A7A7FF80808080FFFFFF00FFFFFF0080808080FFFFFFFFA5A5A5FFE6E6
+      E6FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEDED
+      EDFF9F9F9FFF80808080FFFFFF00FFFFFF0080808080FFFFFFFFCBCBCBFFBABA
+      BAFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFC0C0
+      C0FFC5C5C5FF80808080FFFFFF00FFFFFF0080808080FFFFFFFFFEFEFEFF7A7A
+      7AFFFEFEFEFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF7A7A
+      7AFFFDFDFDFF80808080FFFFFF00FFFFFF0080808080FFFFFFFFFFFFFFFFD5D5
+      D5FF858585FFFAFAFAFFFFFFFFFFFFFFFFFFFFFFFFFFFBFBFBFF7B7B7BFF8483
+      83FFFFFFFFFF80808080FFFFFF00FFFFFF0080808080FFFFFFFFFFFFFFFFFFFF
+      FFFFDFDFDFFF838383FF8E8E8EFFA4A4A4FF8F8F8FFF828282FF9E9E9EFF1F1E
+      1EFFA19E9DFF80808080FFFFFF00FFFFFF0080808080FFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFF9F9F9FFE7E7E7FFF9F9F9FFFFFFFFFFFFFFFFFFB9B7
+      B6FF260D09FF746A6893FFFFFF00FFFFFF0080808080FFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFBEB6B4FF1E0400FEA89D9C54FFFFFF00A0A0A060808080C0808080C08080
+      80C0808080C0808080C0808080C0808080C0808080C0808080C0808080C08080
+      80C0808080C06C656496D2CDCC25
+    }
+  end
+end

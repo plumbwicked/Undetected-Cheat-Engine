@@ -1,0 +1,11 @@
+object frmStructures: TfrmStructures
+  Left = 657
+  Height = 348
+  Top = 306
+  Width = 653
+  Caption = 'Memory dissect'
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Position = poScreenCenter
+  LCLVersion = '1.6.0.4'
+end

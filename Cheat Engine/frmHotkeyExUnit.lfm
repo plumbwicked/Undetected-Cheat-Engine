@@ -1,0 +1,100 @@
+object frmHotkeyEx: TfrmHotkeyEx
+  Left = 369
+  Height = 79
+  Top = 306
+  Width = 354
+  AutoSize = True
+  BorderStyle = bsDialog
+  Caption = 'Set Hotkey'
+  ClientHeight = 79
+  ClientWidth = 354
+  Position = poScreenCenter
+  LCLVersion = '2.0.7.0'
+  object edtHotkey: TEdit
+    AnchorSideLeft.Control = Label1
+    AnchorSideTop.Control = Label1
+    AnchorSideTop.Side = asrBottom
+    AnchorSideRight.Control = Label1
+    AnchorSideRight.Side = asrBottom
+    Left = 8
+    Height = 22
+    Top = 16
+    Width = 258
+    Anchors = [akTop, akLeft, akRight]
+    OnKeyDown = edtHotkeyKeyDown
+    ReadOnly = True
+    TabOrder = 0
+  end
+  object Label1: TLabel
+    AnchorSideLeft.Control = Owner
+    AnchorSideTop.Control = Owner
+    Left = 8
+    Height = 16
+    Top = 0
+    Width = 258
+    BorderSpacing.Left = 8
+    Caption = 'Press the key combination you want to use'
+    ParentColor = False
+  end
+  object Button3: TButton
+    AnchorSideLeft.Control = edtHotkey
+    AnchorSideLeft.Side = asrBottom
+    AnchorSideTop.Control = edtHotkey
+    AnchorSideTop.Side = asrCenter
+    Left = 269
+    Height = 20
+    Top = 17
+    Width = 60
+    AutoSize = True
+    BorderSpacing.Left = 3
+    BorderSpacing.Right = 8
+    Caption = 'Clear'
+    OnClick = Button3Click
+    TabOrder = 1
+  end
+  object Panel1: TPanel
+    AnchorSideLeft.Control = Owner
+    AnchorSideLeft.Side = asrCenter
+    AnchorSideTop.Control = edtHotkey
+    AnchorSideTop.Side = asrBottom
+    Left = 99
+    Height = 20
+    Top = 44
+    Width = 156
+    AutoSize = True
+    BorderSpacing.Top = 6
+    BorderSpacing.Bottom = 6
+    BevelOuter = bvNone
+    ClientHeight = 20
+    ClientWidth = 156
+    TabOrder = 2
+    object Button1: TButton
+      AnchorSideLeft.Control = Panel1
+      AnchorSideTop.Control = Panel1
+      Left = 0
+      Height = 20
+      Top = 0
+      Width = 75
+      AutoSize = True
+      Caption = 'OK'
+      Constraints.MinWidth = 75
+      ModalResult = 1
+      TabOrder = 0
+    end
+    object Button2: TButton
+      AnchorSideLeft.Control = Button1
+      AnchorSideLeft.Side = asrBottom
+      AnchorSideTop.Control = Button1
+      Left = 81
+      Height = 20
+      Top = 0
+      Width = 75
+      AutoSize = True
+      BorderSpacing.Left = 6
+      Caption = 'Cancel'
+      Constraints.MinWidth = 75
+      ModalResult = 2
+      TabOrder = 1
+    end
+  end
+end

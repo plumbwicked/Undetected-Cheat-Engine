@@ -1,0 +1,159 @@
+object frmFillMemory: TfrmFillMemory
+  Left = 688
+  Height = 109
+  Top = 409
+  Width = 184
+  AutoSize = True
+  BorderIcons = []
+  BorderStyle = bsSingle
+  Caption = 'Fill memory'
+  ClientHeight = 109
+  ClientWidth = 184
+  OnClose = FormClose
+  OnCreate = FormCreate
+  OnShow = FormShow
+  Position = poOwnerFormCenter
+  LCLVersion = '1.6.4.0'
+  object Panel1: TPanel
+    AnchorSideLeft.Control = Owner
+    AnchorSideLeft.Side = asrCenter
+    AnchorSideTop.Control = Panel2
+    AnchorSideTop.Side = asrBottom
+    Left = 15
+    Height = 25
+    Top = 83
+    Width = 154
+    AutoSize = True
+    BorderSpacing.Top = 6
+    BorderSpacing.Bottom = 4
+    BevelOuter = bvNone
+    ClientHeight = 25
+    ClientWidth = 154
+    TabOrder = 0
+    object Button1: TButton
+      AnchorSideLeft.Control = Panel1
+      AnchorSideTop.Control = Panel1
+      Left = 0
+      Height = 25
+      Top = 0
+      Width = 75
+      AutoSize = True
+      Caption = 'OK'
+      Constraints.MinWidth = 75
+      Default = True
+      OnClick = Button1Click
+      TabOrder = 0
+    end
+    object Button2: TButton
+      AnchorSideLeft.Control = Button1
+      AnchorSideLeft.Side = asrBottom
+      AnchorSideTop.Control = Button1
+      Left = 79
+      Height = 25
+      Top = 0
+      Width = 75
+      AutoSize = True
+      BorderSpacing.Left = 4
+      Cancel = True
+      Caption = 'Cancel'
+      Constraints.MinWidth = 75
+      ModalResult = 2
+      TabOrder = 1
+    end
+  end
+  object Panel2: TPanel
+    AnchorSideLeft.Control = Owner
+    AnchorSideTop.Control = Owner
+    Left = 10
+    Height = 77
+    Top = 0
+    Width = 148
+    AutoSize = True
+    BorderSpacing.Left = 10
+    BorderSpacing.Right = 10
+    BevelOuter = bvNone
+    ClientHeight = 77
+    ClientWidth = 148
+    TabOrder = 1
+    object Label1: TLabel
+      AnchorSideTop.Control = Edit1
+      AnchorSideTop.Side = asrCenter
+      AnchorSideRight.Control = Edit1
+      Left = 13
+      Height = 15
+      Top = 8
+      Width = 28
+      Anchors = [akTop, akRight]
+      BorderSpacing.Right = 2
+      Caption = 'From'
+      ParentColor = False
+    end
+    object Label2: TLabel
+      AnchorSideRight.Control = Edit2
+      Left = 28
+      Height = 15
+      Top = 32
+      Width = 13
+      Anchors = [akTop, akRight]
+      BorderSpacing.Right = 2
+      Caption = 'To'
+      ParentColor = False
+    end
+    object Label3: TLabel
+      AnchorSideTop.Control = Edit3
+      AnchorSideTop.Side = asrCenter
+      AnchorSideRight.Control = Edit3
+      Left = 0
+      Height = 15
+      Top = 58
+      Width = 41
+      Anchors = [akTop, akRight]
+      BorderSpacing.Right = 2
+      Caption = 'Fill with'
+      ParentColor = False
+    end
+    object Edit1: TEdit
+      AnchorSideTop.Control = Panel2
+      AnchorSideRight.Control = Panel2
+      AnchorSideRight.Side = asrBottom
+      Left = 43
+      Height = 23
+      Top = 4
+      Width = 105
+      Anchors = [akTop, akRight]
+      BorderSpacing.Top = 4
+      MaxLength = 16
+      TabOrder = 0
+    end
+    object Edit2: TEdit
+      AnchorSideTop.Control = Edit1
+      AnchorSideTop.Side = asrBottom
+      AnchorSideRight.Control = Panel2
+      AnchorSideRight.Side = asrBottom
+      Left = 43
+      Height = 23
+      Top = 29
+      Width = 105
+      Anchors = [akTop, akRight]
+      BorderSpacing.Top = 2
+      MaxLength = 16
+      TabOrder = 1
+    end
+    object Edit3: TEdit
+      AnchorSideTop.Control = Edit2
+      AnchorSideTop.Side = asrBottom
+      AnchorSideRight.Control = Panel2
+      AnchorSideRight.Side = asrBottom
+      Left = 43
+      Height = 23
+      Top = 54
+      Width = 105
+      Anchors = [akTop, akRight]
+      BorderSpacing.Top = 2
+      ParentShowHint = False
+      ShowHint = True
+      TabOrder = 2
+      Text = '0'
+    end
+  end
+end

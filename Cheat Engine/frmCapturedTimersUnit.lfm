@@ -1,0 +1,110 @@
+object frmCapturedTimers: TfrmCapturedTimers
+  Left = 502
+  Height = 234
+  Top = 144
+  Width = 507
+  Caption = 'Captured Timers'
+  ClientHeight = 234
+  ClientWidth = 507
+  OnClose = FormClose
+  Position = poScreenCenter
+  LCLVersion = '1.6.0.4'
+  object Label1: TLabel
+    Left = 0
+    Height = 15
+    Top = 0
+    Width = 507
+    Align = alTop
+    Caption = 'The following WM_TIMER messages have been received'
+    ParentColor = False
+  end
+  object ListView1: TListView
+    Left = 0
+    Height = 164
+    Top = 15
+    Width = 507
+    Align = alClient
+    Columns = <    
+      item
+        Caption = 'Window Handle'
+        Width = 110
+      end    
+      item
+        Caption = 'Window Title'
+        Width = 120
+      end    
+      item
+        Caption = 'Window Class'
+        Width = 90
+      end    
+      item
+        Caption = 'Timer ID'
+        Width = 55
+      end    
+      item
+        Caption = 'TimerProc'
+        Width = 70
+      end    
+      item
+        Caption = 'Count'
+      end>
+    HideSelection = False
+    MultiSelect = True
+    ReadOnly = True
+    RowSelect = True
+    TabOrder = 0
+    ViewStyle = vsReport
+  end
+  object Panel1: TPanel
+    Left = 0
+    Height = 55
+    Top = 179
+    Width = 507
+    Align = alBottom
+    AutoSize = True
+    BevelOuter = bvNone
+    ClientHeight = 55
+    ClientWidth = 507
+    TabOrder = 1
+    object Button1: TButton
+      AnchorSideLeft.Control = Panel1
+      AnchorSideLeft.Side = asrCenter
+      AnchorSideTop.Control = Edit1
+      AnchorSideTop.Side = asrBottom
+      Left = 216
+      Height = 25
+      Top = 27
+      Width = 75
+      BorderSpacing.Bottom = 3
+      Caption = 'Close'
+      OnClick = Button1Click
+      TabOrder = 0
+    end
+    object Button2: TButton
+      AnchorSideLeft.Control = Edit1
+      AnchorSideLeft.Side = asrBottom
+      AnchorSideTop.Control = Edit1
+      AnchorSideTop.Side = asrCenter
+      Left = 75
+      Height = 17
+      Top = 7
+      Width = 121
+      BorderSpacing.Left = 5
+      Caption = 'Send timer messages'
+      OnClick = Button2Click
+      TabOrder = 1
+    end
+    object Edit1: TEdit
+      AnchorSideLeft.Control = Panel1
+      AnchorSideTop.Control = Panel1
+      Left = 5
+      Height = 23
+      Top = 4
+      Width = 65
+      BorderSpacing.Left = 5
+      BorderSpacing.Top = 4
+      TabOrder = 2
+      Text = '10'
+    end
+  end
+end

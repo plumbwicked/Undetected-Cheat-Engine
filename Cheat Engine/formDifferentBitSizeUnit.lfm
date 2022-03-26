@@ -1,0 +1,94 @@
+object formDifferentBitSize: TformDifferentBitSize
+  Left = 719
+  Height = 145
+  Top = 250
+  Width = 329
+  VertScrollBar.Visible = False
+  AutoSize = True
+  BorderIcons = [biSystemMenu]
+  Caption = 'Different sized row of bits'
+  ClientHeight = 145
+  ClientWidth = 329
+  OnCreate = FormCreate
+  OnShow = FormShow
+  Position = poScreenCenter
+  LCLVersion = '1.6.4.0'
+  object Labelold: TLabel
+    AnchorSideTop.Control = Label1
+    AnchorSideTop.Side = asrBottom
+    Left = 130
+    Height = 18
+    Top = 70
+    Width = 80
+    BorderSpacing.Top = 10
+    Caption = 'LabelOld'
+    Font.Height = -16
+    Font.Name = 'Courier New'
+    ParentColor = False
+    ParentFont = False
+  end
+  object LabelNew: TLabel
+    AnchorSideTop.Control = Labelold
+    AnchorSideTop.Side = asrBottom
+    Left = 130
+    Height = 18
+    Top = 90
+    Width = 80
+    BorderSpacing.Top = 2
+    Caption = 'LabelNew'
+    Font.Height = -16
+    Font.Name = 'Courier New'
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label1: TLabel
+    Left = 0
+    Height = 60
+    Top = 0
+    Width = 329
+    Align = alTop
+    Caption = 'The last time you scanned the number of bits was 90 and now it is 12. Please tell me how and how much i must change the bit offset to successfully scan. (Left arrow+right arrow move the bits)'
+    ParentColor = False
+    WordWrap = True
+  end
+  object Edit1: TEdit
+    AnchorSideLeft.Control = Button1
+    AnchorSideLeft.Side = asrCenter
+    AnchorSideTop.Control = Button1
+    AnchorSideTop.Side = asrCenter
+    Left = 148
+    Height = 23
+    Top = 117
+    Width = 33
+    BorderSpacing.Top = 3
+    OnKeyDown = Edit1KeyDown
+    OnKeyPress = Edit1KeyPress
+    PopupMenu = PopupMenu1
+    TabOrder = 0
+    Text = 'Edit1'
+  end
+  object Button1: TButton
+    AnchorSideLeft.Control = Owner
+    AnchorSideLeft.Side = asrCenter
+    AnchorSideTop.Control = LabelNew
+    AnchorSideTop.Side = asrBottom
+    Left = 127
+    Height = 25
+    Top = 116
+    Width = 75
+    BorderSpacing.Top = 8
+    Caption = 'OK'
+    Default = True
+    OnClick = Button1Click
+    TabOrder = 1
+    TabStop = False
+  end
+  object PopupMenu1: TPopupMenu
+    left = 72
+    top = 80
+    object OhnoYoufoundme1: TMenuItem
+      Caption = 'Oh no! You found me!!!'
+      OnClick = OhnoYoufoundme1Click
+    end
+  end
+end

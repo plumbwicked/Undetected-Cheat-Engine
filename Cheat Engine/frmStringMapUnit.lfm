@@ -1,0 +1,273 @@
+object frmStringMap: TfrmStringMap
+  Left = 392
+  Height = 400
+  Top = 322
+  Width = 521
+  AutoSize = True
+  Caption = 'String map'
+  ClientHeight = 400
+  ClientWidth = 521
+  OnClose = FormClose
+  OnDestroy = FormDestroy
+  OnResize = FormResize
+  Position = poScreenCenter
+  LCLVersion = '2.0.0.4'
+  object Panel1: TPanel
+    Left = 350
+    Height = 400
+    Top = 0
+    Width = 171
+    Align = alRight
+    AutoSize = True
+    ClientHeight = 400
+    ClientWidth = 171
+    TabOrder = 0
+    OnResize = Panel1Resize
+    object ProgressBar1: TProgressBar
+      AnchorSideLeft.Control = Panel2
+      AnchorSideTop.Control = Panel1
+      AnchorSideRight.Control = Panel2
+      AnchorSideRight.Side = asrBottom
+      Left = 6
+      Height = 20
+      Top = 5
+      Width = 159
+      Anchors = [akTop, akLeft, akRight]
+      BorderSpacing.Top = 4
+      TabOrder = 0
+    end
+    object lblStringCount: TLabel
+      AnchorSideLeft.Control = Panel2
+      AnchorSideTop.Control = Panel2
+      AnchorSideTop.Side = asrBottom
+      Left = 6
+      Height = 15
+      Top = 83
+      Width = 74
+      Caption = 'Stringcount: 0'
+      ParentColor = False
+    end
+    object btnShowList: TButton
+      AnchorSideLeft.Control = Panel1
+      AnchorSideBottom.Control = Panel1
+      AnchorSideBottom.Side = asrBottom
+      Left = 1
+      Height = 25
+      Top = 372
+      Width = 89
+      Anchors = [akLeft, akBottom]
+      AutoSize = True
+      BorderSpacing.Bottom = 2
+      Caption = '<<Show list'
+      OnClick = btnShowListClick
+      TabOrder = 1
+    end
+    object edtRegExp: TEdit
+      AnchorSideLeft.Control = cbMustBeStart
+      AnchorSideTop.Control = cbMustBeStart
+      AnchorSideTop.Side = asrBottom
+      AnchorSideRight.Control = Panel2
+      AnchorSideRight.Side = asrBottom
+      Left = 6
+      Height = 23
+      Top = 174
+      Width = 159
+      Anchors = [akTop, akLeft, akRight]
+      BorderSpacing.Bottom = 48
+      Enabled = False
+      TabOrder = 2
+    end
+    object cbRegExp: TCheckBox
+      AnchorSideLeft.Control = cbSaveToDisk
+      AnchorSideTop.Control = cbSaveToDisk
+      AnchorSideTop.Side = asrBottom
+      Left = 6
+      Height = 19
+      Top = 117
+      Width = 164
+      Caption = 'Strings must match reg exp'
+      OnChange = cbRegExpChange
+      TabOrder = 3
+    end
+    object cbCaseSensitive: TCheckBox
+      AnchorSideLeft.Control = cbRegExp
+      AnchorSideTop.Control = cbRegExp
+      AnchorSideTop.Side = asrBottom
+      Left = 6
+      Height = 19
+      Top = 136
+      Width = 93
+      Caption = 'Case sensitive'
+      Enabled = False
+      TabOrder = 4
+    end
+    object cbMustBeStart: TCheckBox
+      AnchorSideLeft.Control = cbCaseSensitive
+      AnchorSideTop.Control = cbCaseSensitive
+      AnchorSideTop.Side = asrBottom
+      Left = 6
+      Height = 19
+      Top = 155
+      Width = 89
+      Caption = 'Must be start'
+      Enabled = False
+      TabOrder = 5
+    end
+    object cbSaveToDisk: TCheckBox
+      AnchorSideLeft.Control = lblStringCount
+      AnchorSideTop.Control = lblStringCount
+      AnchorSideTop.Side = asrBottom
+      Left = 6
+      Height = 19
+      Top = 98
+      Width = 82
+      Caption = 'Save to disk'
+      TabOrder = 6
+    end
+    object Panel2: TPanel
+      AnchorSideLeft.Control = Panel1
+      AnchorSideTop.Control = ProgressBar1
+      AnchorSideTop.Side = asrBottom
+      AnchorSideRight.Control = Panel1
+      AnchorSideRight.Side = asrBottom
+      Left = 6
+      Height = 54
+      Top = 29
+      Width = 159
+      Anchors = [akTop, akLeft, akRight]
+      AutoSize = True
+      BorderSpacing.Left = 5
+      BorderSpacing.Top = 4
+      BorderSpacing.Right = 5
+      BevelOuter = bvNone
+      ClientHeight = 54
+      ClientWidth = 159
+      TabOrder = 7
+      object btnFree: TButton
+        AnchorSideLeft.Control = Panel2
+        AnchorSideTop.Control = btnScan
+        AnchorSideTop.Side = asrBottom
+        AnchorSideRight.Control = Panel2
+        AnchorSideRight.Side = asrBottom
+        Left = 0
+        Height = 25
+        Top = 29
+        Width = 159
+        Anchors = [akTop, akLeft, akRight]
+        AutoSize = True
+        BorderSpacing.Top = 4
+        Caption = 'Free the current list'
+        Enabled = False
+        OnClick = btnFreeClick
+        TabOrder = 0
+      end
+      object btnScan: TButton
+        AnchorSideLeft.Control = Panel2
+        AnchorSideTop.Control = Panel2
+        AnchorSideRight.Control = Panel2
+        AnchorSideRight.Side = asrBottom
+        Left = 0
+        Height = 25
+        Top = 0
+        Width = 159
+        Anchors = [akTop, akLeft, akRight]
+        AutoSize = True
+        Caption = 'Generate string map'
+        OnClick = btnScanClick
+        TabOrder = 1
+      end
+    end
+  end
+  object ListView1: TListView
+    Left = 0
+    Height = 400
+    Top = 0
+    Width = 350
+    Align = alClient
+    Columns = <    
+      item
+        Caption = 'Address'
+        Width = 80
+      end    
+      item
+        Caption = 'String'
+        Width = 150
+      end>
+    HideSelection = False
+    PopupMenu = pmStringList
+    ReadOnly = True
+    RowSelect = True
+    TabOrder = 1
+    ViewStyle = vsReport
+    OnDblClick = ListView1DblClick
+  end
+  object SaveDialog1: TSaveDialog
+    DefaultExt = '.txt'
+    Filter = 'Text files|*.txt'
+    left = 57
+    top = 170
+  end
+  object pmStringList: TPopupMenu
+    Images = smImageList
+    left = 35
+    top = 33
+    object miFind: TMenuItem
+      Caption = 'Find...'
+      ImageIndex = 0
+      ShortCut = 16454
+      OnClick = miFindClick
+    end
+    object miNext: TMenuItem
+      Caption = 'Next'
+      Enabled = False
+      ShortCut = 114
+      Visible = False
+      OnClick = miNextClick
+    end
+  end
+  object FindDialog1: TFindDialog
+    Options = [frDown, frHideWholeWord, frHideUpDown, frHideEntireScope]
+    OnFind = FindDialog1Find
+    left = 136
+    top = 40
+  end
+  object smImageList: TImageList
+    left = 255
+    top = 153
+    Bitmap = {
+      4C69010000001000000010000000FFFFFF00A0A0A060808080C0808080C08080
+      80C0808080C0808080C0808080C0808080C0808080C0808080C0747474BFBCBC
+      BC35FFFFFF00FFFFFF00FFFFFF00FFFFFF0080808080FFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF6767
+      67E6D8D8D81BFFFFFF00FFFFFF00FFFFFF0080808080FFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF6F6
+      F6FF5C5C5CCCF0F0F009FFFFFF00FFFFFF0080808080FFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFBABABAFF888888FF8C8C8CFF888888FFB7B7B7FFFFFFFFFFFFFF
+      FFFFE5E5E5FF84848476FFFFFF00FFFFFF0080808080FFFFFFFFFFFFFFFFF7F7
+      F7FF7D7D7DFFC3C3C3FFFFFFFFFFFFFFFFFFFFFFFFFFC6C6C6FF7B7B7BFFF6F6
+      F6FFFFFFFFFF80808080FFFFFF00FFFFFF0080808080FFFFFFFFFFFFFFFF8787
+      87FFE7E7E7FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEAEAEAFF8484
+      84FFFFFFFFFF80808080FFFFFF00FFFFFF0080808080FFFFFFFFE4E4E4FF9C9C
+      9CFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFA2A2
+      A2FFDFDFDFFF80808080FFFFFF00FFFFFF0080808080FFFFFFFFAEAEAEFFDCDC
+      DCFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFE2E2
+      E2FFA7A7A7FF80808080FFFFFF00FFFFFF0080808080FFFFFFFFA5A5A5FFE6E6
+      E6FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEDED
+      EDFF9F9F9FFF80808080FFFFFF00FFFFFF0080808080FFFFFFFFCBCBCBFFBABA
+      BAFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFC0C0
+      C0FFC5C5C5FF80808080FFFFFF00FFFFFF0080808080FFFFFFFFFEFEFEFF7A7A
+      7AFFFEFEFEFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF7A7A
+      7AFFFDFDFDFF80808080FFFFFF00FFFFFF0080808080FFFFFFFFFFFFFFFFD5D5
+      D5FF858585FFFAFAFAFFFFFFFFFFFFFFFFFFFFFFFFFFFBFBFBFF7B7B7BFF8483
+      83FFFFFFFFFF80808080FFFFFF00FFFFFF0080808080FFFFFFFFFFFFFFFFFFFF
+      FFFFDFDFDFFF838383FF8E8E8EFFA4A4A4FF8F8F8FFF828282FF9E9E9EFF1F1E
+      1EFFA19E9DFF80808080FFFFFF00FFFFFF0080808080FFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFF9F9F9FFE7E7E7FFF9F9F9FFFFFFFFFFFFFFFFFFB9B7
+      B6FF260D09FF746A6893FFFFFF00FFFFFF0080808080FFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFBEB6B4FF1E0400FEA89D9C54FFFFFF00A0A0A060808080C0808080C08080
+      80C0808080C0808080C0808080C0808080C0808080C0808080C0808080C08080
+      80C0808080C06C656496D2CDCC25
+    }
+  end
+end

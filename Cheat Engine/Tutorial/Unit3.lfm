@@ -1,0 +1,110 @@
+object Form3: TForm3
+  Left = 946
+  Height = 280
+  Top = 256
+  Width = 640
+  BorderIcons = [biSystemMenu]
+  Caption = 'Step 3'
+  ClientHeight = 280
+  ClientWidth = 640
+  Color = clBtnFace
+  OnClose = FormClose
+  OnCloseQuery = FormCloseQuery
+  OnCreate = FormCreate
+  LCLVersion = '2.0.6.0'
+  Visible = True
+  object Label1: TLabel
+    AnchorSideLeft.Control = Memo1
+    AnchorSideLeft.Side = asrCenter
+    AnchorSideBottom.Control = ProgressBar1
+    Left = 319
+    Height = 15
+    Top = 249
+    Width = 3
+    Alignment = taCenter
+    Anchors = [akLeft, akBottom]
+    Caption = ' '
+    ParentColor = False
+  end
+  object SpeedButton1: TSpeedButton
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    AnchorSideBottom.Control = ProgressBar1
+    Left = 614
+    Height = 19
+    Top = 245
+    Width = 26
+    Anchors = [akRight, akBottom]
+    AutoSize = True
+    Caption = 'Skip'
+    Flat = True
+    OnClick = SpeedButton1Click
+  end
+  object Memo1: TMemo
+    AnchorSideBottom.Control = Button2
+    Left = 0
+    Height = 189
+    Top = 0
+    Width = 640
+    Align = alTop
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    BorderSpacing.Bottom = 2
+    Color = clBtnFace
+    Lines.Strings = (
+      'See resourcestrings'
+    )
+    ReadOnly = True
+    ScrollBars = ssVertical
+    TabOrder = 0
+  end
+  object Button1: TButton
+    AnchorSideLeft.Control = Memo1
+    AnchorSideLeft.Side = asrCenter
+    AnchorSideBottom.Control = Label1
+    Left = 283
+    Height = 25
+    Top = 224
+    Width = 75
+    Anchors = [akLeft, akBottom]
+    AutoSize = True
+    Caption = 'Next'
+    Constraints.MinWidth = 75
+    Enabled = False
+    OnClick = Button1Click
+    TabOrder = 1
+  end
+  object Button2: TButton
+    AnchorSideLeft.Control = Memo1
+    AnchorSideLeft.Side = asrCenter
+    AnchorSideBottom.Control = Button1
+    Left = 289
+    Height = 25
+    Top = 191
+    Width = 62
+    Anchors = [akLeft, akBottom]
+    AutoSize = True
+    BorderSpacing.Bottom = 8
+    Caption = 'Hit me'
+    OnClick = Button2Click
+    TabOrder = 2
+  end
+  object ProgressBar1: TProgressBar
+    Left = 0
+    Height = 16
+    Top = 264
+    Width = 640
+    Align = alBottom
+    TabOrder = 3
+  end
+  object Timer1: TTimer
+    Interval = 250
+    OnTimer = Timer1Timer
+    Left = 8
+    Top = 8
+  end
+  object Timer2: TTimer
+    OnTimer = Timer2Timer
+    Left = 408
+    Top = 224
+  end
+end

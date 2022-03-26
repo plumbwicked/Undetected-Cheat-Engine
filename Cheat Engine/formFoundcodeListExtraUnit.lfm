@@ -1,0 +1,577 @@
+object FormFoundCodeListExtra: TFormFoundCodeListExtra
+  Left = 867
+  Height = 387
+  Top = 208
+  Width = 625
+  AutoSize = True
+  Caption = 'Extra info'
+  ClientHeight = 387
+  ClientWidth = 625
+  OnClose = FormClose
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  OnShow = FormShow
+  PopupMenu = pmCopy
+  Position = poScreenCenter
+  LCLVersion = '2.0.6.0'
+  object Panel1: TPanel
+    AnchorSideLeft.Control = Owner
+    AnchorSideTop.Control = pnlEPTWatch
+    AnchorSideTop.Side = asrBottom
+    Left = 0
+    Height = 127
+    Top = 54
+    Width = 98
+    AutoSize = True
+    BevelOuter = bvNone
+    ClientHeight = 127
+    ClientWidth = 98
+    Font.CharSet = ANSI_CHARSET
+    Font.Name = 'Courier New'
+    ParentFont = False
+    TabOrder = 0
+    object Label10: TLabel
+      AnchorSideLeft.Control = Panel1
+      AnchorSideTop.Control = Label3
+      AnchorSideTop.Side = asrCenter
+      Left = 0
+      Height = 22
+      Top = 55
+      Width = 24
+      Caption = '>>'
+      ParentColor = False
+    end
+    object Label3: TLabel
+      AnchorSideLeft.Control = Label10
+      AnchorSideLeft.Side = asrBottom
+      AnchorSideTop.Control = Label2
+      AnchorSideTop.Side = asrBottom
+      Left = 26
+      Height = 22
+      Top = 55
+      Width = 72
+      BorderSpacing.Left = 2
+      BorderSpacing.Top = 3
+      Caption = 'Label3'
+      ParentColor = False
+      OnDblClick = Label1DblClick
+    end
+    object Label4: TLabel
+      AnchorSideLeft.Control = Label10
+      AnchorSideLeft.Side = asrBottom
+      AnchorSideTop.Control = Label3
+      AnchorSideTop.Side = asrBottom
+      Left = 26
+      Height = 22
+      Top = 80
+      Width = 72
+      BorderSpacing.Left = 2
+      BorderSpacing.Top = 3
+      Caption = 'Label4'
+      ParentColor = False
+      OnDblClick = Label1DblClick
+    end
+    object Label5: TLabel
+      AnchorSideLeft.Control = Label10
+      AnchorSideLeft.Side = asrBottom
+      AnchorSideTop.Control = Label4
+      AnchorSideTop.Side = asrBottom
+      Left = 26
+      Height = 22
+      Top = 105
+      Width = 72
+      BorderSpacing.Left = 2
+      BorderSpacing.Top = 3
+      Caption = 'Label5'
+      ParentColor = False
+      OnDblClick = Label1DblClick
+    end
+    object Label2: TLabel
+      AnchorSideLeft.Control = Label10
+      AnchorSideLeft.Side = asrBottom
+      AnchorSideTop.Control = Label1
+      AnchorSideTop.Side = asrBottom
+      Left = 26
+      Height = 22
+      Top = 30
+      Width = 72
+      BorderSpacing.Left = 2
+      BorderSpacing.Top = 3
+      Caption = 'Label2'
+      ParentColor = False
+      OnDblClick = Label1DblClick
+    end
+    object Label1: TLabel
+      AnchorSideLeft.Control = Label10
+      AnchorSideLeft.Side = asrBottom
+      AnchorSideTop.Control = Panel1
+      Left = 26
+      Height = 22
+      Top = 5
+      Width = 72
+      BorderSpacing.Left = 2
+      BorderSpacing.Top = 5
+      Caption = 'Label1'
+      ParentColor = False
+      OnDblClick = Label1DblClick
+    end
+  end
+  object Panel3: TPanel
+    AnchorSideLeft.Control = Panel1
+    AnchorSideTop.Control = Panel1
+    AnchorSideTop.Side = asrBottom
+    Left = 0
+    Height = 34
+    Top = 181
+    Width = 62
+    AutoSize = True
+    BevelOuter = bvNone
+    ClientHeight = 34
+    ClientWidth = 62
+    ParentFont = False
+    TabOrder = 1
+    object Panel4: TPanel
+      AnchorSideLeft.Control = Panel3
+      AnchorSideTop.Control = Panel3
+      Left = 12
+      Height = 33
+      Top = 1
+      Width = 38
+      AutoSize = True
+      BorderSpacing.Left = 12
+      BorderSpacing.Top = 1
+      BorderSpacing.Right = 12
+      BevelOuter = bvNone
+      ClientHeight = 33
+      ClientWidth = 38
+      ParentFont = False
+      TabOrder = 0
+      object Label6: TLabel
+        AnchorSideLeft.Control = Panel4
+        AnchorSideTop.Control = Panel4
+        Left = 1
+        Height = 15
+        Top = 1
+        Width = 36
+        BorderSpacing.Left = 1
+        BorderSpacing.Top = 1
+        Caption = 'xxx123'
+        ParentColor = False
+        ParentFont = False
+        WordWrap = True
+      end
+      object Label17: TLabel
+        AnchorSideLeft.Control = Label6
+        AnchorSideTop.Control = Label6
+        AnchorSideTop.Side = asrBottom
+        Left = 2
+        Height = 15
+        Top = 17
+        Width = 36
+        BorderSpacing.Left = 1
+        BorderSpacing.Top = 1
+        BorderSpacing.Bottom = 1
+        Caption = 'yyy123'
+        ParentColor = False
+        ParentFont = False
+        PopupMenu = pmCopy2
+        WordWrap = True
+      end
+    end
+  end
+  object Panel5: TPanel
+    AnchorSideTop.Control = Label18
+    AnchorSideTop.Side = asrBottom
+    Left = 0
+    Height = 36
+    Top = 315
+    Width = 625
+    Anchors = [akTop, akLeft, akRight]
+    AutoSize = True
+    BevelOuter = bvNone
+    ClientHeight = 36
+    ClientWidth = 625
+    ParentFont = False
+    TabOrder = 2
+    object Button1: TButton
+      AnchorSideLeft.Control = Panel5
+      AnchorSideLeft.Side = asrCenter
+      AnchorSideTop.Control = Panel5
+      Left = 267
+      Height = 32
+      Top = 2
+      Width = 90
+      AutoSize = True
+      BorderSpacing.Top = 2
+      BorderSpacing.Bottom = 2
+      Cancel = True
+      Caption = 'OK'
+      Constraints.MinHeight = 32
+      Constraints.MinWidth = 90
+      Default = True
+      ModalResult = 1
+      OnClick = Button1Click
+      ParentFont = False
+      TabOrder = 0
+    end
+  end
+  object Panel6: TPanel
+    AnchorSideLeft.Control = Owner
+    AnchorSideTop.Control = Panel3
+    AnchorSideTop.Side = asrBottom
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    Left = 4
+    Height = 72
+    Top = 220
+    Width = 621
+    Anchors = [akTop, akLeft, akRight]
+    AutoSize = True
+    BorderSpacing.Left = 4
+    BorderSpacing.Top = 5
+    BevelOuter = bvNone
+    ClientHeight = 72
+    ClientWidth = 621
+    ParentFont = False
+    TabOrder = 3
+    OnResize = Panel6Resize
+    object pnlRegisters: TPanel
+      AnchorSideLeft.Control = Panel6
+      AnchorSideRight.Control = Panel8
+      Left = 0
+      Height = 72
+      Top = 0
+      Width = 596
+      Anchors = [akTop, akLeft, akRight]
+      AutoSize = True
+      BorderSpacing.Right = 4
+      BevelOuter = bvNone
+      ChildSizing.HorizontalSpacing = 20
+      ChildSizing.VerticalSpacing = 3
+      ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+      ChildSizing.Layout = cclTopToBottomThenLeftToRight
+      ChildSizing.ControlsPerLine = 3
+      ClientHeight = 72
+      ClientWidth = 596
+      Font.CharSet = ANSI_CHARSET
+      Font.Name = 'Courier New'
+      ParentFont = False
+      TabOrder = 0
+      object lblRAX: TLabel
+        Left = 0
+        Height = 22
+        Top = 0
+        Width = 186
+        Caption = 'EAX=DDDDDDDD'
+        ParentColor = False
+        PopupMenu = pmEmpty
+        OnDblClick = RegisterDblClick
+        OnMouseDown = RegisterMouseDown
+      end
+      object lblRBX: TLabel
+        Left = 0
+        Height = 22
+        Top = 25
+        Width = 186
+        Caption = 'EBX=DDDDDDDD'
+        ParentColor = False
+        PopupMenu = pmEmpty
+        OnDblClick = RegisterDblClick
+        OnMouseDown = RegisterMouseDown
+      end
+      object lblRCX: TLabel
+        Left = 0
+        Height = 22
+        Top = 50
+        Width = 186
+        Caption = 'ECX=DDDDDDDD'
+        ParentColor = False
+        PopupMenu = pmEmpty
+        OnDblClick = RegisterDblClick
+        OnMouseDown = RegisterMouseDown
+      end
+      object lblRDX: TLabel
+        Left = 206
+        Height = 22
+        Top = 0
+        Width = 186
+        Caption = 'EDX=DDDDDDDD'
+        ParentColor = False
+        PopupMenu = pmEmpty
+        OnDblClick = RegisterDblClick
+        OnMouseDown = RegisterMouseDown
+      end
+      object lblRSI: TLabel
+        Left = 206
+        Height = 22
+        Top = 25
+        Width = 186
+        Caption = 'ESI=DDDDDDDD'
+        ParentColor = False
+        PopupMenu = pmEmpty
+        OnDblClick = RegisterDblClick
+        OnMouseDown = RegisterMouseDown
+      end
+      object lblRDI: TLabel
+        Left = 206
+        Height = 22
+        Top = 50
+        Width = 186
+        Caption = 'EDI=DDDDDDDD'
+        ParentColor = False
+        PopupMenu = pmEmpty
+        OnDblClick = RegisterDblClick
+        OnMouseDown = RegisterMouseDown
+      end
+      object lblRBP: TLabel
+        Left = 412
+        Height = 22
+        Top = 0
+        Width = 184
+        Caption = 'EBP=DDDDDDDD'
+        ParentColor = False
+        PopupMenu = pmEmpty
+        OnDblClick = RegisterDblClick
+        OnMouseDown = RegisterMouseDown
+      end
+      object lblRSP: TLabel
+        Left = 412
+        Height = 22
+        Top = 25
+        Width = 184
+        Caption = 'ESP=DDDDDDDD'
+        ParentColor = False
+        PopupMenu = pmEmpty
+        OnDblClick = RegisterDblClick
+        OnMouseDown = RegisterMouseDown
+      end
+      object lblRIP: TLabel
+        Left = 412
+        Height = 22
+        Top = 50
+        Width = 184
+        Caption = 'EIP=DDDDDDDD'
+        ParentColor = False
+        PopupMenu = pmEmpty
+        OnDblClick = RegisterDblClick
+        OnMouseDown = RegisterMouseDown
+      end
+    end
+    object Panel8: TPanel
+      AnchorSideLeft.Control = Panel6
+      AnchorSideTop.Control = Panel6
+      AnchorSideTop.Side = asrCenter
+      AnchorSideRight.Control = Panel6
+      AnchorSideRight.Side = asrBottom
+      Left = 600
+      Height = 60
+      Top = 6
+      Width = 21
+      Anchors = [akTop, akRight]
+      AutoSize = True
+      BevelOuter = bvNone
+      ClientHeight = 60
+      ClientWidth = 21
+      ParentFont = False
+      TabOrder = 1
+      object sbShowStack: TSpeedButton
+        AnchorSideLeft.Control = Panel8
+        AnchorSideTop.Control = Panel8
+        AnchorSideRight.Control = Panel8
+        AnchorSideRight.Side = asrBottom
+        Left = 0
+        Height = 30
+        Hint = 'Stack view'
+        Top = 0
+        Width = 21
+        Caption = 'S'
+        OnClick = sbShowStackClick
+        ShowHint = True
+        ParentFont = False
+        ParentShowHint = False
+      end
+      object sbShowFloats: TSpeedButton
+        AnchorSideLeft.Control = Panel8
+        AnchorSideTop.Control = sbShowStack
+        AnchorSideTop.Side = asrBottom
+        AnchorSideRight.Control = Panel8
+        AnchorSideRight.Side = asrBottom
+        Left = 0
+        Height = 30
+        Hint = 'Floating point registers'
+        Top = 30
+        Width = 21
+        Caption = 'F'
+        OnClick = sbShowFloatsClick
+        ShowHint = True
+        ParentFont = False
+        ParentShowHint = False
+      end
+    end
+  end
+  object Label18: TLabel
+    AnchorSideLeft.Control = Owner
+    AnchorSideTop.Control = Panel6
+    AnchorSideTop.Side = asrBottom
+    Left = 4
+    Height = 15
+    Top = 300
+    Width = 720
+    Anchors = [akTop, akLeft, akRight]
+    BorderSpacing.Left = 4
+    BorderSpacing.Top = 8
+    Caption = 'The registers shown here are AFTER the instruction has been executed'
+    ParentColor = False
+    ParentFont = False
+    Visible = False
+    WordWrap = True
+  end
+  object pnlEPTWatch: TPanel
+    AnchorSideLeft.Control = Owner
+    AnchorSideTop.Control = Owner
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    Left = 0
+    Height = 54
+    Top = 0
+    Width = 625
+    Anchors = [akTop, akLeft, akRight]
+    AutoSize = True
+    ChildSizing.HorizontalSpacing = 30
+    ChildSizing.VerticalSpacing = 4
+    ChildSizing.Layout = cclLeftToRightThenTopToBottom
+    ChildSizing.ControlsPerLine = 2
+    ClientHeight = 54
+    ClientWidth = 625
+    ParentFont = False
+    TabOrder = 4
+    object lblPhysicalAddress: TLabel
+      Left = 0
+      Height = 15
+      Top = 0
+      Width = 152
+      Caption = 'Physical Address=XXXXXXXX'
+      ParentColor = False
+      ParentFont = False
+      OnMouseDown = RegisterMouseDown
+    end
+    object lblVirtualAddress: TLabel
+      Left = 182
+      Height = 15
+      Top = 0
+      Width = 143
+      Caption = 'Virtual Address=XXXXXXXX'
+      ParentColor = False
+      ParentFont = False
+      OnDblClick = RegisterDblClick
+      OnMouseDown = RegisterMouseDown
+    end
+    object lblFSBase: TLabel
+      Left = 0
+      Height = 15
+      Top = 19
+      Width = 152
+      Caption = 'FSBase=XXXXXXXX'
+      ParentColor = False
+      ParentFont = False
+      OnDblClick = RegisterDblClick
+      OnMouseDown = RegisterMouseDown
+    end
+    object lblGSBase: TLabel
+      Left = 182
+      Height = 15
+      Top = 19
+      Width = 143
+      Caption = 'GSBase=XXXXXXXX'
+      ParentColor = False
+      ParentFont = False
+      OnDblClick = RegisterDblClick
+      OnMouseDown = RegisterMouseDown
+    end
+    object lblCR3: TLabel
+      Left = 0
+      Height = 15
+      Top = 38
+      Width = 152
+      Caption = 'CR3=XXXXXXXX'
+      ParentColor = False
+      ParentFont = False
+      OnMouseDown = RegisterMouseDown
+    end
+    object lblGSBaseKernel: TLabel
+      Left = 182
+      Height = 15
+      Top = 38
+      Width = 143
+      Caption = 'GSBase K=XXXXXXXX'
+      ParentColor = False
+      ParentFont = False
+      OnDblClick = RegisterDblClick
+      OnMouseDown = RegisterMouseDown
+    end
+  end
+  object pmCopy: TPopupMenu
+    Images = eiImageList
+    Left = 112
+    Top = 112
+    object Copyaddresstoclipboard1: TMenuItem
+      Caption = 'Copy info to clipboard'
+      ImageIndex = 0
+      ShortCut = 16451
+      OnClick = Copyaddresstoclipboard1Click
+    end
+  end
+  object pmCopy2: TPopupMenu
+    Images = eiImageList
+    Left = 190
+    Top = 112
+    object Copyguesstoclipboard1: TMenuItem
+      Caption = 'Copy easy guess to clipboard'
+      ImageIndex = 0
+      OnClick = Copyguesstoclipboard1Click
+    end
+  end
+  object pmEmpty: TPopupMenu
+    Left = 280
+    Top = 112
+  end
+  object eiImageList: TImageList
+    Left = 208
+    Top = 69
+    Bitmap = {
+      4C69010000001000000010000000606060C4808080E0808080E0808080E08080
+      80E0808080E0808080E0777777E098989856FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00808080E0FFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFF828282F6BCBCBC33FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00808080E0FFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFEFEFEFF565656DCFFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00808080E0FFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF6F6F6FF0FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00808080E0F9F9F9FFE1E1E1FFE1E1E1FFB7B7
+      B7FF6D6D6DFF7F7F7FFF7F7F7FFF7F7F7FFF606060FC676767C8676767C85555
+      55B6E8E8E80FFFFFFF00FFFFFF00808080E0FFFFFFFFFCFCFCFFFCFCFCFFBDBD
+      BDFFC0C0C0FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFECEC
+      ECFF5A5A5AB7F8F8F803FFFFFF00808080E0F9F9F9FFE1E1E1FFE1E1E1FFA9A9
+      A9FFC0C0C0FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFD5D5D5FF7F7F7F78FFFFFF00808080E0F8F8F8FFDEDEDEFFDEDEDEFFA6A6
+      A6FFC0C0C0FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFF77777798FFFFFF00808080E0F8F8F8FFDEDEDEFFDEDEDEFFA6A6
+      A6FFC0C0C0FFF6F6F6FFEFEFEFFFEFEFEFFFEFEFEFFFEFEFEFFFEFEFEFFFF0F0
+      F0FFFFFFFFFF77777798FFFFFF00808080E0FFFFFFFFFFFFFFFFFFFFFFFFC0C0
+      C0FFC0C0C0FFF8F8F8FFF2F2F2FFF2F2F2FFF2F2F2FFF2F2F2FFF2F2F2FFF3F3
+      F3FFFFFFFFFF77777798FFFFFF00808080E0FFFFFFFFFFFFFFFFFFFFFFFFC0C0
+      C0FFC0C0C0FFECECECFFDEDEDEFFDEDEDEFFDEDEDEFFDEDEDEFFDEDEDEFFE0E0
+      E0FFFFFFFFFF77777798FFFFFF005C5C5CBD777777D8777777D8777777D85959
+      59E2C0C0C0FFEEEEEEFFE1E1E1FFE1E1E1FFE1E1E1FFE1E1E1FFE1E1E1FFE3E3
+      E3FFFFFFFFFF77777798FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00C0C0
+      C040C0C0C0FFF2F2F2FFE8E8E8FFE8E8E8FFE8E8E8FFE8E8E8FFE8E8E8FFE9E9
+      E9FFFFFFFFFF77777798FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00C0C0
+      C040C0C0C0FFFCFCFCFFF9F9F9FFF9F9F9FFF9F9F9FFF9F9F9FFF9F9F9FFF9F9
+      F9FFFFFFFFFF77777798FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00C0C0
+      C040C0C0C0FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFF77777798FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00C0C0
+      C03C535353F06F6F6FF06F6F6FF06F6F6FF06F6F6FF06F6F6FF06F6F6FF06F6F
+      6FF06F6F6FF06A6A6A8EFFFFFF00
+    }
+  end
+end

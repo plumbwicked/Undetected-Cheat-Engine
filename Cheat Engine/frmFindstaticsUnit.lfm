@@ -1,0 +1,244 @@
+object frmFindStatics: TfrmFindStatics
+  Left = 426
+  Height = 320
+  Top = 400
+  Width = 386
+  AutoSize = True
+  Caption = 'Find static addresses'
+  ClientHeight = 320
+  ClientWidth = 386
+  OnClose = FormClose
+  OnCreate = FormCreate
+  OnShow = FormShow
+  Position = poScreenCenter
+  LCLVersion = '2.0.0.4'
+  object ProgressBar1: TProgressBar
+    Left = 0
+    Height = 17
+    Top = 303
+    Width = 386
+    Align = alBottom
+    TabOrder = 0
+  end
+  object Panel1: TPanel
+    Left = 287
+    Height = 284
+    Top = 0
+    Width = 99
+    Align = alRight
+    AutoSize = True
+    BevelOuter = bvNone
+    ClientHeight = 284
+    ClientWidth = 99
+    TabOrder = 1
+    object Label1: TLabel
+      AnchorSideLeft.Control = Button1
+      AnchorSideTop.Control = Button1
+      AnchorSideTop.Side = asrBottom
+      Left = 8
+      Height = 15
+      Top = 41
+      Width = 28
+      BorderSpacing.Top = 8
+      Caption = 'From'
+      ParentColor = False
+    end
+    object Label2: TLabel
+      AnchorSideLeft.Control = Edit1
+      AnchorSideTop.Control = Edit1
+      AnchorSideTop.Side = asrBottom
+      Left = 8
+      Height = 15
+      Top = 81
+      Width = 16
+      BorderSpacing.Top = 2
+      Caption = 'To:'
+      ParentColor = False
+    end
+    object Label4: TLabel
+      AnchorSideLeft.Control = Edit1
+      AnchorSideTop.Control = Edit2
+      AnchorSideTop.Side = asrBottom
+      Left = 8
+      Height = 15
+      Top = 151
+      Width = 80
+      BorderSpacing.Top = 32
+      Caption = 'Filter addresses'
+      ParentColor = False
+    end
+    object Label5: TLabel
+      AnchorSideLeft.Control = Edit1
+      AnchorSideTop.Control = Label4
+      AnchorSideTop.Side = asrBottom
+      Left = 8
+      Height = 15
+      Top = 166
+      Width = 28
+      Caption = 'From'
+      ParentColor = False
+    end
+    object Label6: TLabel
+      AnchorSideLeft.Control = Edit1
+      AnchorSideTop.Control = Edit3
+      AnchorSideTop.Side = asrBottom
+      Left = 8
+      Height = 15
+      Top = 206
+      Width = 16
+      BorderSpacing.Top = 2
+      Caption = 'To:'
+      ParentColor = False
+    end
+    object Button1: TButton
+      AnchorSideLeft.Control = Panel1
+      AnchorSideTop.Control = Panel1
+      AnchorSideRight.Control = Panel1
+      AnchorSideRight.Side = asrBottom
+      Left = 8
+      Height = 25
+      Top = 8
+      Width = 83
+      Anchors = [akTop, akLeft, akRight]
+      AutoSize = True
+      BorderSpacing.Left = 8
+      BorderSpacing.Top = 8
+      BorderSpacing.Right = 8
+      Caption = 'Stopping...'
+      OnClick = Button1Click
+      TabOrder = 0
+    end
+    object Edit1: TEdit
+      AnchorSideLeft.Control = Label1
+      AnchorSideTop.Control = Label1
+      AnchorSideTop.Side = asrBottom
+      AnchorSideRight.Control = Panel1
+      AnchorSideRight.Side = asrBottom
+      Left = 8
+      Height = 23
+      Top = 56
+      Width = 83
+      Anchors = [akTop, akRight]
+      BorderSpacing.Left = 8
+      BorderSpacing.Right = 8
+      CharCase = ecUppercase
+      MaxLength = 8
+      TabOrder = 1
+      Text = '00401000'
+    end
+    object Edit2: TEdit
+      AnchorSideLeft.Control = Edit1
+      AnchorSideTop.Control = Label2
+      AnchorSideTop.Side = asrBottom
+      AnchorSideRight.Control = Edit1
+      AnchorSideRight.Side = asrBottom
+      Left = 8
+      Height = 23
+      Top = 96
+      Width = 83
+      Anchors = [akTop, akLeft, akRight]
+      CharCase = ecUppercase
+      MaxLength = 8
+      TabOrder = 2
+      Text = '00700000'
+    end
+    object Edit3: TEdit
+      AnchorSideLeft.Control = Edit1
+      AnchorSideTop.Control = Label5
+      AnchorSideTop.Side = asrBottom
+      AnchorSideRight.Control = Edit1
+      AnchorSideRight.Side = asrBottom
+      Left = 8
+      Height = 23
+      Top = 181
+      Width = 83
+      Anchors = [akTop, akLeft, akRight]
+      CharCase = ecUppercase
+      MaxLength = 8
+      TabOrder = 3
+      Text = '00400000'
+    end
+    object Edit4: TEdit
+      AnchorSideLeft.Control = Edit1
+      AnchorSideTop.Control = Label6
+      AnchorSideTop.Side = asrBottom
+      AnchorSideRight.Control = Edit1
+      AnchorSideRight.Side = asrBottom
+      Left = 8
+      Height = 23
+      Top = 221
+      Width = 83
+      Anchors = [akTop, akLeft, akRight]
+      CharCase = ecUppercase
+      MaxLength = 8
+      TabOrder = 4
+      Text = '7FFFFFFF'
+    end
+  end
+  object Panel2: TPanel
+    Left = 0
+    Height = 19
+    Top = 284
+    Width = 386
+    Align = alBottom
+    AutoSize = True
+    BevelOuter = bvNone
+    ClientHeight = 19
+    ClientWidth = 386
+    TabOrder = 2
+    object CheckBox1: TCheckBox
+      AnchorSideLeft.Control = Panel2
+      AnchorSideRight.Control = Panel2
+      AnchorSideRight.Side = asrBottom
+      Left = 0
+      Height = 19
+      Top = 0
+      Width = 386
+      Anchors = [akTop, akLeft, akRight]
+      Caption = 'Only disassemble and check executable code'
+      Checked = True
+      State = cbChecked
+      TabOrder = 0
+    end
+  end
+  object Panel3: TPanel
+    Left = 0
+    Height = 284
+    Top = 0
+    Width = 287
+    Align = alClient
+    BevelOuter = bvNone
+    ClientHeight = 284
+    ClientWidth = 287
+    TabOrder = 3
+    object ListView1: TListView
+      Left = 0
+      Height = 284
+      Top = 0
+      Width = 287
+      Align = alClient
+      Columns = <      
+        item
+          Caption = 'Address'
+          Width = 80
+        end      
+        item
+          Alignment = taCenter
+          Caption = 'Pointer?'
+          Width = 85
+        end      
+        item
+          Caption = 'Reference count'
+          Width = 100
+        end>
+      ReadOnly = True
+      RowSelect = True
+      SortType = stText
+      TabOrder = 0
+      ViewStyle = vsReport
+      OnColumnClick = ListView1ColumnClick
+      OnCompare = ListView1Compare
+      OnDblClick = ListView1DblClick
+    end
+  end
+end

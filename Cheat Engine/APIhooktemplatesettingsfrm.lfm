@@ -1,0 +1,173 @@
+object frmAPIhookTemplateSettings: TfrmAPIhookTemplateSettings
+  Left = 528
+  Height = 187
+  Top = 335
+  Width = 334
+  AutoSize = True
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsDialog
+  Caption = 'Api hook template'
+  ClientHeight = 187
+  ClientWidth = 334
+  OnCreate = FormCreate
+  OnShow = FormShow
+  Position = poScreenCenter
+  LCLVersion = '2.0.6.0'
+  object Label1: TLabel
+    AnchorSideLeft.Control = Owner
+    AnchorSideTop.Control = Owner
+    Left = 8
+    Height = 16
+    Top = 0
+    Width = 124
+    BorderSpacing.Left = 8
+    Caption = 'Original api address:'
+    ParentColor = False
+  end
+  object Label2: TLabel
+    AnchorSideLeft.Control = Edit1
+    AnchorSideTop.Control = Edit1
+    AnchorSideTop.Side = asrBottom
+    Left = 8
+    Height = 16
+    Top = 37
+    Width = 104
+    Caption = 'New api address:'
+    ParentColor = False
+  end
+  object Label3: TLabel
+    AnchorSideLeft.Control = Label1
+    AnchorSideTop.Control = Edit2
+    AnchorSideTop.Side = asrBottom
+    Left = 8
+    Height = 16
+    Top = 78
+    Width = 290
+    BorderSpacing.Top = 4
+    BorderSpacing.Right = 4
+    Caption = 'Address where to store the new original api call:'
+    ParentColor = False
+  end
+  object Label4: TLabel
+    AnchorSideLeft.Control = Label1
+    AnchorSideTop.Control = Label3
+    AnchorSideTop.Side = asrBottom
+    Left = 8
+    Height = 16
+    Top = 94
+    Width = 318
+    BorderSpacing.Right = 4
+    Caption = '(optional, in case your dll uses a variable for the call)'
+    ParentColor = False
+  end
+  object Label6: TLabel
+    Left = 136
+    Height = 1
+    Top = 16
+    Width = 1
+    ParentColor = False
+  end
+  object Label5: TLabel
+    AnchorSideTop.Control = Button1
+    AnchorSideTop.Side = asrBottom
+    AnchorSideBottom.Control = Owner
+    AnchorSideBottom.Side = asrBottom
+    Left = 8
+    Height = 16
+    Top = 156
+    Width = 324
+    BorderSpacing.Top = 2
+    BorderSpacing.Right = 4
+    BorderSpacing.Bottom = 2
+    Caption = 'Note: The addresses can also be exportnames of dll''s'
+    ParentColor = False
+    WordWrap = True
+  end
+  object Edit1: TEdit
+    AnchorSideLeft.Control = Label1
+    AnchorSideTop.Control = Label1
+    AnchorSideTop.Side = asrBottom
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    Left = 8
+    Height = 21
+    Top = 16
+    Width = 318
+    Anchors = [akTop, akLeft, akRight]
+    BorderSpacing.Right = 8
+    TabOrder = 0
+  end
+  object Edit2: TEdit
+    AnchorSideLeft.Control = Label2
+    AnchorSideTop.Control = Label2
+    AnchorSideTop.Side = asrBottom
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    Left = 8
+    Height = 21
+    Top = 53
+    Width = 318
+    Anchors = [akTop, akLeft, akRight]
+    BorderSpacing.Right = 8
+    TabOrder = 1
+  end
+  object Edit3: TEdit
+    AnchorSideLeft.Control = Label4
+    AnchorSideTop.Control = Label4
+    AnchorSideTop.Side = asrBottom
+    AnchorSideRight.Control = Edit1
+    AnchorSideRight.Side = asrBottom
+    Left = 8
+    Height = 21
+    Top = 110
+    Width = 318
+    Anchors = [akTop, akLeft, akRight]
+    TabOrder = 2
+  end
+  object Button1: TButton
+    AnchorSideTop.Control = Edit3
+    AnchorSideTop.Side = asrBottom
+    AnchorSideRight.Control = Panel1
+    Left = 87
+    Height = 20
+    Top = 134
+    Width = 75
+    Anchors = [akTop, akRight]
+    AutoSize = True
+    BorderSpacing.Top = 3
+    Caption = 'OK'
+    Constraints.MinWidth = 75
+    Default = True
+    ModalResult = 1
+    TabOrder = 3
+  end
+  object Button2: TButton
+    AnchorSideLeft.Control = Panel1
+    AnchorSideLeft.Side = asrBottom
+    AnchorSideTop.Control = Edit3
+    AnchorSideTop.Side = asrBottom
+    Left = 172
+    Height = 20
+    Top = 134
+    Width = 75
+    AutoSize = True
+    BorderSpacing.Top = 3
+    Cancel = True
+    Caption = 'Cancel'
+    Constraints.MinWidth = 75
+    ModalResult = 2
+    TabOrder = 4
+  end
+  object Panel1: TPanel
+    AnchorSideLeft.Control = Owner
+    AnchorSideLeft.Side = asrCenter
+    AnchorSideTop.Control = Edit3
+    AnchorSideTop.Side = asrBottom
+    Left = 162
+    Height = 11
+    Top = 131
+    Width = 10
+    BevelOuter = bvNone
+    TabOrder = 5
+  end
+end

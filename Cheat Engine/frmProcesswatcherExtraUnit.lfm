@@ -1,0 +1,20 @@
+object frmProcessWatcherExtra: TfrmProcessWatcherExtra
+  Left = 589
+  Height = 165
+  Top = 176
+  Width = 245
+  Caption = 'Processwatcher Extra'
+  ClientHeight = 165
+  ClientWidth = 245
+  LCLVersion = '1.6.0.4'
+  object data: TMemo
+    Left = 0
+    Height = 165
+    Top = 0
+    Width = 245
+    Align = alClient
+    ReadOnly = True
+    ScrollBars = ssVertical
+    TabOrder = 0
+  end
+end

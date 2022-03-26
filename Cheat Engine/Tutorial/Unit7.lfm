@@ -1,0 +1,127 @@
+object Form7: TForm7
+  Left = 571
+  Height = 282
+  Top = 257
+  Width = 640
+  Caption = 'Step 6'
+  ClientHeight = 282
+  ClientWidth = 640
+  Color = clBtnFace
+  OnClose = FormClose
+  OnCloseQuery = FormCloseQuery
+  OnCreate = FormCreate
+  LCLVersion = '2.0.6.0'
+  object Label1: TLabel
+    AnchorSideLeft.Control = Button1
+    AnchorSideLeft.Side = asrBottom
+    AnchorSideTop.Control = Button1
+    AnchorSideTop.Side = asrCenter
+    Left = 372
+    Height = 15
+    Top = 199
+    Width = 18
+    BorderSpacing.Left = 3
+    Caption = '100'
+    ParentColor = False
+  end
+  object Label2: TLabel
+    AnchorSideLeft.Control = Memo1
+    AnchorSideLeft.Side = asrCenter
+    AnchorSideTop.Control = Button3
+    AnchorSideTop.Side = asrCenter
+    Left = 317
+    Height = 15
+    Top = 227
+    Width = 6
+    BorderSpacing.Left = 3
+    BorderSpacing.Top = 7
+    Caption = '3'
+    ParentColor = False
+    Visible = False
+  end
+  object SpeedButton1: TSpeedButton
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    AnchorSideBottom.Control = Owner
+    AnchorSideBottom.Side = asrBottom
+    Left = 614
+    Height = 19
+    Top = 263
+    Width = 26
+    Anchors = [akRight, akBottom]
+    AutoSize = True
+    Caption = 'Skip'
+    Flat = True
+    OnClick = SpeedButton1Click
+  end
+  object Memo1: TMemo
+    AnchorSideBottom.Control = Button1
+    Left = 0
+    Height = 194
+    Top = 0
+    Width = 640
+    Align = alTop
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    Color = clBtnFace
+    Lines.Strings = (
+      ''
+    )
+    ReadOnly = True
+    ScrollBars = ssVertical
+    TabOrder = 0
+  end
+  object Button2: TButton
+    AnchorSideLeft.Control = Memo1
+    AnchorSideLeft.Side = asrCenter
+    AnchorSideTop.Control = Button3
+    AnchorSideTop.Side = asrBottom
+    AnchorSideBottom.Control = Owner
+    AnchorSideBottom.Side = asrBottom
+    Left = 290
+    Height = 25
+    Top = 253
+    Width = 60
+    Anchors = [akLeft, akBottom]
+    AutoSize = True
+    BorderSpacing.Bottom = 4
+    Caption = 'Next'
+    Constraints.MinWidth = 60
+    Enabled = False
+    OnClick = Button2Click
+    TabOrder = 1
+  end
+  object Button1: TButton
+    AnchorSideLeft.Control = Memo1
+    AnchorSideLeft.Side = asrCenter
+    AnchorSideTop.Control = Memo1
+    AnchorSideTop.Side = asrBottom
+    AnchorSideBottom.Control = Button3
+    Left = 271
+    Height = 25
+    Top = 194
+    Width = 98
+    Anchors = [akLeft, akBottom]
+    AutoSize = True
+    BorderSpacing.Bottom = 3
+    Caption = 'Change value'
+    OnClick = Button1Click
+    TabOrder = 2
+  end
+  object Button3: TButton
+    AnchorSideLeft.Control = Memo1
+    AnchorSideLeft.Side = asrCenter
+    AnchorSideTop.Control = Button1
+    AnchorSideTop.Side = asrBottom
+    AnchorSideBottom.Control = Button2
+    Left = 266
+    Height = 25
+    Top = 222
+    Width = 108
+    Anchors = [akLeft, akBottom]
+    AutoSize = True
+    BorderSpacing.Bottom = 6
+    Caption = 'Change pointer'
+    OnClick = Button3Click
+    TabOrder = 3
+  end
+end

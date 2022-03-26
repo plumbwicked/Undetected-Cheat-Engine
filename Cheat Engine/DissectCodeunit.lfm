@@ -1,0 +1,353 @@
+object frmDissectCode: TfrmDissectCode
+  Left = 803
+  Height = 439
+  Top = 245
+  Width = 348
+  AutoSize = True
+  Caption = 'Dissect Code'
+  ClientHeight = 419
+  ClientWidth = 348
+  Menu = MainMenu1
+  OnClose = FormClose
+  OnCreate = FormCreate
+  OnShow = FormShow
+  Position = poScreenCenter
+  LCLVersion = '2.0.6.0'
+  object ProgressBar1: TProgressBar
+    Left = 0
+    Height = 21
+    Top = 398
+    Width = 348
+    Align = alBottom
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 1
+  end
+  object Panel1: TPanel
+    Left = 0
+    Height = 398
+    Top = 0
+    Width = 214
+    Align = alClient
+    BevelOuter = bvNone
+    ClientHeight = 398
+    ClientWidth = 214
+    TabOrder = 0
+    object lbModuleList: TListBox
+      AnchorSideTop.Control = Panel2
+      AnchorSideTop.Side = asrBottom
+      AnchorSideRight.Control = Panel1
+      AnchorSideRight.Side = asrBottom
+      Left = 0
+      Height = 260
+      Top = 49
+      Width = 214
+      Anchors = [akTop, akLeft, akRight]
+      ItemHeight = 0
+      MultiSelect = True
+      TabOrder = 0
+    end
+    object Panel2: TPanel
+      AnchorSideLeft.Control = Panel1
+      AnchorSideTop.Control = Panel1
+      Left = 0
+      Height = 49
+      Top = 0
+      Width = 199
+      AutoSize = True
+      BevelOuter = bvNone
+      ClientHeight = 49
+      ClientWidth = 199
+      TabOrder = 1
+      object Label2: TLabel
+        AnchorSideLeft.Control = Panel2
+        AnchorSideTop.Control = Panel2
+        Left = 0
+        Height = 15
+        Top = 0
+        Width = 161
+        Caption = 'Select the module(s) to dissect'
+        ParentColor = False
+      end
+      object Label3: TLabel
+        AnchorSideLeft.Control = Panel2
+        AnchorSideTop.Control = Label2
+        AnchorSideTop.Side = asrBottom
+        Left = 0
+        Height = 15
+        Top = 15
+        Width = 199
+        Caption = 'Hold CTRL to select multiple modules'
+        ParentColor = False
+      end
+      object cbIncludesystemModules: TCheckBox
+        AnchorSideLeft.Control = Panel2
+        AnchorSideTop.Control = Label3
+        AnchorSideTop.Side = asrBottom
+        Left = 0
+        Height = 19
+        Top = 30
+        Width = 148
+        Caption = 'Include system modules'
+        OnChange = cbIncludesystemModulesClick
+        TabOrder = 0
+      end
+    end
+    object Label8: TLabel
+      AnchorSideTop.Control = lbModuleList
+      AnchorSideTop.Side = asrBottom
+      Left = 0
+      Height = 15
+      Top = 311
+      Width = 101
+      BorderSpacing.Top = 2
+      Caption = 'Custom range start'
+      ParentColor = False
+    end
+    object edtCustomRangeStart: TEdit
+      AnchorSideTop.Control = Label8
+      AnchorSideTop.Side = asrBottom
+      AnchorSideRight.Control = Panel1
+      AnchorSideRight.Side = asrBottom
+      Left = 0
+      Height = 23
+      Top = 326
+      Width = 214
+      Anchors = [akTop, akLeft, akRight]
+      TabOrder = 2
+    end
+    object Label10: TLabel
+      AnchorSideTop.Control = edtCustomRangeStart
+      AnchorSideTop.Side = asrBottom
+      Left = 0
+      Height = 15
+      Top = 351
+      Width = 101
+      BorderSpacing.Top = 2
+      Caption = 'Custom range stop'
+      ParentColor = False
+    end
+    object edtCustomRangeStop: TEdit
+      AnchorSideTop.Control = Label10
+      AnchorSideTop.Side = asrBottom
+      AnchorSideRight.Control = Panel1
+      AnchorSideRight.Side = asrBottom
+      Left = 0
+      Height = 23
+      Top = 366
+      Width = 214
+      Anchors = [akTop, akLeft, akRight]
+      TabOrder = 3
+    end
+  end
+  object Panel3: TPanel
+    Left = 214
+    Height = 398
+    Top = 0
+    Width = 134
+    Align = alRight
+    AutoSize = True
+    BevelOuter = bvNone
+    ClientHeight = 398
+    ClientWidth = 134
+    TabOrder = 2
+    object Label6: TLabel
+      AnchorSideLeft.Control = Panel3
+      AnchorSideLeft.Side = asrCenter
+      AnchorSideTop.Control = Panel3
+      Left = 16
+      Height = 15
+      Top = 8
+      Width = 102
+      BorderSpacing.Top = 8
+      Caption = 'Estimated time left:'
+      ParentColor = False
+    end
+    object Label7: TLabel
+      AnchorSideLeft.Control = Panel3
+      AnchorSideLeft.Side = asrCenter
+      AnchorSideTop.Control = Label6
+      AnchorSideTop.Side = asrBottom
+      Left = 46
+      Height = 15
+      Top = 23
+      Width = 42
+      Alignment = taCenter
+      Caption = '00:00:00'
+      ParentColor = False
+    end
+    object Label4: TLabel
+      AnchorSideLeft.Control = Panel3
+      AnchorSideTop.Control = Label7
+      AnchorSideTop.Side = asrBottom
+      Left = 8
+      Height = 15
+      Top = 46
+      Width = 126
+      BorderSpacing.Left = 8
+      BorderSpacing.Top = 8
+      Caption = 'String references found:'
+      ParentColor = False
+    end
+    object lblStringRef: TLabel
+      AnchorSideLeft.Control = Label4
+      AnchorSideTop.Control = Label4
+      AnchorSideTop.Side = asrBottom
+      Left = 8
+      Height = 15
+      Top = 61
+      Width = 6
+      Caption = '0'
+      ParentColor = False
+    end
+    object Label5: TLabel
+      AnchorSideLeft.Control = Label4
+      AnchorSideTop.Control = lblStringRef
+      AnchorSideTop.Side = asrBottom
+      Left = 8
+      Height = 15
+      Top = 84
+      Width = 102
+      BorderSpacing.Top = 8
+      Caption = 'Conditional Jumps:'
+      ParentColor = False
+    end
+    object lblConditionalJumps: TLabel
+      AnchorSideLeft.Control = Label4
+      AnchorSideTop.Control = Label5
+      AnchorSideTop.Side = asrBottom
+      Left = 8
+      Height = 15
+      Top = 99
+      Width = 6
+      Caption = '0'
+      ParentColor = False
+    end
+    object Label9: TLabel
+      AnchorSideLeft.Control = Label4
+      AnchorSideTop.Control = lblConditionalJumps
+      AnchorSideTop.Side = asrBottom
+      Left = 8
+      Height = 15
+      Top = 122
+      Width = 115
+      BorderSpacing.Top = 8
+      Caption = 'Unconditional Jumps:'
+      ParentColor = False
+    end
+    object lblUnConditionalJumps: TLabel
+      AnchorSideLeft.Control = Label4
+      AnchorSideTop.Control = Label9
+      AnchorSideTop.Side = asrBottom
+      Left = 8
+      Height = 15
+      Top = 137
+      Width = 6
+      Caption = '0'
+      ParentColor = False
+    end
+    object Label11: TLabel
+      AnchorSideLeft.Control = Label4
+      AnchorSideTop.Control = lblUnConditionalJumps
+      AnchorSideTop.Side = asrBottom
+      Left = 8
+      Height = 15
+      Top = 160
+      Width = 28
+      BorderSpacing.Top = 8
+      Caption = 'Calls:'
+      ParentColor = False
+    end
+    object lblCalls: TLabel
+      AnchorSideLeft.Control = Label4
+      AnchorSideTop.Control = Label11
+      AnchorSideTop.Side = asrBottom
+      Left = 8
+      Height = 15
+      Top = 175
+      Width = 6
+      Caption = '0'
+      ParentColor = False
+    end
+    object Label1: TLabel
+      AnchorSideLeft.Control = Label4
+      AnchorSideTop.Control = lblCalls
+      AnchorSideTop.Side = asrBottom
+      Left = 8
+      Height = 15
+      Top = 198
+      Width = 91
+      BorderSpacing.Top = 8
+      Caption = 'Maximum offset:'
+      ParentColor = False
+      Visible = False
+    end
+    object lblMaxOffset: TLabel
+      AnchorSideLeft.Control = Label4
+      AnchorSideTop.Control = Label1
+      AnchorSideTop.Side = asrBottom
+      Left = 8
+      Height = 15
+      Top = 213
+      Width = 6
+      Caption = '0'
+      ParentColor = False
+      Visible = False
+    end
+    object btnStart: TButton
+      AnchorSideLeft.Control = Panel3
+      AnchorSideLeft.Side = asrCenter
+      AnchorSideTop.Control = lblMaxOffset
+      AnchorSideTop.Side = asrBottom
+      Left = 17
+      Height = 25
+      Top = 233
+      Width = 100
+      AutoSize = True
+      BorderSpacing.Top = 5
+      BorderSpacing.Bottom = 25
+      Caption = 'Start'
+      Constraints.MinWidth = 100
+      OnClick = btnStartClick
+      TabOrder = 0
+    end
+  end
+  object Timer1: TTimer
+    Enabled = False
+    Interval = 500
+    OnTimer = Timer1Timer
+    Top = 80
+  end
+  object MainMenu1: TMainMenu
+    Images = MainForm.mfImageList
+    Left = 213
+    Top = 283
+    object MenuItem1: TMenuItem
+      Caption = 'File'
+      object MenuItem2: TMenuItem
+        Caption = 'Open'
+        ImageIndex = 3
+        ShortCut = 16463
+        OnClick = MenuItem2Click
+      end
+      object MenuItem3: TMenuItem
+        Caption = 'Save'
+        ImageIndex = 5
+        ShortCut = 16467
+        OnClick = MenuItem3Click
+      end
+    end
+  end
+  object OpenDialog1: TOpenDialog
+    DefaultExt = '.CDC'
+    Filter = 'Dissect Code Files (*.CDC)|*.CDC'
+    Options = [ofFileMustExist, ofEnableSizing, ofViewDetail]
+    Left = 78
+    Top = 88
+  end
+  object SaveDialog1: TSaveDialog
+    Filter = 'Dissect Code Files (*.CDC)|*.CDC'
+    Left = 81
+    Top = 157
+  end
+end

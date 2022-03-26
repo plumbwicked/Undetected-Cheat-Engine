@@ -1,0 +1,162 @@
+object frmBreakpointCondition: TfrmBreakpointCondition
+  Left = 371
+  Height = 232
+  Top = 364
+  Width = 533
+  AutoSize = True
+  Caption = 'Breakpoint condition'
+  ClientHeight = 232
+  ClientWidth = 533
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  OnShow = FormShow
+  Position = poScreenCenter
+  LCLVersion = '2.0.6.0'
+  object Button1: TButton
+    AnchorSideTop.Control = PageControl1
+    AnchorSideBottom.Control = Owner
+    AnchorSideBottom.Side = asrBottom
+    Left = 8
+    Height = 25
+    Top = 204
+    Width = 75
+    Anchors = [akLeft, akBottom]
+    AutoSize = True
+    BorderSpacing.Bottom = 3
+    Caption = 'OK'
+    Constraints.MinWidth = 75
+    Default = True
+    ModalResult = 1
+    TabOrder = 0
+  end
+  object Button2: TButton
+    AnchorSideBottom.Control = Button1
+    AnchorSideBottom.Side = asrBottom
+    Left = 96
+    Height = 25
+    Top = 204
+    Width = 75
+    Anchors = [akLeft, akBottom]
+    AutoSize = True
+    Cancel = True
+    Caption = 'Cancel'
+    Constraints.MinWidth = 75
+    ModalResult = 2
+    TabOrder = 1
+  end
+  object PageControl1: TPageControl
+    AnchorSideLeft.Control = rbEasy
+    AnchorSideTop.Control = rbEasy
+    AnchorSideTop.Side = asrBottom
+    AnchorSideBottom.Control = Button1
+    Left = 8
+    Height = 179
+    Top = 20
+    Width = 520
+    ActivePage = TabSheet1
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    BorderSpacing.Bottom = 5
+    TabIndex = 0
+    TabOrder = 2
+    object TabSheet1: TTabSheet
+      Caption = 'Easy formula'
+      ClientHeight = 151
+      ClientWidth = 512
+      object edtEasy: TEdit
+        AnchorSideLeft.Control = Label2
+        AnchorSideTop.Control = Label2
+        AnchorSideTop.Side = asrBottom
+        Left = 4
+        Height = 23
+        Top = 37
+        Width = 503
+        Anchors = [akTop, akLeft, akRight]
+        BorderSpacing.Top = 2
+        BorderSpacing.Bottom = 10
+        TabOrder = 0
+      end
+      object Label1: TLabel
+        AnchorSideLeft.Control = TabSheet1
+        AnchorSideTop.Control = TabSheet1
+        AnchorSideRight.Control = TabSheet1
+        AnchorSideRight.Side = asrBottom
+        Left = 4
+        Height = 15
+        Top = 5
+        Width = 425
+        BorderSpacing.Left = 4
+        BorderSpacing.Top = 5
+        BorderSpacing.Right = 4
+        Caption = 'Give a formula that must return true if you want the breakpoint to trigger a break'
+        ParentColor = False
+        WordWrap = True
+      end
+      object Label2: TLabel
+        AnchorSideLeft.Control = Label1
+        AnchorSideTop.Control = Label1
+        AnchorSideTop.Side = asrBottom
+        AnchorSideRight.Control = TabSheet1
+        AnchorSideRight.Side = asrBottom
+        Left = 4
+        Height = 15
+        Top = 20
+        Width = 413
+        BorderSpacing.Right = 4
+        Caption = 'Example: EAX == 0x1234  (case sensitive and hexadecimal starts with 0x ) (Lua)'
+        ParentColor = False
+        WordWrap = True
+      end
+    end
+    object TabSheet2: TTabSheet
+      Caption = 'Complex function'
+      ClientHeight = 151
+      ClientWidth = 512
+      object mComplex: TMemo
+        Left = 0
+        Height = 151
+        Top = 0
+        Width = 512
+        Align = alClient
+        Lines.Strings = (
+          '--the register values like EAX and EBX can be read here. '
+          '--Changing them has no effect though'
+          '--Note: Keep in mind hexadecimal values start with 0x'
+          ''
+          'return (conditon) --return a non-zero value if you want to break'
+        )
+        ScrollBars = ssBoth
+        TabOrder = 0
+      end
+    end
+  end
+  object rbEasy: TRadioButton
+    AnchorSideLeft.Control = Owner
+    AnchorSideTop.Control = Owner
+    Left = 8
+    Height = 19
+    Top = 1
+    Width = 43
+    BorderSpacing.Left = 8
+    BorderSpacing.Top = 1
+    Caption = 'Easy'
+    Checked = True
+    OnChange = rbEasyChange
+    OnClick = rbEasyChange
+    TabOrder = 3
+    TabStop = True
+  end
+  object rbComplex: TRadioButton
+    AnchorSideLeft.Control = rbEasy
+    AnchorSideLeft.Side = asrBottom
+    AnchorSideTop.Control = rbEasy
+    Left = 56
+    Height = 19
+    Top = 1
+    Width = 68
+    BorderSpacing.Left = 5
+    Caption = 'Complex'
+    OnChange = rbEasyChange
+    OnClick = rbEasyChange
+    TabOrder = 4
+  end
+end

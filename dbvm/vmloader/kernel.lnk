@@ -1,0 +1,15 @@
+OUTPUT_FORMAT("elf32-i386")
+ENTRY(amain)
+SECTIONS
+{
+  .text  0x30000 : {
+    *(.text)
+  }
+  .data 0x30000 : {
+    *(.data)
+  }
+  .bss  :
+  { 					
+    *(.bss)
+  }
+}

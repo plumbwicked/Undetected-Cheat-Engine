@@ -1,0 +1,78 @@
+object formPointerOrPointee: TformPointerOrPointee
+  Left = 358
+  Height = 99
+  Top = 798
+  Width = 354
+  AutoSize = True
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsSingle
+  Caption = 'Cheat Engine Pointer'
+  ClientHeight = 99
+  ClientWidth = 354
+  Position = poMainFormCenter
+  LCLVersion = '1.6.4.0'
+  object Label1: TLabel
+    AnchorSideLeft.Control = Owner
+    AnchorSideTop.Control = Owner
+    Left = 8
+    Height = 15
+    Top = 4
+    Width = 86
+    BorderSpacing.Left = 8
+    BorderSpacing.Top = 4
+    Caption = 'This is a pointer.'
+    ParentColor = False
+    WordWrap = True
+  end
+  object Panel1: TPanel
+    AnchorSideTop.Control = Label1
+    AnchorSideTop.Side = asrBottom
+    Left = 0
+    Height = 62
+    Top = 19
+    Width = 341
+    AutoSize = True
+    BevelOuter = bvNone
+    ClientHeight = 62
+    ClientWidth = 341
+    TabOrder = 0
+    object btnFindWhatWritesPointer: TButton
+      AnchorSideLeft.Control = Panel1
+      AnchorSideTop.Control = Panel1
+      AnchorSideRight.Control = Panel1
+      AnchorSideRight.Side = asrBottom
+      Left = 8
+      Height = 25
+      Top = 2
+      Width = 325
+      Anchors = [akTop, akLeft, akRight]
+      AutoSize = True
+      BorderSpacing.Left = 8
+      BorderSpacing.Top = 2
+      BorderSpacing.Right = 8
+      Caption = 'Find what writes to this pointer'
+      ModalResult = 6
+      TabOrder = 0
+    end
+    object btnFindWhatWritesPointee: TButton
+      AnchorSideLeft.Control = Panel1
+      AnchorSideTop.Control = btnFindWhatWritesPointer
+      AnchorSideTop.Side = asrBottom
+      AnchorSideRight.Control = Panel1
+      AnchorSideRight.Side = asrBottom
+      Left = 8
+      Height = 25
+      Top = 32
+      Width = 325
+      Anchors = [akTop, akLeft, akRight]
+      AutoSize = True
+      BorderSpacing.Left = 8
+      BorderSpacing.Top = 5
+      BorderSpacing.Right = 8
+      BorderSpacing.Bottom = 5
+      Caption = 'Find what writes to the address pointed at by this pointer'
+      ModalResult = 7
+      TabOrder = 1
+    end
+  end
+end

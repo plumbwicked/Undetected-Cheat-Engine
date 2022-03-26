@@ -1,0 +1,679 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectOptions>
+    <Version Value="11"/>
+    <PathDelim Value="\"/>
+    <General>
+      <MainUnit Value="0"/>
+      <UseXPManifest Value="True"/>
+      <XPManifest>
+        <DpiAware Value="True"/>
+      </XPManifest>
+      <Icon Value="0"/>
+    </General>
+    <i18n>
+      <EnableI18N Value="True"/>
+      <OutDir Value="..\bin\languages"/>
+    </i18n>
+    <VersionInfo>
+      <Language Value=""/>
+      <CharSet Value=""/>
+    </VersionInfo>
+    <BuildModes Count="4" Active="release 64-Bit">
+      <Item1 Name="debug" Default="True"/>
+      <Item2 Name="release">
+        <CompilerOptions>
+          <Version Value="11"/>
+          <PathDelim Value="\"/>
+          <Target>
+            <Filename Value="..\bin\tutorial-$(TargetCPU)"/>
+          </Target>
+          <SearchPaths>
+            <IncludeFiles Value="$(ProjOutDir)"/>
+            <OtherUnitFiles Value="..\betterControls"/>
+            <UnitOutputDirectory Value="unitbin"/>
+          </SearchPaths>
+          <Parsing>
+            <Style Value="1"/>
+          </Parsing>
+          <CodeGeneration>
+            <SmartLinkUnit Value="True"/>
+            <Optimizations>
+              <OptimizationLevel Value="3"/>
+              <VariablesInRegisters Value="True"/>
+            </Optimizations>
+          </CodeGeneration>
+          <Linking>
+            <Debugging>
+              <GenerateDebugInfo Value="False"/>
+              <UseLineInfoUnit Value="False"/>
+              <StripSymbols Value="True"/>
+            </Debugging>
+            <LinkSmart Value="True"/>
+            <Options>
+              <Win32>
+                <GraphicApplication Value="True"/>
+              </Win32>
+            </Options>
+          </Linking>
+          <Other>
+            <Verbosity>
+              <ShowWarn Value="False"/>
+              <ShowNotes Value="False"/>
+              <ShowHints Value="False"/>
+            </Verbosity>
+            <CustomOptions Value="-dbc_skipsynedit"/>
+          </Other>
+        </CompilerOptions>
+      </Item2>
+      <Item3 Name="release 32-Bit">
+        <CompilerOptions>
+          <Version Value="11"/>
+          <PathDelim Value="\"/>
+          <Target>
+            <Filename Value="..\bin\tutorial-$(TargetCPU)"/>
+          </Target>
+          <SearchPaths>
+            <IncludeFiles Value="$(ProjOutDir)"/>
+            <OtherUnitFiles Value="..\betterControls"/>
+            <UnitOutputDirectory Value="unitbin"/>
+          </SearchPaths>
+          <Parsing>
+            <Style Value="1"/>
+          </Parsing>
+          <CodeGeneration>
+            <SmartLinkUnit Value="True"/>
+            <TargetCPU Value="i386"/>
+            <TargetOS Value="win32"/>
+            <Optimizations>
+              <OptimizationLevel Value="3"/>
+              <VariablesInRegisters Value="True"/>
+            </Optimizations>
+          </CodeGeneration>
+          <Linking>
+            <Debugging>
+              <GenerateDebugInfo Value="False"/>
+              <UseLineInfoUnit Value="False"/>
+              <StripSymbols Value="True"/>
+            </Debugging>
+            <LinkSmart Value="True"/>
+            <Options>
+              <Win32>
+                <GraphicApplication Value="True"/>
+              </Win32>
+            </Options>
+          </Linking>
+          <Other>
+            <Verbosity>
+              <ShowWarn Value="False"/>
+              <ShowNotes Value="False"/>
+              <ShowHints Value="False"/>
+            </Verbosity>
+            <CustomOptions Value="-dbc_skipsynedit"/>
+          </Other>
+        </CompilerOptions>
+      </Item3>
+      <Item4 Name="release 64-Bit">
+        <CompilerOptions>
+          <Version Value="11"/>
+          <PathDelim Value="\"/>
+          <Target>
+            <Filename Value="..\bin\tutorial-$(TargetCPU)"/>
+          </Target>
+          <SearchPaths>
+            <IncludeFiles Value="$(ProjOutDir)"/>
+            <OtherUnitFiles Value="..\betterControls"/>
+            <UnitOutputDirectory Value="unitbin"/>
+          </SearchPaths>
+          <Parsing>
+            <Style Value="1"/>
+          </Parsing>
+          <CodeGeneration>
+            <SmartLinkUnit Value="True"/>
+            <TargetCPU Value="x86_64"/>
+            <TargetOS Value="win64"/>
+            <Optimizations>
+              <OptimizationLevel Value="3"/>
+              <VariablesInRegisters Value="True"/>
+            </Optimizations>
+          </CodeGeneration>
+          <Linking>
+            <Debugging>
+              <UseLineInfoUnit Value="False"/>
+              <StripSymbols Value="True"/>
+              <UseExternalDbgSyms Value="True"/>
+            </Debugging>
+            <LinkSmart Value="True"/>
+            <Options>
+              <Win32>
+                <GraphicApplication Value="True"/>
+              </Win32>
+            </Options>
+          </Linking>
+          <Other>
+            <Verbosity>
+              <ShowWarn Value="False"/>
+              <ShowNotes Value="False"/>
+              <ShowHints Value="False"/>
+            </Verbosity>
+            <CustomOptions Value="-dbc_skipsynedit"/>
+          </Other>
+        </CompilerOptions>
+      </Item4>
+    </BuildModes>
+    <PublishOptions>
+      <Version Value="2"/>
+    </PublishOptions>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes Count="1">
+        <Mode0 Name="default">
+          <local>
+            <LaunchingApplication PathPlusParams="/usr/X11R6/bin/xterm -T 'Lazarus Run Output' -e $(LazarusDir)/tools/runwait.sh $(TargetCmdLine)"/>
+          </local>
+        </Mode0>
+      </Modes>
+    </RunParams>
+    <RequiredPackages Count="1">
+      <Item1>
+        <PackageName Value="LCL"/>
+      </Item1>
+    </RequiredPackages>
+    <Units Count="38">
+      <Unit0>
+        <Filename Value="tutorial.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="4"/>
+        <CursorPos Y="28"/>
+        <UsageCount Value="71"/>
+        <Loaded Value="True"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="Unit1.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Form1"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <CursorPos X="58" Y="46"/>
+        <UsageCount Value="71"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="Unit2.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Form2"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="5"/>
+        <CursorPos X="67" Y="9"/>
+        <UsageCount Value="71"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="Unit3.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Form3"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="6"/>
+        <CursorPos X="77" Y="9"/>
+        <UsageCount Value="71"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="Unit4.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Form4"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="7"/>
+        <CursorPos X="48" Y="9"/>
+        <UsageCount Value="71"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="Unit5.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Form5"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="9"/>
+        <CursorPos X="82" Y="9"/>
+        <UsageCount Value="71"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="Unit6.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Form6"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="10"/>
+        <CursorPos X="57" Y="9"/>
+        <UsageCount Value="71"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="Unit7.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Form7"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="12"/>
+        <CursorPos X="57" Y="9"/>
+        <UsageCount Value="71"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="Unit8.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Form8"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="14"/>
+        <CursorPos X="57" Y="9"/>
+        <UsageCount Value="71"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit8>
+      <Unit9>
+        <Filename Value="Unit9.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Form9"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="15"/>
+        <CursorPos X="57" Y="9"/>
+        <UsageCount Value="71"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit9>
+      <Unit10>
+        <Filename Value="Unit10.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Form10"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="18"/>
+        <CursorPos X="80" Y="10"/>
+        <UsageCount Value="71"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit10>
+      <Unit11>
+        <Filename Value="C:\lazarus\fpc\2.4.3\source\rtl\inc\systemh.inc"/>
+        <TopLine Value="170"/>
+        <CursorPos X="3" Y="105"/>
+        <UsageCount Value="8"/>
+      </Unit11>
+      <Unit12>
+        <Filename Value="cetranslator.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="13"/>
+        <TopLine Value="25"/>
+        <CursorPos X="41" Y="42"/>
+        <UsageCount Value="66"/>
+        <Loaded Value="True"/>
+      </Unit12>
+      <Unit13>
+        <Filename Value="C:\lazarus\fpc\2.5.1\source\packages\fcl-base\src\custapp.pp"/>
+        <TopLine Value="241"/>
+        <CursorPos X="22" Y="269"/>
+        <UsageCount Value="8"/>
+      </Unit13>
+      <Unit14>
+        <Filename Value="Unit3.lfm"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="1"/>
+        <TopLine Value="65"/>
+        <CursorPos Y="84"/>
+        <UsageCount Value="25"/>
+        <DefaultSyntaxHighlighter Value="LFM"/>
+      </Unit14>
+      <Unit15>
+        <Filename Value="Unit5.lfm"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="1"/>
+        <TopLine Value="160"/>
+        <CursorPos Y="179"/>
+        <UsageCount Value="25"/>
+        <DefaultSyntaxHighlighter Value="LFM"/>
+      </Unit15>
+      <Unit16>
+        <Filename Value="Unit6.lfm"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="1"/>
+        <TopLine Value="74"/>
+        <CursorPos X="5" Y="97"/>
+        <UsageCount Value="25"/>
+        <DefaultSyntaxHighlighter Value="LFM"/>
+      </Unit16>
+      <Unit17>
+        <Filename Value="Unit7.lfm"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="1"/>
+        <TopLine Value="48"/>
+        <CursorPos Y="69"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="LFM"/>
+      </Unit17>
+      <Unit18>
+        <Filename Value="Unit8.lfm"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="1"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="LFM"/>
+      </Unit18>
+      <Unit19>
+        <Filename Value="Unit10.lfm"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="25"/>
+        <DefaultSyntaxHighlighter Value="LFM"/>
+      </Unit19>
+      <Unit20>
+        <Filename Value="Unit9.lfm"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos Y="9"/>
+        <UsageCount Value="25"/>
+        <DefaultSyntaxHighlighter Value="LFM"/>
+      </Unit20>
+      <Unit21>
+        <Filename Value="C:\lazarus\lcl\controls.pp"/>
+        <TopLine Value="2429"/>
+        <CursorPos X="14" Y="2446"/>
+        <UsageCount Value="7"/>
+      </Unit21>
+      <Unit22>
+        <Filename Value="Unit1.lfm"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="68"/>
+        <CursorPos Y="89"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="LFM"/>
+      </Unit22>
+      <Unit23>
+        <Filename Value="C:\lazarus\fpc\2.5.1\source\rtl\objpas\objpas.pp"/>
+        <TopLine Value="372"/>
+        <CursorPos X="3" Y="377"/>
+        <UsageCount Value="7"/>
+      </Unit23>
+      <Unit24>
+        <Filename Value="C:\development\lazarus\lcl\controls.pp"/>
+        <UnitName Value="Controls"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="1"/>
+        <TopLine Value="2113"/>
+        <CursorPos X="14" Y="2127"/>
+        <UsageCount Value="10"/>
+      </Unit24>
+      <Unit25>
+        <Filename Value="C:\development\lazarus\lcl\include\wincontrol.inc"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="1"/>
+        <TopLine Value="3635"/>
+        <CursorPos X="3" Y="3640"/>
+        <UsageCount Value="10"/>
+      </Unit25>
+      <Unit26>
+        <Filename Value="C:\development\fpc\rtl\win\wininc\struct.inc"/>
+        <TopLine Value="211"/>
+        <CursorPos X="6" Y="226"/>
+        <UsageCount Value="10"/>
+      </Unit26>
+      <Unit27>
+        <Filename Value="C:\development\fpc\rtl\objpas\classes\classesh.inc"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="1"/>
+        <TopLine Value="2031"/>
+        <CursorPos X="10" Y="2046"/>
+        <UsageCount Value="10"/>
+      </Unit27>
+      <Unit28>
+        <Filename Value="Unit2.lfm"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="1"/>
+        <TopLine Value="88"/>
+        <CursorPos Y="107"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="LFM"/>
+      </Unit28>
+      <Unit29>
+        <Filename Value="Unit4.lfm"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="1"/>
+        <CursorPos Y="12"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="LFM"/>
+      </Unit29>
+      <Unit30>
+        <Filename Value="C:\lazarus\lcl\graphics.pp"/>
+        <UnitName Value="Graphics"/>
+        <EditorIndex Value="8"/>
+        <TopLine Value="569"/>
+        <CursorPos X="14" Y="581"/>
+        <UsageCount Value="15"/>
+        <Loaded Value="True"/>
+      </Unit30>
+      <Unit31>
+        <Filename Value="C:\lazarus164\fpc\3.0.2\source\rtl\win\wininc\ascdef.inc"/>
+        <EditorIndex Value="17"/>
+        <TopLine Value="458"/>
+        <CursorPos X="22" Y="470"/>
+        <UsageCount Value="15"/>
+        <Loaded Value="True"/>
+      </Unit31>
+      <Unit32>
+        <Filename Value="frmhelpunit.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmHelp"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="frmHelpUnit"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="56"/>
+        <CursorPos X="53" Y="65"/>
+        <UsageCount Value="29"/>
+      </Unit32>
+      <Unit33>
+        <Filename Value="C:\lazarus200\lcl\controls.pp"/>
+        <UnitName Value="Controls"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="1683"/>
+        <CursorPos X="14" Y="1713"/>
+        <UsageCount Value="13"/>
+        <Loaded Value="True"/>
+      </Unit33>
+      <Unit34>
+        <Filename Value="C:\lazarus200\lcl\include\control.inc"/>
+        <EditorIndex Value="3"/>
+        <TopLine Value="4202"/>
+        <CursorPos X="3" Y="4207"/>
+        <UsageCount Value="13"/>
+        <Loaded Value="True"/>
+      </Unit34>
+      <Unit35>
+        <Filename Value="C:\lazarus200\lcl\forms.pp"/>
+        <UnitName Value="Forms"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="1597"/>
+        <CursorPos X="14" Y="1613"/>
+        <UsageCount Value="11"/>
+        <Loaded Value="True"/>
+      </Unit35>
+      <Unit36>
+        <Filename Value="..\betterControls\bettercontrols.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="betterControls"/>
+        <EditorIndex Value="11"/>
+        <TopLine Value="7"/>
+        <CursorPos X="49" Y="27"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+      </Unit36>
+      <Unit37>
+        <Filename Value="..\betterControls\newsynedit.pas"/>
+        <UnitName Value="newSynEdit"/>
+        <EditorIndex Value="16"/>
+        <CursorPos X="63" Y="8"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit37>
+    </Units>
+    <JumpHistory Count="22" HistoryIndex="21">
+      <Position1>
+        <Filename Value="Unit9.pas"/>
+        <Caret Line="333" Column="3" TopLine="323"/>
+      </Position1>
+      <Position2>
+        <Filename Value="Unit10.pas"/>
+        <Caret Line="61" Column="21" TopLine="41"/>
+      </Position2>
+      <Position3>
+        <Filename Value="Unit10.pas"/>
+        <Caret Line="304" Column="24" TopLine="281"/>
+      </Position3>
+      <Position4>
+        <Filename Value="Unit1.pas"/>
+        <Caret Line="64" Column="3" TopLine="62"/>
+      </Position4>
+      <Position5>
+        <Filename Value="Unit2.pas"/>
+        <Caret Line="138" Column="25" TopLine="124"/>
+      </Position5>
+      <Position6>
+        <Filename Value="Unit2.pas"/>
+        <Caret Line="138" Column="12" TopLine="124"/>
+      </Position6>
+      <Position7>
+        <Filename Value="Unit10.pas"/>
+        <Caret Line="307" Column="26" TopLine="285"/>
+      </Position7>
+      <Position8>
+        <Filename Value="Unit9.pas"/>
+        <Caret Line="192" Column="23" TopLine="174"/>
+      </Position8>
+      <Position9>
+        <Filename Value="Unit8.pas"/>
+        <Caret Line="113" Column="26" TopLine="95"/>
+      </Position9>
+      <Position10>
+        <Filename Value="Unit7.pas"/>
+        <Caret Line="208" Column="26" TopLine="190"/>
+      </Position10>
+      <Position11>
+        <Filename Value="Unit6.pas"/>
+        <Caret Line="118" Column="26" TopLine="100"/>
+      </Position11>
+      <Position12>
+        <Filename Value="Unit5.pas"/>
+        <Caret Line="104" Column="26" TopLine="86"/>
+      </Position12>
+      <Position13>
+        <Filename Value="Unit3.pas"/>
+        <Caret Line="90" Column="10" TopLine="72"/>
+      </Position13>
+      <Position14>
+        <Filename Value="Unit1.pas"/>
+        <Caret Line="68" Column="18" TopLine="56"/>
+      </Position14>
+      <Position15>
+        <Filename Value="Unit1.pas"/>
+        <Caret Line="64" Column="32" TopLine="47"/>
+      </Position15>
+      <Position16>
+        <Filename Value="Unit2.pas"/>
+        <Caret Line="138" Column="3" TopLine="124"/>
+      </Position16>
+      <Position17>
+        <Filename Value="Unit1.pas"/>
+        <Caret Line="64" TopLine="47"/>
+      </Position17>
+      <Position18>
+        <Filename Value="Unit6.pas"/>
+        <Caret Line="118" Column="26" TopLine="100"/>
+      </Position18>
+      <Position19>
+        <Filename Value="Unit9.pas"/>
+        <Caret Line="9" Column="57"/>
+      </Position19>
+      <Position20>
+        <Filename Value="C:\lazarus200\lcl\forms.pp"/>
+        <Caret Line="1613" Column="14" TopLine="1597"/>
+      </Position20>
+      <Position21>
+        <Filename Value="..\betterControls\bettercontrols.pas"/>
+        <Caret Line="7" Column="28"/>
+      </Position21>
+      <Position22>
+        <Filename Value="Unit2.pas"/>
+        <Caret Line="9" Column="67"/>
+      </Position22>
+    </JumpHistory>
+  </ProjectOptions>
+  <CompilerOptions>
+    <Version Value="11"/>
+    <PathDelim Value="\"/>
+    <Target>
+      <Filename Value="..\bin\tutorial-$(TargetCPU)"/>
+    </Target>
+    <SearchPaths>
+      <OtherUnitFiles Value="..\betterControls"/>
+      <UnitOutputDirectory Value="unitbin"/>
+    </SearchPaths>
+    <Parsing>
+      <Style Value="1"/>
+    </Parsing>
+    <CodeGeneration>
+      <Optimizations>
+        <OptimizationLevel Value="0"/>
+      </Optimizations>
+    </CodeGeneration>
+    <Linking>
+      <Debugging>
+        <UseLineInfoUnit Value="False"/>
+      </Debugging>
+      <Options>
+        <Win32>
+          <GraphicApplication Value="True"/>
+        </Win32>
+      </Options>
+    </Linking>
+    <Other>
+      <Verbosity>
+        <ShowWarn Value="False"/>
+        <ShowNotes Value="False"/>
+        <ShowHints Value="False"/>
+      </Verbosity>
+      <CustomOptions Value="-dbc_skipsynedit"/>
+      <OtherDefines Count="1">
+        <Define0 Value="bc_skipsynedit"/>
+      </OtherDefines>
+    </Other>
+  </CompilerOptions>
+  <Debugging>
+    <Watches Count="1">
+      <Item1>
+        <Expression Value="nexttut"/>
+      </Item1>
+    </Watches>
+    <Exceptions Count="3">
+      <Item1>
+        <Name Value="EAbort"/>
+      </Item1>
+      <Item2>
+        <Name Value="ECodetoolError"/>
+      </Item2>
+      <Item3>
+        <Name Value="EFOpenError"/>
+      </Item3>
+    </Exceptions>
+  </Debugging>
+</CONFIG>

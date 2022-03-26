@@ -1,0 +1,161 @@
+ceshare is a lua extension that, in the background, connects to a website (by 
+default cheatengine.org, but you're free to implement your own database...) and
+querries information about the currently opened process
+
+Information about the process is gained from initially doing a md5sum of 
+the first 4096 bytes of the process and the processname. (this allows for 
+version specific data, as the peheader also has information like section sizes 
+which often change on different builds)
+
+If that still ends up being ambiguous(the server tells you), do a md5sum of the 
+whole file, or give an md5 sum of a modulename list that the server tells you to 
+check instead. (e.g in case of unchanged game.exe but different game.dll)
+
+If still ambiguous, let the user pick from a list
+
+once a correct build has been found, (or there is version independant data based
+on the processname ) show the user some options.
+Like loading a table, or just open a browser window with information about using
+CE on it. (Or even executing a cheat directly from that window, e.g luascript)
+
+Each entry should have a kind of rating (symbolized using 5 stars) and perhaps 
+comments as well
+
+People should be able to add their own data and tables to the database, if they 
+have a CE username and password
+
+They can decide to have their entry editable by everyone, or only those in an 
+specific access list. 
+
+database schema:
+  CheatList  --list containing all cheat descriptors+who owns them
+    id: integer
+    owneruserid: integer
+    lastEditorUserID: integer
+    lastEditorIP: string
+    lastEditTime: integer    
+    description: text
+    public: bool - Editable by everyone, else editable only by the owner and by people in the accesslist
+    processnamemd5: binary(16) (index)
+    versionIndependant: bool --if set, only the processname matters
+    ratingtotal: integer
+    ratingcount: integer    -ratingtotal/ratingcount = stars
+    accessCount: integer    -Number of times the cheatdata has been fetched (cheatlist won't count)  
+
+    headermd5: binary(16) (index)
+    fullfilehashmd5: binary(16) - if set, and there are multiple results, use this
+    secondarymodulename: string -- if set, use this. (before fullfilehash)
+    secondaryfullfilehashmd5: binary(16)  
+    LuaScriptToCheckForMatch: string/blob --only for very trusted members, let the user execute this lua script. If it returns true, it's valid
+    datatype: integer - 0=table, 1=URL, 2=Lua script
+    data: long text
+    
+  History
+    Historyid: integer;
+    cheatId: integer    
+    oldedittime: integer    
+    olddescription: integer
+    olddatatype: integer
+    olddata: BLOB    
+    oldlastEditorUserID: integer;
+    oldlastEditorIP: string
+    
+  Reports:
+    -reportid: integer
+    cheatid: integer;
+    commentid: integer -can be null if cheat report
+    explenation: text
+    
+
+    
+  Ratings --keep track of what the users have rated (rating is only possible when logged in)
+    -id: integer
+    -userid: integer
+    rated: integer
+    
+  Comments:
+    -commentid: integer
+    -cheatid: integer
+    userid: integer
+    comment: text
+    commentDateTime: dateTime --time of the comment
+
+  AccessList:
+    -id: integer
+    -userid: integer
+
+
+  Requests: 
+    -requestid
+    processnamemd5 
+    headermd5 --for specific versions
+    userid
+    commentsonwhat
+    time
+
+    
+  Sessions
+    -sessionid: binary(16)
+    ip: integer
+    userid: integer
+    lastUpdate: integer --if longer than 1 hour delete this entry
+    
+  LoginFloodProtect  
+    ip: integer
+    lastloginattempt: integer    
+
+php api:
+  QueryProcessCheats(processnamemd5, headermd5)   
+    Returns all entries matching this process and header, or only process if versionIndependant is true
+    format: (xml) 
+    <CheatList>
+      <CheatEntry ID=int Owner=string VersionIndependant=bool Public=bool Rating=int RatingCount=int LastUpdate=date>description</CheatEntry>
+      <CheatEntry ID=int Owner=string VersionIndependant=bool Public=bool Rating=int RatingCount=int LastUpdate=date FullFileHash=string SecondaryModuleName=false SecondaryFullFileHash=string CheckCode=text>description</CheatEntry>      ...
+    </CheatList>
+    
+    
+    
+    If multiple results, the lua script will have to check fullfilehash and secondarymodulename to filter out entries that do not match
+    Then show the results to the user
+    
+  QueryProcessRequests(processnamemd5, headermd5)
+    Same as QueryProcessCheats, but for requests
+    
+  GetCheatData(id)
+    Returns the type and data
+  
+  Login(username, password)    
+    On success, returns a sessionid you can use for things that require a login (sessionid is only valid for the IP used to login)
+    <Session id="123456789abcdef0123456789abcdef0"/>
+  
+  Logout(sessionid):  
+    Expires the session   
+    
+  PublishCheat(sessionid, cheatdata, processnamemd5, headermd5, versionindependant, description, public, datatype, fullfilehash OPT,secondarymodulename OPT, secondaryfullfilehashmd5 OPT, LuaScript OPT/ADMIN,  )
+    On success returns a cheatid
+
+  ModifyCheat(sessionid,cheatid,headermd5, versionindependant, description, public(only from 0 to 1), datatype, fullfilehash OPT,secondarymodulename OPT, secondaryfullfilehashmd5 OPT, LuaScript OPT/ADMIN)
+  
+
+  addAccess(sessionid,cheatid,username) 
+  revokeAccess(sessionid,cheatid,username)
+
+  PlaceRequest(sessionid, processnamemd5,headermd5 opt, comment)
+  RemoveReQuest(sessionid, requestid)
+     
+
+  ReportCheat(cheatid, reason) --no need to login
+  ReportComment(commentid, reason)
+    
+  GetComments(id, startcount, maxcount):
+    Returns the comments
+
+  Rate(sessionid, cheatid, score1to5)
+   
+   
+  CheckForUpdate()
+    Returns the current version
+    
+  GetLatestVersion()
+    Returns the updated files
+    <filelist><file relativepath="/">urltofile</file><file relativepath="/xml/">urltofile</file>

@@ -1,0 +1,70 @@
+object frmSelectionList: TfrmSelectionList
+  Left = 751
+  Height = 232
+  Top = 154
+  Width = 313
+  BorderIcons = [biSystemMenu]
+  Caption = 'title'
+  ClientHeight = 232
+  ClientWidth = 313
+  OnShow = FormShow
+  Position = poScreenCenter
+  LCLVersion = '1.6.4.0'
+  object Label1: TLabel
+    Left = 0
+    Height = 15
+    Top = 0
+    Width = 313
+    Align = alTop
+    Caption = 'caption'
+    ParentColor = False
+    WordWrap = True
+  end
+  object ListBox1: TListBox
+    Left = 0
+    Height = 161
+    Top = 38
+    Width = 313
+    Align = alClient
+    ItemHeight = 0
+    OnDblClick = ListBox1DblClick
+    OnSelectionChange = ListBox1SelectionChange
+    TabOrder = 0
+  end
+  object Panel1: TPanel
+    Left = 0
+    Height = 33
+    Top = 199
+    Width = 313
+    Align = alBottom
+    AutoSize = True
+    ClientHeight = 33
+    ClientWidth = 313
+    TabOrder = 1
+    object btnOK: TButton
+      Left = 124
+      Height = 25
+      Top = 4
+      Width = 66
+      Anchors = [akTop]
+      AutoSize = True
+      BorderSpacing.Top = 3
+      BorderSpacing.Bottom = 3
+      Caption = '    OK    '
+      Default = True
+      ModalResult = 1
+      TabOrder = 0
+    end
+  end
+  object Edit1: TEdit
+    Left = 0
+    Height = 23
+    Top = 15
+    Width = 313
+    Align = alTop
+    OnChange = Edit1Change
+    OnKeyPress = Edit1KeyPress
+    TabOrder = 2
+    Visible = False
+  end
+end

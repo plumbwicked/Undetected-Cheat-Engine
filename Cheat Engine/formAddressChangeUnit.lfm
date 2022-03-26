@@ -1,0 +1,700 @@
+object formAddressChange: TformAddressChange
+  Left = 828
+  Height = 295
+  Top = 182
+  Width = 263
+  AutoSize = True
+  BorderIcons = [biSystemMenu]
+  Caption = 'Change address'
+  ClientHeight = 295
+  ClientWidth = 263
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  OnResize = FormResize
+  OnShow = FormShow
+  Position = poScreenCenter
+  LCLVersion = '2.0.6.0'
+  object LabelAddress: TLabel
+    AnchorSideLeft.Control = Owner
+    AnchorSideTop.Control = Owner
+    Left = 8
+    Height = 15
+    Top = 0
+    Width = 45
+    BorderSpacing.Left = 8
+    Caption = 'Address:'
+    ParentColor = False
+  end
+  object editAddress: TEdit
+    AnchorSideLeft.Control = LabelAddress
+    AnchorSideTop.Control = LabelAddress
+    AnchorSideTop.Side = asrBottom
+    Left = 8
+    Height = 23
+    Top = 15
+    Width = 112
+    OnChange = editAddressChange
+    TabOrder = 0
+  end
+  object lblValue: TLabel
+    AnchorSideLeft.Control = editAddress
+    AnchorSideLeft.Side = asrBottom
+    AnchorSideTop.Control = editAddress
+    AnchorSideTop.Side = asrCenter
+    Left = 120
+    Height = 15
+    Top = 19
+    Width = 36
+    Caption = '=Value'
+    ParentColor = False
+    PopupMenu = pmValue
+  end
+  object btnOk: TButton
+    AnchorSideLeft.Control = Owner
+    AnchorSideTop.Control = cbPointer
+    AnchorSideTop.Side = asrBottom
+    Left = 8
+    Height = 25
+    Top = 258
+    Width = 80
+    AutoSize = True
+    BorderSpacing.Left = 8
+    BorderSpacing.Bottom = 8
+    Caption = 'OK'
+    Constraints.MinHeight = 25
+    Constraints.MinWidth = 80
+    Default = True
+    OnClick = btnOkClick
+    TabOrder = 6
+  end
+  object btnCancel: TButton
+    AnchorSideLeft.Control = btnOk
+    AnchorSideLeft.Side = asrBottom
+    AnchorSideTop.Control = cbPointer
+    AnchorSideTop.Side = asrBottom
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    Left = 96
+    Height = 25
+    Top = 258
+    Width = 80
+    AutoSize = True
+    BorderSpacing.Left = 8
+    BorderSpacing.Right = 8
+    Cancel = True
+    Caption = 'Cancel'
+    Constraints.MinHeight = 25
+    Constraints.MinWidth = 80
+    ModalResult = 2
+    TabOrder = 7
+  end
+  object cbPointer: TCheckBox
+    AnchorSideLeft.Control = LabelAddress
+    AnchorSideTop.Control = pnlExtra
+    AnchorSideTop.Side = asrBottom
+    Left = 8
+    Height = 19
+    Top = 239
+    Width = 58
+    Caption = 'Pointer'
+    OnChange = cbPointerClick
+    TabOrder = 5
+  end
+  object cbvarType: TComboBox
+    AnchorSideLeft.Control = LabelAddress
+    AnchorSideTop.Control = LabelType
+    AnchorSideTop.Side = asrBottom
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    Left = 8
+    Height = 23
+    Top = 95
+    Width = 247
+    Anchors = [akTop, akLeft, akRight]
+    BorderSpacing.Right = 8
+    ItemHeight = 15
+    ItemIndex = 3
+    Items.Strings = (
+      'Binary'
+      'Byte'
+      '2 Bytes'
+      '4 Bytes'
+      '8 Bytes'
+      'Float'
+      'Double'
+      'Text'
+      'Array of Bytes'
+    )
+    OnChange = cbvarTypeChange
+    Style = csDropDownList
+    TabOrder = 2
+    Text = '4 Bytes'
+  end
+  object HexAndSignedPanel: TPanel
+    AnchorSideLeft.Control = LabelAddress
+    AnchorSideTop.Control = cbvarType
+    AnchorSideTop.Side = asrBottom
+    Left = 8
+    Height = 24
+    Top = 118
+    Width = 264
+    Anchors = [akTop, akLeft, akRight]
+    AutoSize = True
+    BorderSpacing.Bottom = 10
+    BevelOuter = bvNone
+    ClientHeight = 24
+    ClientWidth = 264
+    TabOrder = 3
+    object cbHex: TCheckBox
+      AnchorSideLeft.Control = HexAndSignedPanel
+      AnchorSideTop.Control = HexAndSignedPanel
+      AnchorSideTop.Side = asrCenter
+      AnchorSideBottom.Side = asrBottom
+      Left = 0
+      Height = 19
+      Top = 3
+      Width = 89
+      BorderSpacing.Top = 2
+      BorderSpacing.Bottom = 2
+      Caption = 'Hexadecimal'
+      OnChange = cbHexChange
+      TabOrder = 0
+    end
+    object cbSigned: TCheckBox
+      AnchorSideLeft.Control = cbHex
+      AnchorSideLeft.Side = asrBottom
+      AnchorSideTop.Control = cbHex
+      AnchorSideBottom.Control = cbHex
+      AnchorSideBottom.Side = asrBottom
+      Left = 99
+      Height = 19
+      Top = 3
+      Width = 56
+      Anchors = [akTop, akLeft, akBottom]
+      BorderSpacing.Left = 10
+      Caption = 'Signed'
+      OnChange = cbSignedChange
+      TabOrder = 1
+    end
+  end
+  object pnlExtra: TPanel
+    AnchorSideLeft.Control = LabelAddress
+    AnchorSideTop.Control = HexAndSignedPanel
+    AnchorSideTop.Side = asrBottom
+    Left = 8
+    Height = 87
+    Top = 152
+    Width = 190
+    AutoSize = True
+    BevelOuter = bvNone
+    ClientHeight = 87
+    ClientWidth = 190
+    TabOrder = 4
+    Visible = False
+    OnResize = pnlExtraResize
+    object cbunicode: TCheckBox
+      AnchorSideTop.Control = edtSize
+      AnchorSideTop.Side = asrCenter
+      Left = 48
+      Height = 19
+      Top = 17
+      Width = 64
+      Caption = 'Unicode'
+      OnChange = cbunicodeChange
+      TabOrder = 1
+    end
+    object edtSize: TEdit
+      AnchorSideTop.Control = lengthlabel
+      AnchorSideTop.Side = asrBottom
+      Left = 0
+      Height = 23
+      Top = 15
+      Width = 45
+      TabOrder = 0
+      Text = '10'
+    end
+    object lengthlabel: TLabel
+      AnchorSideLeft.Control = pnlExtra
+      AnchorSideTop.Control = pnlExtra
+      Left = 0
+      Height = 15
+      Top = 0
+      Width = 37
+      Caption = 'Length'
+      ParentColor = False
+    end
+    object pnlBitinfo: TPanel
+      AnchorSideLeft.Control = pnlExtra
+      AnchorSideTop.Control = edtSize
+      AnchorSideTop.Side = asrBottom
+      Left = 0
+      Height = 49
+      Top = 38
+      Width = 160
+      AutoSize = True
+      BevelOuter = bvNone
+      ClientHeight = 49
+      ClientWidth = 160
+      TabOrder = 3
+      Visible = False
+      object Label4: TLabel
+        AnchorSideLeft.Control = RadioButton1
+        AnchorSideTop.Control = Label2
+        AnchorSideTop.Side = asrBottom
+        Left = 0
+        Height = 15
+        Top = 15
+        Width = 6
+        Caption = '0'
+        ParentColor = False
+      end
+      object Label5: TLabel
+        AnchorSideLeft.Control = RadioButton2
+        AnchorSideTop.Control = Label2
+        AnchorSideTop.Side = asrBottom
+        Left = 20
+        Height = 15
+        Top = 15
+        Width = 6
+        Caption = '1'
+        ParentColor = False
+      end
+      object Label6: TLabel
+        AnchorSideLeft.Control = RadioButton3
+        AnchorSideTop.Control = Label2
+        AnchorSideTop.Side = asrBottom
+        Left = 40
+        Height = 15
+        Top = 15
+        Width = 6
+        Caption = '2'
+        ParentColor = False
+      end
+      object Label7: TLabel
+        AnchorSideLeft.Control = RadioButton4
+        AnchorSideTop.Control = Label2
+        AnchorSideTop.Side = asrBottom
+        Left = 60
+        Height = 15
+        Top = 15
+        Width = 6
+        Caption = '3'
+        ParentColor = False
+      end
+      object Label8: TLabel
+        AnchorSideLeft.Control = RadioButton5
+        AnchorSideTop.Control = Label2
+        AnchorSideTop.Side = asrBottom
+        Left = 80
+        Height = 15
+        Top = 15
+        Width = 6
+        Caption = '4'
+        ParentColor = False
+      end
+      object Label9: TLabel
+        AnchorSideLeft.Control = RadioButton6
+        AnchorSideTop.Control = Label2
+        AnchorSideTop.Side = asrBottom
+        Left = 100
+        Height = 15
+        Top = 15
+        Width = 6
+        Caption = '5'
+        ParentColor = False
+      end
+      object Label10: TLabel
+        AnchorSideLeft.Control = RadioButton7
+        AnchorSideTop.Control = Label2
+        AnchorSideTop.Side = asrBottom
+        Left = 120
+        Height = 15
+        Top = 15
+        Width = 6
+        Caption = '6'
+        ParentColor = False
+      end
+      object Label11: TLabel
+        AnchorSideLeft.Control = RadioButton8
+        AnchorSideTop.Control = Label2
+        AnchorSideTop.Side = asrBottom
+        Left = 140
+        Height = 15
+        Top = 15
+        Width = 6
+        Caption = '7'
+        ParentColor = False
+      end
+      object Label2: TLabel
+        AnchorSideLeft.Control = pnlBitinfo
+        AnchorSideTop.Control = pnlBitinfo
+        Left = 0
+        Height = 15
+        Top = 0
+        Width = 41
+        Caption = 'Startbit:'
+        ParentColor = False
+      end
+      object RadioButton1: TRadioButton
+        AnchorSideTop.Control = Label4
+        AnchorSideTop.Side = asrBottom
+        Left = 0
+        Height = 19
+        Top = 30
+        Width = 20
+        Checked = True
+        TabOrder = 0
+        TabStop = True
+      end
+      object RadioButton2: TRadioButton
+        AnchorSideLeft.Control = RadioButton1
+        AnchorSideLeft.Side = asrBottom
+        AnchorSideTop.Control = Label4
+        AnchorSideTop.Side = asrBottom
+        Left = 20
+        Height = 19
+        Top = 30
+        Width = 20
+        TabOrder = 1
+      end
+      object RadioButton3: TRadioButton
+        AnchorSideLeft.Control = RadioButton2
+        AnchorSideLeft.Side = asrBottom
+        AnchorSideTop.Control = Label4
+        AnchorSideTop.Side = asrBottom
+        Left = 40
+        Height = 19
+        Top = 30
+        Width = 20
+        TabOrder = 2
+      end
+      object RadioButton4: TRadioButton
+        AnchorSideLeft.Control = RadioButton3
+        AnchorSideLeft.Side = asrBottom
+        AnchorSideTop.Control = Label4
+        AnchorSideTop.Side = asrBottom
+        Left = 60
+        Height = 19
+        Top = 30
+        Width = 20
+        TabOrder = 3
+      end
+      object RadioButton5: TRadioButton
+        AnchorSideLeft.Control = RadioButton4
+        AnchorSideLeft.Side = asrBottom
+        AnchorSideTop.Control = Label4
+        AnchorSideTop.Side = asrBottom
+        Left = 80
+        Height = 19
+        Top = 30
+        Width = 20
+        TabOrder = 4
+      end
+      object RadioButton6: TRadioButton
+        AnchorSideLeft.Control = RadioButton5
+        AnchorSideLeft.Side = asrBottom
+        AnchorSideTop.Control = Label4
+        AnchorSideTop.Side = asrBottom
+        Left = 100
+        Height = 19
+        Top = 30
+        Width = 20
+        TabOrder = 5
+      end
+      object RadioButton7: TRadioButton
+        AnchorSideLeft.Control = RadioButton6
+        AnchorSideLeft.Side = asrBottom
+        AnchorSideTop.Control = Label4
+        AnchorSideTop.Side = asrBottom
+        Left = 120
+        Height = 19
+        Top = 30
+        Width = 20
+        TabOrder = 6
+      end
+      object RadioButton8: TRadioButton
+        AnchorSideLeft.Control = RadioButton7
+        AnchorSideLeft.Side = asrBottom
+        AnchorSideTop.Control = Label4
+        AnchorSideTop.Side = asrBottom
+        Left = 140
+        Height = 19
+        Top = 30
+        Width = 20
+        TabOrder = 7
+      end
+    end
+    object cbCodePage: TCheckBox
+      AnchorSideLeft.Control = cbunicode
+      AnchorSideLeft.Side = asrBottom
+      AnchorSideTop.Control = cbunicode
+      Left = 116
+      Height = 19
+      Top = 17
+      Width = 74
+      BorderSpacing.Left = 4
+      Caption = 'Codepage'
+      OnChange = cbCodePageChange
+      TabOrder = 2
+    end
+  end
+  object editDescription: TEdit
+    AnchorSideLeft.Control = LabelAddress
+    AnchorSideTop.Control = LabelDescription
+    AnchorSideTop.Side = asrBottom
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    Left = 8
+    Height = 23
+    Top = 55
+    Width = 247
+    Anchors = [akTop, akLeft, akRight]
+    BorderSpacing.Right = 8
+    TabOrder = 1
+  end
+  object LabelDescription: TLabel
+    AnchorSideLeft.Control = LabelAddress
+    AnchorSideTop.Control = editAddress
+    AnchorSideTop.Side = asrBottom
+    Left = 8
+    Height = 15
+    Top = 40
+    Width = 60
+    BorderSpacing.Top = 2
+    Caption = 'Description'
+    ParentColor = False
+  end
+  object LabelType: TLabel
+    AnchorSideLeft.Control = LabelAddress
+    AnchorSideTop.Control = editDescription
+    AnchorSideTop.Side = asrBottom
+    Left = 8
+    Height = 15
+    Top = 80
+    Width = 24
+    BorderSpacing.Top = 2
+    Caption = 'Type'
+    ParentColor = False
+  end
+  object Timer1: TTimer
+    OnTimer = Timer1Timer
+    Left = 128
+    Top = 40
+  end
+  object Timer2: TTimer
+    Interval = 1
+    OnTimer = Timer2Timer
+    Left = 64
+    Top = 48
+  end
+  object pmOffset: TPopupMenu
+    Images = caImageList
+    OnPopup = pmOffsetPopup
+    Left = 112
+    Top = 88
+    object miCut: TMenuItem
+      Caption = 'Cut'
+      ImageIndex = 2
+      OnClick = miCutClick
+    end
+    object miCopy: TMenuItem
+      Caption = 'Copy'
+      ImageIndex = 0
+      OnClick = miCopyClick
+    end
+    object miPaste: TMenuItem
+      Caption = 'Paste'
+      ImageIndex = 1
+      OnClick = miPasteClick
+    end
+    object miSeparator: TMenuItem
+      Caption = '-'
+    end
+    object miAddOffsetAbove: TMenuItem
+      Caption = 'Add Offset Above'
+      OnClick = miAddOffsetAboveClick
+    end
+    object miAddOffsetBelow: TMenuItem
+      Caption = 'Add Offset Below'
+      OnClick = miAddOffsetBelowClick
+    end
+    object miRemoveOffset: TMenuItem
+      Caption = 'Remove Offset'
+      OnClick = miRemoveOffsetClick
+    end
+    object miUpdateSeparator: TMenuItem
+      Caption = '-'
+    end
+    object miUpdateOnReinterpretOnly: TMenuItem
+      AutoCheck = True
+      Caption = 'Only update the offset when the memory record gets reinterpreted'
+      OnClick = miUpdateOnReinterpretOnlyClick
+    end
+    object miUpdateAfterInterval: TMenuItem
+      AutoCheck = True
+      Caption = 'Only update the offset after a specific amount of time'
+      OnClick = miUpdateAfterIntervalClick
+    end
+  end
+  object pmPointerRow: TPopupMenu
+    Images = caImageList
+    Left = 152
+    Top = 184
+    object miAddAddressToList: TMenuItem
+      Caption = 'Add this address to the list'
+      ImageIndex = 3
+      OnClick = miAddAddressToListClick
+    end
+    object miCopyAddressToClipboard: TMenuItem
+      Caption = 'Copy this address to Clipboard'
+      ImageIndex = 0
+      OnClick = miCopyAddressToClipboardClick
+    end
+  end
+  object caImageList: TImageList
+    Left = 176
+    Top = 40
+    Bitmap = {
+      4C69040000001000000010000000606060C4808080E0808080E0808080E08080
+      80E0808080E0808080E0777777E098989856FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00808080E0FFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFF828282F6BCBCBC33FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00808080E0FFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFEFEFEFF565656DCFFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00808080E0FFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF6F6F6FF0FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00808080E0F9F9F9FFE1E1E1FFE1E1E1FFB7B7
+      B7FF6D6D6DFF7F7F7FFF7F7F7FFF7F7F7FFF606060FC676767C8676767C85555
+      55B6E8E8E80FFFFFFF00FFFFFF00808080E0FFFFFFFFFCFCFCFFFCFCFCFFBDBD
+      BDFFC0C0C0FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFECEC
+      ECFF5A5A5AB7F8F8F803FFFFFF00808080E0F9F9F9FFE1E1E1FFE1E1E1FFA9A9
+      A9FFC0C0C0FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFD5D5D5FF7F7F7F78FFFFFF00808080E0F8F8F8FFDEDEDEFFDEDEDEFFA6A6
+      A6FFC0C0C0FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFF77777798FFFFFF00808080E0F8F8F8FFDEDEDEFFDEDEDEFFA6A6
+      A6FFC0C0C0FFF6F6F6FFEFEFEFFFEFEFEFFFEFEFEFFFEFEFEFFFEFEFEFFFF0F0
+      F0FFFFFFFFFF77777798FFFFFF00808080E0FFFFFFFFFFFFFFFFFFFFFFFFC0C0
+      C0FFC0C0C0FFF8F8F8FFF2F2F2FFF2F2F2FFF2F2F2FFF2F2F2FFF2F2F2FFF3F3
+      F3FFFFFFFFFF77777798FFFFFF00808080E0FFFFFFFFFFFFFFFFFFFFFFFFC0C0
+      C0FFC0C0C0FFECECECFFDEDEDEFFDEDEDEFFDEDEDEFFDEDEDEFFDEDEDEFFE0E0
+      E0FFFFFFFFFF77777798FFFFFF005C5C5CBD777777D8777777D8777777D85959
+      59E2C0C0C0FFEEEEEEFFE1E1E1FFE1E1E1FFE1E1E1FFE1E1E1FFE1E1E1FFE3E3
+      E3FFFFFFFFFF77777798FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00C0C0
+      C040C0C0C0FFF2F2F2FFE8E8E8FFE8E8E8FFE8E8E8FFE8E8E8FFE8E8E8FFE9E9
+      E9FFFFFFFFFF77777798FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00C0C0
+      C040C0C0C0FFFCFCFCFFF9F9F9FFF9F9F9FFF9F9F9FFF9F9F9FFF9F9F9FFF9F9
+      F9FFFFFFFFFF77777798FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00C0C0
+      C040C0C0C0FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFF77777798FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00C0C0
+      C03C535353F06F6F6FF06F6F6FF06F6F6FF06F6F6FF06F6F6FF06F6F6FF06F6F
+      6FF06F6F6FF06A6A6A8EFFFFFF00F8F8F803C0C0C030C0C0C030A4A5A4539A9B
+      9A809A9B9A809A9B9A809A9B9A80A4A5A453C0C0C030C0C0C030F8F8F803FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00E0E0E010797B00FF959700FF676913FF696F
+      69FF696F69FF696F69FF696F69FF676913FF959700FF797B00FFE0E0E010FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00E0E0E010818300FF748B59FF7B956BFF7489
+      73FF748973FF748973FF748973FF7B956BFF748B59FF818300FFE0E0E010FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00E0E0E010818300FF99C097FFCCFFC9FFCCFF
+      C9FFCCFFC9FFCCFFC9FFCCFFC9FFCCFFC9FF99C097FF818300FFE0E0E010FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00E0E0E010818300FF99C097FFCCFFC9FFCCFF
+      C9FFCCFFC9FFCCFFC9FFCCFFC9FFCCFFC9FF99C097FF818300FFE0E0E010FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00E0E0E010818300FF99C097FFCCFFC9FFCCFF
+      C9FFCCFFC9FF96BB94FF677F66FF677F66FF4F614EFF444507FF5B5B5B8F6767
+      6788B0B0B03BFFFFFF00FFFFFF00E0E0E010818300FF99C097FFCCFFC9FFCCFF
+      C9FFCCFFC9FF668064FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFF737373EDCCCCCC24FFFFFF00E0E0E010818300FF99C097FFCCFFC9FFCCFF
+      C9FFCCFFC9FF668064FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFAFAFAFF5E5E5EC4FFFFFF00E0E0E010818300FF99C097FFCCFFC9FFCCFF
+      C9FFCCFFC9FF668064FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFF777777D8FFFFFF00E0E0E010818300FF99C097FFCCFFC9FFCCFF
+      C9FFCCFFC9FF668064FFFEFEFEFFE5E5E5FFE5E5E5FFE5E5E5FFE5E5E5FFE5E5
+      E5FFF5F5F5FF777777D8FFFFFF00E0E0E010818300FF99C097FFCCFFC9FFCCFF
+      C9FFCCFFC9FF668064FFFEFEFEFFE5E5E5FFE5E5E5FFE5E5E5FFE5E5E5FFE5E5
+      E5FFF5F5F5FF777777D8FFFFFF00E0E0E010818300FF8BAD89FFB9E7B6FFB9E7
+      B6FFB9E7B6FF5C735BFFFEFEFEFFE5E5E5FFE5E5E5FFE5E5E5FFE5E5E5FFE5E5
+      E5FFF5F5F5FF777777D8FFFFFF00E0E0E010818300FF868800FF868800FF8688
+      00FF868800FF434400FFFEFEFEFFE5E5E5FFE5E5E5FFE5E5E5FFE5E5E5FFE5E5
+      E5FFF5F5F5FF777777D8FFFFFF00F0F0F008A0A08080A7A88080A7A88080A7A8
+      8080A7A88080535440C0FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFF777777D8FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF0080808080EFEFEFFFEFEFEFFFEFEFEFFFEFEFEFFFEFEFEFFFEFEF
+      EFFFEFEFEFFF727272D8FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00C0C0C03880808070808080708080807080808070808080708080
+      8070808080709090905EFFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00B5AAA151965827E6713E16F29C7555AFD2D1
+      D023FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00C0BD
+      B937AC8558ADAA8152B3C1BEB934B47340D59C918869F8F8F803ADA39C568A53
+      28E1D8D8D81AFFFFFF00FFFFFF00FFFFFF00FFFFFF00DCDCDC1A9D7D58A2DF8D
+      2CFEFFA133FFE08D2CFE8D785F8FA3734DB5A79B9164FFFFFF00FFFFFF00AB88
+      6B9495765D9BF8F8F803FFFFFF00F0F0F008A3927D7AC47D2AF4FFA133FFF49A
+      30FFA57741C9C0BDB937FFFFFF00D0CECC27845027DDA68F7E7AA8A29E4FB775
+      41D3F88931FFA76A3BD19A90856FAD7432DEFD9F32FFFEA032FFB47830E6A79D
+      915EFCFCFC01FFFFFF00FFFFFF00FFFFFF00E0E0E015AD937F7FAC7B55ADA67A
+      57ACB96725FCA86522FFB4752DFFFFA133FFCE832CF8A18C7386ECECEC0CFFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00E0E0E015AD987F80AC8455ADA682
+      57ACD8882BFCEF9730FF98662CFFB26A23FFB86828F8A1877386ECECEC0CFFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00D0CECC27855A27DDA6937E7AA8A39E4FB781
+      41D3F89D31FFA7753BD1998F856FAD6832DEFD8C32FFFE8D32FFB46B30E6A79B
+      915EFCFCFC01FFFFFF00FFFFFF00A37B4DB5A79D9164FFFFFF00FFFFFF00AB8E
+      6B94957C5D9BF8F8F803FFFFFF00F0F0F008A38E7D7AC46E2AF4FF8D33FFF487
+      30FFA56D41C9C0BCB938FFFFFF00B47F40D59C938869F8F8F803ADA59C568A5D
+      28E1D8D8D81AFFFFFF00FFFFFF00FFFFFF00FFFFFF00DCDCDC1A9D7758A2DF7B
+      2CFEFF8D33FFE07C2CFE8D735F8FB5ACA151966327E5714716F29C7B55AFD2D1
+      D023FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00C0BC
+      B937AC7D58ADAA7952B3C1BDB934FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFF4E90EFFA64CE0FFA64CE0FFF4E90EFFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFF3E610FF9933FFFF9933FFFFF3E610FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFF3E610FF9933FFFF9933FFFFF3E610FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFF3E610FF9933FFFF9933FFFFF3E610FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFF4E90EFFF3E610FFF3
+      E610FFF3E610FFE7D01FFF9933FFFF9933FFFFE7D01FFFF3E610FFF3E610FFF3
+      E610FFF4E90EFFFFFF00FFFFFF00FFFFFF00FFFFFF00FFA64CE0FF9933FFFF99
+      33FFFF9933FFFF9933FFFF9933FFFF9933FFFF9933FFFF9933FFFF9933FFFF99
+      33FFFFA64CE0FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFA64CE0FF9933FFFF99
+      33FFFF9933FFFF9933FFFF9933FFFF9933FFFF9933FFFF9933FFFF9933FFFF99
+      33FFFFA64CE0FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFF4E90EFFF3E610FFF3
+      E610FFF3E610FFE7D01FFF9933FFFF9933FFFFE7D01FFFF3E610FFF3E610FFF3
+      E610FFF4E90EFFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFF3E610FF9933FFFF9933FFFFF3E610FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFF3E610FF9933FFFF9933FFFFF3E610FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFF3E610FF9933FFFF9933FFFFF3E610FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFF4E90EFFA64CE0FFA64CE0FFF4E90EFFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00
+    }
+  end
+  object pmValue: TPopupMenu
+    Left = 184
+    object miCopyFinalAddressToClipboard: TMenuItem
+      Caption = 'Copy this address to Clipboard'
+      OnClick = miCopyFinalAddressToClipboardClick
+    end
+    object miCopyValueToClipboard: TMenuItem
+      Caption = 'Copy this value to Clipboard'
+      OnClick = miCopyValueToClipboardClick
+    end
+  end
+end

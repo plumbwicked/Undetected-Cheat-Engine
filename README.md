@@ -15,6 +15,6 @@ Deleted Websites
 
 Added Unknowncheats.me link to icon
 
-PRECompiled 64 / 32 release / debug versions in bin
+
 
 

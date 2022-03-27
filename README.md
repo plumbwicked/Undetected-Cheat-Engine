@@ -34,8 +34,8 @@ Build Instructions
 Download and instal these 2 files
 
 1. lazarus-2.0.10-fpc-3.2.0-win64.exe
-2. 
-3. lazarus-2.0.10-fpc-3.2.0-cross-i386-win32-win64.exe
+
+2. lazarus-2.0.10-fpc-3.2.0-cross-i386-win32-win64.exe
 
 
 at https://sourceforge.net/projects/lazarus/files/Lazarus%20Windows%2064%20bits/Lazarus%202.0.10/

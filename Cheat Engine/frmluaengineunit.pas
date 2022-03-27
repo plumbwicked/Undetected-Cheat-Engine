@@ -1532,7 +1532,7 @@ end;
 
 procedure TfrmLuaEngine.reloadHighlighterSettings;
 begin
-  synhighlighter.LoadFromRegistry(HKEY_CURRENT_USER, '\Software\Cheat Engine\Lua Highlighter'+darkmodestring);
+  synhighlighter.LoadFromRegistry(HKEY_CURRENT_USER, '\Software\Game FuqR\Lua Highlighter'+darkmodestring);
 end;
 
 procedure TfrmLuaEngine.MenuItem15Click(Sender: TObject);
@@ -1540,11 +1540,11 @@ var
   frmHighlighterEditor: TfrmHighlighterEditor;
 begin
   frmHighlighterEditor:=TfrmHighlighterEditor.create(self);
-  synhighlighter.LoadFromRegistry(HKEY_CURRENT_USER, '\Software\Cheat Engine\Lua Highlighter'+darkmodestring);
+  synhighlighter.LoadFromRegistry(HKEY_CURRENT_USER, '\Software\Game FuqR\Lua Highlighter'+darkmodestring);
   frmHighlighterEditor.highlighter:=synhighlighter;
   if frmHighlighterEditor.showmodal=mrok then
   begin
-    synhighlighter.SaveToRegistry(HKEY_CURRENT_USER, '\Software\Cheat Engine\Lua Highlighter'+darkmodestring);
+    synhighlighter.SaveToRegistry(HKEY_CURRENT_USER, '\Software\Game FuqR\Lua Highlighter'+darkmodestring);
     ReloadAllAutoInjectHighlighters; //AA uses lua too
     ReloadAllLuaEngineHighlighters;
   end;

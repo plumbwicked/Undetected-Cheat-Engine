@@ -29,7 +29,7 @@ in directory where your program translation files are placed.
 }
 
 {
-Modified for Cheat Engine use because filenames differ between 32 and 64-bit (also different po file, but just pick the one with the most data...)
+Modified for Game FuqR use because filenames differ between 32 and 64-bit (also different po file, but just pick the one with the most data...)
 
 }
 

@@ -1512,7 +1512,7 @@ begin
     else
       usedtempdir:=GetTempDir;
 
-    symbolpath:=usedtempdir+'Cheat Engine Symbols'+pathdelim;
+    symbolpath:=usedtempdir+'Game FuqR Symbols'+pathdelim;
     ForceDirectory(symbolpath);
 
     InitializeSQLite;
@@ -6014,7 +6014,7 @@ begin
   reg:=Tregistry.Create; //do this as the settings may not have been loaded yet
   try
     Reg.RootKey := HKEY_CURRENT_USER;
-    if Reg.OpenKey('\Software\Cheat Engine',false) then
+    if Reg.OpenKey('\Software\Game FuqR',false) then
     begin
       if reg.ValueExists('Don''t use tempdir') then
         dontusetempdir:=reg.ReadBool('Don''t use tempdir');
@@ -6060,7 +6060,7 @@ begin
   if usedtempdir[length(usedtempdir)]<>PathDelim then
     usedtempdir:=usedtempdir+PathDelim;
 
-  databasepath:=usedtempdir+'Cheat Engine Symbols'+pathdelim+'structures.sqlite';
+  databasepath:=usedtempdir+'Game FuqR Symbols'+pathdelim+'structures.sqlite';
 end;
 
 initialization

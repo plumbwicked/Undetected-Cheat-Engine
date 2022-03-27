@@ -5,7 +5,7 @@ unit windows7taskbar;
 interface
 
 {$IFDEF windows}
-//credits to http://alex.ciobanu.org/?p=215
+
 
 uses Forms,win32int, win32proc;
 

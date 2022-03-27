@@ -52,7 +52,7 @@ resourcestring
   rsAreYouSureYouWantToDelete = 'Are you sure you want to delete %s?';
   rsThisIsNotAValidStructureFile = 'This is not a valid structure file';
   rsWrongVersion = 'This structure file was generated with a newer version of '
-    +'Cheat Engine. (That means there''s more than likely a new version so '
+    +'Game FuqR. (That means there''s more than likely a new version so '
     +'please update....)';
   rsUnkownFileExtension = 'Unknown file extension';
   rsAreYouSureYouWantToRemoveAllStructures = 'Are you sure you want to remove '

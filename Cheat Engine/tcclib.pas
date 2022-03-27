@@ -1076,15 +1076,15 @@ begin
   {$ifdef windows}
 
   {$ifdef cpu32}
-  module:=LoadLibrary({$ifdef standalonetest}'D:\git\cheat-engine\Cheat Engine\bin\'+{$endif}'tcc32-32.dll'); //generates 32-bit code
+  module:=LoadLibrary({$ifdef standalonetest}'D:\git\cheat-engine\Game FuqR\bin\'+{$endif}'tcc32-32.dll'); //generates 32-bit code
   {$else}
   if target=x86_64 then
-    module:=loadlibrary({$ifdef standalonetest}'D:\git\cheat-engine\Cheat Engine\bin\'+{$endif}'tcc64-64.dll')
+    module:=loadlibrary({$ifdef standalonetest}'D:\git\cheat-engine\Game FuqR\bin\'+{$endif}'tcc64-64.dll')
   else
-    module:=loadlibrary({$ifdef standalonetest}'D:\git\cheat-engine\Cheat Engine\bin\'+{$endif}'tcc64-32.dll'); //generates 32-bit code
+    module:=loadlibrary({$ifdef standalonetest}'D:\git\cheat-engine\Game FuqR\bin\'+{$endif}'tcc64-32.dll'); //generates 32-bit code
   {$endif}
   {$else}
-  module:=loadlibrary({$ifdef standalonetest}'D:\git\cheat-engine\Cheat Engine\bin\'+{$endif}'libtcc.dylib');
+  module:=loadlibrary({$ifdef standalonetest}'D:\git\cheat-engine\Game FuqR\bin\'+{$endif}'libtcc.dylib');
   if module=0 then
   begin
     p:=ExtractFilePath(application.ExeName)+'libtcc.dylib';
@@ -1244,11 +1244,11 @@ var
   params: string;
   i: integer;
 begin
-  add_include_path(s,{$ifdef standalonetest}'D:\git\cheat-engine\Cheat Engine\bin\'+{$endif}'include');
+  add_include_path(s,{$ifdef standalonetest}'D:\git\cheat-engine\Game FuqR\bin\'+{$endif}'include');
   {$ifdef windows}
-  add_include_path(s,{$ifdef standalonetest}'D:\git\cheat-engine\Cheat Engine\bin\'+{$endif}'include\winapi');
+  add_include_path(s,{$ifdef standalonetest}'D:\git\cheat-engine\Game FuqR\bin\'+{$endif}'include\winapi');
   {$endif}
-  add_include_path(s,{$ifdef standalonetest}'D:\git\cheat-engine\Cheat Engine\bin\'+{$endif}'include\sys');
+  add_include_path(s,{$ifdef standalonetest}'D:\git\cheat-engine\Game FuqR\bin\'+{$endif}'include\sys');
   add_include_path(s,pchar(ExtractFilePath(application.exename)+'include'));
   {$ifdef windows}
   add_include_path(s,pchar(ExtractFilePath(application.exename)+'include\winapi'));

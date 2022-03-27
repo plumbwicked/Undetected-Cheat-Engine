@@ -261,7 +261,7 @@ begin
     if MultilineInputQuery(rsRPIpList,rsRPEnterTheIpAddressesToNotifyExplicitly, iplist) then  //save the new ip list
     begin
       Reg.RootKey := HKEY_CURRENT_USER;
-      if Reg.OpenKey('\Software\Cheat Engine',true) then
+      if Reg.OpenKey('\Software\Game FuqR',true) then
         reg.WriteString('Worker IP List', iplist.text);
     end;
 
@@ -719,7 +719,7 @@ begin
   reg:=tregistry.create;
   try
     Reg.RootKey := HKEY_CURRENT_USER;
-    if Reg.OpenKey('\Software\Cheat Engine',false) then
+    if Reg.OpenKey('\Software\Game FuqR',false) then
     begin
       if reg.ValueExists('Worker IP List') then
         iplist.Text:=reg.ReadString('Worker IP List');

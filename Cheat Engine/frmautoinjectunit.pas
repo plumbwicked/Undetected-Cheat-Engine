@@ -413,8 +413,8 @@ resourcestring
   rsLUAScript = 'LUA Script';
   rsGNUAScript = 'GNU Assembler Script';
   rsWriteCode = 'Write code';
-  rsCEAFilter = 'Cheat Engine Assembly (*.CEA)|*.CEA|All Files ( *.* )|*.*';
-  rsCEGAFilter = 'Cheat Engine GNU Assembly (*.CEGA)|*.CEGA|All Files ( *.* )|*.*';
+  rsCEAFilter = 'Game FuqR Assembly (*.CEA)|*.CEA|All Files ( *.* )|*.*';
+  rsCEGAFilter = 'Game FuqR GNU Assembly (*.CEGA)|*.CEGA|All Files ( *.* )|*.*';
   rsAutoAssembler = 'Auto assembler';
   rsCodeNeedsEnableAndDisable = 'The code needs an [ENABLE] and a [DISABLE] section if you want to use this script as a table entry';
   rsNotAllCodeIsInjectable = 'Not all code is injectable.'#13#10'%s'#13#10'Are you sure you want to edit it to this?';
@@ -1647,7 +1647,7 @@ begin
 
     reg:=tregistry.create;
     try
-      if reg.OpenKey('\Software\Cheat Engine\Auto Assembler\',false) then
+      if reg.OpenKey('\Software\Game FuqR\Auto Assembler\',false) then
       begin
         if reg.valueexists('Font.name') then
           assemblescreen.Font.Name:=reg.readstring('Font.name');
@@ -2338,7 +2338,7 @@ begin
 
   reg:=tregistry.create;
   try
-    if reg.OpenKey('\Software\Cheat Engine\Auto Assembler\',false) then
+    if reg.OpenKey('\Software\Game FuqR\Auto Assembler\',false) then
     begin
       if reg.valueexists('Show Line Numbers') then
         assemblescreen.Gutter.linenumberpart.visible:=reg.ReadBool('Show Line Numbers');
@@ -2668,7 +2668,7 @@ begin
         //save these settings
         reg:=tregistry.create;
         try
-          if reg.OpenKey('\Software\Cheat Engine\Auto Assembler\',true) then
+          if reg.OpenKey('\Software\Game FuqR\Auto Assembler\',true) then
           begin
             reg.WriteString('Font.name', assemblescreen.Font.Name);
             reg.WriteInteger('Font.size', assemblescreen.Font.size);
@@ -2843,7 +2843,7 @@ begin
   end;
 end;
 
-// \/   http://forum.cheatengine.org/viewtopic.php?t=566415 (jgoemat and some mods by db)
+
 procedure GenerateFullInjectionScript(Script: tstrings; address: string; commentRadius: integer=10);
 var
   originalcode: array of string;
@@ -2915,7 +2915,7 @@ begin
   ReadProcessMemory(processhandle, pointer(a), @originalbytes[0], codesize, br);
 
 
-  // same as menu option "Cheat Engine framework code", make sure we
+  // same as menu option "Game FuqR framework code", make sure we
   // have enable and disable
   getenableanddisablepos(script,enablepos,disablepos);
 
@@ -3076,9 +3076,9 @@ end;
 
 procedure TfrmAutoInject.reloadHighlighterSettings;
 begin
-  LuaHighlighter.LoadFromRegistry(HKEY_CURRENT_USER, '\Software\Cheat Engine\Lua Highlighter'+darkmodestring);
-  AAHighlighter.LoadFromRegistry(HKEY_CURRENT_USER, '\Software\Cheat Engine\AA Highlighter'+darkmodestring);
-  CPPHighlighter.LoadFromRegistry(HKEY_CURRENT_USER, '\Software\Cheat Engine\CPP Highlighter'+darkmodestring);
+  LuaHighlighter.LoadFromRegistry(HKEY_CURRENT_USER, '\Software\Game FuqR\Lua Highlighter'+darkmodestring);
+  AAHighlighter.LoadFromRegistry(HKEY_CURRENT_USER, '\Software\Game FuqR\AA Highlighter'+darkmodestring);
+  CPPHighlighter.LoadFromRegistry(HKEY_CURRENT_USER, '\Software\Game FuqR\CPP Highlighter'+darkmodestring);
 end;
 
 procedure TfrmAutoInject.MenuItem2Click(Sender: TObject);
@@ -3086,11 +3086,11 @@ var
   frmHighlighterEditor: TfrmHighlighterEditor;
 begin
   frmHighlighterEditor:=TfrmHighlighterEditor.create(self);
-  LuaHighlighter.LoadFromRegistry(HKEY_CURRENT_USER, '\Software\Cheat Engine\Lua Highlighter'+darkmodestring);
+  LuaHighlighter.LoadFromRegistry(HKEY_CURRENT_USER, '\Software\Game FuqR\Lua Highlighter'+darkmodestring);
   frmHighlighterEditor.highlighter:=LuaHighlighter;
   if frmHighlighterEditor.showmodal=mrok then
   begin
-    LuaHighlighter.SaveToRegistry(HKEY_CURRENT_USER, '\Software\Cheat Engine\Lua Highlighter'+darkmodestring);
+    LuaHighlighter.SaveToRegistry(HKEY_CURRENT_USER, '\Software\Game FuqR\Lua Highlighter'+darkmodestring);
     reloadHighlighterSettings;
     ReloadAllLuaEngineHighlighters;
   end;
@@ -3104,11 +3104,11 @@ var
   frmHighlighterEditor: TfrmHighlighterEditor;
 begin
   frmHighlighterEditor:=TfrmHighlighterEditor.create(self);
-  AAHighlighter.LoadFromRegistry(HKEY_CURRENT_USER, '\Software\Cheat Engine\AA Highlighter'+darkmodestring);
+  AAHighlighter.LoadFromRegistry(HKEY_CURRENT_USER, '\Software\Game FuqR\AA Highlighter'+darkmodestring);
   frmHighlighterEditor.highlighter:=AAHighlighter;
   if frmHighlighterEditor.showmodal=mrok then
   begin
-    AAHighlighter.SaveToRegistry(HKEY_CURRENT_USER, '\Software\Cheat Engine\AA Highlighter'+darkmodestring);
+    AAHighlighter.SaveToRegistry(HKEY_CURRENT_USER, '\Software\Game FuqR\AA Highlighter'+darkmodestring);
     ReloadAllAutoInjectHighlighters;
   end;
 
@@ -3120,12 +3120,12 @@ var
   frmHighlighterEditor: TfrmHighlighterEditor;
 begin
   frmHighlighterEditor:=TfrmHighlighterEditor.create(self);
-  CPPHighlighter.loadFromRegistryDefault(HKEY_CURRENT_USER, '\Software\Cheat Engine\CPP Highlighter'+darkmodestring);
+  CPPHighlighter.loadFromRegistryDefault(HKEY_CURRENT_USER, '\Software\Game FuqR\CPP Highlighter'+darkmodestring);
 
   frmHighlighterEditor.highlighter:=CPPHighlighter;
   if frmHighlighterEditor.showmodal=mrok then
   begin
-    CPPHighlighter.SaveToRegistry(HKEY_CURRENT_USER, '\Software\Cheat Engine\CPP Highlighter'+darkmodestring);
+    CPPHighlighter.SaveToRegistry(HKEY_CURRENT_USER, '\Software\Game FuqR\CPP Highlighter'+darkmodestring);
     ReloadAllAutoInjectHighlighters;
   end;
 
@@ -3208,7 +3208,7 @@ begin
   setlength(originalbytes, codesize);
   ReadProcessMemory(processhandle, pointer(a), @originalbytes[0], codesize, br);
 
-  // same as menu option "Cheat Engine framework code", make sure we
+  // same as menu option "Game FuqR framework code", make sure we
   // have enable and disable
   getenableanddisablepos(script,enablepos,disablepos);
 
@@ -3747,7 +3747,7 @@ begin
   result := true;
 end;
 
-// /\   http://forum.cheatengine.org/viewtopic.php?t=566415 (jgoemat and some mods by db)
+
 
 function lua_getTabScript(L: PLua_State): integer; cdecl;
 var

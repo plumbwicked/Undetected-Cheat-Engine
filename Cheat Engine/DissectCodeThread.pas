@@ -317,7 +317,7 @@ begin
   fs:=tfilestream.create(filename, fmCreate);
 
   try
-    fs.WriteDWord($ce00dc02);  //cheat engine dissect code v1
+    fs.WriteDWord($ce00dc02);  //Game FuqR dissect code v1
     saveModuleListToStream(fs);
     saveListToStream(calllist, fs);
     saveListToStream(unconditionaljumplist, fs);

@@ -608,7 +608,7 @@ begin
 
   reg:=tregistry.create;
   try
-    if reg.OpenKey('\Software\Cheat Engine\Process Window\Font'+darkmodestring,false) then
+    if reg.OpenKey('\Software\Game FuqR\Process Window\Font'+darkmodestring,false) then
       LoadFontFromRegistry(processlist.Font, reg)
     else
       processlist.font.color:=colorset.FontColor;
@@ -656,7 +656,7 @@ begin
 
     reg:=tregistry.create;
     try
-      if reg.OpenKey('\Software\Cheat Engine\Process Window\Font'+darkmodestring,true) then
+      if reg.OpenKey('\Software\Game FuqR\Process Window\Font'+darkmodestring,true) then
         SaveFontToRegistry(FontDialog1.Font, reg);
 
 

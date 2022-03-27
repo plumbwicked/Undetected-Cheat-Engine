@@ -1,4 +1,4 @@
-// Copyright Cheat Engine. All Rights Reserved.
+// Copyright Game FuqR. All Rights Reserved.
 
 unit memscan;
 
@@ -829,7 +829,7 @@ resourcestring
   rsMSNothingToScanFor = 'Nothing to scan for';
   rsMStupidAlignsize = 'Stupid alignsize';
   rsMSCustomTypeIsNil = 'Custom type is nil';
-  rsMSTheScanWasForcedToTerminateSubsequentScansMayNotFunctionProperlyEtc = 'The scan was forced to terminate. Subsequent scans may not function properly. It''s recommended to restart Cheat Engine';
+  rsMSTheScanWasForcedToTerminateSubsequentScansMayNotFunctionProperlyEtc = 'The scan was forced to terminate. Subsequent scans may not function properly. It''s recommended to restart Game FuqR';
   rsThread = 'thread ';
   rsMSPointerTypeNotRecognised = 'Pointer type not recognised: ';
 //===============Local functions================//
@@ -8183,7 +8183,7 @@ begin
 
   usedtempdir:=IncludeTrailingPathDelimiter(usedtempdir);
 
-  fScanResultFolder:=usedtempdir+'Cheat Engine'+pathdelim;
+  fScanResultFolder:=usedtempdir+'Game FuqR'+pathdelim;
 
  // OutputDebugString('fScanResultFolder='+fScanResultFolder);
 
@@ -8249,7 +8249,7 @@ begin
         usedtempdir:=GetTempDir;
 
 
-      if FindFirst(usedtempdir+'Cheat Engine'+pathdelim+'{*}',  faDirectory , info)=0 then
+      if FindFirst(usedtempdir+'Game FuqR'+pathdelim+'{*}',  faDirectory , info)=0 then
       begin
         repeat
           if (info.Attr and faDirectory) = faDirectory then
@@ -8257,7 +8257,7 @@ begin
             if length(info.Name)>5 then
             begin
               //if found, delete them if older than 2 days
-              f:=usedtempdir+'Cheat Engine'+pathdelim+info.name;
+              f:=usedtempdir+'Game FuqR'+pathdelim+info.name;
 
 
               age:=info.time; //FileAge('"'+f+'"');

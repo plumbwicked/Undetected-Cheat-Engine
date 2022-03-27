@@ -240,7 +240,7 @@ initialization
     reg:=tregistry.create;
     try
       Reg.RootKey := HKEY_CURRENT_USER;
-      if Reg.OpenKey('\Software\Cheat Engine',false) then
+      if Reg.OpenKey('\Software\Game FuqR',false) then
       begin
         if reg.ValueExists('Disable DarkMode Support') and
            reg.ReadBool('Disable DarkMode Support') then exit;

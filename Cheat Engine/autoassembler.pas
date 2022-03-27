@@ -1,4 +1,4 @@
-// Copyright Cheat Engine. All Rights Reserved.
+// Copyright Game FuqR. All Rights Reserved.
 
 unit autoassembler;
 
@@ -1600,7 +1600,7 @@ begin
   symhandler.waitforsymbolsloaded(true);
 
 {$ifndef jni}
-  if pluginhandler=nil then exit; //Error. Cheat Engine is not properly configured
+  if pluginhandler=nil then exit; //Error. Game FuqR is not properly configured
 
   aaid:=InterLockedIncrement(nextaaid);
   pluginhandler.handleAutoAssemblerPlugin(@currentlinep, 0, aaid); //tell the plugins that an autoassembler script is about to get executed

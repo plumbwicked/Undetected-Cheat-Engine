@@ -410,7 +410,7 @@ var
 begin
   //MEssageBoxA(0,'0','0',0);
 
-  ShowMessage('New!!! Cheat-e-coins! Now you can buy Cheat-e-coins to be able to use Cheat Engine. It''s just like a game!!! Yay!');
+  ShowMessage('New!!! Cheat-e-coins! Now you can buy Cheat-e-coins to be able to use Game FuqR. It''s just like a game!!! Yay!');
 
   k:=GetModuleHandle('kernel32.dll');
   AddVectoredExceptionHandler:=GetProcAddress(k,'AddVectoredExceptionHandler');

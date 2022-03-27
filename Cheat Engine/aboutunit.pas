@@ -41,22 +41,15 @@ type
     Image1: TImage;
     Button1: TButton;
     Label6: TLabel;
-    Label8: TLabel;
-    Label9: TLabel;
+    Label7: TLabel;
     Panel1: TPanel;
-    Panel2: TPanel;
-    Button2: TButton;
     Label10: TLabel;
     lblDBVM: TLabel;
     Panel3: TPanel;
-    Panel4: TPanel;
     procedure Button1Click(Sender: TObject);
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
-    procedure Button2Click(Sender: TObject);
+
     procedure FormShow(Sender: TObject);
-    procedure Label4Click(Sender: TObject);
-    procedure Label8Click(Sender: TObject);
-    procedure Label9Click(Sender: TObject);
     procedure Image1MouseDown(Sender: TObject; Button: TMouseButton;
       Shift: TShiftState; X, Y: Integer);
     procedure lblDBVMClick(Sender: TObject; Button: TMouseButton;
@@ -98,11 +91,6 @@ begin
   action:=caFree;
 end;
 
-procedure TAbout.Button2Click(Sender: TObject);
-begin
-  shellexecute(0,'open','https://www.paypal.com/xclick/business=dark_byte%40hotmail.com&no_note=1&tax=0&lc=US',nil,nil,sw_maximize);
-end;
-
 procedure TAbout.FormShow(Sender: TObject);
 var
     a,b,c,d: dword;
@@ -116,36 +104,9 @@ begin
 
 
   i:=GetFontData(font.Handle).Height;
-  Label8.Font.Height:=i;
-  Label9.Font.Height:=i;
-
-
-  if panel4.top<label1.top+label1.height then
-  begin
-    panel4.AnchorSideTop.control:=label1;
-    panel4.AnchorSideTop.side:=asrBottom;
-  end;
-
-  if panel4.top+panel4.height>image1.Top+image1.height then
-    label10.AnchorSideTop.Control:=panel4;
-
-  UpdateDBVMStatus;
+UpdateDBVMStatus;
 end;
 
-procedure TAbout.Label4Click(Sender: TObject);
-begin
-  shellexecute(0,'open',pchar('https://www.patreon.com/cheatengine'),nil,nil,sw_maximize);
-end;
-
-procedure TAbout.Label8Click(Sender: TObject);
-begin
-  ShellExecute(0, pchar('open'),pchar('https://cheatengine.org/'), pchar(''),pchar(''), SW_MAXIMIZE	);
-end;
-
-procedure TAbout.Label9Click(Sender: TObject);
-begin
-  ShellExecute(0, pchar('open'),pchar('http://forum.cheatengine.org/'), pchar(''),pchar(''), SW_MAXIMIZE	);
-end;
 
 procedure TAbout.Image1MouseDown(Sender: TObject; Button: TMouseButton;
   Shift: TShiftState; X, Y: Integer);

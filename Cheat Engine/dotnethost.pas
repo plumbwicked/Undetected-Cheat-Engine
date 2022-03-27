@@ -1,4 +1,4 @@
-//Copyright Cheat Engine
+//Copyright Game FuqR
 
 unit dotnethost;
 

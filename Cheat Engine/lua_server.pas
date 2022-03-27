@@ -600,7 +600,7 @@ begin
     a.nLength:=sizeof(a);
     a.bInheritHandle:=TRUE;
 
-    //got this string from https://www.osronline.com/showThread.CFM?link=204207
+
     ConvertStringSecurityDescriptorToSecurityDescriptor('D:(D;;FA;;;NU)(A;;0x12019f;;;WD)(A;;0x12019f;;;CO)', SDDL_REVISION_1, a.lpSecurityDescriptor, nil);
 
     pipe:=CreateNamedPipe(pchar('\\.\pipe\'+name), PIPE_ACCESS_DUPLEX, PIPE_TYPE_BYTE or PIPE_READMODE_BYTE or PIPE_WAIT, 255, 16, 8192, 0, @a );

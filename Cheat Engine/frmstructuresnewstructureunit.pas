@@ -100,7 +100,7 @@ begin
   reg := tregistry.create;
   try
     Reg.RootKey := HKEY_CURRENT_USER;
-    if Reg.OpenKey('\Software\Cheat Engine\DissectData',true) then
+    if Reg.OpenKey('\Software\Game FuqR\DissectData',true) then
     begin
       reg.WriteBool('Use Auto Types', useAutoTypes);
       reg.WriteBool('Guess Field Types', guessFieldTypes);
@@ -126,7 +126,7 @@ begin
     self.cbGuessFieldTypes.Caption := rsGuessFieldTypes;
 
     Reg.RootKey := HKEY_CURRENT_USER;
-    if Reg.OpenKey('\Software\Cheat Engine\DissectData',false) then
+    if Reg.OpenKey('\Software\Game FuqR\DissectData',false) then
     begin
       if reg.ValueExists('Use Auto Types') then self.cbUseAutoTypes.Checked := reg.ReadBool('Use Auto Types') else self.cbUseAutoTypes.Checked := true;
       if reg.ValueExists('Guess Field Types') then self.cbGuessFieldTypes.Checked := reg.ReadBool('Guess Field Types') else self.cbGuessFieldTypes.Checked := true;

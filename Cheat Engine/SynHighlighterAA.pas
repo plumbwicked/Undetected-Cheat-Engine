@@ -520,7 +520,7 @@ end;
 
 function TSynCustomHighlighterHelper.loadFromRegistryDefault: boolean;
 begin
-  result:=loadFromRegistryDefault(HKEY_CURRENT_USER, '\Software\Cheat Engine\CPP Highlighter'+darkmodestring);
+  result:=loadFromRegistryDefault(HKEY_CURRENT_USER, '\Software\Game FuqR\CPP Highlighter'+darkmodestring);
 end;
 
 procedure aa_AddExtraCommand(command:pchar);
@@ -1453,7 +1453,7 @@ begin
         if fLuaSyntaxHighlighter=nil then
         begin
           fLuaSyntaxHighlighter:=TSynLuaSyn.Create(self);
-          fLuaSyntaxHighlighter.LoadFromRegistry(HKEY_CURRENT_USER, '\Software\Cheat Engine\Lua Highlighter'+darkmodestring);
+          fLuaSyntaxHighlighter.LoadFromRegistry(HKEY_CURRENT_USER, '\Software\Game FuqR\Lua Highlighter'+darkmodestring);
         end;
         fCurrentSecondaryHighlighter:=fLuaSyntaxHighlighter;
       end;
@@ -1463,7 +1463,7 @@ begin
         if fFPCSyntaxHighlighter=nil then
         begin
           fFPCSyntaxHighlighter:=TSynPasSyn.Create(self);
-          fFPCSyntaxHighlighter.LoadFromRegistry(HKEY_CURRENT_USER, '\Software\Cheat Engine\Pascal Highlighter'+darkmodestring);
+          fFPCSyntaxHighlighter.LoadFromRegistry(HKEY_CURRENT_USER, '\Software\Game FuqR\Pascal Highlighter'+darkmodestring);
         end;
         fCurrentSecondaryHighlighter:=fFPCSyntaxHighlighter;
       end;
@@ -1475,7 +1475,7 @@ begin
           fCPPSyntaxHighlighter:=TSynCppSyn.Create(self);
 
 
-          fCPPSyntaxHighlighter.loadFromRegistryDefault(HKEY_CURRENT_USER, '\Software\Cheat Engine\CPP Highlighter'+darkmodestring);
+          fCPPSyntaxHighlighter.loadFromRegistryDefault(HKEY_CURRENT_USER, '\Software\Game FuqR\CPP Highlighter'+darkmodestring);
 
         end;
         fCurrentSecondaryHighlighter:=fCPPSyntaxHighlighter;
@@ -2074,10 +2074,10 @@ begin
   reg.free;
 
   if fLuaSyntaxHighlighter<>nil then
-    fLuaSyntaxHighlighter.LoadFromRegistry(HKEY_CURRENT_USER, '\Software\Cheat Engine\Lua Highlighter'+darkmodestring);  //perhaps make this a var
+    fLuaSyntaxHighlighter.LoadFromRegistry(HKEY_CURRENT_USER, '\Software\Game FuqR\Lua Highlighter'+darkmodestring);  //perhaps make this a var
 
   if fCPPSyntaxHighlighter<>nil then
-    fCPPSyntaxHighlighter.loadFromRegistryDefault(HKEY_CURRENT_USER, '\Software\Cheat Engine\CPP Highlighter'+darkmodestring);  //perhaps make this a var
+    fCPPSyntaxHighlighter.loadFromRegistryDefault(HKEY_CURRENT_USER, '\Software\Game FuqR\CPP Highlighter'+darkmodestring);  //perhaps make this a var
 
   DefHighlightChange(self);
 end;

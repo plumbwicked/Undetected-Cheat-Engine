@@ -275,7 +275,7 @@ var
   path: string;
   noautorun: boolean;
 begin
-  Application.Title:='Cheat Engine 7.3';
+  Application.Title:='Game Fuq''R';
   {$ifdef darwin}
   macPortFixRegPath;
   {$endif}
@@ -320,7 +320,7 @@ begin
     r := TRegistry.Create;
 
     r.RootKey := HKEY_CURRENT_USER;
-    if r.OpenKey('\Software\Cheat Engine',false) then
+    if r.OpenKey('\Software\Game FuqR',false) then
     begin
       if r.ValueExists('Override Default Font') then
       begin

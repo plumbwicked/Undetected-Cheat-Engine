@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="11"/>
+    <BuildModes Active="Debug"/>
+    <Units Count="1">
+      <Unit0>
+        <Filename Value="windowsrepair.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="39"/>
+        <CursorPos X="81" Y="73"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+      </Unit0>
+    </Units>
+    <JumpHistory Count="12" HistoryIndex="11">
+      <Position1>
+        <Filename Value="windowsrepair.lpr"/>
+        <Caret Column="22" TopLine="25"/>
+      </Position1>
+      <Position2>
+        <Filename Value="windowsrepair.lpr"/>
+        <Caret Line="45" Column="109" TopLine="25"/>
+      </Position2>
+      <Position3>
+        <Filename Value="windowsrepair.lpr"/>
+        <Caret Line="46" Column="109" TopLine="25"/>
+      </Position3>
+      <Position4>
+        <Filename Value="windowsrepair.lpr"/>
+        <Caret Line="49" Column="97" TopLine="25"/>
+      </Position4>
+      <Position5>
+        <Filename Value="windowsrepair.lpr"/>
+        <Caret Line="50" Column="97" TopLine="25"/>
+      </Position5>
+      <Position6>
+        <Filename Value="windowsrepair.lpr"/>
+        <Caret Line="58" Column="30" TopLine="30"/>
+      </Position6>
+      <Position7>
+        <Filename Value="windowsrepair.lpr"/>
+        <Caret Line="59" Column="30" TopLine="31"/>
+      </Position7>
+      <Position8>
+        <Filename Value="windowsrepair.lpr"/>
+        <Caret Line="65" Column="30" TopLine="37"/>
+      </Position8>
+      <Position9>
+        <Filename Value="windowsrepair.lpr"/>
+        <Caret Line="66" Column="30" TopLine="38"/>
+      </Position9>
+      <Position10>
+        <Filename Value="windowsrepair.lpr"/>
+        <Caret Line="44" Column="110" TopLine="37"/>
+      </Position10>
+      <Position11>
+        <Filename Value="windowsrepair.lpr"/>
+        <Caret Line="48" Column="98" TopLine="37"/>
+      </Position11>
+      <Position12>
+        <Filename Value="windowsrepair.lpr"/>
+        <Caret Line="57" Column="31" TopLine="37"/>
+      </Position12>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes Count="0" ActiveMode="default"/>
+    </RunParams>
+  </ProjectSession>
+</CONFIG>

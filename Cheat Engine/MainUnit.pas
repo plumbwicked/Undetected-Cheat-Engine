@@ -1145,7 +1145,7 @@ resourcestring
   rsRename = 'Rename';
   rsSaveToDisk = 'Save to disk';
   rsAreYouSureYouWantToDelete = 'Are you sure you want to delete %s?';
-  rsCheatEngine = 'Cheat Engine';
+  rsCheatEngine = 'Game FuqR';
   rsWhatWillBeTheNewNameForThisTab = 'What will be the new name for this tab?';
   rsScan = 'Scan';
   rsScanresult = 'Scanresult';
@@ -1153,14 +1153,14 @@ resourcestring
   rsWhatNameDoYouWantToGiveToTheseScanresults =
     'What name do you want to give to these scanresults?';
   rsThankYouForTryingOutCheatEngineBecauseItHasExpired =
-    'Thank you for trying out Cheat Engine. Because it has expired Cheat Engine will now close. Is that ok with you?';
+    'Thank you for trying out Game FuqR. Because it has expired Game FuqR will now close. Is that ok with you?';
   rsWHATAreYouSayingYouReGoingToContinueUsingCEILLEGAL =
     'WHAT!!! Are you saying you''re going to continue using CE ILLEGALLY??? If you say yes, i''m going to mail the cops to '
     + 'get you and send you to jail!!!';
   rsHrmpfBecauseIMInAGoodMoodILlLetYouGoThisTimeButDon =
     'Hrmpf... Because I''m in a good mood i''ll let you go this time. But don''t do it again you filthy pirate';
   rsAprilFools = 'April fools!!!!';
-  strClickToGoHome = 'Click here to go to the Cheat Engine homepage';
+  strClickToGoHome = 'Click here to go to the Game FuqR homepage';
   rsLuaScriptCheatTable = 'Lua script: Cheat Table';
   strChangeDescription1 = 'Description';
   strChangeDescription2 = 'Change the description to:';
@@ -1192,7 +1192,7 @@ resourcestring
   rsComparingTo = 'Comparing to %s';
   rsHex = 'Hex';
   rsDoYouWantToGoToTheCheatEngineWebsite =
-    'Do you want to go to the Cheat Engine website?';
+    'Do you want to go to the Game FuqR website?';
 
   strdeleteall = 'Are you sure you want to delete all addresses?';
   stralreadyin = 'This address is already in the list';
@@ -1239,17 +1239,17 @@ resourcestring
   strHideAll = 'will hide all windows';
   strUnHideForeground = 'will bring the foreground window back';
   strUnhideAll = 'will bring all windows back';
-  rsBringsCheatEngineToFront = 'brings Cheat Engine to front';
+  rsBringsCheatEngineToFront = 'brings Game FuqR to front';
 
   strhappybirthday = 'Let''s sing Happy Birthday for Dark Byte today!';
   strXMess = 'Merry christmas and happy new year';
   strNewyear = 'And what are your good intentions for this year? ;-)';
-  strfuture = 'Wow,I never imagined people would use Cheat Engine up to today';
+  strfuture = 'Wow,I never imagined people would use Game FuqR up to today';
   rsLicenseExpired =
-    'Your license to use Cheat Engine has expired. You can buy a license to use cheat engine for 1 month for $200, 6 months for only $1000 and for 1 year for ' + 'only $1800. If you don''t renew your license Cheat Engine will be severely limited in it''s abilities. (e.g: Next scan has been disabled)';
+    'Your license to use Game FuqR has expired. You can buy a license to use Game FuqR for 1 month for $200, 6 months for only $1000 and for 1 year for ' + 'only $1800. If you don''t renew your license Game FuqR will be severely limited in it''s abilities. (e.g: Next scan has been disabled)';
   rsEXPIRED = 'EXPIRED';
   strdontbother =
-    'Don''t even bother. Cheat Engine uses the main thread to receive messages when the scan is done, freeze it and CE will crash!';
+    'Don''t even bother. Game FuqR uses the main thread to receive messages when the scan is done, freeze it and CE will crash!';
   rsTheProcessIsnTFullyOpenedIndicatingAInvalidProcess =
     'The process isn''t fully opened. Indicating a invalid ProcessID. You still want to find out the EPROCESS? (BSOD is '
     + 'possible)';
@@ -1305,7 +1305,7 @@ resourcestring
   rsWasClickedAtPositon = ' was clicked at positon ';
   rsWidth = '   -   width=';
   rsHeight = ' , height=';
-  rsUnableToScanFixYourScanSettings = 'Unable to scan. Fix your scan settings and restart cheat engine';
+  rsUnableToScanFixYourScanSettings = 'Unable to scan. Fix your scan settings and restart Game FuqR';
   rsCustomLuaType = 'Custom LUA type';
   rsCustomTypeName = 'Custom Type Name';
   rsLanguage = 'Language';
@@ -3668,7 +3668,7 @@ begin
     try
       Reg.RootKey := HKEY_CURRENT_USER;
 
-      if Reg.OpenKey('\Software\Cheat Engine\FoundList'+darkmodestring, True) then
+      if Reg.OpenKey('\Software\Game FuqR\FoundList'+darkmodestring, True) then
       begin
         reg.WriteInteger('FoundList.NormalValueColor', foundlistcolors.NormalValueColor);
         reg.WriteInteger('FoundList.ChangedValueColor', foundlistcolors.ChangedValueColor);
@@ -4471,7 +4471,7 @@ begin
   vartype.OnChange := nil;
   //disable the onchange event so CreateCustomType doesn't keep setting it
   try
-    if reg.OpenKey('\Software\Cheat Engine\CustomTypes\', False) then
+    if reg.OpenKey('\Software\Game FuqR\CustomTypes\', False) then
     begin
       CustomTypes := TStringList.Create;
       try
@@ -4479,7 +4479,7 @@ begin
 
         for i := 0 to CustomTypes.Count - 1 do
         begin
-          if reg.OpenKey('\Software\Cheat Engine\CustomTypes\' + CustomTypes[i], False) then
+          if reg.OpenKey('\Software\Game FuqR\CustomTypes\' + CustomTypes[i], False) then
           begin
             try
               islua := False;
@@ -4550,7 +4550,7 @@ begin
       mtConfirmation, [mbNo, mbYes], 0) = mrYes then
     begin
       reg := tregistry.Create;
-      reg.DeleteKey('\Software\Cheat Engine\CustomTypes\' + ct.Name);
+      reg.DeleteKey('\Software\Game FuqR\CustomTypes\' + ct.Name);
       ct.remove;
       RefreshCustomTypes;
     end;
@@ -4589,7 +4589,7 @@ begin
       begin
         //delete the old one
         reg := Tregistry.Create;
-        reg.DeleteKey('\Software\Cheat Engine\CustomTypes\' + oldname);
+        reg.DeleteKey('\Software\Game FuqR\CustomTypes\' + oldname);
         freeandnil(reg);
       end;
     end;
@@ -4598,7 +4598,7 @@ begin
 
     //Add/change this to the registry
     reg := Tregistry.Create;
-    if Reg.OpenKey('\Software\Cheat Engine\CustomTypes\' + ct.Name, True) then
+    if Reg.OpenKey('\Software\Game FuqR\CustomTypes\' + ct.Name, True) then
     begin
       reg.WriteString('Script', script);
       if lua then
@@ -5661,7 +5661,7 @@ begin
   callhelp := False;
   Result := True;
 
-  wikipath:='https://wiki.cheatengine.org/index.php';
+  wikipath:='https://www.unknowncheats.me/forum/index.php';
   wikiurl:='';
 
   if command = HELP_CONTEXT then
@@ -7024,7 +7024,7 @@ end;
 procedure TMainForm.LogoClick(Sender: TObject);
 var s: string;
 begin
-  s:=format('http://www.cheatengine.org/?referredby=CE%.2f',[ceversion]);
+  s:=format('https://www.unknowncheats.me/forum/members/2225892.html',[ceversion]);
   if messagedlg(rsDoYouWantToGoToTheCheatEngineWebsite, mtConfirmation,
     [mbYes, mbNo], 0) = mrYes then
     ShellExecute(0, PChar('open'), PChar(s),
@@ -8010,9 +8010,9 @@ begin
   try
     Reg.RootKey := HKEY_CURRENT_USER;
 
-    if not Reg.OpenKey('\Software\Cheat Engine', False) then //can't be opened. Clean install
+    if not Reg.OpenKey('\Software\Game FuqR', False) then //can't be opened. Clean install
     begin
-      if Reg.OpenKey('\Software\Cheat Engine', True) then
+      if Reg.OpenKey('\Software\Game FuqR', True) then
       begin
         //write some default data into the registry
         reg.WriteBool('Undo', True);
@@ -8252,7 +8252,7 @@ begin
   fromaddress.Font.Height:=i;
   toaddress.Font.Height:=i;
 
-  if Reg.OpenKey('\Software\Cheat Engine\FoundList'+darkmodestring, false) then
+  if Reg.OpenKey('\Software\Game FuqR\FoundList'+darkmodestring, false) then
   begin
     if reg.ValueExists('FoundList.NormalValueColor') then foundlistcolors.NormalValueColor:=reg.ReadInteger('FoundList.NormalValueColor');
     if reg.ValueExists('FoundList.ChangedValueColor') then foundlistcolors.ChangedValueColor:=reg.ReadInteger('FoundList.ChangedValueColor');
@@ -8811,7 +8811,7 @@ begin
   reg := Tregistry.Create;
   try
     Reg.RootKey := HKEY_CURRENT_USER;
-    if Reg.OpenKey('\Software\Cheat Engine', True) then
+    if Reg.OpenKey('\Software\Game FuqR', True) then
       reg.WriteString('Initial tables dir', dir);
 
   finally
@@ -10590,7 +10590,7 @@ end;
 
 procedure TMainForm.Helpindex1Click(Sender: TObject);
 begin
-  ShellExecute(0,'open','https://wiki.cheatengine.org/index.php',nil,nil,SW_SHOW);
+  ShellExecute(0,'open','https://www.unknowncheats.me/forum/index.php',nil,nil,SW_SHOW);
 //  Application.HelpContext(1);
 end;
 

@@ -1186,7 +1186,7 @@ begin
   reg:=tregistry.create;
   try
     Reg.RootKey := HKEY_CURRENT_USER;
-    if Reg.OpenKey('\Software\Cheat Engine',true) then
+    if Reg.OpenKey('\Software\Game FuqR',true) then
       reg.WriteBool('FormDesigner CheckboxForBoolean', oid.GridControl[oipgpProperties].CheckboxForBoolean);
   finally
     reg.free;
@@ -1308,7 +1308,7 @@ begin
     reg:=tregistry.create;
     try
       Reg.RootKey := HKEY_CURRENT_USER;
-      if Reg.OpenKey('\Software\Cheat Engine',false) then
+      if Reg.OpenKey('\Software\Game FuqR',false) then
       begin
         if reg.ValueExists('FormDesigner CheckboxForBoolean') then
           oid.GridControl[oipgpProperties].CheckboxForBoolean:=reg.ReadBool('FormDesigner CheckboxForBoolean')

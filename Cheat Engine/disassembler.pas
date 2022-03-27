@@ -1,4 +1,4 @@
-// Copyright Cheat Engine. All Rights Reserved.
+// Copyright Game FuqR. All Rights Reserved.
 
 unit disassembler;
 

@@ -21,7 +21,7 @@ uses
 const ceversion=7.3;
 
 resourcestring
-  cename = 'Cheat Engine 7.3';
+  cename = 'Game FuqR';
   rsPleaseWait = 'Please Wait!';
 
 procedure UpdateToolsMenu;
@@ -31,7 +31,7 @@ procedure initcetitle;
 
 
 
-const beta=' beta 3.0.1'; //empty this for a release
+const beta=' beta 0.0.1'; //empty this for a release
 
 var
   CEnorm:string;
@@ -145,7 +145,7 @@ begin
     reg:=Tregistry.Create;
     try
       Reg.RootKey := HKEY_CURRENT_USER;
-      if Reg.OpenKey('\Software\Cheat Engine',false) then
+      if Reg.OpenKey('\Software\Game FuqR',false) then
       begin
 
         with formsettings do
@@ -319,11 +319,11 @@ begin
             {$endif}
 
 
-          if reg.ValueExists('Show Cheat Engine Hotkey') then
+          if reg.ValueExists('Show Game FuqR Hotkey') then
             {$ifdef windows}
-            reg.ReadBinaryData('Show Cheat Engine Hotkey',temphotkeylist[1][0],10);
+            reg.ReadBinaryData('Show Game FuqR Hotkey',temphotkeylist[1][0],10);
             {$else}
-            HexToBin(pchar(reg.ReadString('Show Cheat Engine Hotkey')),pchar(@temphotkeylist[1][0]),10);
+            HexToBin(pchar(reg.ReadString('Show Game FuqR Hotkey')),pchar(@temphotkeylist[1][0]),10);
             {$endif}
 
           if reg.ValueExists('Pause process Hotkey') then
@@ -1005,7 +1005,7 @@ begin
 
       {$ifndef net}
       formsettings.lvtools.Clear;
-      if Reg.OpenKey('\Software\Cheat Engine\Tools',false) then
+      if Reg.OpenKey('\Software\Game FuqR\Tools',false) then
       begin
         names:=TStringList.create;
         try
@@ -1043,7 +1043,7 @@ begin
 
 
 
-      if (not skipPlugins) and (Reg.OpenKey('\Software\Cheat Engine\Plugins'{$ifdef cpu64}+'64'{$else}+'32'{$endif},false)) then
+      if (not skipPlugins) and (Reg.OpenKey('\Software\Game FuqR\Plugins'{$ifdef cpu64}+'64'{$else}+'32'{$endif},false)) then
       begin
         names:=TStringList.create;
         try

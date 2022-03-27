@@ -204,7 +204,7 @@ var
 begin
   reg:=Tregistry.Create;
   try
-    if reg.OpenKey('\Software\Cheat Engine\Ignored Exceptions\',true) then
+    if reg.OpenKey('\Software\Game FuqR\Ignored Exceptions\',true) then
     begin
       try
         l:=tstringlist.create;
@@ -245,7 +245,7 @@ begin
   {$endif}
   reg:=Tregistry.Create;
   try
-    if reg.OpenKey('\Software\Cheat Engine\Ignored Exceptions\',false) then
+    if reg.OpenKey('\Software\Game FuqR\Ignored Exceptions\',false) then
     begin
       l:=tstringlist.create;
 

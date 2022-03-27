@@ -1474,7 +1474,7 @@ begin
       m.free;
 
       if version<>{$ifdef cpu64}1{$else}0{$endif} then
-        raise exception.create('This trace was made with the '+{$ifdef cpu64}'32'{$else}'64'{$endif}+'-bit version of cheat engine. You need to use that version to see the register values and stacktrace');
+        raise exception.create('This trace was made with the '+{$ifdef cpu64}'32'{$else}'64'{$endif}+'-bit version of Game FuqR. You need to use that version to see the register values and stacktrace');
 
       for i:=0 to comparetv.Items.Count-1 do
       begin
@@ -1535,7 +1535,7 @@ begin
       m.free;
 
       if version<>{$ifdef cpu64}1{$else}0{$endif} then
-        raise exception.create('This trace was made with the '+{$ifdef cpu64}'32'{$else}'64'{$endif}+'-bit version of cheat engine. You need to use that version to see the register values and stacktrace');
+        raise exception.create('This trace was made with the '+{$ifdef cpu64}'32'{$else}'64'{$endif}+'-bit version of Game FuqR. You need to use that version to see the register values and stacktrace');
 
       for i:=0 to lvTracer.Items.Count-1 do
         lvTracer.Items[i].Data:=TTraceDebugInfo.createFromStream(f);

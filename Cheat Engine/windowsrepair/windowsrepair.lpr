@@ -41,35 +41,35 @@ var
   reg: TRegistry;
 
 begin
-  deleteKey('\Software\Wow6432Node\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\Cheat Engine.exe');
-  deleteKey('\Software\Wow6432Node\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\cheatengine-i386.exe');
-  deleteKey('\Software\Wow6432Node\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\cheatengine-x86_64.exe');
+  deleteKey('\Software\Wow6432Node\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\Game FuqR.exe');
+  deleteKey('\Software\Wow6432Node\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\gamefuqr-i386.exe');
+  deleteKey('\Software\Wow6432Node\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\gamefuqr-x86_64.exe');
 
-  deleteKey('\Software\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\Cheat Engine.exe');
-  deleteKey('\Software\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\cheatengine-i386.exe');
-  deleteKey('\Software\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\cheatengine-x86_64.exe');
+  deleteKey('\Software\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\Game FuqR.exe');
+  deleteKey('\Software\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\gamefuqr-i386.exe');
+  deleteKey('\Software\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\gamefuqr-x86_64.exe');
 
   reg:=Tregistry.Create;
   try
     reg.RootKey := HKEY_LOCAL_MACHINE;
     if reg.OpenKey('\Software\Wow6432Node\Microsoft\Windows NT\CurrentVersion\Image File Execution Options',false) then
     begin
-      reg.deletekey('Cheat Engine.exe');
-      reg.deletekey('cheatengine-i386.exe');
-      reg.deletekey('cheatengine-x86_64.exe');
+      reg.deletekey('Game FuqR.exe');
+      reg.deletekey('gamefuqr-i386.exe');
+      reg.deletekey('gamefuqr-x86_64.exe');
     end;
 
     if reg.OpenKey('\Software\Microsoft\Windows NT\CurrentVersion\Image File Execution Options',false) then
     begin
-      reg.deletekey('Cheat Engine.exe');
-      reg.deletekey('cheatengine-i386.exe');
-      reg.deletekey('cheatengine-x86_64.exe');
+      reg.deletekey('Game FuqR.exe');
+      reg.deletekey('gamefuqr-i386.exe');
+      reg.deletekey('gamefuqr-x86_64.exe');
     end;
   finally
     reg.free;
   end;
 
   if (ParamCount=0) or (ParamStr(1)<>'/s') then
-    messagebox(0,'Your windows install should be repaired. Try running Cheat Engine now', 'Windows Repair (CE)',0);
+    messagebox(0,'Your windows install should be repaired. Try running Game FuqR now', 'Windows Repair (CE)',0);
 end.
 

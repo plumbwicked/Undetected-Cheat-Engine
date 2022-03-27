@@ -776,7 +776,7 @@ resourcestring
   rsYouWantToGiveAnAdditional32BitParameterWillShowUpI = 'You want to give an additional 32-bit parameter? (Will show up in (R)/(E)BX)';
   rsPleaseEnterAValidHexadecimalValue = 'Please enter a valid hexadecimal value';
   rsPleaseTargetAProcessFirst = 'Please target a process first';
-  rsPleaseTargetAnotherProcess = 'Start another version of Cheat Engine and attach to that instead';
+  rsPleaseTargetAnotherProcess = 'Start another version of Game FuqR and attach to that instead';
   rsDoYouWantToExecuteAFunctionOfTheDll = 'Do you want to execute a function of the dll?';
   rsInjectDll = 'Inject dll';
   rsSelectTheFunctionYouWantToExecute = 'Select the function you want to execute';
@@ -2442,7 +2442,7 @@ begin
   reg:=Tregistry.Create;
   try
 
-    if reg.OpenKey('\Software\Cheat Engine\Disassemblerview '+inttostr(screen.PixelsPerInch)+darkmodestring+'\',true) then
+    if reg.OpenKey('\Software\Game FuqR\Disassemblerview '+inttostr(screen.PixelsPerInch)+darkmodestring+'\',true) then
     begin
       reg.{$ifdef windows}WriteBinaryData{$else}WriteString{$endif}('colors', {$ifndef windows}bintohexs({$endif}disassemblerview.colors, sizeof(disassemblerview.colors)){$ifndef windows}){$endif};
 
@@ -2459,23 +2459,23 @@ begin
       reg.writeInteger('jlSpacing', disassemblerview.jlSpacing);
     end;
 
-    if reg.OpenKey('\Software\Cheat Engine\Disassemblerview '+inttostr(screen.PixelsPerInch)+'\Font'+darkmodestring,true) then
+    if reg.OpenKey('\Software\Game FuqR\Disassemblerview '+inttostr(screen.PixelsPerInch)+'\Font'+darkmodestring,true) then
       SaveFontToRegistry(disassemblerview.font, reg);
 
-    if reg.OpenKey('\Software\Cheat Engine\Hexview '+inttostr(screen.PixelsPerInch),true) then
+    if reg.OpenKey('\Software\Game FuqR\Hexview '+inttostr(screen.PixelsPerInch),true) then
     begin
       reg.writeInteger('spaceBetweenLines', hexview.spaceBetweenLines);
       reg.WriteBool('showStatusBar', hexview.statusbar.Visible);
     end;
 
-    if reg.openkey('\Software\Cheat Engine\Hexview'+darkmodestring,true) then
+    if reg.openkey('\Software\Game FuqR\Hexview'+darkmodestring,true) then
       reg.{$ifdef windows}WriteBinaryData{$else}WriteString{$endif}('colors', {$ifndef windows}bintohexs({$endif}hexview.colors, sizeof(hexview.colors)){$ifndef windows}){$endif};
 
 
-    if reg.OpenKey('\Software\Cheat Engine\Hexview '+inttostr(screen.PixelsPerInch)+'\Font'+darkmodestring,true) then
+    if reg.OpenKey('\Software\Game FuqR\Hexview '+inttostr(screen.PixelsPerInch)+'\Font'+darkmodestring,true) then
       SaveFontToRegistry(hexview.hexfont, reg);
 
-    if reg.OpenKey('\Software\Cheat Engine\RegisterView '+inttostr(screen.PixelsPerInch)+'\Font'+darkmodestring,true) then
+    if reg.OpenKey('\Software\Game FuqR\RegisterView '+inttostr(screen.PixelsPerInch)+'\Font'+darkmodestring,true) then
       SaveFontToRegistry(scrollbox1.Font, reg);
 
   finally
@@ -2664,13 +2664,13 @@ begin
   f:=TFont.create;
   reg:=Tregistry.Create;
   try
-    if reg.OpenKey('\Software\Cheat Engine\Disassemblerview '+inttostr(screen.PixelsPerInch)+'\Font'+darkmodestring,false) then
+    if reg.OpenKey('\Software\Game FuqR\Disassemblerview '+inttostr(screen.PixelsPerInch)+'\Font'+darkmodestring,false) then
     begin
       LoadFontFromRegistry(f, reg);
       disassemblerview.font:=f;
     end;
 
-    if reg.OpenKey('\Software\Cheat Engine\Disassemblerview '+inttostr(screen.PixelsPerInch)+darkmodestring+'\',false) then
+    if reg.OpenKey('\Software\Game FuqR\Disassemblerview '+inttostr(screen.PixelsPerInch)+darkmodestring+'\',false) then
     begin
       if reg.ValueExists('colors') then
       begin
@@ -2712,7 +2712,7 @@ begin
       disassemblerview.reinitialize;
     end;
 
-    if reg.OpenKey('\Software\Cheat Engine\Hexview '+inttostr(screen.PixelsPerInch),false) then
+    if reg.OpenKey('\Software\Game FuqR\Hexview '+inttostr(screen.PixelsPerInch),false) then
     begin
       if reg.ValueExists('spaceBetweenLines') then
         hexview.spaceBetweenLines:=reg.ReadInteger('spaceBetweenLines');
@@ -2722,7 +2722,7 @@ begin
 
     end;
 
-    if reg.openkey('\Software\Cheat Engine\Hexview'+darkmodestring,true) then
+    if reg.openkey('\Software\Game FuqR\Hexview'+darkmodestring,true) then
     begin
       if reg.ValueExists('colors') then
       begin
@@ -2736,13 +2736,13 @@ begin
 
 
 
-    if reg.OpenKey('\Software\Cheat Engine\Hexview '+inttostr(screen.PixelsPerInch)+'\Font'+darkmodestring,false) then
+    if reg.OpenKey('\Software\Game FuqR\Hexview '+inttostr(screen.PixelsPerInch)+'\Font'+darkmodestring,false) then
     begin
       LoadFontFromRegistry(f, reg);
       hexview.hexfont:=f;
     end;
 
-    if reg.OpenKey('\Software\Cheat Engine\RegisterView '+inttostr(screen.PixelsPerInch)+'\Font'+darkmodestring,false) then
+    if reg.OpenKey('\Software\Game FuqR\RegisterView '+inttostr(screen.PixelsPerInch)+'\Font'+darkmodestring,false) then
     begin
       LoadFontFromRegistry(f, reg);
 //      scrollbox1.Font:=f;
@@ -3394,7 +3394,7 @@ begin
   begin
     if debuggerthread.isBreakpoint(Address)<>nil then
     begin
-      beep; //Best sound effect cheat engine has
+      beep; //Best sound effect Game FuqR has
       exit;
     end;
   end;
@@ -3837,7 +3837,7 @@ begin
 end;
 
 procedure TMemoryBrowser.Savememoryregion1Click(Sender: TObject);
-{will save a cheat engine memory region file .CEM}
+{will save a Game FuqR memory region file .CEM}
 begin
   if frmSaveMemoryRegion=nil then
     frmSaveMemoryRegion:=TFrmSaveMemoryRegion.create(self);

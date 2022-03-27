@@ -467,7 +467,7 @@ begin
 end;
 
 function lua_ToCEUserData(L: PLua_state; i: integer): pointer;
-//Cheat Engine implements two types of userdata. the legacy LightUserData used in 6.2- and the Heavy UserData in 6.3+
+//Game FuqR implements two types of userdata. the legacy LightUserData used in 6.2- and the Heavy UserData in 6.3+
 //Heavy UserData is a pointer with a pointer to the real object, while lightuserdata is just a pointer to the object
 begin
   result:=lua_touserdata(L,i);
@@ -13715,7 +13715,7 @@ begin
     //0=everything
     //1=all handles from the opened process
     //2=all handles to the opened process
-    //3=all handles to cheat engine
+    //3=all handles to Game FuqR
 
     case filter of
       2:

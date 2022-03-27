@@ -1,6 +1,6 @@
 unit tableconverter;
 {
-Converts Cheat engine 5.6 tables to xmlformat tables
+Converts Game FuqR 5.6 tables to xmlformat tables
 }
 
 {$mode delphi}
@@ -19,7 +19,7 @@ implementation
 uses opensave;
 
 resourcestring
-  rsTooOldTable = 'This table is too old to be used. Get Cheat engine 5.6 and '
+  rsTooOldTable = 'This table is too old to be used. Get Game FuqR 5.6 and '
     +'open/resave this table';
 
 function ConvertCheatTableToXML(filename: string): TXMLDocument;
@@ -83,7 +83,7 @@ begin
       x[11]:=#0;
 
      // if x<>'CHEATENGINE' then
-     //   raise exception.Create('Not a valid cheat engine 5.6 table. If this table was made by a uce, get ce 5.6 and open/resave it');
+     //   raise exception.Create('Not a valid Game FuqR 5.6 table. If this table was made by a uce, get ce 5.6 and open/resave it');
 
     finally
       freememandnil(x);

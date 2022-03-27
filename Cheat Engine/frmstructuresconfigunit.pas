@@ -295,7 +295,7 @@ begin
   reg:=tregistry.create;
   try
     Reg.RootKey := HKEY_CURRENT_USER;
-    if Reg.OpenKey('\Software\Cheat Engine\DissectData',true) then
+    if Reg.OpenKey('\Software\Game FuqR\DissectData',true) then
     begin
 
       reg.WriteInteger('Default Color',defaultText);
@@ -323,7 +323,7 @@ begin
 
       if customfont then
       begin
-        if Reg.OpenKey('\Software\Cheat Engine\DissectData\Font'+darkmodestring,true) then
+        if Reg.OpenKey('\Software\Game FuqR\DissectData\Font'+darkmodestring,true) then
           SaveFontToRegistry(groupbox1.Font, reg);
       end;
     end;
@@ -391,7 +391,7 @@ begin
   reg:=tregistry.create;
   try
     Reg.RootKey := HKEY_CURRENT_USER;
-    if Reg.OpenKey('\Software\Cheat Engine\DissectData',false) then
+    if Reg.OpenKey('\Software\Game FuqR\DissectData',false) then
     begin
       if reg.ValueExists('Default Color') then defaultText:=reg.ReadInteger('Default Color');
       if reg.ValueExists('Match Color') then equalText:=reg.ReadInteger('Match Color');
@@ -416,7 +416,7 @@ begin
       if reg.ValueExists('Position Addresses Over Columns') then cbPositionAddressesOverColumns.checked:=reg.ReadBool('Position Addresses Over Columns');
 
 
-      if Reg.OpenKey('\Software\Cheat Engine\DissectData\Font'+darkmodestring,false) then
+      if Reg.OpenKey('\Software\Game FuqR\DissectData\Font'+darkmodestring,false) then
       begin
         LoadFontFromRegistry(groupbox1.Font,reg);
         fcustomfont:=true;

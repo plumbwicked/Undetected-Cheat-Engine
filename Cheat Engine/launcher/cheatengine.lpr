@@ -72,7 +72,7 @@ begin
   //MessageBox(0, pchar(param),'bla',0);
 
   if launch32bit then
-    exename:='cheatengine-i386.exe'
+    exename:='gamefuqr-i386.exe'
   else
   begin
     asm
@@ -85,9 +85,9 @@ begin
     end;
 
     if (cpuid7ebx and (1 shl 5))>0 then
-      exename:='cheatengine-x86_64-SSE4-AVX2.exe'
+      exename:='gamefuqr-x86_64-SSE4-AVX2.exe'
     else
-      exename:='cheatengine-x86_64.exe';
+      exename:='gamefuqr-x86_64.exe';
   end;
 
   
@@ -96,7 +96,7 @@ begin
   else
   begin
     s:=exename;
-    MessageBoxW(0, pwidechar(exename+' could not be found. Please disable/uninstall your anti virus and reinstall Cheat Engine to fix this'),'Cheat Engine launch error',MB_OK or MB_ICONERROR);
+    MessageBoxW(0, pwidechar(exename+' could not be found. Please disable/uninstall your anti virus and reinstall Game FuqR to fix this'),'Game FuqR launch error',MB_OK or MB_ICONERROR);
   end;
 
 

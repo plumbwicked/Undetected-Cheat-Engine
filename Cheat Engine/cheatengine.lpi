@@ -7,12 +7,12 @@
       <SessionStorage Value="InProjectDir"/>
       <MainUnit Value="0"/>
       <AutoCreateForms Value="False"/>
-      <Title Value="Cheat Engine 7.3"/>
+      <Title Value="Game Fuq'R"/>
       <UseXPManifest Value="True"/>
       <XPManifest>
         <DpiAware Value="True"/>
         <ExecutionLevel Value="requireAdministrator"/>
-        <TextName Value="Cheat Engine"/>
+        <TextName Value="Game Fuq'R"/>
         <TextDesc Value="Scripting language and tools"/>
       </XPManifest>
       <Icon Value="0"/>
@@ -127,7 +127,7 @@
             <TargetCPU Value="x86_64"/>
             <TargetOS Value="win64"/>
             <Optimizations>
-              <OptimizationLevel Value="4"/>
+              <OptimizationLevel Value="3"/>
               <VariablesInRegisters Value="True"/>
             </Optimizations>
           </CodeGeneration>
@@ -592,9 +592,6 @@
       <DestinationDirectory Value="$(ProjPath)\published\"/>
     </PublishOptions>
     <RunParams>
-      <local>
-        <LaunchingApplication PathPlusParams="\usr\X11R6\bin\xterm -T 'Lazarus Run Output' -e $(LazarusDir)\tools\runwait.sh $(TargetCmdLine)"/>
-      </local>
       <FormatVersion Value="2"/>
       <Modes Count="1">
         <Mode0 Name="default">
@@ -2850,21 +2847,6 @@
         <IgnoredMessages idx6058="True"/>
       </CompilerMessages>
       <CustomOptions Value="-dbenchmarkps -dcemain -WB00400000 -dNDEBUG -dDBVMFORAMDISWORKING"/>
-      <OtherDefines Count="13">
-        <Define0 Value="NOTMULTITHREADED"/>
-        <Define1 Value="benchmarkps"/>
-        <Define2 Value="cemain"/>
-        <Define3 Value="NDEBUG"/>
-        <Define4 Value="D3DDebug"/>
-        <Define5 Value="NOVMX"/>
-        <Define6 Value="CUSTOMFLOAT"/>
-        <Define7 Value="XDEBUG"/>
-        <Define8 Value="memleaksearch"/>
-        <Define9 Value="checkassembleralphabet"/>
-        <Define10 Value="memorymapped"/>
-        <Define11 Value="privatebuild"/>
-        <Define12 Value="DBVMFORAMDISWORKING"/>
-      </OtherDefines>
     </Other>
   </CompilerOptions>
   <Debugging>

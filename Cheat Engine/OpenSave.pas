@@ -204,9 +204,9 @@ uses MainUnit, mainunit2, symbolhandler, symbolhandlerstructs, LuaHandler,
 
 resourcestring
   strCorruptIcon='The icon has been corrupted';
-  strCantLoadFilepatcher='The file patcher can''t be loaded by Cheat Engine!';
-  strNotACETrainer='This is not a trainer made by Cheat Engine (If it is a trainer at all!)';
-  strUnknownTrainerVersion='This version of Cheat Engine doesn''t know how to read this trainer! Trainerversion=';
+  strCantLoadFilepatcher='The file patcher can''t be loaded by Game FuqR!';
+  strNotACETrainer='This is not a trainer made by Game FuqR (If it is a trainer at all!)';
+  strUnknownTrainerVersion='This version of Game FuqR doesn''t know how to read this trainer! Trainerversion=';
   strCantLoadProtectedfile='This trainer is protected from being opened by CE. Now go away!!!';
   rsThisTableContainsALuaScriptDoYouWantToRunIt = 'This table contains a lua script. Do you want to run it?';
   rsErrorExecutingThisTableSLuaScript = 'Error executing this table''s lua script: %s';
@@ -222,7 +222,7 @@ resourcestring
   rsAskIfStupid = 'Generating a trainer with the current state of the cheat '
     +'table will likely result in a completely useless trainer that does '
     +'nothing. Are you sure?';
-  rsOSThereIsANewerVersionifCheatEngineOutEtc = 'There is a newer version of Cheat Engine out. It''s recommended to use that version instead';
+  rsOSThereIsANewerVersionifCheatEngineOutEtc = 'There is a newer version of Game FuqR out. It''s recommended to use that version instead';
   rsOSThisCheatTableIsCorrupt = 'This cheat table is corrupt';
   rsInvalidLuaForTrainer = 'The lua script in this trainer has some issues and will therefore not load';
 
@@ -765,7 +765,7 @@ begin
         try
           Reg.RootKey := HKEY_CURRENT_USER;
 
-          if Reg.OpenKey('\Software\Cheat Engine',false) then   //fill it from the registry (in case it's loaded before the settings are loaded)
+          if Reg.OpenKey('\Software\Game FuqR',false) then   //fill it from the registry (in case it's loaded before the settings are loaded)
           begin
             if reg.ValueExists('LuaScriptAction') then
               i:=reg.ReadInteger('LuaScriptAction')

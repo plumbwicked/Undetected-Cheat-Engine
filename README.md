@@ -11,11 +11,11 @@ Change Log :
 
 Removed 90% of all cheat engine ref.
 
-Deleted Websites
+Deleted Websites addresses
 
 Added Unknowncheats.me link to icon
 
-
+plumbwicked#0001 @discord
 
 
 Build Instructions

@@ -40,3 +40,8 @@ Instructions:
 Install 1. lazarus-2.0.10-fpc-3.2.0-win64.exe first-https://sourceforge.net/projects/lazarus/files/Lazarus%20Windows%2064%20bits/Lazarus%202.0.10/lazarus-2.0.10-fpc-3.2.0-win64.exe/download 
 then when it is finished.
 Install #2 file .https://sourceforge.net/projects/lazarus/files/Lazarus%20Windows%2064%20bits/Lazarus%202.0.10/lazarus-2.0.10-fpc-3.2.0-cross-i386-win32-win64.exe/download
+
+ Run Lazarus 
+ click on Project->Open Project. 
+ Select cheatengine.lpi from the Undetected Cheat Engine folder as the project.
+    Click on Run->Build or press SHIFT+F9.

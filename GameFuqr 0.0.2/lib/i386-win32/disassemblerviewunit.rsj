@@ -1,0 +1,11 @@
+{"version":1,"strings":[
+{"hash":43587081,"name":"disassemblerviewunit.rssymbolsarebeingloaded","sourcebytes":[83,121,109,98,111,108,115,32,97,114,101,32,98,101,105,110,103,32,108,111,97,100,101,100,32,40,37,100,32,37,37,41],"value":"Symbols are being loaded (%d %%)"},
+{"hash":68105060,"name":"disassemblerviewunit.rsstructuresarebeingparsed","sourcebytes":[83,116,114,117,99,116,117,114,101,115,32,97,114,101,32,98,101,105,110,103,32,112,97,114,115,101,100],"value":"Structures are being parsed"},
+{"hash":156433705,"name":"disassemblerviewunit.rsextendeddebuginfoisloaded","sourcebytes":[69,120,116,101,110,100,101,100,32,100,101,98,117,103,32,105,110,102,111,32,105,115,32,98,101,105,110,103,32,108,111,97,100,101,100,32,40,37,100,32,37,37,41],"value":"Extended debug info is being loaded (%d %%)"},
+{"hash":263312436,"name":"disassemblerviewunit.rspleaseopenaprocessfirst","sourcebytes":[80,108,101,97,115,101,32,111,112,101,110,32,97,32,112,114,111,99,101,115,115,32,102,105,114,115,116],"value":"Please open a process first"},
+{"hash":128683235,"name":"disassemblerviewunit.rsaddress","sourcebytes":[65,100,100,114,101,115,115],"value":"Address"},
+{"hash":4852419,"name":"disassemblerviewunit.rsbytes","sourcebytes":[66,121,116,101,115],"value":"Bytes"},
+{"hash":90613157,"name":"disassemblerviewunit.rsopcode","sourcebytes":[79,112,99,111,100,101],"value":"Opcode"},
+{"hash":174341140,"name":"disassemblerviewunit.rscomment","sourcebytes":[67,111,109,109,101,110,116],"value":"Comment"},
+{"hash":304761,"name":"disassemblerviewunit.rscopy","sourcebytes":[67,111,112,121],"value":"Copy"}
+]}

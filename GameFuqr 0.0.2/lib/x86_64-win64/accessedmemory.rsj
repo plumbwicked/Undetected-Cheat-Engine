@@ -1,0 +1,4 @@
+{"version":1,"strings":[
+{"hash":5020002,"name":"accessedmemory.rsamerror","sourcebytes":[69,114,114,111,114],"value":"Error"},
+{"hash":213629860,"name":"accessedmemory.rsamyoucantsaveanemptylist","sourcebytes":[89,111,117,32,99,97,110,39,116,32,115,97,118,101,32,97,110,32,101,109,112,116,121,32,108,105,115,116],"value":"You can't save an empty list"}
+]}

@@ -1,0 +1,4 @@
+{"version":1,"strings":[
+{"hash":171941358,"name":"virtualmemory.rsnomemoryfoundinthespecifiedregion","sourcebytes":[78,111,32,109,101,109,111,114,121,32,102,111,117,110,100,32,105,110,32,116,104,101,32,115,112,101,99,105,102,105,101,100,32,114,101,103,105,111,110],"value":"No memory found in the specified region"},
+{"hash":240188174,"name":"virtualmemory.rsnotenoughmemoryfreetoscan","sourcebytes":[78,111,116,32,101,110,111,117,103,104,32,109,101,109,111,114,121,32,102,114,101,101,32,116,111,32,115,99,97,110],"value":"Not enough memory free to scan"}
+]}

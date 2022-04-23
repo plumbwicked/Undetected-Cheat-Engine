@@ -1,0 +1,4 @@
+{"version":1,"strings":[
+{"hash":96240069,"name":"dbvmdebuggerinterface.rsdbvmlevelnotfor32bit","sourcebytes":[68,66,86,77,32,108,101,118,101,108,32,100,101,98,117,103,32,100,111,101,115,32,110,111,116,32,119,111,114,107,32,111,110,32,116,104,101,32,51,50,45,98,105,116,32,67,69],"value":"DBVM level debug does not work on the 32-bit CE"},
+{"hash":146165671,"name":"dbvmdebuggerinterface.rsdbvmfunctionneedsdbvm","sourcebytes":[83,111,114,114,121,44,32,98,117,116,32,121,111,117,32,110,101,101,100,32,68,66,86,77,32,102,111,114,32,68,66,86,77,32,108,101,118,101,108,32,100,101,98,117,103,103,105,110,103],"value":"Sorry, but you need DBVM for DBVM level debugging"}
+]}

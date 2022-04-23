@@ -1,0 +1,23 @@
+{"version":1,"strings":[
+{"hash":130258176,"name":"assemblerarm.rsthevalue","sourcebytes":[84,104,101,32,118,97,108,117,101,32],"value":"The value "},
+{"hash":108782133,"name":"assemblerarm.rscannotbeencoded","sourcebytes":[32,99,97,110,32,110,111,116,32,98,101,32,101,110,99,111,100,101,100,32,117,115,105,110,103,32,56,32,98,105,116,115,32,97,110,100,32,100,111,117,98,108,101,32,114,111,116,97,116,101],"value":" can not be encoded using 8 bits and double rotate"},
+{"hash":54104771,"name":"assemblerarm.rsinvalidshiftparameters","sourcebytes":[105,110,118,97,108,105,100,32,115,104,105,102,116,32,112,97,114,97,109,101,116,101,114,115],"value":"invalid shift parameters"},
+{"hash":219056308,"name":"assemblerarm.rsthisinstructionclassdoesnotallow","sourcebytes":[84,104,105,115,32,105,110,115,116,114,117,99,116,105,111,110,32,99,108,97,115,115,32,100,111,101,115,32,110,111,116,32,97,108,108,111,119,32,97,32,114,101,103,105,115,116,101,114,32,98,97,115,101,100,32,115,104,105,102,116],"value":"This instruction class does not allow a register based shift"},
+{"hash":219655954,"name":"assemblerarm.rsinvalidshiftregister","sourcebytes":[73,110,118,97,108,105,100,32,115,104,105,102,116,32,114,101,103,105,115,116,101,114],"value":"Invalid shift register"},
+{"hash":181976260,"name":"assemblerarm.rsthedestinationaddressmustbedividableby4","sourcebytes":[84,104,101,32,100,101,115,116,105,110,97,116,105,111,110,32,97,100,100,114,101,115,115,32,109,117,115,116,32,98,101,32,100,105,118,105,100,97,98,108,101,32,98,121,32,52],"value":"The destination address must be dividable by 4"},
+{"hash":154977671,"name":"assemblerarm.rsdistanceistoobig","sourcebytes":[68,105,115,116,97,110,99,101,32,105,115,32,116,111,111,32,98,105,103],"value":"Distance is too big"},
+{"hash":178683524,"name":"assemblerarm.rstodochangethistoa12byteinstruction","sourcebytes":[84,111,100,111,58,32,67,104,97,110,103,101,32,116,104,105,115,32,116,111,32,97,32,49,50,32,98,121,116,101,32,105,110,115,116,114,117,99,116,105,111,110,58,32,76,68,82,47,83,84,82,32,91,80,67,44,35,49,54,93,32,45,32,66,32,80,67,32,45,32,68,68,32,111,102,102,115,101,116],"value":"Todo: Change this to a 12 byte instruction: LDR\/STR [PC,#16] - B PC - DD offset"},
+{"hash":67815554,"name":"assemblerarm.rsinvalidregister","sourcebytes":[73,110,118,97,108,105,100,32,114,101,103,105,115,116,101,114],"value":"Invalid register"},
+{"hash":103116148,"name":"assemblerarm.rsinvalidshift","sourcebytes":[73,110,118,97,108,105,100,32,115,104,105,102,116],"value":"Invalid shift"},
+{"hash":159788199,"name":"assemblerarm.rsthedistanceistoobig","sourcebytes":[84,104,101,32,100,105,115,116,97,110,99,101,32,105,115,32,116,111,111,32,98,105,103],"value":"The distance is too big"},
+{"hash":98619089,"name":"assemblerarm.rsinvalidparameter1","sourcebytes":[73,110,118,97,108,105,100,32,112,97,114,97,109,101,116,101,114,32,49],"value":"Invalid parameter 1"},
+{"hash":6163491,"name":"assemblerarm.rsinvalidparameters","sourcebytes":[105,110,118,97,108,105,100,32,112,97,114,97,109,101,116,101,114,115],"value":"invalid parameters"},
+{"hash":78565317,"name":"assemblerarm.rsinvalidopcode","sourcebytes":[73,110,118,97,108,105,100,32,111,112,99,111,100,101],"value":"Invalid opcode"},
+{"hash":90573474,"name":"assemblerarm.rsinvaliddestinationregister","sourcebytes":[73,110,118,97,108,105,100,32,100,101,115,116,105,110,97,116,105,111,110,32,114,101,103,105,115,116,101,114],"value":"Invalid destination register"},
+{"hash":56800050,"name":"assemblerarm.rsinvalidfirstoperandregister","sourcebytes":[73,110,118,97,108,105,100,32,102,105,114,115,116,32,111,112,101,114,97,110,100,32,114,101,103,105,115,116,101,114],"value":"Invalid first operand register"},
+{"hash":134716452,"name":"assemblerarm.rsinvalidregisterlist","sourcebytes":[73,110,118,97,108,105,100,32,114,101,103,105,115,116,101,114,32,108,105,115,116],"value":"Invalid register list"},
+{"hash":263548858,"name":"assemblerarm.rsinvalidregisterinregisterlist","sourcebytes":[73,110,118,97,108,105,100,32,114,101,103,105,115,116,101,114,32,105,110,32,114,101,103,105,115,116,101,114,32,108,105,115,116,58],"value":"Invalid register in register list:"},
+{"hash":98619090,"name":"assemblerarm.rsinvalidparameter2","sourcebytes":[73,110,118,97,108,105,100,32,112,97,114,97,109,101,116,101,114,32,50],"value":"Invalid parameter 2"},
+{"hash":98619091,"name":"assemblerarm.rsinvalidparameter3","sourcebytes":[73,110,118,97,108,105,100,32,112,97,114,97,109,101,116,101,114,32,51],"value":"Invalid parameter 3"},
+{"hash":98619092,"name":"assemblerarm.rsinvalidparameter4","sourcebytes":[73,110,118,97,108,105,100,32,112,97,114,97,109,101,116,101,114,32,52],"value":"Invalid parameter 4"}
+]}

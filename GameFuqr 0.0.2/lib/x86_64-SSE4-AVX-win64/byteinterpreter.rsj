@@ -1,0 +1,8 @@
+{"version":1,"strings":[
+{"hash":48892537,"name":"byteinterpreter.rsbibyte","sourcebytes":[40,98,121,116,101,41],"value":"(byte)"},
+{"hash":50227305,"name":"byteinterpreter.rsbiword","sourcebytes":[40,119,111,114,100,41],"value":"(word)"},
+{"hash":247359561,"name":"byteinterpreter.rsbidword","sourcebytes":[40,100,119,111,114,100,41],"value":"(dword)"},
+{"hash":260991049,"name":"byteinterpreter.rsbiqword","sourcebytes":[40,113,119,111,114,100,41],"value":"(qword)"},
+{"hash":248731721,"name":"byteinterpreter.rsbifloat","sourcebytes":[40,102,108,111,97,116,41],"value":"(float)"},
+{"hash":191598745,"name":"byteinterpreter.rsbidouble","sourcebytes":[40,100,111,117,98,108,101,41],"value":"(double)"}
+]}

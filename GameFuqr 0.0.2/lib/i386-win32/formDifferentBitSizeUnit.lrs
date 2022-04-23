@@ -1,0 +1,33 @@
+LazarusResources.Add('TformDifferentBitSize','FORMDATA',[
+  'TPF0'#21'TformDifferentBitSize'#20'formDifferentBitSize'#4'Left'#3#207#2#6'H'
+  +'eight'#3#145#0#3'Top'#3#250#0#5'Width'#3'I'#1#21'VertScrollBar.Visible'#8#8
+  +'AutoSize'#9#11'BorderIcons'#11#12'biSystemMenu'#0#7'Caption'#6#27'Different'
+  +' sized row of bits'#12'ClientHeight'#3#145#0#11'ClientWidth'#3'I'#1#8'OnCre'
+  +'ate'#7#10'FormCreate'#6'OnShow'#7#8'FormShow'#8'Position'#7#14'poScreenCent'
+  +'er'#10'LCLVersion'#6#7'1.6.4.0'#0#6'TLabel'#8'Labelold'#21'AnchorSideTop.Co'
+  +'ntrol'#7#6'Label1'#18'AnchorSideTop.Side'#7#9'asrBottom'#4'Left'#3#130#0#6
+  +'Height'#2#18#3'Top'#2'F'#5'Width'#2'P'#17'BorderSpacing.Top'#2#10#7'Caption'
+  +#6#8'LabelOld'#11'Font.Height'#2#240#9'Font.Name'#6#11'Courier New'#11'Paren'
+  +'tColor'#8#10'ParentFont'#8#0#0#6'TLabel'#8'LabelNew'#21'AnchorSideTop.Contr'
+  +'ol'#7#8'Labelold'#18'AnchorSideTop.Side'#7#9'asrBottom'#4'Left'#3#130#0#6'H'
+  +'eight'#2#18#3'Top'#2'Z'#5'Width'#2'P'#17'BorderSpacing.Top'#2#2#7'Caption'#6
+  +#8'LabelNew'#11'Font.Height'#2#240#9'Font.Name'#6#11'Courier New'#11'ParentC'
+  +'olor'#8#10'ParentFont'#8#0#0#6'TLabel'#6'Label1'#4'Left'#2#0#6'Height'#2'<'
+  +#3'Top'#2#0#5'Width'#3'I'#1#5'Align'#7#5'alTop'#7'Caption'#6#191'The last ti'
+  +'me you scanned the number of bits was 90 and now it is 12. Please tell me h'
+  +'ow and how much i must change the bit offset to successfully scan. (Left ar'
+  +'row+right arrow move the bits)'#11'ParentColor'#8#8'WordWrap'#9#0#0#5'TEdit'
+  +#5'Edit1'#22'AnchorSideLeft.Control'#7#7'Button1'#19'AnchorSideLeft.Side'#7#9
+  +'asrCenter'#21'AnchorSideTop.Control'#7#7'Button1'#18'AnchorSideTop.Side'#7#9
+  +'asrCenter'#4'Left'#3#148#0#6'Height'#2#23#3'Top'#2'u'#5'Width'#2'!'#17'Bord'
+  +'erSpacing.Top'#2#3#9'OnKeyDown'#7#12'Edit1KeyDown'#10'OnKeyPress'#7#13'Edit'
+  +'1KeyPress'#9'PopupMenu'#7#10'PopupMenu1'#8'TabOrder'#2#0#4'Text'#6#5'Edit1'
+  +#0#0#7'TButton'#7'Button1'#22'AnchorSideLeft.Control'#7#5'Owner'#19'AnchorSi'
+  +'deLeft.Side'#7#9'asrCenter'#21'AnchorSideTop.Control'#7#8'LabelNew'#18'Anch'
+  +'orSideTop.Side'#7#9'asrBottom'#4'Left'#2#127#6'Height'#2#25#3'Top'#2't'#5'W'
+  +'idth'#2'K'#17'BorderSpacing.Top'#2#8#7'Caption'#6#2'OK'#7'Default'#9#7'OnCl'
+  +'ick'#7#12'Button1Click'#8'TabOrder'#2#1#7'TabStop'#8#0#0#10'TPopupMenu'#10
+  +'PopupMenu1'#4'left'#2'H'#3'top'#2'P'#0#9'TMenuItem'#15'OhnoYoufoundme1'#7'C'
+  +'aption'#6#22'Oh no! You found me!!!'#7'OnClick'#7#20'OhnoYoufoundme1Click'#0
+  +#0#0#0
+]);

@@ -1,0 +1,123 @@
+object frmAssemblyScan: TfrmAssemblyScan
+  Left = 682
+  Height = 215
+  Top = 308
+  Width = 451
+  BorderIcons = [biSystemMenu]
+  Caption = 'Assembly scan'
+  ClientHeight = 215
+  ClientWidth = 451
+  OnShow = FormShow
+  Position = poScreenCenter
+  LCLVersion = '2.0.0.4'
+  object Panel1: TPanel
+    Left = 0
+    Height = 215
+    Top = 0
+    Width = 363
+    Align = alClient
+    AutoSize = True
+    BevelOuter = bvNone
+    ClientHeight = 215
+    ClientWidth = 363
+    TabOrder = 0
+    object lblInputAssemblyCode: TLabel
+      AnchorSideLeft.Control = Panel1
+      AnchorSideTop.Control = Panel1
+      AnchorSideRight.Control = Panel1
+      AnchorSideRight.Side = asrBottom
+      Left = 0
+      Height = 45
+      Top = 0
+      Width = 363
+      Anchors = [akTop, akLeft, akRight]
+      Caption = 'Input the assembly code to find. Wildcards supported:'#13#10'* matches zero or more chars, ? matches exactly one char'#13#10'^ matches the start and $ matches the end of line.'
+      ParentColor = False
+    end
+    object mAssemblerSearch: TMemo
+      AnchorSideLeft.Control = lblInputAssemblyCode
+      AnchorSideTop.Control = lblInputAssemblyCode
+      AnchorSideTop.Side = asrBottom
+      AnchorSideRight.Control = Panel1
+      AnchorSideRight.Side = asrBottom
+      AnchorSideBottom.Control = Panel1
+      AnchorSideBottom.Side = asrBottom
+      Left = 0
+      Height = 170
+      Top = 45
+      Width = 363
+      Anchors = [akTop, akLeft, akRight, akBottom]
+      TabOrder = 0
+    end
+  end
+  object Panel2: TPanel
+    Left = 363
+    Height = 215
+    Top = 0
+    Width = 88
+    Align = alRight
+    AutoSize = True
+    BevelOuter = bvNone
+    ClientHeight = 215
+    ClientWidth = 88
+    Constraints.MinHeight = 9
+    TabOrder = 1
+    object btnOk: TButton
+      AnchorSideLeft.Control = Panel2
+      AnchorSideLeft.Side = asrCenter
+      AnchorSideTop.Control = edtTo
+      AnchorSideTop.Side = asrBottom
+      Left = 7
+      Height = 25
+      Top = 81
+      Width = 75
+      AutoSize = True
+      BorderSpacing.Top = 5
+      BorderSpacing.Bottom = 20
+      Caption = 'Scan'
+      Constraints.MinWidth = 75
+      OnClick = btnOkClick
+      TabOrder = 0
+    end
+    object edtFrom: TEdit
+      Left = 4
+      Height = 23
+      Top = 15
+      Width = 80
+      Align = alTop
+      BorderSpacing.Left = 4
+      BorderSpacing.Right = 4
+      TabOrder = 1
+    end
+    object lblFrom: TLabel
+      Left = 4
+      Height = 15
+      Top = 0
+      Width = 84
+      Align = alTop
+      BorderSpacing.Left = 4
+      Caption = 'From'
+      ParentColor = False
+    end
+    object lblTo: TLabel
+      Left = 4
+      Height = 15
+      Top = 38
+      Width = 84
+      Align = alTop
+      BorderSpacing.Left = 4
+      Caption = 'To'
+      ParentColor = False
+    end
+    object edtTo: TEdit
+      Left = 4
+      Height = 23
+      Top = 53
+      Width = 80
+      Align = alTop
+      BorderSpacing.Left = 4
+      BorderSpacing.Right = 4
+      TabOrder = 2
+    end
+  end
+end

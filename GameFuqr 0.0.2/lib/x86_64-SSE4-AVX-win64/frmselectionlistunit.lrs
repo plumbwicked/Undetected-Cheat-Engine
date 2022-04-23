@@ -1,0 +1,20 @@
+LazarusResources.Add('TfrmSelectionList','FORMDATA',[
+  'TPF0'#17'TfrmSelectionList'#16'frmSelectionList'#4'Left'#3#239#2#6'Height'#3
+  +#232#0#3'Top'#3#154#0#5'Width'#3'9'#1#11'BorderIcons'#11#12'biSystemMenu'#0#7
+  +'Caption'#6#5'title'#12'ClientHeight'#3#232#0#11'ClientWidth'#3'9'#1#6'OnSho'
+  +'w'#7#8'FormShow'#8'Position'#7#14'poScreenCenter'#10'LCLVersion'#6#7'1.6.4.'
+  +'0'#0#6'TLabel'#6'Label1'#4'Left'#2#0#6'Height'#2#15#3'Top'#2#0#5'Width'#3'9'
+  +#1#5'Align'#7#5'alTop'#7'Caption'#6#7'caption'#11'ParentColor'#8#8'WordWrap'
+  +#9#0#0#8'TListBox'#8'ListBox1'#4'Left'#2#0#6'Height'#3#161#0#3'Top'#2'&'#5'W'
+  +'idth'#3'9'#1#5'Align'#7#8'alClient'#10'ItemHeight'#2#0#10'OnDblClick'#7#16
+  +'ListBox1DblClick'#17'OnSelectionChange'#7#23'ListBox1SelectionChange'#8'Tab'
+  +'Order'#2#0#0#0#6'TPanel'#6'Panel1'#4'Left'#2#0#6'Height'#2'!'#3'Top'#3#199#0
+  +#5'Width'#3'9'#1#5'Align'#7#8'alBottom'#8'AutoSize'#9#12'ClientHeight'#2'!'
+  +#11'ClientWidth'#3'9'#1#8'TabOrder'#2#1#0#7'TButton'#5'btnOK'#4'Left'#2'|'#6
+  +'Height'#2#25#3'Top'#2#4#5'Width'#2'B'#7'Anchors'#11#5'akTop'#0#8'AutoSize'#9
+  +#17'BorderSpacing.Top'#2#3#20'BorderSpacing.Bottom'#2#3#7'Caption'#6#10'    '
+  +'OK    '#7'Default'#9#11'ModalResult'#2#1#8'TabOrder'#2#0#0#0#0#5'TEdit'#5'E'
+  +'dit1'#4'Left'#2#0#6'Height'#2#23#3'Top'#2#15#5'Width'#3'9'#1#5'Align'#7#5'a'
+  +'lTop'#8'OnChange'#7#11'Edit1Change'#10'OnKeyPress'#7#13'Edit1KeyPress'#8'Ta'
+  +'bOrder'#2#2#7'Visible'#8#0#0#0
+]);

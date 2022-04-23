@@ -1,0 +1,14 @@
+{"version":1,"strings":[
+{"hash":145534789,"name":"gnuassembler.rsinvalidelffile","sourcebytes":[73,110,118,97,108,105,100,32,69,76,70,32,102,105,108,101],"value":"Invalid ELF file"},
+{"hash":128256277,"name":"gnuassembler.rsdoesntseemtobeavalidelffile","sourcebytes":[32,100,111,101,115,110,39,116,32,115,101,101,109,32,116,111,32,98,101,32,97,32,118,97,108,105,100,32,69,76,70,32,102,105,108,101],"value":" doesn't seem to be a valid ELF file"},
+{"hash":22923124,"name":"gnuassembler.rsconfigureavalidbinutilssetupfirst","sourcebytes":[67,111,110,102,105,103,117,114,101,32,97,32,118,97,108,105,100,32,98,105,110,117,116,105,108,115,32,115,101,116,117,112,32,102,105,114,115,116],"value":"Configure a valid binutils setup first"},
+{"hash":115917344,"name":"gnuassembler.rstheaobfor","sourcebytes":[84,104,101,32,65,79,66,32,102,111,114,32],"value":"The AOB for "},
+{"hash":111005828,"name":"gnuassembler.rscouldnotbefound","sourcebytes":[32,99,111,117,108,100,32,110,111,116,32,98,101,32,102,111,117,110,100],"value":" could not be found"},
+{"hash":171177166,"name":"gnuassembler.rstheproperformatofasectionis","sourcebytes":[84,104,101,32,112,114,111,112,101,114,32,102,111,114,109,97,116,32,111,102,32,46,97,115,101,99,116,105,111,110,32,105,115,32,58,32,46,97,115,101,99,116,105,111,110,32,60,110,97,109,101,62,32,60,112,114,101,102,101,114,101,100,97,100,100,114,101,115,115,62],"value":"The proper format of .asection is : .asection <name> <preferedaddress>"},
+{"hash":2667678,"name":"gnuassembler.rstheproperformatofmsectionis","sourcebytes":[84,104,101,32,112,114,111,112,101,114,32,102,111,114,109,97,116,32,111,102,32,46,109,115,101,99,116,105,111,110,32,105,115,32,58,32,46,109,115,101,99,116,105,111,110,32,60,110,97,109,101,62,32,60,97,100,100,114,101,115,115,62,32,60,111,112,116,105,111,110,97,108,32,101,120,112,101,99,116,101,100,32,115,105,122,101,62],"value":"The proper format of .msection is : .msection <name> <address> <optional expected size>"},
+{"hash":218452,"name":"gnuassembler.rsnobinutilsinstalled","sourcebytes":[78,111,32,98,105,110,117,116,105,108,115,32,105,110,115,116,97,108,108,101,100],"value":"No binutils installed"},
+{"hash":41641424,"name":"gnuassembler.rstook","sourcebytes":[32,116,111,111,107,32],"value":" took "},
+{"hash":25062912,"name":"gnuassembler.rsbyteswhile","sourcebytes":[32,98,121,116,101,115,32,119,104,105,108,101,32],"value":" bytes while "},
+{"hash":27524004,"name":"gnuassembler.rswhereexpected","sourcebytes":[32,119,104,101,114,101,32,101,120,112,101,99,116,101,100],"value":" where expected"},
+{"hash":33047362,"name":"gnuassembler.rsgnuassemblererror","sourcebytes":[71,78,85,32,65,115,115,101,109,98,108,101,114,32,101,114,114,111,114],"value":"GNU Assembler error"}
+]}

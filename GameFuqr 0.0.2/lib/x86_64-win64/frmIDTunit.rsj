@@ -1,0 +1,10 @@
+{"version":1,"strings":[
+{"hash":133824036,"name":"frmidtunit.rsidtnotpresent","sourcebytes":[110,111,116,32,112,114,101,115,101,110,116],"value":"not present"},
+{"hash":165061157,"name":"frmidtunit.rsidttaskgate","sourcebytes":[116,97,115,107,32,103,97,116,101],"value":"task gate"},
+{"hash":22680341,"name":"frmidtunit.rsidt16bitinterruptgate","sourcebytes":[49,54,45,98,105,116,32,105,110,116,101,114,114,117,112,116,32,103,97,116,101],"value":"16-bit interrupt gate"},
+{"hash":19130901,"name":"frmidtunit.rsidt16biytrapgate","sourcebytes":[49,54,45,98,105,116,32,116,114,97,112,32,103,97,116,101],"value":"16-bit trap gate"},
+{"hash":22680021,"name":"frmidtunit.rsidt32bitinterruptgate","sourcebytes":[51,50,45,98,105,116,32,105,110,116,101,114,114,117,112,116,32,103,97,116,101],"value":"32-bit interrupt gate"},
+{"hash":19121685,"name":"frmidtunit.rsidt32biytrapgate","sourcebytes":[51,50,45,98,105,116,32,116,114,97,112,32,103,97,116,101],"value":"32-bit trap gate"},
+{"hash":112992196,"name":"frmidtunit.rsidtunkownidt","sourcebytes":[117,110,107,110,111,119,110,32,73,68,84],"value":"unknown IDT"},
+{"hash":2397437,"name":"frmidtunit.rsidtdpl","sourcebytes":[32,68,80,76,61],"value":" DPL="}
+]}

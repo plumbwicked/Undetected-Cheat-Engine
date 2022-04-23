@@ -1,0 +1,6 @@
+{"version":1,"strings":[
+{"hash":66226163,"name":"frmfillmemoryunit.rspleasefillinavalidfromaddress","sourcebytes":[80,108,101,97,115,101,32,102,105,108,108,32,105,110,32,97,32,118,97,108,105,100,32,39,70,114,111,109,39,32,97,100,100,114,101,115,115],"value":"Please fill in a valid 'From' address"},
+{"hash":99572019,"name":"frmfillmemoryunit.rspleasefillinavalidtoaddress","sourcebytes":[80,108,101,97,115,101,32,102,105,108,108,32,105,110,32,97,32,118,97,108,105,100,32,39,84,111,39,32,97,100,100,114,101,115,115],"value":"Please fill in a valid 'To' address"},
+{"hash":189353381,"name":"frmfillmemoryunit.rspleasefillinavalidfillvalue","sourcebytes":[80,108,101,97,115,101,32,102,105,108,108,32,105,110,32,97,32,118,97,108,105,100,32,39,70,105,108,108,39,32,118,97,108,117,101],"value":"Please fill in a valid 'Fill' value"},
+{"hash":18315797,"name":"frmfillmemoryunit.rsfmregiontoolarge","sourcebytes":[82,101,103,105,111,110,32,116,111,111,32,108,97,114,103,101],"value":"Region too large"}
+]}

@@ -1,0 +1,9 @@
+{"version":1,"strings":[
+{"hash":91413907,"name":"frmmemoryallochandlerunit.rsqueuedmemoryeventswaiting","sourcebytes":[81,117,101,117,101,100,32,109,101,109,111,114,121,32,101,118,101,110,116,115,32,119,97,105,116,105,110,103,58,32,37,115],"value":"Queued memory events waiting: %s"},
+{"hash":40827235,"name":"frmmemoryallochandlerunit.rsheapcount","sourcebytes":[72,101,97,112,99,111,117,110,116,61,37,115],"value":"Heapcount=%s"},
+{"hash":31359477,"name":"frmmemoryallochandlerunit.rsfailuretoinitialize","sourcebytes":[70,97,105,108,117,114,101,32,116,111,32,105,110,105,116,105,97,108,105,122,101],"value":"Failure to initialize"},
+{"hash":187318187,"name":"frmmemoryallochandlerunit.rsfailuretohook","sourcebytes":[70,97,105,108,117,114,101,32,116,111,32,104,111,111,107],"value":"Failure to hook"},
+{"hash":196391562,"name":"frmmemoryallochandlerunit.rsevent1failure","sourcebytes":[69,118,101,110,116,49,32,102,97,105,108,117,114,101,58],"value":"Event1 failure:"},
+{"hash":196395658,"name":"frmmemoryallochandlerunit.rsevent2failure","sourcebytes":[69,118,101,110,116,50,32,102,97,105,108,117,114,101,58],"value":"Event2 failure:"},
+{"hash":196399754,"name":"frmmemoryallochandlerunit.rsevent3failure","sourcebytes":[69,118,101,110,116,51,32,102,97,105,108,117,114,101,58],"value":"Event3 failure:"}
+]}

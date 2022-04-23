@@ -1,0 +1,10 @@
+{"version":1,"strings":[
+{"hash":3175875,"name":"frmprocesswatcherunit.rsprocesswatcherthreaderror","sourcebytes":[112,114,111,99,101,115,115,119,97,116,99,104,101,114,58,32,116,104,114,101,97,100,32,101,114,114,111,114,58,37,115],"value":"processwatcher: thread error:%s"},
+{"hash":7614418,"name":"frmprocesswatcherunit.rsfailedstartingtheprocesswatcher","sourcebytes":[70,97,105,108,101,100,32,115,116,97,114,116,105,110,103,32,116,104,101,32,112,114,111,99,101,115,115,32,119,97,116,99,104,101,114],"value":"Failed starting the process watcher"},
+{"hash":75042340,"name":"frmprocesswatcherunit.rsisntavalidprocessid","sourcebytes":[37,115,32,105,115,110,39,116,32,97,32,118,97,108,105,100,32,112,114,111,99,101,115,115,73,68],"value":"%s isn't a valid processID"},
+{"hash":84620849,"name":"frmprocesswatcherunit.rsfirstselectaprocess","sourcebytes":[70,105,114,115,116,32,115,101,108,101,99,116,32,97,32,112,114,111,99,101,115,115,33],"value":"First select a process!"},
+{"hash":164561965,"name":"frmprocesswatcherunit.rsprocessid","sourcebytes":[80,114,111,99,101,115,115,73,68,61],"value":"ProcessID="},
+{"hash":120775229,"name":"frmprocesswatcherunit.rspeprocess","sourcebytes":[80,69,80,82,79,67,69,83,83,61],"value":"PEPROCESS="},
+{"hash":146265994,"name":"frmprocesswatcherunit.rsthreadid","sourcebytes":[84,104,114,101,97,100,73,68,58],"value":"ThreadID:"},
+{"hash":124672957,"name":"frmprocesswatcherunit.rsconventionalids","sourcebytes":[45,45,45,45,67,111,110,118,101,110,116,105,111,110,97,108,32,73,68,39,115,45,45,45,45],"value":"----Conventional ID's----"}
+]}

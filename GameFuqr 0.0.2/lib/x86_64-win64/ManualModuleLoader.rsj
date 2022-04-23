@@ -1,0 +1,7 @@
+{"version":1,"strings":[
+{"hash":156655205,"name":"manualmoduleloader.rsmmlnotavalidfile","sourcebytes":[110,111,116,32,97,32,118,97,108,105,100,32,102,105,108,101],"value":"not a valid file"},
+{"hash":75051922,"name":"manualmoduleloader.rsmmlnotavalidheader","sourcebytes":[78,111,116,32,97,32,118,97,108,105,100,32,104,101,97,100,101,114],"value":"Not a valid header"},
+{"hash":98414589,"name":"manualmoduleloader.rsmmltriedloadinga64bitmoduleona32bitsystem","sourcebytes":[84,114,105,101,100,32,108,111,97,100,105,110,103,32,97,32,54,52,45,98,105,116,32,109,111,100,117,108,101,32,111,110,32,97,32,51,50,45,98,105,116,32,115,121,115,116,101,109],"value":"Tried loading a 64-bit module on a 32-bit system"},
+{"hash":99661330,"name":"manualmoduleloader.rsmmlallocationerror","sourcebytes":[65,108,108,111,99,97,116,105,111,110,32,101,114,114,111,114],"value":"Allocation error"},
+{"hash":12910304,"name":"manualmoduleloader.rsmmlfailedfindingaddressof","sourcebytes":[102,97,105,108,101,100,32,102,105,110,100,105,110,103,32,97,100,100,114,101,115,115,32,111,102,32],"value":"failed finding address of "}
+]}

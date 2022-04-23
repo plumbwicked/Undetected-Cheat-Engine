@@ -1,0 +1,4 @@
+{"version":1,"strings":[
+{"hash":246819024,"name":"addresslisthandlerunit.rsalhagroupwiththename","sourcebytes":[65,32,103,114,111,117,112,32,119,105,116,104,32,116,104,101,32,110,97,109,101,32],"value":"A group with the name "},
+{"hash":88496003,"name":"addresslisthandlerunit.rsalhalreadyexists","sourcebytes":[32,97,108,114,101,97,100,121,32,101,120,105,115,116,115],"value":" already exists"}
+]}

@@ -1,0 +1,7 @@
+{"version":1,"strings":[
+{"hash":241446697,"name":"disassemblerviewlinesunit.rsun","sourcebytes":[40,85,110,99,111,110,100,105,116,105,111,110,97,108,41],"value":"(Unconditional)"},
+{"hash":107220169,"name":"disassemblerviewlinesunit.rscon","sourcebytes":[40,67,111,110,100,105,116,105,111,110,97,108,41],"value":"(Conditional)"},
+{"hash":46760681,"name":"disassemblerviewlinesunit.rscall","sourcebytes":[40,67,97,108,108,41],"value":"(Call)"},
+{"hash":135671705,"name":"disassemblerviewlinesunit.rsmemory","sourcebytes":[40,67,111,100,101,47,68,97,116,97,41],"value":"(Code\/Data)"},
+{"hash":212710425,"name":"disassemblerviewlinesunit.rsinvaliddisassembly","sourcebytes":[73,110,118,97,108,105,100,32,100,105,115,97,115,115,101,109,98,108,121],"value":"Invalid disassembly"}
+]}

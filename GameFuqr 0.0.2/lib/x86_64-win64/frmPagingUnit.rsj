@@ -1,0 +1,4 @@
+{"version":1,"strings":[
+{"hash":107822884,"name":"frmpagingunit.rsnotfound","sourcebytes":[78,111,116,32,102,111,117,110,100],"value":"Not found"},
+{"hash":68578489,"name":"frmpagingunit.rsfailurereadingphysicalmemory","sourcebytes":[102,97,105,108,117,114,101,32,114,101,97,100,105,110,103,32,112,104,121,115,105,99,97,108,32,109,101,109,111,114,121],"value":"failure reading physical memory"}
+]}

@@ -1,0 +1,82 @@
+object frmMemrecCombobox: TfrmMemrecCombobox
+  Left = 402
+  Height = 81
+  Top = 137
+  Width = 250
+  AutoSize = True
+  BorderStyle = bsDialog
+  Caption = 'Change value'
+  ClientHeight = 81
+  ClientWidth = 250
+  Constraints.MinWidth = 250
+  OnDestroy = FormDestroy
+  OnShow = FormShow
+  Position = poScreenCenter
+  LCLVersion = '1.6.0.4'
+  object cbMemrecCombobox: TComboBox
+    Left = 2
+    Height = 23
+    Top = 15
+    Width = 246
+    Align = alTop
+    BorderSpacing.Left = 2
+    BorderSpacing.Right = 2
+    ItemHeight = 15
+    TabOrder = 0
+  end
+  object Label1: TLabel
+    Left = 0
+    Height = 15
+    Top = 0
+    Width = 250
+    Align = alTop
+    Caption = 'Change value to:'
+    ParentColor = False
+  end
+  object Panel1: TPanel
+    AnchorSideLeft.Control = Owner
+    AnchorSideLeft.Side = asrCenter
+    AnchorSideTop.Control = cbMemrecCombobox
+    AnchorSideTop.Side = asrBottom
+    Left = 47
+    Height = 25
+    Top = 42
+    Width = 157
+    AutoSize = True
+    BorderSpacing.Top = 4
+    BevelOuter = bvNone
+    ClientHeight = 25
+    ClientWidth = 157
+    TabOrder = 1
+    object btnOk: TButton
+      AnchorSideLeft.Control = Panel1
+      AnchorSideTop.Control = Panel1
+      Left = 0
+      Height = 25
+      Top = 0
+      Width = 75
+      AutoSize = True
+      Caption = 'OK'
+      Constraints.MinWidth = 75
+      Default = True
+      OnClick = btnOkClick
+      TabOrder = 0
+    end
+    object btnCancel: TButton
+      AnchorSideLeft.Control = btnOk
+      AnchorSideLeft.Side = asrBottom
+      AnchorSideTop.Control = Panel1
+      Left = 82
+      Height = 25
+      Top = 0
+      Width = 75
+      AutoSize = True
+      BorderSpacing.Left = 7
+      Cancel = True
+      Caption = 'Cancel'
+      Constraints.MinWidth = 75
+      ModalResult = 2
+      TabOrder = 1
+    end
+  end
+end

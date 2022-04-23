@@ -1,0 +1,332 @@
+object frmStructures2ElementInfo: TfrmStructures2ElementInfo
+  Left = 386
+  Height = 299
+  Top = 296
+  Width = 314
+  AutoSize = True
+  BorderStyle = bsSingle
+  Caption = 'Structure Info'
+  ClientHeight = 299
+  ClientWidth = 314
+  OnCreate = FormCreate
+  Position = poScreenCenter
+  LCLVersion = '2.0.6.0'
+  object Label1: TLabel
+    AnchorSideLeft.Control = Label3
+    AnchorSideTop.Control = edtOffset
+    AnchorSideTop.Side = asrBottom
+    Left = 20
+    Height = 15
+    Top = 42
+    Width = 60
+    BorderSpacing.Top = 2
+    Caption = 'Description'
+    ParentColor = False
+  end
+  object Label2: TLabel
+    AnchorSideLeft.Control = edtByteSize
+    AnchorSideTop.Control = Label4
+    Left = 240
+    Height = 15
+    Top = 83
+    Width = 42
+    Caption = 'Bytesize'
+    Enabled = False
+    ParentColor = False
+  end
+  object Label3: TLabel
+    AnchorSideLeft.Control = Owner
+    AnchorSideTop.Control = Owner
+    Left = 20
+    Height = 15
+    Top = 2
+    Width = 32
+    BorderSpacing.Left = 20
+    BorderSpacing.Top = 2
+    Caption = 'Offset'
+    ParentColor = False
+  end
+  object cbStructType: TComboBox
+    AnchorSideLeft.Control = Label5
+    AnchorSideTop.Control = Label5
+    AnchorSideTop.Side = asrBottom
+    Left = 20
+    Height = 23
+    Top = 212
+    Width = 208
+    Enabled = False
+    ItemHeight = 15
+    ItemIndex = 0
+    Items.Strings = (
+      'Undefined'
+    )
+    OnChange = cbStructTypeChange
+    Style = csDropDownList
+    TabOrder = 5
+    Text = 'Undefined'
+  end
+  object Button1: TButton
+    AnchorSideLeft.Control = cbExpandChangesAddress
+    AnchorSideTop.Control = cbExpandChangesAddress
+    AnchorSideTop.Side = asrBottom
+    Left = 20
+    Height = 25
+    Top = 268
+    Width = 75
+    AutoSize = True
+    BorderSpacing.Top = 10
+    BorderSpacing.Bottom = 6
+    Caption = 'OK'
+    Constraints.MinWidth = 75
+    Default = True
+    OnClick = Button1Click
+    TabOrder = 7
+  end
+  object Button2: TButton
+    AnchorSideLeft.Control = Button1
+    AnchorSideLeft.Side = asrBottom
+    AnchorSideTop.Control = Button1
+    Left = 102
+    Height = 25
+    Top = 268
+    Width = 75
+    AutoSize = True
+    BorderSpacing.Left = 7
+    BorderSpacing.Bottom = 6
+    Cancel = True
+    Caption = 'Cancel'
+    Constraints.MinWidth = 75
+    ModalResult = 2
+    TabOrder = 8
+  end
+  object edtDescription: TEdit
+    AnchorSideLeft.Control = Label1
+    AnchorSideTop.Control = Label1
+    AnchorSideTop.Side = asrBottom
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    Left = 20
+    Height = 23
+    Top = 57
+    Width = 274
+    Anchors = [akTop, akLeft, akRight]
+    BorderSpacing.Right = 20
+    OnChange = edtDescriptionChange
+    TabOrder = 0
+  end
+  object edtByteSize: TEdit
+    AnchorSideLeft.Control = cbType
+    AnchorSideLeft.Side = asrBottom
+    AnchorSideTop.Control = cbType
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    Left = 240
+    Height = 23
+    Top = 99
+    Width = 54
+    Anchors = [akTop, akLeft, akRight]
+    BorderSpacing.Left = 12
+    BorderSpacing.Right = 20
+    Constraints.MinWidth = 50
+    Enabled = False
+    OnChange = edtByteSizeChange
+    TabOrder = 2
+    Text = '0'
+  end
+  object edtOffset: TEdit
+    AnchorSideLeft.Control = Label3
+    AnchorSideTop.Control = Label3
+    AnchorSideTop.Side = asrBottom
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    Left = 20
+    Height = 23
+    Top = 17
+    Width = 274
+    Anchors = [akTop, akLeft, akRight]
+    BorderSpacing.Right = 20
+    OnChange = edtOffsetChange
+    TabOrder = 9
+    Text = '0'
+  end
+  object cbType: TComboBox
+    AnchorSideLeft.Control = Label4
+    AnchorSideTop.Control = Label4
+    AnchorSideTop.Side = asrBottom
+    Left = 20
+    Height = 23
+    Top = 99
+    Width = 208
+    BorderSpacing.Top = 1
+    ItemHeight = 15
+    ItemIndex = 2
+    Items.Strings = (
+      'Byte'
+      '2 Bytes'
+      '4 Bytes'
+      '8 Bytes'
+      'Float'
+      'Double'
+      'String'
+      'Unicode String'
+      'Array of Byte'
+      'Pointer'
+    )
+    OnChange = cbTypeChange
+    Style = csDropDownList
+    TabOrder = 1
+    Text = '4 Bytes'
+  end
+  object Label4: TLabel
+    AnchorSideLeft.Control = edtDescription
+    AnchorSideTop.Control = edtDescription
+    AnchorSideTop.Side = asrBottom
+    Left = 20
+    Height = 15
+    Top = 83
+    Width = 24
+    BorderSpacing.Top = 3
+    Caption = 'Type'
+    ParentColor = False
+  end
+  object Label5: TLabel
+    AnchorSideLeft.Control = pnlBackground
+    AnchorSideTop.Control = pnlBackground
+    AnchorSideTop.Side = asrBottom
+    Left = 20
+    Height = 15
+    Top = 197
+    Width = 106
+    Caption = 'Structure pointed to'
+    Enabled = False
+    ParentColor = False
+  end
+  object cbHexadecimal: TCheckBox
+    AnchorSideLeft.Control = cbType
+    AnchorSideTop.Control = cbType
+    AnchorSideTop.Side = asrBottom
+    Left = 20
+    Height = 19
+    Top = 130
+    Width = 89
+    BorderSpacing.Top = 8
+    Caption = 'Hexadecimal'
+    OnChange = cbHexadecimalChange
+    TabOrder = 3
+  end
+  object cbSigned: TCheckBox
+    AnchorSideLeft.Control = cbHexadecimal
+    AnchorSideLeft.Side = asrBottom
+    AnchorSideTop.Control = cbHexadecimal
+    Left = 125
+    Height = 19
+    Top = 130
+    Width = 56
+    BorderSpacing.Left = 16
+    Caption = 'Signed'
+    OnChange = cbSignedChange
+    TabOrder = 4
+  end
+  object lblOffsetInto: TLabel
+    AnchorSideLeft.Control = edtChildstart
+    AnchorSideTop.Control = Label5
+    Left = 240
+    Height = 15
+    Top = 197
+    Width = 56
+    Caption = 'Offset into'
+    Enabled = False
+    ParentColor = False
+  end
+  object edtChildstart: TEdit
+    AnchorSideLeft.Control = cbStructType
+    AnchorSideLeft.Side = asrBottom
+    AnchorSideTop.Control = cbStructType
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    Left = 240
+    Height = 23
+    Top = 212
+    Width = 54
+    Anchors = [akTop, akLeft, akRight]
+    BorderSpacing.Left = 12
+    BorderSpacing.Right = 20
+    Constraints.MinWidth = 50
+    Enabled = False
+    OnChange = edtChildstartChange
+    TabOrder = 6
+    Text = '0'
+  end
+  object Label6: TLabel
+    AnchorSideLeft.Control = cbHexadecimal
+    AnchorSideTop.Control = cbHexadecimal
+    AnchorSideTop.Side = asrBottom
+    Left = 20
+    Height = 15
+    Top = 153
+    Width = 96
+    BorderSpacing.Top = 4
+    Caption = 'Background Color'
+    ParentColor = False
+  end
+  object pnlBackground: TPanel
+    AnchorSideLeft.Control = Label6
+    AnchorSideTop.Control = Label6
+    AnchorSideTop.Side = asrBottom
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    Cursor = crHandPoint
+    Left = 20
+    Height = 29
+    Top = 168
+    Width = 274
+    Anchors = [akTop, akLeft, akRight]
+    BorderSpacing.Right = 20
+    BevelOuter = bvNone
+    Color = clWindow
+    ParentColor = False
+    TabOrder = 10
+    OnClick = pnlBackgroundClick
+  end
+  object cbExpandChangesAddress: TCheckBox
+    AnchorSideLeft.Control = cbStructType
+    AnchorSideTop.Control = cbStructType
+    AnchorSideTop.Side = asrBottom
+    Left = 20
+    Height = 19
+    Top = 239
+    Width = 254
+    BorderSpacing.Top = 4
+    BorderSpacing.Right = 20
+    Caption = 'Expanding this node will change the address'
+    Enabled = False
+    TabOrder = 11
+  end
+  object ColorDialog1: TColorDialog
+    Color = clBlack
+    CustomColors.Strings = (
+      'ColorA=000000'
+      'ColorB=000080'
+      'ColorC=008000'
+      'ColorD=008080'
+      'ColorE=800000'
+      'ColorF=800080'
+      'ColorG=808000'
+      'ColorH=808080'
+      'ColorI=C0C0C0'
+      'ColorJ=0000FF'
+      'ColorK=00FF00'
+      'ColorL=00FFFF'
+      'ColorM=FF0000'
+      'ColorN=FF00FF'
+      'ColorO=FFFF00'
+      'ColorP=FFFFFF'
+      'ColorQ=C0DCC0'
+      'ColorR=F0CAA6'
+      'ColorS=F0FBFF'
+      'ColorT=A4A0A0'
+    )
+    Left = 180
+    Top = 133
+  end
+end

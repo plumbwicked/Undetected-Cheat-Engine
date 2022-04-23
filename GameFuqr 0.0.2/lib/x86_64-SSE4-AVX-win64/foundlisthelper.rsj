@@ -1,0 +1,4 @@
+{"version":1,"strings":[
+{"hash":214966674,"name":"foundlisthelper.rsundefinederror","sourcebytes":[85,110,100,101,102,105,110,101,100,32,101,114,114,111,114],"value":"Undefined error"},
+{"hash":5020002,"name":"foundlisthelper.rserror","sourcebytes":[69,114,114,111,114],"value":"Error"}
+]}

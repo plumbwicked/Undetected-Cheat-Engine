@@ -1,0 +1,9 @@
+{"version":1,"strings":[
+{"hash":243532306,"name":"luasyntax.syns_filterlua","sourcebytes":[76,117,97,32,70,105,108,101,115,32,40,42,46,108,117,97,44,32,42,46,108,112,114,41,124,42,46,108,117,97,59,42,46,108,112,114],"value":"Lua Files (*.lua, *.lpr)|*.lua;*.lpr"},
+{"hash":21425,"name":"luasyntax.syns_langlua","sourcebytes":[76,117,97],"value":"Lua"},
+{"hash":246171655,"name":"luasyntax.syns_attrluamstring","sourcebytes":[77,117,108,116,105,108,105,110,101,32,83,116,114,105,110,103],"value":"Multiline String"},
+{"hash":237966738,"name":"luasyntax.syns_attrreservedword2","sourcebytes":[82,101,115,101,114,118,101,100,32,119,111,114,100,32,50],"value":"Reserved word 2"},
+{"hash":237966739,"name":"luasyntax.syns_attrreservedword3","sourcebytes":[82,101,115,101,114,118,101,100,32,119,111,114,100,32,51],"value":"Reserved word 3"},
+{"hash":237966740,"name":"luasyntax.syns_attrreservedword4","sourcebytes":[82,101,115,101,114,118,101,100,32,119,111,114,100,32,52],"value":"Reserved word 4"},
+{"hash":96701635,"name":"luasyntax.syns_attrnumber","sourcebytes":[78,117,109,98,101,114,115],"value":"Numbers"}
+]}

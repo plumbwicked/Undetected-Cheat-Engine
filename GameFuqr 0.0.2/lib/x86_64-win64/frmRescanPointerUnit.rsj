@@ -1,0 +1,13 @@
+{"version":1,"strings":[
+{"hash":266517902,"name":"frmrescanpointerunit.rsnotallthestartoffsetshavebeenfilledin","sourcebytes":[78,111,116,32,97,108,108,32,116,104,101,32,115,116,97,114,116,32,111,102,102,115,101,116,115,32,104,97,118,101,32,98,101,101,110,32,102,105,108,108,101,100,32,105,110],"value":"Not all the start offsets have been filled in"},
+{"hash":153170734,"name":"frmrescanpointerunit.rsnotalltheendoffsetshavebeenfilledin","sourcebytes":[78,111,116,32,97,108,108,32,116,104,101,32,101,110,100,32,111,102,102,115,101,116,115,32,104,97,118,101,32,98,101,101,110,32,102,105,108,108,101,100,32,105,110],"value":"Not all the end offsets have been filled in"},
+{"hash":18340,"name":"frmrescanpointerunit.rsadd","sourcebytes":[65,100,100],"value":"Add"},
+{"hash":93079237,"name":"frmrescanpointerunit.rsremove","sourcebytes":[82,101,109,111,118,101],"value":"Remove"},
+{"hash":193924692,"name":"frmrescanpointerunit.rsrpthefunction","sourcebytes":[84,104,101,32,102,117,110,99,116,105,111,110,32,37,115,40,98,97,115,101,44,32,111,102,102,115,101,116,115,44,32,116,97,114,103,101,116,41,32,104,97,115,32,110,111,116,32,121,101,116,32,98,101,101,110,32,100,101,102,105,110,101,100,46,32,80,108,101,97,115,101,32,100,101,102,105,110,101,32,105,116,32,102,105,114,115,116],"value":"The function %s(base, offsets, target) has not yet been defined. Please define it first"},
+{"hash":237318372,"name":"frmrescanpointerunit.rsrpiplist","sourcebytes":[73,80,32,76,105,115,116],"value":"IP List"},
+{"hash":69258009,"name":"frmrescanpointerunit.rsrpentertheipaddressestonotifyexplicitly","sourcebytes":[69,110,116,101,114,32,116,104,101,32,73,80,32,97,100,100,114,101,115,115,101,115,32,116,111,32,110,111,116,105,102,121,32,101,120,112,108,105,99,105,116,108,121],"value":"Enter the IP addresses to notify explicitly"},
+{"hash":118379428,"name":"frmrescanpointerunit.rsrplastoffset","sourcebytes":[76,97,115,116,32,111,102,102,115,101,116],"value":"Last offset"},
+{"hash":59524004,"name":"frmrescanpointerunit.rsrpfirstoffset","sourcebytes":[70,105,114,115,116,32,111,102,102,115,101,116],"value":"First offset"},
+{"hash":228230256,"name":"frmrescanpointerunit.rsrpusesavedpointermap","sourcebytes":[85,115,101,32,115,97,118,101,100,32,112,111,105,110,116,101,114,109,97,112,58,32],"value":"Use saved pointermap: "},
+{"hash":129866368,"name":"frmrescanpointerunit.rsrpusesavedpointermap2","sourcebytes":[85,115,101,32,115,97,118,101,100,32,112,111,105,110,116,101,114,109,97,112],"value":"Use saved pointermap"}
+]}

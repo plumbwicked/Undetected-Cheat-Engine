@@ -1,0 +1,275 @@
+object frmAdConfig: TfrmAdConfig
+  Left = 714
+  Height = 267
+  Top = 381
+  Width = 335
+  AutoSize = True
+  Caption = 'Support Game Fuqr'
+  ClientHeight = 267
+  ClientWidth = 335
+  OnCreate = FormCreate
+  LCLVersion = '1.6.0.4'
+  object Label1: TLabel
+    Left = 0
+    Height = 30
+    Top = 0
+    Width = 335
+    Align = alTop
+    Caption = 'Thank you for supporting Game Fuqr. And to thank you for that I''ll let you share in the generated traffic'
+    ParentColor = False
+    WordWrap = True
+  end
+  object GroupBox1: TGroupBox
+    Left = 0
+    Height = 237
+    Top = 30
+    Width = 105
+    Align = alLeft
+    AutoSize = True
+    Caption = 'Position'
+    ClientHeight = 217
+    ClientWidth = 101
+    TabOrder = 0
+    object Shape1: TShape
+      AnchorSideLeft.Control = GroupBox1
+      AnchorSideLeft.Side = asrCenter
+      AnchorSideTop.Control = rbTop
+      AnchorSideTop.Side = asrBottom
+      Left = 18
+      Height = 84
+      Top = 20
+      Width = 65
+      BorderSpacing.Top = 1
+    end
+    object rbTop: TRadioButton
+      AnchorSideLeft.Control = Shape1
+      AnchorSideLeft.Side = asrCenter
+      AnchorSideTop.Control = GroupBox1
+      Left = 40
+      Height = 19
+      Top = 0
+      Width = 20
+      OnChange = PosChange
+      TabOrder = 0
+    end
+    object rbRight: TRadioButton
+      AnchorSideLeft.Control = Shape1
+      AnchorSideLeft.Side = asrBottom
+      AnchorSideTop.Control = Shape1
+      AnchorSideTop.Side = asrCenter
+      Left = 87
+      Height = 19
+      Top = 53
+      Width = 20
+      BorderSpacing.Left = 4
+      OnChange = PosChange
+      TabOrder = 3
+    end
+    object rbBottom: TRadioButton
+      AnchorSideLeft.Control = Shape1
+      AnchorSideLeft.Side = asrCenter
+      AnchorSideTop.Control = Shape1
+      AnchorSideTop.Side = asrBottom
+      Left = 40
+      Height = 19
+      Top = 105
+      Width = 20
+      BorderSpacing.Top = 1
+      Checked = True
+      OnChange = PosChange
+      TabOrder = 1
+      TabStop = True
+    end
+    object rbLeft: TRadioButton
+      AnchorSideLeft.Control = Shape1
+      AnchorSideRight.Control = Shape1
+      Left = -2
+      Height = 19
+      Top = 50
+      Width = 20
+      Anchors = [akTop, akRight]
+      OnChange = PosChange
+      TabOrder = 2
+    end
+    object ComboBox1: TComboBox
+      AnchorSideTop.Control = Label2
+      AnchorSideTop.Side = asrBottom
+      Left = 1
+      Height = 23
+      Top = 139
+      Width = 100
+      ItemHeight = 15
+      ItemIndex = 3
+      Items.Strings = (
+        '120x600'
+        '160x600'
+        '300x250'
+        '468x60'
+        '728x90'
+      )
+      OnChange = ComboBox1Change
+      Style = csDropDownList
+      TabOrder = 4
+      Text = '468x60'
+    end
+    object Label2: TLabel
+      AnchorSideTop.Control = rbBottom
+      AnchorSideTop.Side = asrBottom
+      Left = 1
+      Height = 15
+      Top = 124
+      Width = 38
+      Caption = 'Format'
+      ParentColor = False
+    end
+    object edtwidth: TEdit
+      AnchorSideTop.Control = ComboBox1
+      AnchorSideTop.Side = asrBottom
+      Left = 0
+      Height = 23
+      Top = 167
+      Width = 40
+      BorderSpacing.Top = 5
+      OnChange = edtwidthChange
+      OnKeyPress = edtwidthKeyPress
+      TabOrder = 5
+      Text = '468'
+    end
+    object edtHeight: TEdit
+      AnchorSideTop.Control = edtwidth
+      Left = 57
+      Height = 23
+      Top = 167
+      Width = 40
+      OnChange = edtHeightChange
+      OnKeyPress = edtwidthKeyPress
+      TabOrder = 6
+      Text = '60'
+    end
+    object Label3: TLabel
+      AnchorSideTop.Control = edtwidth
+      AnchorSideTop.Side = asrCenter
+      Left = 45
+      Height = 15
+      Top = 171
+      Width = 5
+      Caption = 'x'
+      ParentColor = False
+    end
+    object cbCanClose: TCheckBox
+      AnchorSideTop.Control = edtwidth
+      AnchorSideTop.Side = asrBottom
+      Left = 0
+      Height = 19
+      Top = 192
+      Width = 79
+      BorderSpacing.Top = 2
+      Caption = 'Has header'
+      Checked = True
+      OnChange = cbCanCloseChange
+      State = cbChecked
+      TabOrder = 7
+    end
+  end
+  object GroupBox2: TGroupBox
+    Left = 105
+    Height = 237
+    Top = 30
+    Width = 230
+    Align = alClient
+    Caption = 'Extra url'
+    ClientHeight = 217
+    ClientWidth = 226
+    TabOrder = 1
+    object edtUrl: TEdit
+      AnchorSideLeft.Control = cbOwnUrl
+      AnchorSideTop.Control = lblUrl
+      AnchorSideTop.Side = asrBottom
+      AnchorSideRight.Control = GroupBox2
+      AnchorSideRight.Side = asrBottom
+      Left = 6
+      Height = 23
+      Top = 34
+      Width = 218
+      Anchors = [akTop, akLeft, akRight]
+      BorderSpacing.Right = 2
+      Enabled = False
+      TabOrder = 0
+    end
+    object lblPercentage: TLabel
+      AnchorSideTop.Control = edtExtra
+      AnchorSideTop.Side = asrBottom
+      Left = 6
+      Height = 15
+      Top = 95
+      Width = 125
+      Caption = 'Percentage shown: 75%'
+      Enabled = False
+      ParentColor = False
+    end
+    object tbPercentage: TTrackBar
+      AnchorSideTop.Control = lblPercentage
+      AnchorSideTop.Side = asrBottom
+      Left = -2
+      Height = 25
+      Top = 110
+      Width = 181
+      Frequency = 5
+      Max = 75
+      OnChange = tbPercentageChange
+      Position = 75
+      Enabled = False
+      TabOrder = 1
+    end
+    object cbOwnUrl: TCheckBox
+      AnchorSideLeft.Control = GroupBox2
+      AnchorSideTop.Control = GroupBox2
+      Left = 6
+      Height = 19
+      Top = 0
+      Width = 124
+      BorderSpacing.Left = 6
+      Caption = 'Show my own page'
+      OnChange = cbOwnUrlChange
+      TabOrder = 2
+    end
+    object lblUrl: TLabel
+      AnchorSideLeft.Control = cbOwnUrl
+      AnchorSideTop.Control = cbOwnUrl
+      AnchorSideTop.Side = asrBottom
+      Left = 6
+      Height = 15
+      Top = 19
+      Width = 15
+      Caption = 'Url'
+      Enabled = False
+      ParentColor = False
+    end
+    object edtExtra: TEdit
+      AnchorSideLeft.Control = edtUrl
+      AnchorSideTop.Control = lblExtra
+      AnchorSideTop.Side = asrBottom
+      AnchorSideRight.Control = GroupBox2
+      AnchorSideRight.Side = asrBottom
+      Left = 6
+      Height = 23
+      Top = 72
+      Width = 218
+      Anchors = [akTop, akLeft, akRight]
+      BorderSpacing.Right = 2
+      TabOrder = 3
+    end
+    object lblExtra: TLabel
+      AnchorSideLeft.Control = cbOwnUrl
+      AnchorSideTop.Control = edtUrl
+      AnchorSideTop.Side = asrBottom
+      Left = 6
+      Height = 15
+      Top = 57
+      Width = 87
+      Caption = 'Extra parameters'
+      Enabled = False
+      ParentColor = False
+    end
+  end
+end

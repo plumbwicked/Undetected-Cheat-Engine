@@ -1,0 +1,24 @@
+LazarusResources.Add('TComments','FORMDATA',[
+  'TPF0'#9'TComments'#8'Comments'#4'Left'#3#2#4#6'Height'#3#1#1#3'Top'#3#213#0#5
+  +'Width'#3'O'#1#11'HelpContext'#2#11#11'BorderIcons'#11#10'biMaximize'#0#7'Ca'
+  +'ption'#6#8'Comments'#12'ClientHeight'#3#1#1#11'ClientWidth'#3'O'#1#7'OnClos'
+  +'e'#7#9'FormClose'#8'OnCreate'#7#10'FormCreate'#9'OnDestroy'#7#11'FormDestro'
+  +'y'#6'OnShow'#7#8'FormShow'#8'Position'#7#14'poScreenCenter'#10'LCLVersion'#6
+  +#7'2.0.6.0'#0#6'TPanel'#6'Panel1'#4'Left'#2#0#6'Height'#2'!'#3'Top'#3#224#0#5
+  +'Width'#3'O'#1#5'Align'#7#8'alBottom'#8'AutoSize'#9#10'BevelOuter'#7#6'bvNon'
+  +'e'#12'ClientHeight'#2'!'#11'ClientWidth'#3'O'#1#8'TabOrder'#2#0#8'OnResize'
+  +#7#12'Panel1Resize'#0#7'TButton'#7'Button1'#22'AnchorSideLeft.Control'#7#6'P'
+  +'anel1'#19'AnchorSideLeft.Side'#7#9'asrCenter'#21'AnchorSideTop.Control'#7#6
+  +'Panel1'#4'Left'#2'}'#6'Height'#2#25#3'Top'#2#4#5'Width'#2'U'#8'AutoSize'#9
+  +#17'BorderSpacing.Top'#2#4#20'BorderSpacing.Bottom'#2#4#7'Caption'#6#5'Close'
+  +#21'Constraints.MinHeight'#2#25#20'Constraints.MinWidth'#2'U'#7'OnClick'#7#12
+  +'Button1Click'#8'TabOrder'#2#0#0#0#0#12'TPageControl'#12'PageControl1'#4'Lef'
+  +'t'#2#0#6'Height'#3#224#0#3'Top'#2#0#5'Width'#3'O'#1#10'ActivePage'#7#9'tsCo'
+  +'mment'#5'Align'#7#8'alClient'#8'TabIndex'#2#0#8'TabOrder'#2#1#0#9'TTabSheet'
+  +#9'tsComment'#7'Caption'#6#8'Comments'#12'ClientHeight'#3#196#0#11'ClientWid'
+  +'th'#3'G'#1#0#5'TMemo'#5'Memo1'#4'Left'#2#0#6'Height'#3#196#0#3'Top'#2#0#5'W'
+  +'idth'#3'G'#1#5'Align'#7#8'alClient'#12'Font.CharSet'#7#12'ANSI_CHARSET'#11
+  +'Font.Height'#2#241#9'Font.Name'#6#11'Courier New'#10'Font.Pitch'#7#7'fpFixe'
+  +'d'#12'Font.Quality'#7#7'fqDraft'#10'ParentFont'#8#10'ScrollBars'#7#6'ssBoth'
+  +#8'TabOrder'#2#0#0#0#0#0#0
+]);

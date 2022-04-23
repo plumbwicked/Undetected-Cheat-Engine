@@ -1,0 +1,5 @@
+{"version":1,"strings":[
+{"hash":55008864,"name":"luadissectcode.rsthemodulenamed","sourcebytes":[84,104,101,32,109,111,100,117,108,101,32,110,97,109,101,100,32],"value":"The module named "},
+{"hash":111005828,"name":"luadissectcode.rscouldnotbefound","sourcebytes":[32,99,111,117,108,100,32,110,111,116,32,98,101,32,102,111,117,110,100],"value":" could not be found"},
+{"hash":37352436,"name":"luadissectcode.rsinvalidparametersfordissect","sourcebytes":[73,110,118,97,108,105,100,32,112,97,114,97,109,101,116,101,114,115,32,102,111,114,32,100,105,115,115,101,99,116],"value":"Invalid parameters for dissect"}
+]}

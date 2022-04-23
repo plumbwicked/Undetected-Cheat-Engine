@@ -1,0 +1,4 @@
+{"version":1,"strings":[
+{"hash":244761201,"name":"luastructurefrm.rsgroup1","sourcebytes":[71,114,111,117,112,32,49],"value":"Group 1"},
+{"hash":158082644,"name":"luastructurefrm.rsgroupd","sourcebytes":[71,114,111,117,112,32,37,100],"value":"Group %d"}
+]}

@@ -1,0 +1,11 @@
+{"version":1,"strings":[
+{"hash":380871,"name":"frmsnapshothandlerunit.rsshview","sourcebytes":[86,105,101,119],"value":"View"},
+{"hash":265391156,"name":"frmsnapshothandlerunit.rsshdissectmemoryofselectedsnapshot","sourcebytes":[68,105,115,115,101,99,116,32,109,101,109,111,114,121,32,111,102,32,115,101,108,101,99,116,101,100,32,115,110,97,112,115,104,111,116],"value":"Dissect memory of selected snapshot"},
+{"hash":65847715,"name":"frmsnapshothandlerunit.rsshdissectandcomparememoryofselectedsnapshots","sourcebytes":[68,105,115,115,101,99,116,32,97,110,100,32,99,111,109,112,97,114,101,32,109,101,109,111,114,121,32,111,102,32,115,101,108,101,99,116,101,100,32,115,110,97,112,115,104,111,116,115],"value":"Dissect and compare memory of selected snapshots"},
+{"hash":174352581,"name":"frmsnapshothandlerunit.rsshcompare","sourcebytes":[67,111,109,112,97,114,101],"value":"Compare"},
+{"hash":164361216,"name":"frmsnapshothandlerunit.rsshfunctions","sourcebytes":[32,70,117,110,99,116,105,111,110,40,115,41,58,32],"value":" Function(s): "},
+{"hash":5389598,"name":"frmsnapshothandlerunit.rsshthestructureslistisbroken","sourcebytes":[84,104,101,32,115,116,114,117,99,116,117,114,101,115,32,108,105,115,116,32,105,115,32,98,114,111,107,101,110],"value":"The structures list is broken"},
+{"hash":166756318,"name":"frmsnapshothandlerunit.rsshnewwindow","sourcebytes":[60,78,101,119,32,119,105,110,100,111,119,62],"value":"<New window>"},
+{"hash":258012628,"name":"frmsnapshothandlerunit.rsshlockandaddtostructuredissect","sourcebytes":[76,111,99,107,32,97,110,100,32,97,100,100,32,116,111,32,115,116,114,117,99,116,117,114,101,32,100,105,115,115,101,99,116],"value":"Lock and add to structure dissect"},
+{"hash":56768975,"name":"frmsnapshothandlerunit.rsshselectthestructuredissectwindowyouwishtoaddthisregionto","sourcebytes":[83,101,108,101,99,116,32,116,104,101,32,115,116,114,117,99,116,117,114,101,32,100,105,115,115,101,99,116,32,119,105,110,100,111,119,32,121,111,117,32,119,105,115,104,32,116,111,32,97,100,100,32,116,104,105,115,32,114,101,103,105,111,110,32,116,111],"value":"Select the structure dissect window you wish to add this region to"}
+]}

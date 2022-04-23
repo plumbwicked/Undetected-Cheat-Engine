@@ -1,0 +1,8 @@
+{"version":1,"strings":[
+{"hash":83127636,"name":"savedisassemblyfrm.rscopydisassembledoutput","sourcebytes":[67,111,112,121,32,100,105,115,97,115,115,101,109,98,108,101,100,32,111,117,116,112,117,116],"value":"Copy disassembled output"},
+{"hash":304761,"name":"savedisassemblyfrm.rscopy","sourcebytes":[67,111,112,121],"value":"Copy"},
+{"hash":197579076,"name":"savedisassemblyfrm.rssavedisassembledoutput","sourcebytes":[83,97,118,101,32,100,105,115,97,115,115,101,109,98,108,101,100,32,111,117,116,112,117,116],"value":"Save disassembled output"},
+{"hash":366789,"name":"savedisassemblyfrm.rssave","sourcebytes":[83,97,118,101],"value":"Save"},
+{"hash":231513639,"name":"savedisassemblyfrm.rsstopcopying","sourcebytes":[83,116,111,112,32,99,111,112,121,105,110,103],"value":"Stop copying"},
+{"hash":130185831,"name":"savedisassemblyfrm.rsstopsaving","sourcebytes":[83,116,111,112,32,115,97,118,105,110,103],"value":"Stop saving"}
+]}

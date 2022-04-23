@@ -1,0 +1,7 @@
+{"version":1,"strings":[
+{"hash":145225475,"name":"accesscheck.rsnofilecreationrightsornofileoverwriterights","sourcebytes":[78,111,32,102,105,108,101,32,99,114,101,97,116,105,111,110,32,114,105,103,104,116,115,32,111,114,32,110,111,32,102,105,108,101,32,111,118,101,114,119,114,105,116,101,32,114,105,103,104,116,115],"value":"No file creation rights or no file overwrite rights"},
+{"hash":143610819,"name":"accesscheck.rsnofilemodificationrights","sourcebytes":[78,111,32,102,105,108,101,32,109,111,100,105,102,105,99,97,116,105,111,110,32,114,105,103,104,116,115],"value":"No file modification rights"},
+{"hash":87508419,"name":"accesscheck.rsnofiledeletionrights","sourcebytes":[78,111,32,102,105,108,101,32,100,101,108,101,116,105,111,110,32,114,105,103,104,116,115],"value":"No file deletion rights"},
+{"hash":222839971,"name":"accesscheck.rsnodeleterights","sourcebytes":[78,111,32,100,101,108,101,116,101,32,114,105,103,104,116,115],"value":"No delete rights"},
+{"hash":18041091,"name":"accesscheck.rsbutyoudohavemodifyrights","sourcebytes":[66,117,116,32,121,111,117,32,100,111,32,104,97,118,101,32,109,111,100,105,102,121,32,114,105,103,104,116,115],"value":"But you do have modify rights"}
+]}

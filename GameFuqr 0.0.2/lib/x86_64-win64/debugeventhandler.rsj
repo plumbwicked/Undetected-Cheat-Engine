@@ -1,0 +1,4 @@
+{"version":1,"strings":[
+{"hash":175933895,"name":"debugeventhandler.rsdebughandleaccessviolationdebugeventnow","sourcebytes":[68,101,98,117,103,32,72,97,110,100,108,101,65,99,99,101,115,115,86,105,111,108,97,116,105,111,110,68,101,98,117,103,69,118,101,110,116,32,110,111,119],"value":"Debug HandleAccessViolationDebugEvent now"},
+{"hash":37757285,"name":"debugeventhandler.rsspecialcase","sourcebytes":[83,112,101,99,105,97,108,32,99,97,115,101],"value":"Special case"}
+]}

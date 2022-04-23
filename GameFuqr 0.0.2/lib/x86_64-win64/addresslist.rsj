@@ -1,0 +1,20 @@
+{"version":1,"strings":[
+{"hash":202106927,"name":"addresslist.rsdoyouwanttodeletetheselectedaddress","sourcebytes":[68,111,32,121,111,117,32,119,97,110,116,32,116,111,32,100,101,108,101,116,101,32,116,104,101,32,115,101,108,101,99,116,101,100,32,97,100,100,114,101,115,115,63],"value":"Do you want to delete the selected address?"},
+{"hash":199807087,"name":"addresslist.rsdoyouwanttodeletetheselectedaddresses","sourcebytes":[68,111,32,121,111,117,32,119,97,110,116,32,116,111,32,100,101,108,101,116,101,32,116,104,101,32,115,101,108,101,99,116,101,100,32,97,100,100,114,101,115,115,101,115,63],"value":"Do you want to delete the selected addresses?"},
+{"hash":215212846,"name":"addresslist.rschangedescription","sourcebytes":[67,104,97,110,103,101,32,68,101,115,99,114,105,112,116,105,111,110],"value":"Change Description"},
+{"hash":246212767,"name":"addresslist.rswhatwillbethenewdescription","sourcebytes":[87,104,97,116,32,119,105,108,108,32,98,101,32,116,104,101,32,110,101,119,32,100,101,115,99,114,105,112,116,105,111,110,63],"value":"What will be the new description?"},
+{"hash":63113061,"name":"addresslist.rschangevalue","sourcebytes":[67,104,97,110,103,101,32,86,97,108,117,101],"value":"Change Value"},
+{"hash":123910271,"name":"addresslist.rswhatvaluetochangethisto","sourcebytes":[119,104,97,116,32,118,97,108,117,101,32,116,111,32,99,104,97,110,103,101,32,116,104,105,115,32,116,111,63],"value":"what value to change this to?"},
+{"hash":224514404,"name":"addresslist.rsthevaluecouldnotbeparsed","sourcebytes":[84,104,101,32,118,97,108,117,101,32,37,115,32,99,111,117,108,100,32,110,111,116,32,98,101,32,112,97,114,115,101,100],"value":"The value %s could not be parsed"},
+{"hash":64395283,"name":"addresslist.rsnotallvaluetypescouldhandlethevalue","sourcebytes":[78,111,116,32,97,108,108,32,118,97,108,117,101,32,116,121,112,101,115,32,99,111,117,108,100,32,104,97,110,100,108,101,32,116,104,101,32,118,97,108,117,101,32,37,115],"value":"Not all value types could handle the value %s"},
+{"hash":75149509,"name":"addresslist.rsactive","sourcebytes":[65,99,116,105,118,101],"value":"Active"},
+{"hash":156067838,"name":"addresslist.rsdescription","sourcebytes":[68,101,115,99,114,105,112,116,105,111,110],"value":"Description"},
+{"hash":128683235,"name":"addresslist.rsaddress","sourcebytes":[65,100,100,114,101,115,115],"value":"Address"},
+{"hash":376933,"name":"addresslist.rstype","sourcebytes":[84,121,112,101],"value":"Type"},
+{"hash":6063029,"name":"addresslist.rsvalue","sourcebytes":[86,97,108,117,101],"value":"Value"},
+{"hash":162071374,"name":"addresslist.rsscript","sourcebytes":[60,115,99,114,105,112,116,62],"value":"<script>"},
+{"hash":132917955,"name":"addresslist.rsaladdaddress","sourcebytes":[65,100,100,32,97,100,100,114,101,115,115],"value":"Add address"},
+{"hash":174941358,"name":"addresslist.rsalnodescription","sourcebytes":[78,111,32,100,101,115,99,114,105,112,116,105,111,110],"value":"No description"},
+{"hash":42495524,"name":"addresslist.rsalautoassemblescritp","sourcebytes":[65,117,116,111,32,65,115,115,101,109,98,108,101,32,115,99,114,105,112,116],"value":"Auto Assemble script"},
+{"hash":167856267,"name":"addresslist.rssortonclick","sourcebytes":[83,111,114,116,32,111,110,32,99,108,105,99,107],"value":"Sort on click"}
+]}

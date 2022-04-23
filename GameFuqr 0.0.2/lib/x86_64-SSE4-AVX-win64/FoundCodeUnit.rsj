@@ -1,0 +1,4 @@
+{"version":1,"strings":[
+{"hash":4863637,"name":"foundcodeunit.strclose","sourcebytes":[67,108,111,115,101],"value":"Close"},
+{"hash":28556911,"name":"foundcodeunit.rsfctheswillsetasiftwarebreakpointint3oneverysingleopcodeetc","sourcebytes":[84,104,105,115,32,119,105,108,108,32,115,101,116,32,97,32,83,111,102,116,119,97,114,101,32,66,114,101,97,107,112,111,105,110,116,32,40,105,110,116,51,41,32,111,110,32,101,118,101,114,121,32,115,105,110,103,108,101,32,111,112,99,111,100,101,32,116,104,97,116,32,119,105,108,108,32,98,101,32,114,101,112,111,114,116,101,100,32,104,101,114,101,46,32,65,114,101,32,121,111,117,32,115,117,114,101,32,63],"value":"This will set a Software Breakpoint (int3) on every single opcode that will be reported here. Are you sure ?"}
+]}

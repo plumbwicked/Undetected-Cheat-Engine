@@ -1,0 +1,4 @@
+{"version":1,"strings":[
+{"hash":201825364,"name":"findwindowunit.rsnothingfound","sourcebytes":[78,111,116,104,105,110,103,32,102,111,117,110,100],"value":"Nothing found"},
+{"hash":190548612,"name":"findwindowunit.rsthespecifiedrangeisinvalid","sourcebytes":[84,104,101,32,115,112,101,99,105,102,105,101,100,32,114,97,110,103,101,32,105,115,32,105,110,118,97,108,105,100],"value":"The specified range is invalid"}
+]}

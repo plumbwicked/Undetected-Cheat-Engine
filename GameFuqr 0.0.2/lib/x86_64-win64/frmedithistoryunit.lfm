@@ -1,0 +1,156 @@
+object frmEditHistory: TfrmEditHistory
+  Left = 549
+  Height = 326
+  Top = 208
+  Width = 320
+  Caption = 'Write log'
+  ClientHeight = 326
+  ClientWidth = 320
+  OnShow = FormShow
+  Position = poScreenCenter
+  LCLVersion = '2.0.0.4'
+  object lvWriteLog: TListView
+    Left = 0
+    Height = 238
+    Top = 0
+    Width = 320
+    Align = alClient
+    Columns = <    
+      item
+        Caption = 'Address'
+        Width = 54
+      end    
+      item
+        Caption = 'Original bytes'
+        Width = 85
+      end    
+      item
+        Caption = 'New bytes'
+        Width = 177
+      end>
+    HideSelection = False
+    MultiSelect = True
+    PopupMenu = PopupMenu1
+    ReadOnly = True
+    RowSelect = True
+    TabOrder = 0
+    ViewStyle = vsReport
+    OnDblClick = lvWriteLogDblClick
+  end
+  object Panel1: TPanel
+    Left = 0
+    Height = 88
+    Top = 238
+    Width = 320
+    Align = alBottom
+    AutoSize = True
+    BevelOuter = bvNone
+    ClientHeight = 88
+    ClientWidth = 320
+    TabOrder = 1
+    object Button1: TButton
+      AnchorSideLeft.Control = Panel1
+      AnchorSideLeft.Side = asrCenter
+      AnchorSideTop.Control = edtMaxWriteLogSize
+      AnchorSideTop.Side = asrBottom
+      AnchorSideBottom.Control = Panel1
+      AnchorSideBottom.Side = asrBottom
+      Left = 123
+      Height = 25
+      Top = 60
+      Width = 75
+      AutoSize = True
+      BorderSpacing.Top = 3
+      BorderSpacing.Bottom = 3
+      Caption = 'Refresh'
+      Constraints.MinWidth = 75
+      OnClick = Button1Click
+      TabOrder = 2
+    end
+    object cbLogWrites: TCheckBox
+      Left = 0
+      Height = 19
+      Top = 0
+      Width = 320
+      Align = alTop
+      Caption = 'Enable write logging'
+      OnChange = cbLogWritesChange
+      TabOrder = 0
+    end
+    object edtMaxWriteLogSize: TEdit
+      Left = 0
+      Height = 23
+      Top = 34
+      Width = 320
+      Align = alTop
+      OnChange = edtMaxWriteLogSizeChange
+      TabOrder = 1
+      Text = '250'
+    end
+    object Label1: TLabel
+      Left = 0
+      Height = 15
+      Top = 19
+      Width = 320
+      Align = alTop
+      Caption = 'Max log size (nr of entries)'
+      ParentColor = False
+    end
+  end
+  object PopupMenu1: TPopupMenu
+    Images = wlImageList
+    left = 87
+    top = 68
+    object miUndo: TMenuItem
+      Caption = 'Undo'
+      ImageIndex = 0
+      ShortCut = 16474
+      OnClick = miUndoClick
+    end
+  end
+  object Timer1: TTimer
+    Interval = 100
+    OnTimer = Timer1Timer
+    left = 92
+    top = 158
+  end
+  object wlImageList: TImageList
+    left = 216
+    top = 122
+    Bitmap = {
+      4C69010000001000000010000000FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00A78C7A73FCFCFC00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00F8F8F801DC712CFEBF8B699ACEB0
+      9C63D08453BFD16D2DEDD56D2AF5CE773FD3CC9B7C89E3DFDD19FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00E2E1E011EF7A2FFFFF8333FFFF83
+      33FFFF8333FFFF8333FFFF8333FFFF8333FFFF8333FFE37833F2C8B1A152FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00D6D5D421FD8232FFFF8333FFFF83
+      33FFFF8333FFFF8333FFFF8333FFFF8333FFFF8333FFFF8333FFEF7A2FFCD0BC
+      B047FFFFFF00FFFFFF00FFFFFF00FFFFFF00D3CAC333FF8333FFFF8333FFFF83
+      33FFFF8333FFDB702BFAB4937D77C98C65A4F47D30FEFF8333FFFF8333FFD374
+      37E3F0F0F007FFFFFF00FFFFFF00FFFFFF00D2C1B642FF8333FFFF8333FFFF83
+      33FFFF8333FFFF8333FFC5703AE0D0CECC1DC2A69363FB8132FFFF8333FFFF83
+      33FFD1B7A658FFFFFF00FFFFFF00FFFFFF00CEB7A955D27336E4CE8556B8D49F
+      7D8DD1B19D62CEC3BC37E9E8E80DFFFFFF00FFFFFF00D17D46D1FF8333FFFF83
+      33FFD1987396FFFFFF00FFFFFF00FFFFFF00FCFCFC00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00D2926AA2FF8333FFFF83
+      33FFCA875BABFFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00CD7B45CCFF8333FFFF83
+      33FFD0957099FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00BDA59559F98031FFFF8333FFFF83
+      33FFD0B3A05FFFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00D8D6D41BE0732CFAFF8333FFFF8333FFDD79
+      39E9ECECEC0BFFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00C4917091FF8333FFF47D30FECCB4
+      A552FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00EEEDEC0CC16F39DACCAF9C60FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00F4F4F405FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00
+    }
+  end
+end

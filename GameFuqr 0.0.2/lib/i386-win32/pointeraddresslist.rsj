@@ -1,0 +1,4 @@
+{"version":1,"strings":[
+{"hash":253764741,"name":"pointeraddresslist.rspalinvalidscandatafile","sourcebytes":[73,110,118,97,108,105,100,32,115,99,97,110,100,97,116,97,32,102,105,108,101],"value":"Invalid scandata file"},
+{"hash":33779278,"name":"pointeraddresslist.rspalinvalidscandataversion","sourcebytes":[73,110,118,97,108,105,100,32,115,99,97,110,100,97,116,97,32,118,101,114,115,105,111,110],"value":"Invalid scandata version"}
+]}

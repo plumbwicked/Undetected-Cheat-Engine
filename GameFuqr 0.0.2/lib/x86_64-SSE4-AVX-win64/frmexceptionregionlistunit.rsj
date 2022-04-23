@@ -1,0 +1,4 @@
+{"version":1,"strings":[
+{"hash":95427711,"name":"frmexceptionregionlistunit.rsconfirmdeleteregion","sourcebytes":[65,114,101,32,121,111,117,32,115,117,114,101,32,121,111,117,32,119,105,115,104,32,116,111,32,114,101,109,111,118,101,32,116,104,101,32,114,97,110,103,101,32,37,115,63],"value":"Are you sure you wish to remove the range %s?"},
+{"hash":181901727,"name":"frmexceptionregionlistunit.rseraselistquestion","sourcebytes":[65,114,101,32,121,111,117,32,115,117,114,101,32,116,104,101,32,101,114,97,115,101,32,116,104,101,32,108,105,115,116,63],"value":"Are you sure the erase the list?"}
+]}

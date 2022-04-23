@@ -1,0 +1,15 @@
+{"version":1,"strings":[
+{"hash":158210617,"name":"memoryrecordunit.rsmrnibblesupportisonlyforhexadecimaldisplay","sourcebytes":[78,105,98,98,108,101,32,115,117,112,112,111,114,116,32,105,115,32,111,110,108,121,32,102,111,114,32,104,101,120,97,100,101,99,105,109,97,108,32,100,105,115,112,108,97,121],"value":"Nibble support is only for hexadecimal display"},
+{"hash":58867999,"name":"memoryrecordunit.rspqqqqqqqq","sourcebytes":[80,45,62,63,63,63,63,63,63,63,63],"value":"P->????????"},
+{"hash":21262,"name":"memoryrecordunit.rsp","sourcebytes":[80,45,62],"value":"P->"},
+{"hash":7117154,"name":"memoryrecordunit.rserror","sourcebytes":[101,114,114,111,114],"value":"error"},
+{"hash":48728334,"name":"memoryrecordunit.rstoggleactivation","sourcebytes":[84,111,103,103,108,101,32,65,99,116,105,118,97,116,105,111,110],"value":"Toggle Activation"},
+{"hash":258934373,"name":"memoryrecordunit.rstoggleactivationallowincrease","sourcebytes":[84,111,103,103,108,101,32,65,99,116,105,118,97,116,105,111,110,32,65,108,108,111,119,32,73,110,99,114,101,97,115,101],"value":"Toggle Activation Allow Increase"},
+{"hash":7276069,"name":"memoryrecordunit.rstoggleactivationallowdecrease","sourcebytes":[84,111,103,103,108,101,32,65,99,116,105,118,97,116,105,111,110,32,65,108,108,111,119,32,68,101,99,114,101,97,115,101],"value":"Toggle Activation Allow Decrease"},
+{"hash":179358933,"name":"memoryrecordunit.rsactivate","sourcebytes":[65,99,116,105,118,97,116,101],"value":"Activate"},
+{"hash":179594197,"name":"memoryrecordunit.rsdeactivate","sourcebytes":[68,101,97,99,116,105,118,97,116,101],"value":"Deactivate"},
+{"hash":106707573,"name":"memoryrecordunit.rssetvalue","sourcebytes":[83,101,116,32,86,97,108,117,101],"value":"Set Value"},
+{"hash":66379301,"name":"memoryrecordunit.rsincreasevalue","sourcebytes":[73,110,99,114,101,97,115,101,32,86,97,108,117,101],"value":"Increase Value"},
+{"hash":217374597,"name":"memoryrecordunit.rsdecreasevalue","sourcebytes":[68,101,99,114,101,97,115,101,32,86,97,108,117,101],"value":"Decrease Value"},
+{"hash":202513807,"name":"memoryrecordunit.rsadjustmrwithrelativeaddress","sourcebytes":[68,111,32,121,111,117,32,119,105,115,104,32,116,111,32,97,100,106,117,115,116,32,109,101,109,111,114,121,32,114,101,99,111,114,100,115,32,119,105,116,104,32,114,101,108,97,116,105,118,101,32,97,100,100,114,101,115,115,101,115,32,97,115,32,119,101,108,108,63],"value":"Do you wish to adjust memory records with relative addresses as well?"}
+]}

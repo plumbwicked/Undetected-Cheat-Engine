@@ -1,0 +1,6 @@
+{"version":1,"strings":[
+{"hash":180277930,"name":"luacaller.rsthistypeofmethod","sourcebytes":[84,104,105,115,32,116,121,112,101,32,111,102,32,109,101,116,104,111,100,58],"value":"This type of method:"},
+{"hash":233152772,"name":"luacaller.rsisnotyetsupported","sourcebytes":[32,105,115,32,110,111,116,32,121,101,116,32,115,117,112,112,111,114,116,101,100],"value":" is not yet supported"},
+{"hash":198965816,"name":"luacaller.rsautoassemblercallbackluafunctionerror","sourcebytes":[65,117,116,111,65,115,115,101,109,98,108,101,114,67,97,108,108,98,97,99,107,58,32,76,117,97,32,70,117,110,99,116,105,111,110,32,101,114,114,111,114,40],"value":"AutoAssemblerCallback: Lua Function error("},
+{"hash":160303576,"name":"luacaller.rsstructuredissecteventluafunctionerror","sourcebytes":[83,116,114,117,99,116,117,114,101,68,105,115,115,101,99,116,69,118,101,110,116,58,32,76,117,97,32,70,117,110,99,116,105,111,110,32,101,114,114,111,114,40],"value":"StructureDissectEvent: Lua Function error("}
+]}

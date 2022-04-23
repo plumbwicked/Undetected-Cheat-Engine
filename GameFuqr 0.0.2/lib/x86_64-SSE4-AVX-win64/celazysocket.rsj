@@ -1,0 +1,9 @@
+{"version":1,"strings":[
+{"hash":116804927,"name":"celazysocket.rswhoopdeedoo","sourcebytes":[87,104,111,111,112,100,101,101,100,111,111],"value":"Whoopdeedoo"},
+{"hash":82594241,"name":"celazysocket.rstimeoutwhilesendingdata","sourcebytes":[84,105,109,101,111,117,116,32,119,104,105,108,101,32,115,101,110,100,105,110,103,32,100,97,116,97],"value":"Timeout while sending data"},
+{"hash":194409680,"name":"celazysocket.rserrorwhilesendingdata","sourcebytes":[69,114,114,111,114,32,119,104,105,108,101,32,115,101,110,100,105,110,103,32,100,97,116,97,58,32],"value":"Error while sending data: "},
+{"hash":190901921,"name":"celazysocket.rsdisconnectedwhilesendingdata","sourcebytes":[68,105,115,99,111,110,110,101,99,116,101,100,32,119,104,105,108,101,32,115,101,110,100,105,110,103,32,100,97,116,97],"value":"Disconnected while sending data"},
+{"hash":229049345,"name":"celazysocket.rstimeoutwhilereceivingdata","sourcebytes":[84,105,109,101,111,117,116,32,119,104,105,108,101,32,114,101,99,101,105,118,105,110,103,32,100,97,116,97],"value":"Timeout while receiving data"},
+{"hash":110156960,"name":"celazysocket.rserrorwhilereceivingdata","sourcebytes":[69,114,114,111,114,32,119,104,105,108,101,32,114,101,99,101,105,118,105,110,103,32,100,97,116,97,58,32],"value":"Error while receiving data: "},
+{"hash":17017729,"name":"celazysocket.rsdisconnectedwhilereceivingdata","sourcebytes":[68,105,115,99,111,110,110,101,99,116,101,100,32,119,104,105,108,101,32,114,101,99,101,105,118,105,110,103,32,100,97,116,97],"value":"Disconnected while receiving data"}
+]}

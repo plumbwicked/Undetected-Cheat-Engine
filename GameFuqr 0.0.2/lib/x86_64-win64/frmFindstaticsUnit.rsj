@@ -1,0 +1,7 @@
+{"version":1,"strings":[
+{"hash":366974,"name":"frmfindstaticsunit.strscan","sourcebytes":[83,99,97,110],"value":"Scan"},
+{"hash":371552,"name":"frmfindstaticsunit.strstop","sourcebytes":[83,116,111,112],"value":"Stop"},
+{"hash":113129342,"name":"frmfindstaticsunit.strstopping","sourcebytes":[83,116,111,112,112,105,110,103,46,46,46],"value":"Stopping..."},
+{"hash":231900505,"name":"frmfindstaticsunit.rsfsstructorarray","sourcebytes":[115,116,114,117,99,116,32,111,114,32,97,114,114,97,121],"value":"struct or array"},
+{"hash":182646466,"name":"frmfindstaticsunit.rsfsunreadablepointer","sourcebytes":[85,110,114,101,97,100,97,98,108,101,32,112,111,105,110,116,101,114],"value":"Unreadable pointer"}
+]}

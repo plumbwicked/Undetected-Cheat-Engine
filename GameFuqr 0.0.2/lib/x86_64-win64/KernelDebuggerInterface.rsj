@@ -1,0 +1,4 @@
+{"version":1,"strings":[
+{"hash":146349476,"name":"kerneldebuggerinterface.rsdbkdebug_startdebuggingfailed","sourcebytes":[68,66,75,68,101,98,117,103,95,83,116,97,114,116,68,101,98,117,103,103,105,110,103,32,102,97,105,108,101,100],"value":"DBKDebug_StartDebugging failed"},
+{"hash":110943981,"name":"kerneldebuggerinterface.rskernelmodeneedsdbvm","sourcebytes":[89,111,117,32,99,97,110,39,116,32,117,115,101,32,107,101,114,110,101,108,100,101,98,117,103,32,105,110,32,54,52,45,98,105,116,32,119,105,116,104,111,117,116,32,68,66,86,77],"value":"You can't use kerneldebug in 64-bit without DBVM"}
+]}

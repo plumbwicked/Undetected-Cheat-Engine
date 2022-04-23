@@ -1,0 +1,4 @@
+{"version":1,"strings":[
+{"hash":47126356,"name":"pluginexports.rsloadmodulefailed","sourcebytes":[76,111,97,100,77,111,100,117,108,101,32,102,97,105,108,101,100],"value":"LoadModule failed"},
+{"hash":68520339,"name":"pluginexports.rspluginaddress","sourcebytes":[80,108,117,103,105,110,32,65,100,100,114,101,115,115],"value":"Plugin Address"}
+]}

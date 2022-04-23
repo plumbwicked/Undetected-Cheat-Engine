@@ -1,0 +1,14 @@
+{"version":1,"strings":[
+{"hash":219782404,"name":"frmgdtunit.rsgdtcodesegment","sourcebytes":[67,111,100,101,32,83,101,103,109,101,110,116],"value":"Code Segment"},
+{"hash":219584772,"name":"frmgdtunit.rsgdtdatasegment","sourcebytes":[68,97,116,97,32,83,101,103,109,101,110,116],"value":"Data Segment"},
+{"hash":152601268,"name":"frmgdtunit.rsgdtsystemsegment","sourcebytes":[83,121,115,116,101,109,32,83,101,103,109,101,110,116],"value":"System Segment"},
+{"hash":131726884,"name":"frmgdtunit.rsgdtnotpresent","sourcebytes":[78,111,116,32,112,114,101,115,101,110,116],"value":"Not present"},
+{"hash":164289773,"name":"frmgdtunit.rsgdtaccessed","sourcebytes":[65,99,99,101,115,115,101,100,61],"value":"Accessed="},
+{"hash":11004957,"name":"frmgdtunit.rsgdtwritable","sourcebytes":[87,114,105,116,97,98,108,101,61],"value":"Writable="},
+{"hash":12978653,"name":"frmgdtunit.rsgdtexpansiondirection","sourcebytes":[69,120,112,97,110,115,105,111,110,32,100,105,114,101,99,116,105,111,110,61],"value":"Expansion direction="},
+{"hash":128444989,"name":"frmgdtunit.rsgdtreadable","sourcebytes":[82,101,97,100,97,98,108,101,61],"value":"Readable="},
+{"hash":114925693,"name":"frmgdtunit.rsgdtconforming","sourcebytes":[67,111,110,102,111,114,109,105,110,103,61],"value":"Conforming="},
+{"hash":300285,"name":"frmgdtunit.rsgdtdpl","sourcebytes":[68,80,76,61],"value":"DPL="},
+{"hash":289533,"name":"frmgdtunit.rsgdtavl","sourcebytes":[65,86,76,61],"value":"AVL="},
+{"hash":107549714,"name":"frmgdtunit.rsgdtreaderror","sourcebytes":[82,101,97,100,32,101,114,114,111,114],"value":"Read error"}
+]}

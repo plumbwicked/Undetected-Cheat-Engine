@@ -1,0 +1,34 @@
+object frmBusy: TfrmBusy
+  Left = 551
+  Height = 34
+  Top = 369
+  Width = 374
+  AutoSize = True
+  BorderIcons = []
+  BorderStyle = bsSingle
+  Caption = 'Game Fuqr Scan Busy'
+  ClientHeight = 34
+  ClientWidth = 374
+  FormStyle = fsStayOnTop
+  OnCloseQuery = FormCloseQuery
+  OnShow = FormShow
+  Position = poScreenCenter
+  LCLVersion = '2.0.0.4'
+  object Label1: TLabel
+    AnchorSideLeft.Control = Owner
+    AnchorSideTop.Control = Owner
+    Left = 0
+    Height = 15
+    Top = 0
+    Width = 280
+    Alignment = taCenter
+    Caption = 'The previous scan is still being processed. Please wait'
+    ParentColor = False
+  end
+  object Timer1: TTimer
+    Enabled = False
+    Interval = 50
+    OnTimer = Timer1Timer
+    left = 120
+  end
+end

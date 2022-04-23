@@ -1,0 +1,15 @@
+{"version":1,"strings":[
+{"hash":216976613,"name":"debuggertypedefinitions.rsonexecute","sourcebytes":[79,110,32,69,120,101,99,117,116,101],"value":"On Execute"},
+{"hash":6198725,"name":"debuggertypedefinitions.rsonwrite","sourcebytes":[79,110,32,87,114,105,116,101],"value":"On Write"},
+{"hash":21699461,"name":"debuggertypedefinitions.rsonreadwrite","sourcebytes":[79,110,32,82,101,97,100,47,87,114,105,116,101],"value":"On Read\/Write"},
+{"hash":101743412,"name":"debuggertypedefinitions.rssoftwarebreakpoint","sourcebytes":[83,111,102,116,119,97,114,101,32,66,114,101,97,107,112,111,105,110,116],"value":"Software Breakpoint"},
+{"hash":47938340,"name":"debuggertypedefinitions.rshardwarebreakpoint","sourcebytes":[72,97,114,100,119,97,114,101,32,66,114,101,97,107,112,111,105,110,116],"value":"Hardware Breakpoint"},
+{"hash":213891748,"name":"debuggertypedefinitions.rsexceptionbreakpoint","sourcebytes":[69,120,99,101,112,116,105,111,110,32,66,114,101,97,107,112,111,105,110,116],"value":"Exception Breakpoint"},
+{"hash":248746132,"name":"debuggertypedefinitions.rsdbvmbreakpoint","sourcebytes":[68,66,86,77,32,66,114,101,97,107,112,111,105,110,116],"value":"DBVM Breakpoint"},
+{"hash":146908244,"name":"debuggertypedefinitions.rsdbvmnativebreakpoint","sourcebytes":[68,66,86,77,45,76,101,118,101,108,32,66,114,101,97,107,112,111,105,110,116],"value":"DBVM-Level Breakpoint"},
+{"hash":4819835,"name":"debuggertypedefinitions.rsbreak","sourcebytes":[66,114,101,97,107],"value":"Break"},
+{"hash":80995895,"name":"debuggertypedefinitions.rschangereg","sourcebytes":[67,104,97,110,103,101,32,114,101,103],"value":"Change reg"},
+{"hash":73853093,"name":"debuggertypedefinitions.rsfindcode","sourcebytes":[70,105,110,100,32,99,111,100,101],"value":"Find code"},
+{"hash":1513107,"name":"debuggertypedefinitions.rsfindcodeaccess","sourcebytes":[70,105,110,100,32,99,111,100,101,32,97,99,99,101,115,115],"value":"Find code access"},
+{"hash":218540117,"name":"debuggertypedefinitions.rsbreakandtrace","sourcebytes":[66,114,101,97,107,32,97,110,100,32,116,114,97,99,101],"value":"Break and trace"}
+]}

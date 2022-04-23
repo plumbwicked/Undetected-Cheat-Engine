@@ -1,0 +1,3 @@
+{"version":1,"strings":[
+{"hash":251151891,"name":"addressparser.rsapthisisnotavalidaddress","sourcebytes":[84,104,105,115,32,105,115,32,110,111,116,32,97,32,118,97,108,105,100,32,97,100,100,114,101,115,115],"value":"This is not a valid address"}
+]}

@@ -1,0 +1,8 @@
+{"version":1,"strings":[
+{"hash":18340,"name":"pointerscansettingsipconnectionlist.rspssicladd","sourcebytes":[65,100,100],"value":"Add"},
+{"hash":93079237,"name":"pointerscansettingsipconnectionlist.rspssiclremove","sourcebytes":[82,101,109,111,118,101],"value":"Remove"},
+{"hash":325284,"name":"pointerscansettingsipconnectionlist.rspssiclhost","sourcebytes":[72,111,115,116],"value":"Host"},
+{"hash":358036,"name":"pointerscansettingsipconnectionlist.rspssiclport","sourcebytes":[80,111,114,116],"value":"Port"},
+{"hash":145417188,"name":"pointerscansettingsipconnectionlist.rspssiclpassword","sourcebytes":[80,97,115,115,119,111,114,100],"value":"Password"},
+{"hash":95058213,"name":"pointerscansettingsipconnectionlist.rspssiclstable","sourcebytes":[83,116,97,98,108,101],"value":"Stable"}
+]}

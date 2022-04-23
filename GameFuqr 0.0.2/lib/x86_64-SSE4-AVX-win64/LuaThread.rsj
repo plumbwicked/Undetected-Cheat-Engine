@@ -1,0 +1,5 @@
+{"version":1,"strings":[
+{"hash":265300064,"name":"luathread.rserrorinnativethreadcalled","sourcebytes":[69,114,114,111,114,32,105,110,32,110,97,116,105,118,101,32,116,104,114,101,97,100,32,99,97,108,108,101,100,32],"value":"Error in native thread called "},
+{"hash":2406986,"name":"luathread.rsinnativecode","sourcebytes":[32,105,110,32,110,97,116,105,118,101,32,99,111,100,101,58],"value":" in native code:"},
+{"hash":238071172,"name":"luathread.rsinvalidfirstparameterforcreatenativethread","sourcebytes":[73,110,118,97,108,105,100,32,102,105,114,115,116,32,112,97,114,97,109,101,116,101,114,32,102,111,114,32,99,114,101,97,116,101,78,97,116,105,118,101,84,104,114,101,97,100],"value":"Invalid first parameter for createNativeThread"}
+]}

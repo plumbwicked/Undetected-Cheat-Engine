@@ -1,0 +1,8 @@
+{"version":1,"strings":[
+{"hash":101280642,"name":"pointervaluelist.rspointervaluesetuperror","sourcebytes":[80,111,105,110,116,101,114,32,118,97,108,117,101,32,115,101,116,117,112,32,101,114,114,111,114],"value":"Pointer value setup error"},
+{"hash":171941358,"name":"pointervaluelist.rsnomemoryfoundinthespecifiedregion","sourcebytes":[78,111,32,109,101,109,111,114,121,32,102,111,117,110,100,32,105,110,32,116,104,101,32,115,112,101,99,105,102,105,101,100,32,114,101,103,105,111,110],"value":"No memory found in the specified region"},
+{"hash":192552791,"name":"pointervaluelist.rsallocatingbytestobuffer","sourcebytes":[65,108,108,111,99,97,116,105,110,103,32,37,115,32,98,121,116,101,115,32,116,111,32,39,98,117,102,102,101,114,39],"value":"Allocating %s bytes to 'buffer'"},
+{"hash":253764741,"name":"pointervaluelist.rspvinvalidscandatafile","sourcebytes":[73,110,118,97,108,105,100,32,115,99,97,110,100,97,116,97,32,102,105,108,101],"value":"Invalid scandata file"},
+{"hash":33779278,"name":"pointervaluelist.rspvinvalidscandataversion","sourcebytes":[73,110,118,97,108,105,100,32,115,99,97,110,100,97,116,97,32,118,101,114,115,105,111,110],"value":"Invalid scandata version"},
+{"hash":240188174,"name":"pointervaluelist.rspvnotenoughmemoryfreetoscan","sourcebytes":[78,111,116,32,101,110,111,117,103,104,32,109,101,109,111,114,121,32,102,114,101,101,32,116,111,32,115,99,97,110],"value":"Not enough memory free to scan"}
+]}

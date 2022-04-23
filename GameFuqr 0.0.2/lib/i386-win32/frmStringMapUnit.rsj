@@ -1,0 +1,10 @@
+{"version":1,"strings":[
+{"hash":371552,"name":"frmstringmapunit.rsstop","sourcebytes":[83,116,111,112],"value":"Stop"},
+{"hash":167383232,"name":"frmstringmapunit.rsgeneratestringmap","sourcebytes":[71,101,110,101,114,97,116,101,32,115,116,114,105,110,103,32,109,97,112],"value":"Generate string map"},
+{"hash":55789075,"name":"frmstringmapunit.rsstringcount","sourcebytes":[83,116,114,105,110,103,99,111,117,110,116,58,32,37,115],"value":"Stringcount: %s"},
+{"hash":114772308,"name":"frmstringmapunit.rsbtnshowlist","sourcebytes":[60,60,83,104,111,119,32,108,105,115,116],"value":"<<Show list"},
+{"hash":245508116,"name":"frmstringmapunit.rsnoreadablememoryfound","sourcebytes":[78,111,32,114,101,97,100,97,98,108,101,32,109,101,109,111,114,121,32,102,111,117,110,100],"value":"No readable memory found"},
+{"hash":80320093,"name":"frmstringmapunit.rserror","sourcebytes":[69,114,114,111,114,61],"value":"Error="},
+{"hash":150647944,"name":"frmstringmapunit.rsunhandledtstringscancrash","sourcebytes":[85,110,104,97,110,100,108,101,100,32,84,83,116,114,105,110,103,83,99,97,110,32,99,114,97,115,104],"value":"Unhandled TStringScan crash"},
+{"hash":196773732,"name":"frmstringmapunit.rsgenerateregexprenginefailed","sourcebytes":[71,101,110,101,114,97,116,101,82,101,103,69,120,112,114,69,110,103,105,110,101,32,102,97,105,108,101,100],"value":"GenerateRegExprEngine failed"}
+]}

@@ -1,0 +1,7 @@
+{"version":1,"strings":[
+{"hash":28244426,"name":"frmgroupscanalgoritmgeneratorunit.rswildcard","sourcebytes":[83,107,105,112,32,110,114,32,111,102,32,98,121,116,101,115,58],"value":"Skip nr of bytes:"},
+{"hash":18340,"name":"frmgroupscanalgoritmgeneratorunit.rsadd","sourcebytes":[65,100,100],"value":"Add"},
+{"hash":268306692,"name":"frmgroupscanalgoritmgeneratorunit.rspickedhint","sourcebytes":[87,104,101,110,32,99,104,101,99,107,101,100,32,116,104,105,115,32,101,108,101,109,101,110,116,32,119,105,108,108,32,103,101,116,32,97,100,100,101,100,32,116,111,32,116,104,101,32,97,100,100,114,101,115,115,108,105,115,116,46,32,78,111,116,101,58,32,73,102,32,97,108,108,32,99,104,101,99,107,98,111,120,101,115,32,97,114,101,32,100,105,115,97,98,108,101,100,44,32,65,76,76,32,101,108,101,109,101,110,116,115,32,119,105,108,108,32,98,101,32,97,100,100,101,100],"value":"When checked this element will get added to the addresslist. Note: If all checkboxes are disabled, ALL elements will be added"},
+{"hash":169883876,"name":"frmgroupscanalgoritmgeneratorunit.rsgsgshouldbeatleast","sourcebytes":[83,104,111,117,108,100,32,98,101,32,97,116,32,108,101,97,115,116,32,37,100],"value":"Should be at least %d"},
+{"hash":237629892,"name":"frmgroupscanalgoritmgeneratorunit.rsgsgblocksizemustbeprovided","sourcebytes":[98,108,111,99,107,115,105,122,101,32,109,117,115,116,32,98,101,32,112,114,111,118,105,100,101,100],"value":"blocksize must be provided"}
+]}

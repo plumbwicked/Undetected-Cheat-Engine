@@ -1,0 +1,28 @@
+LazarusResources.Add('TformPointerOrPointee','FORMDATA',[
+  'TPF0'#21'TformPointerOrPointee'#20'formPointerOrPointee'#4'Left'#3'f'#1#6'He'
+  +'ight'#2'c'#3'Top'#3#30#3#5'Width'#3'b'#1#8'AutoSize'#9#11'BorderIcons'#11#12
+  +'biSystemMenu'#0#11'BorderStyle'#7#8'bsSingle'#7'Caption'#6#20'Game Fuqr '
+  +'Pointer'#12'ClientHeight'#2'c'#11'ClientWidth'#3'b'#1#8'Position'#7#16'poMa'
+  +'inFormCenter'#10'LCLVersion'#6#7'1.6.4.0'#0#6'TLabel'#6'Label1'#22'AnchorSi'
+  +'deLeft.Control'#7#5'Owner'#21'AnchorSideTop.Control'#7#5'Owner'#4'Left'#2#8
+  +#6'Height'#2#15#3'Top'#2#4#5'Width'#2'V'#18'BorderSpacing.Left'#2#8#17'Borde'
+  +'rSpacing.Top'#2#4#7'Caption'#6#18'This is a pointer.'#11'ParentColor'#8#8'W'
+  +'ordWrap'#9#0#0#6'TPanel'#6'Panel1'#21'AnchorSideTop.Control'#7#6'Label1'#18
+  +'AnchorSideTop.Side'#7#9'asrBottom'#4'Left'#2#0#6'Height'#2'>'#3'Top'#2#19#5
+  +'Width'#3'U'#1#8'AutoSize'#9#10'BevelOuter'#7#6'bvNone'#12'ClientHeight'#2'>'
+  +#11'ClientWidth'#3'U'#1#8'TabOrder'#2#0#0#7'TButton'#24'btnFindWhatWritesPoi'
+  +'nter'#22'AnchorSideLeft.Control'#7#6'Panel1'#21'AnchorSideTop.Control'#7#6
+  +'Panel1'#23'AnchorSideRight.Control'#7#6'Panel1'#20'AnchorSideRight.Side'#7#9
+  +'asrBottom'#4'Left'#2#8#6'Height'#2#25#3'Top'#2#2#5'Width'#3'E'#1#7'Anchors'
+  +#11#5'akTop'#6'akLeft'#7'akRight'#0#8'AutoSize'#9#18'BorderSpacing.Left'#2#8
+  +#17'BorderSpacing.Top'#2#2#19'BorderSpacing.Right'#2#8#7'Caption'#6' Find wh'
+  +'at writes to this pointer'#11'ModalResult'#2#6#8'TabOrder'#2#0#0#0#7'TButto'
+  +'n'#24'btnFindWhatWritesPointee'#22'AnchorSideLeft.Control'#7#6'Panel1'#21'A'
+  +'nchorSideTop.Control'#7#24'btnFindWhatWritesPointer'#18'AnchorSideTop.Side'
+  +#7#9'asrBottom'#23'AnchorSideRight.Control'#7#6'Panel1'#20'AnchorSideRight.S'
+  +'ide'#7#9'asrBottom'#4'Left'#2#8#6'Height'#2#25#3'Top'#2' '#5'Width'#3'E'#1#7
+  +'Anchors'#11#5'akTop'#6'akLeft'#7'akRight'#0#8'AutoSize'#9#18'BorderSpacing.'
+  +'Left'#2#8#17'BorderSpacing.Top'#2#5#19'BorderSpacing.Right'#2#8#20'BorderSp'
+  +'acing.Bottom'#2#5#7'Caption'#6':Find what writes to the address pointed at '
+  +'by this pointer'#11'ModalResult'#2#7#8'TabOrder'#2#1#0#0#0#0
+]);

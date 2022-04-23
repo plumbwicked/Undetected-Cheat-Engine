@@ -1,0 +1,20 @@
+{"version":1,"strings":[
+{"hash":218421902,"name":"frmexetrainergeneratorunit.rssaving","sourcebytes":[83,97,118,105,110,103,46,46,46],"value":"Saving..."},
+{"hash":206343285,"name":"frmexetrainergeneratorunit.rsgenerate","sourcebytes":[71,101,110,101,114,97,116,101],"value":"Generate"},
+{"hash":96620964,"name":"frmexetrainergeneratorunit.rsupdatefailed","sourcebytes":[70,97,105,108,117,114,101,32,117,112,100,97,116,105,110,103,32,116,104,101,32,116,114,97,105,110,101,114,32,114,101,115,111,117,114,99,101,32,105,110,102,111,114,109,97,116,105,111,110,58,32,37,100],"value":"Failure updating the trainer resource information: %d"},
+{"hash":5230071,"name":"frmexetrainergeneratorunit.rsfailureonwriting","sourcebytes":[102,97,105,108,117,114,101,32,111,110,32,119,114,105,116,105,110,103],"value":"failure on writing"},
+{"hash":12949442,"name":"frmexetrainergeneratorunit.rsiconupdateerror","sourcebytes":[105,99,111,110,32,117,112,100,97,116,101,32,101,114,114,111,114],"value":"icon update error"},
+{"hash":211208302,"name":"frmexetrainergeneratorunit.rsfailureopeningthetrainerforresourceupdates","sourcebytes":[70,97,105,108,117,114,101,32,111,112,101,110,105,110,103,32,116,104,101,32,116,114,97,105,110,101,114,32,102,111,114,32,114,101,115,111,117,114,99,101,32,117,112,100,97,116,101,115,46,32,77,97,107,101,32,115,117,114,101,32,121,111,117,32,100,111,32,110,111,116,32,119,97,116,99,104,32,116,104,101,32,99,114,101,97,116,105,111,110],"value":"Failure opening the trainer for resource updates. Make sure you do not watch the creation"},
+{"hash":127403556,"name":"frmexetrainergeneratorunit.rsthetrainerhasbeensuccessfullygenerated","sourcebytes":[84,104,101,32,116,114,97,105,110,101,114,32,104,97,115,32,98,101,101,110,32,115,117,99,99,101,115,115,102,117,108,108,121,32,103,101,110,101,114,97,116,101,100],"value":"The trainer has been successfully generated"},
+{"hash":349765,"name":"frmexetrainergeneratorunit.rsnone","sourcebytes":[78,111,110,101],"value":"None"},
+{"hash":210414820,"name":"frmexetrainergeneratorunit.rsfastest","sourcebytes":[70,97,115,116,101,115,116],"value":"Fastest"},
+{"hash":180128884,"name":"frmexetrainergeneratorunit.rsdefault","sourcebytes":[68,101,102,97,117,108,116],"value":"Default"},
+{"hash":21384,"name":"frmexetrainergeneratorunit.rsmax","sourcebytes":[77,97,120],"value":"Max"},
+{"hash":106927957,"name":"frmexetrainergeneratorunit.rsnewfoldername","sourcebytes":[78,101,119,32,102,111,108,100,101,114,110,97,109,101],"value":"New foldername"},
+{"hash":267448946,"name":"frmexetrainergeneratorunit.rscetrainermaker","sourcebytes":[67,69,32,116,114,97,105,110,101,114,32,109,97,107,101,114],"value":"CE trainer maker"},
+{"hash":108842730,"name":"frmexetrainergeneratorunit.rsarchive","sourcebytes":[32,65,82,67,72,73,86,69,58],"value":" ARCHIVE:"},
+{"hash":238044234,"name":"frmexetrainergeneratorunit.rsdecompressor","sourcebytes":[32,68,69,67,79,77,80,82,69,83,83,79,82,58],"value":" DECOMPRESSOR:"},
+{"hash":104015401,"name":"frmexetrainergeneratorunit.rsinvalidicon","sourcebytes":[40,73,110,118,97,108,105,100,32,105,99,111,110,41],"value":"(Invalid icon)"},
+{"hash":35206169,"name":"frmexetrainergeneratorunit.rsinvalidicontype","sourcebytes":[40,73,110,118,97,108,105,100,32,105,99,111,110,32,116,121,112,101,41],"value":"(Invalid icon type)"},
+{"hash":244549571,"name":"frmexetrainergeneratorunit.rstrainerfilemissing","sourcebytes":[67,111,112,121,105,110,103,32,37,115,46,100,97,116,32,116,111,32,37,115,32,102,97,105,108,101,100,46,32,80,108,101,97,115,101,32,109,97,107,101,32,115,117,114,101,32,116,104,101,32,102,105,108,101,32,115,116,105,108,108,32,101,120,105,115,116,115],"value":"Copying %s.dat to %s failed. Please make sure the file still exists"}
+]}

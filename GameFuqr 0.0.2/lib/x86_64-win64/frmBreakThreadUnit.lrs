@@ -1,0 +1,33 @@
+LazarusResources.Add('Tfrmbreakthread','FORMDATA',[
+  'TPF0'#15'Tfrmbreakthread'#14'frmbreakthread'#4'Left'#3#210#1#6'Height'#3#188
+  +#0#3'Top'#3#226#0#5'Width'#3#146#1#8'AutoSize'#9#11'BorderIcons'#11#12'biSys'
+  +'temMenu'#0#11'BorderStyle'#7#8'bsSingle'#7'Caption'#6#12'Break Thread'#12'C'
+  +'lientHeight'#3#188#0#11'ClientWidth'#3#146#1#8'OnCreate'#7#10'FormCreate'#6
+  +'OnShow'#7#8'FormShow'#8'Position'#7#17'poOwnerFormCenter'#10'LCLVersion'#6#7
+  +'1.6.0.4'#0#6'TLabel'#6'Label1'#22'AnchorSideLeft.Control'#7#5'Owner'#21'Anc'
+  +'horSideTop.Control'#7#5'Owner'#4'Left'#2#6#6'Height'#2#15#3'Top'#2#0#5'Widt'
+  +'h'#3'|'#1#18'BorderSpacing.Left'#2#6#19'BorderSpacing.Right'#2#6#7'Caption'
+  +#6'HThis process has more than 1 thread. Select the thread you wish to break'
+  +#11'ParentColor'#8#0#0#8'TListBox'#13'Threadlistbox'#22'AnchorSideLeft.Contr'
+  +'ol'#7#6'Label1'#21'AnchorSideTop.Control'#7#6'Label1'#18'AnchorSideTop.Side'
+  +#7#9'asrBottom'#23'AnchorSideRight.Control'#7#5'Owner'#20'AnchorSideRight.Si'
+  +'de'#7#9'asrBottom'#4'Left'#2#6#6'Height'#3#139#0#3'Top'#2#15#5'Width'#3#134
+  +#1#7'Anchors'#11#5'akTop'#6'akLeft'#7'akRight'#0#19'BorderSpacing.Right'#2#6
+  +#10'ItemHeight'#2#0#10'OnDblClick'#7#21'ThreadlistboxDblClick'#8'TabOrder'#2
+  +#0#0#0#7'TButton'#7'Button1'#21'AnchorSideTop.Control'#7#13'Threadlistbox'#18
+  +'AnchorSideTop.Side'#7#9'asrBottom'#23'AnchorSideRight.Control'#7#6'Panel1'#4
+  +'Left'#3#128#0#6'Height'#2#26#3'Top'#3#157#0#5'Width'#2'D'#7'Anchors'#11#5'a'
+  +'kTop'#7'akRight'#0#8'AutoSize'#9#17'BorderSpacing.Top'#2#3#20'BorderSpacing'
+  +'.Bottom'#2#3#7'Caption'#6#2'OK'#21'Constraints.MinHeight'#2#26#20'Constrain'
+  +'ts.MinWidth'#2'D'#7'Default'#9#7'OnClick'#7#12'Button1Click'#8'TabOrder'#2#1
+  +#0#0#7'TButton'#7'Button2'#22'AnchorSideLeft.Control'#7#6'Panel1'#19'AnchorS'
+  +'ideLeft.Side'#7#9'asrBottom'#21'AnchorSideTop.Control'#7#13'Threadlistbox'
+  +#18'AnchorSideTop.Side'#7#9'asrBottom'#4'Left'#3#206#0#6'Height'#2#26#3'Top'
+  +#3#157#0#5'Width'#2'D'#8'AutoSize'#9#17'BorderSpacing.Top'#2#3#20'BorderSpac'
+  +'ing.Bottom'#2#3#6'Cancel'#9#7'Caption'#6#6'Cancel'#21'Constraints.MinHeight'
+  +#2#26#20'Constraints.MinWidth'#2'D'#11'ModalResult'#2#2#8'TabOrder'#2#2#0#0#6
+  +'TPanel'#6'Panel1'#22'AnchorSideLeft.Control'#7#5'Owner'#19'AnchorSideLeft.S'
+  +'ide'#7#9'asrCenter'#21'AnchorSideTop.Control'#7#13'Threadlistbox'#18'Anchor'
+  +'SideTop.Side'#7#9'asrBottom'#4'Left'#3#196#0#6'Height'#2' '#3'Top'#3#154#0#5
+  +'Width'#2#10#10'BevelOuter'#7#6'bvNone'#8'TabOrder'#2#3#0#0#0
+]);

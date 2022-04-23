@@ -1,0 +1,57 @@
+LazarusResources.Add('TfrmAPIhookTemplateSettings','FORMDATA',[
+  'TPF0'#27'TfrmAPIhookTemplateSettings'#26'frmAPIhookTemplateSettings'#4'Left'
+  +#3#16#2#6'Height'#3#187#0#3'Top'#3'O'#1#5'Width'#3'N'#1#8'AutoSize'#9#11'Bor'
+  +'derIcons'#11#12'biSystemMenu'#0#11'BorderStyle'#7#8'bsDialog'#7'Caption'#6
+  +#17'Api hook template'#12'ClientHeight'#3#187#0#11'ClientWidth'#3'N'#1#8'OnC'
+  +'reate'#7#10'FormCreate'#6'OnShow'#7#8'FormShow'#8'Position'#7#14'poScreenCe'
+  +'nter'#10'LCLVersion'#6#7'2.0.6.0'#0#6'TLabel'#6'Label1'#22'AnchorSideLeft.C'
+  +'ontrol'#7#5'Owner'#21'AnchorSideTop.Control'#7#5'Owner'#4'Left'#2#8#6'Heigh'
+  +'t'#2#16#3'Top'#2#0#5'Width'#2'|'#18'BorderSpacing.Left'#2#8#7'Caption'#6#21
+  +'Original api address:'#11'ParentColor'#8#0#0#6'TLabel'#6'Label2'#22'AnchorS'
+  +'ideLeft.Control'#7#5'Edit1'#21'AnchorSideTop.Control'#7#5'Edit1'#18'AnchorS'
+  +'ideTop.Side'#7#9'asrBottom'#4'Left'#2#8#6'Height'#2#16#3'Top'#2'%'#5'Width'
+  +#2'h'#7'Caption'#6#16'New api address:'#11'ParentColor'#8#0#0#6'TLabel'#6'La'
+  +'bel3'#22'AnchorSideLeft.Control'#7#6'Label1'#21'AnchorSideTop.Control'#7#5
+  +'Edit2'#18'AnchorSideTop.Side'#7#9'asrBottom'#4'Left'#2#8#6'Height'#2#16#3'T'
+  +'op'#2'N'#5'Width'#3'"'#1#17'BorderSpacing.Top'#2#4#19'BorderSpacing.Right'#2
+  +#4#7'Caption'#6'1Address where to store the new original api call:'#11'Paren'
+  +'tColor'#8#0#0#6'TLabel'#6'Label4'#22'AnchorSideLeft.Control'#7#6'Label1'#21
+  +'AnchorSideTop.Control'#7#6'Label3'#18'AnchorSideTop.Side'#7#9'asrBottom'#4
+  +'Left'#2#8#6'Height'#2#16#3'Top'#2'^'#5'Width'#3'>'#1#19'BorderSpacing.Right'
+  +#2#4#7'Caption'#6'9(optional, in case your dll uses a variable for the call)'
+  +#11'ParentColor'#8#0#0#6'TLabel'#6'Label6'#4'Left'#3#136#0#6'Height'#2#1#3'T'
+  +'op'#2#16#5'Width'#2#1#11'ParentColor'#8#0#0#6'TLabel'#6'Label5'#21'AnchorSi'
+  +'deTop.Control'#7#7'Button1'#18'AnchorSideTop.Side'#7#9'asrBottom'#24'Anchor'
+  +'SideBottom.Control'#7#5'Owner'#21'AnchorSideBottom.Side'#7#9'asrBottom'#4'L'
+  +'eft'#2#8#6'Height'#2#16#3'Top'#3#156#0#5'Width'#3'D'#1#17'BorderSpacing.Top'
+  +#2#2#19'BorderSpacing.Right'#2#4#20'BorderSpacing.Bottom'#2#2#7'Caption'#6'4'
+  +'Note: The addresses can also be exportnames of dll''s'#11'ParentColor'#8#8
+  +'WordWrap'#9#0#0#5'TEdit'#5'Edit1'#22'AnchorSideLeft.Control'#7#6'Label1'#21
+  +'AnchorSideTop.Control'#7#6'Label1'#18'AnchorSideTop.Side'#7#9'asrBottom'#23
+  +'AnchorSideRight.Control'#7#5'Owner'#20'AnchorSideRight.Side'#7#9'asrBottom'
+  +#4'Left'#2#8#6'Height'#2#21#3'Top'#2#16#5'Width'#3'>'#1#7'Anchors'#11#5'akTo'
+  +'p'#6'akLeft'#7'akRight'#0#19'BorderSpacing.Right'#2#8#8'TabOrder'#2#0#0#0#5
+  +'TEdit'#5'Edit2'#22'AnchorSideLeft.Control'#7#6'Label2'#21'AnchorSideTop.Con'
+  +'trol'#7#6'Label2'#18'AnchorSideTop.Side'#7#9'asrBottom'#23'AnchorSideRight.'
+  +'Control'#7#5'Owner'#20'AnchorSideRight.Side'#7#9'asrBottom'#4'Left'#2#8#6'H'
+  +'eight'#2#21#3'Top'#2'5'#5'Width'#3'>'#1#7'Anchors'#11#5'akTop'#6'akLeft'#7
+  +'akRight'#0#19'BorderSpacing.Right'#2#8#8'TabOrder'#2#1#0#0#5'TEdit'#5'Edit3'
+  +#22'AnchorSideLeft.Control'#7#6'Label4'#21'AnchorSideTop.Control'#7#6'Label4'
+  +#18'AnchorSideTop.Side'#7#9'asrBottom'#23'AnchorSideRight.Control'#7#5'Edit1'
+  +#20'AnchorSideRight.Side'#7#9'asrBottom'#4'Left'#2#8#6'Height'#2#21#3'Top'#2
+  +'n'#5'Width'#3'>'#1#7'Anchors'#11#5'akTop'#6'akLeft'#7'akRight'#0#8'TabOrder'
+  +#2#2#0#0#7'TButton'#7'Button1'#21'AnchorSideTop.Control'#7#5'Edit3'#18'Ancho'
+  +'rSideTop.Side'#7#9'asrBottom'#23'AnchorSideRight.Control'#7#6'Panel1'#4'Lef'
+  +'t'#2'W'#6'Height'#2#20#3'Top'#3#134#0#5'Width'#2'K'#7'Anchors'#11#5'akTop'#7
+  +'akRight'#0#8'AutoSize'#9#17'BorderSpacing.Top'#2#3#7'Caption'#6#2'OK'#20'Co'
+  +'nstraints.MinWidth'#2'K'#7'Default'#9#11'ModalResult'#2#1#8'TabOrder'#2#3#0
+  +#0#7'TButton'#7'Button2'#22'AnchorSideLeft.Control'#7#6'Panel1'#19'AnchorSid'
+  +'eLeft.Side'#7#9'asrBottom'#21'AnchorSideTop.Control'#7#5'Edit3'#18'AnchorSi'
+  +'deTop.Side'#7#9'asrBottom'#4'Left'#3#172#0#6'Height'#2#20#3'Top'#3#134#0#5
+  +'Width'#2'K'#8'AutoSize'#9#17'BorderSpacing.Top'#2#3#6'Cancel'#9#7'Caption'#6
+  +#6'Cancel'#20'Constraints.MinWidth'#2'K'#11'ModalResult'#2#2#8'TabOrder'#2#4
+  +#0#0#6'TPanel'#6'Panel1'#22'AnchorSideLeft.Control'#7#5'Owner'#19'AnchorSide'
+  +'Left.Side'#7#9'asrCenter'#21'AnchorSideTop.Control'#7#5'Edit3'#18'AnchorSid'
+  +'eTop.Side'#7#9'asrBottom'#4'Left'#3#162#0#6'Height'#2#11#3'Top'#3#131#0#5'W'
+  +'idth'#2#10#10'BevelOuter'#7#6'bvNone'#8'TabOrder'#2#5#0#0#0
+]);

@@ -1,0 +1,6 @@
+{"version":1,"strings":[
+{"hash":69680959,"name":"fileaccess.rsnogetnamedsecurityinfo","sourcebytes":[110,111,32,71,101,116,78,97,109,101,100,83,101,99,117,114,105,116,121,73,110,102,111],"value":"no GetNamedSecurityInfo"},
+{"hash":242689439,"name":"fileaccess.rsnogetsecurityinfo","sourcebytes":[110,111,32,71,101,116,83,101,99,117,114,105,116,121,73,110,102,111],"value":"no GetSecurityInfo"},
+{"hash":59557548,"name":"fileaccess.rsnosetentriesinacl","sourcebytes":[110,111,32,83,101,116,69,110,116,114,105,101,115,73,110,65,99,108],"value":"no SetEntriesInAcl"},
+{"hash":69680767,"name":"fileaccess.rsnosetnamedsecurityinfo","sourcebytes":[110,111,32,83,101,116,78,97,109,101,100,83,101,99,117,114,105,116,121,73,110,102,111],"value":"no SetNamedSecurityInfo"}
+]}

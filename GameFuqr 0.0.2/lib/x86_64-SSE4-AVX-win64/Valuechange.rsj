@@ -1,0 +1,5 @@
+{"version":1,"strings":[
+{"hash":155740547,"name":"valuechange.rschangeoffset","sourcebytes":[67,104,97,110,103,101,32,111,102,102,115,101,116,32,37,115],"value":"Change offset %s"},
+{"hash":145181057,"name":"valuechange.rspartofthestringisunreadable","sourcebytes":[80,97,114,116,32,111,102,32,116,104,101,32,115,116,114,105,110,103,32,105,115,32,117,110,114,101,97,100,97,98,108,101,33],"value":"Part of the string is unreadable!"},
+{"hash":206546421,"name":"valuechange.rsunicode","sourcebytes":[85,110,105,99,111,100,101],"value":"Unicode"}
+]}

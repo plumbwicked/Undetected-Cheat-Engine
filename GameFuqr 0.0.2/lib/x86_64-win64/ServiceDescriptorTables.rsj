@@ -1,0 +1,10 @@
+{"version":1,"strings":[
+{"hash":35796005,"name":"servicedescriptortables.rsservicedescriptortable","sourcebytes":[83,101,114,118,105,99,101,32,68,101,115,99,114,105,112,116,111,114,32,84,97,98,108,101],"value":"Service Descriptor Table"},
+{"hash":129841463,"name":"servicedescriptortables.rsservicedescriptortableshadow","sourcebytes":[83,101,114,118,105,99,101,32,68,101,115,99,114,105,112,116,111,114,32,84,97,98,108,101,32,83,104,97,100,111,119],"value":"Service Descriptor Table Shadow"},
+{"hash":142851138,"name":"servicedescriptortables.rsparameter","sourcebytes":[112,97,114,97,109,101,116,101,114],"value":"parameter"},
+{"hash":138134547,"name":"servicedescriptortables.rsparameters","sourcebytes":[112,97,114,97,109,101,116,101,114,115],"value":"parameters"},
+{"hash":112793189,"name":"servicedescriptortables.rsunknownname","sourcebytes":[117,110,107,110,111,119,110,110,97,109,101],"value":"unknownname"},
+{"hash":50704453,"name":"servicedescriptortables.rsincompatiblesdt","sourcebytes":[73,110,99,111,109,112,97,116,105,98,108,101,32,83,101,114,118,105,99,101,32,68,101,115,99,114,105,112,116,111,114,32,84,97,98,108,101,46,32,84,104,105,115,32,116,97,98,108,101,32,99,111,110,116,97,105,110,115,32,109,111,114,101,32,111,114,32,108,101,115,115,32,116,104,97,110,32,105,110,32,116,104,101,32,102,105,108,101],"value":"Incompatible Service Descriptor Table. This table contains more or less than in the file"},
+{"hash":249052757,"name":"servicedescriptortables.rsincompatiblessdt","sourcebytes":[73,110,99,111,109,112,97,116,105,98,108,101,32,83,101,114,118,105,99,101,32,68,101,115,99,114,105,112,116,111,114,32,84,97,98,108,101,32,83,104,97,100,111,119,46,32,84,104,105,115,32,116,97,98,108,101,32,99,111,110,116,97,105,110,115,32,109,111,114,101,32,111,114,32,108,101,115,115,32,116,104,97,110,32,105,110,32,116,104,101,32,102,105,108,101],"value":"Incompatible Service Descriptor Table Shadow. This table contains more or less than in the file"},
+{"hash":201825364,"name":"servicedescriptortables.rsnothingfound","sourcebytes":[78,111,116,104,105,110,103,32,102,111,117,110,100],"value":"Nothing found"}
+]}

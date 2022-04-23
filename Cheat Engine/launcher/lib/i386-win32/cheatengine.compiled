@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CONFIG>
-  <Compiler Value="F:\lazarus\fpc\3.2.0\bin\x86_64-win64\fpc.exe" Date="1357350767"/>
-  <Params Value=" -Twin32 -Pi386 -Rintel -MObjFPC -Scghi -O3 -OoREGVAR -Xs -XX -WG -l -vewnhibq &quot;-FiD:\Dev Projects\GameFuqR\Cheat Engine\launcher\lib\i386-win32&quot; -FuF:\lazarus\components\lazutils\lib\i386-win32 -FuF:\lazarus\packager\units\i386-win32 &quot;-FuD:\Dev Projects\GameFuqR\Cheat Engine\launcher\&quot; &quot;-FUD:\Dev Projects\GameFuqR\Cheat Engine\launcher\lib\i386-win32\&quot; &quot;-FED:\Dev Projects\GameFuqR\Cheat Engine\bin\&quot; &quot;-oD:\Dev Projects\GameFuqR\Cheat Engine\bin\Game Fuq'R.exe&quot; cheatengine.lpr"/>
-</CONFIG>

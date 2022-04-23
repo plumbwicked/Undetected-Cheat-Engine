@@ -1,0 +1,7 @@
+{"version":1,"strings":[
+{"hash":152718589,"name":"formdesignerunit.rsinvalidobject","sourcebytes":[123,73,110,118,97,108,105,100,32,111,98,106,101,99,116,125],"value":"{Invalid object}"},
+{"hash":32976930,"name":"formdesignerunit.rsformdesignercaption","sourcebytes":[70,111,114,109,32,68,101,115,105,103,110,101,114],"value":"Form Designer"},
+{"hash":213694221,"name":"formdesignerunit.rsformfilesfrmfrm","sourcebytes":[70,111,114,109,32,102,105,108,101,115,40,42,46,102,114,109,41,124,42,46,70,82,77],"value":"Form files(*.frm)|*.FRM"},
+{"hash":213211341,"name":"formdesignerunit.rsformfileslfmlfm","sourcebytes":[70,111,114,109,32,102,105,108,101,115,40,42,46,108,102,109,41,124,42,46,76,70,77],"value":"Form files(*.lfm)|*.LFM"},
+{"hash":247654030,"name":"formdesignerunit.rsshowcheckboxesforboolean","sourcebytes":[83,104,111,119,32,99,104,101,99,107,98,111,120,101,115,32,102,111,114,32,98,111,111,108,101,97,110],"value":"Show checkboxes for boolean"}
+]}

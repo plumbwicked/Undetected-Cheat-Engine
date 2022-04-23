@@ -1,0 +1,7 @@
+{"version":1,"strings":[
+{"hash":150114477,"name":"dbvmloadmanual.rscpualreadyrunningdbvm","sourcebytes":[84,104,105,115,32,99,112,117,32,105,115,32,97,108,114,101,97,100,121,32,114,117,110,110,105,110,103,32,68,66,86,77],"value":"This cpu is already running DBVM"},
+{"hash":296304,"name":"dbvmloadmanual.rscpu","sourcebytes":[67,80,85,32],"value":"CPU "},
+{"hash":195431758,"name":"dbvmloadmanual.rschecking","sourcebytes":[60,67,104,101,99,107,105,110,103,62],"value":"<Checking>"},
+{"hash":56077098,"name":"dbvmloadmanual.rsloaded","sourcebytes":[76,111,97,100,101,100,58],"value":"Loaded:"},
+{"hash":120597716,"name":"dbvmloadmanual.rsnotloaded","sourcebytes":[78,111,116,32,108,111,97,100,101,100],"value":"Not loaded"}
+]}

@@ -1,0 +1,4 @@
+{"version":1,"strings":[
+{"hash":72758276,"name":"unrandomizer.rsthefollowingaddressesgotchanged","sourcebytes":[84,104,101,32,102,111,108,108,111,119,105,110,103,32,97,100,100,114,101,115,115,101,115,32,103,111,116,32,99,104,97,110,103,101,100],"value":"The following addresses got changed"},
+{"hash":240219411,"name":"unrandomizer.rstheunrandomizerwillcurrentlynotworkon64bitapplicat","sourcebytes":[84,104,101,32,117,110,114,97,110,100,111,109,105,122,101,114,32,119,105,108,108,32,99,117,114,114,101,110,116,108,121,32,110,111,116,32,119,111,114,107,32,111,110,32,54,52,45,98,105,116,32,97,112,112,108,105,99,97,116,105,111,110,115],"value":"The unrandomizer will currently not work on 64-bit applications"}
+]}

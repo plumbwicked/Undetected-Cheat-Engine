@@ -1,0 +1,18 @@
+{"version":1,"strings":[
+{"hash":111664163,"name":"frmthreadlistunit.rspleasefirstattachthedebuggertothisprocess","sourcebytes":[80,108,101,97,115,101,32,102,105,114,115,116,32,97,116,116,97,99,104,32,116,104,101,32,100,101,98,117,103,103,101,114,32,116,111,32,116,104,105,115,32,112,114,111,99,101,115,115],"value":"Please first attach the debugger to this process"},
+{"hash":214018020,"name":"frmthreadlistunit.rscouldntobtaincontext","sourcebytes":[67,111,117,108,100,110,39,116,32,111,98,116,97,105,110,32,99,111,110,116,101,120,116],"value":"Couldn't obtain context"},
+{"hash":106212197,"name":"frmthreadlistunit.rscouldntopenhandle","sourcebytes":[67,111,117,108,100,110,39,116,32,111,112,101,110,32,104,97,110,100,108,101],"value":"Couldn't open handle"},
+{"hash":65210213,"name":"frmthreadlistunit.rstlchangevalue","sourcebytes":[67,104,97,110,103,101,32,118,97,108,117,101],"value":"Change value"},
+{"hash":5853407,"name":"frmthreadlistunit.rstlwhatshouldthenewvalueofthisregisterbe","sourcebytes":[87,104,97,116,32,115,104,111,117,108,100,32,116,104,101,32,110,101,119,32,118,97,108,117,101,32,111,102,32,116,104,105,115,32,114,101,103,105,115,116,101,114,32,98,101,63],"value":"What should the new value of this register be?"},
+{"hash":122065357,"name":"frmthreadlistunit.rstlfailederrorcode","sourcebytes":[102,97,105,108,101,100,46,32,69,114,114,111,114,99,111,100,101,61],"value":"failed. Errorcode="},
+{"hash":216771813,"name":"frmthreadlistunit.rstlexecute","sourcebytes":[69,120,101,99,117,116,101],"value":"Execute"},
+{"hash":6197413,"name":"frmthreadlistunit.rstlwrite","sourcebytes":[87,114,105,116,101],"value":"Write"},
+{"hash":19519,"name":"frmthreadlistunit.rstlio","sourcebytes":[73,47,79],"value":"I\/O"},
+{"hash":75078819,"name":"frmthreadlistunit.rstlaccess","sourcebytes":[65,99,99,101,115,115],"value":"Access"},
+{"hash":53911717,"name":"frmthreadlistunit.rstl1bytes","sourcebytes":[49,32,98,121,116,101],"value":"1 byte"},
+{"hash":74058483,"name":"frmthreadlistunit.rstl2bytes","sourcebytes":[50,32,98,121,116,101,115],"value":"2 bytes"},
+{"hash":174721779,"name":"frmthreadlistunit.rstl8bytes","sourcebytes":[56,32,98,121,116,101,115],"value":"8 bytes"},
+{"hash":107612915,"name":"frmthreadlistunit.rstl4bytes","sourcebytes":[52,32,98,121,116,101,115],"value":"4 bytes"},
+{"hash":180980756,"name":"frmthreadlistunit.rscurrent","sourcebytes":[67,117,114,114,101,110,116],"value":"Current"},
+{"hash":186320324,"name":"frmthreadlistunit.rsentrypoint","sourcebytes":[69,110,116,114,121,32,80,111,105,110,116],"value":"Entry Point"}
+]}

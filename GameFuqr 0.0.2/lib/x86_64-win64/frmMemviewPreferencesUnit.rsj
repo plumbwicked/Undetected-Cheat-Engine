@@ -1,0 +1,20 @@
+{"version":1,"strings":[
+{"hash":126210178,"name":"frmmemviewpreferencesunit.rsbackgroundcolor","sourcebytes":[66,97,99,107,103,114,111,117,110,100,32,99,111,108,111,114],"value":"Background color"},
+{"hash":77541474,"name":"frmmemviewpreferencesunit.rshexadecimalcolor","sourcebytes":[72,101,120,97,100,101,99,105,109,97,108,32,99,111,108,111,114],"value":"Hexadecimal color"},
+{"hash":188797458,"name":"frmmemviewpreferencesunit.rsnormalcolor","sourcebytes":[78,111,114,109,97,108,32,99,111,108,111,114],"value":"Normal color"},
+{"hash":260771362,"name":"frmmemviewpreferencesunit.rsregistercolor","sourcebytes":[82,101,103,105,115,116,101,114,32,99,111,108,111,114],"value":"Register color"},
+{"hash":198868018,"name":"frmmemviewpreferencesunit.rssymbolcolor","sourcebytes":[83,121,109,98,111,108,32,99,111,108,111,114],"value":"Symbol color"},
+{"hash":243393314,"name":"frmmemviewpreferencesunit.rsconditionaljumpcolor","sourcebytes":[67,111,110,100,105,116,105,111,110,97,108,32,106,117,109,112,32,99,111,108,111,114],"value":"Conditional jump color"},
+{"hash":88204082,"name":"frmmemviewpreferencesunit.rsunconditionaljumpcolor","sourcebytes":[85,110,99,111,110,100,105,116,105,111,110,97,108,32,106,117,109,112,32,99,111,108,111,114],"value":"Unconditional jump color"},
+{"hash":242146114,"name":"frmmemviewpreferencesunit.rscallcolor","sourcebytes":[67,97,108,108,32,99,111,108,111,114],"value":"Call color"},
+{"hash":89559932,"name":"frmmemviewpreferencesunit.rsdcnormal","sourcebytes":[78,111,114,109,97,108],"value":"Normal"},
+{"hash":45287236,"name":"frmmemviewpreferencesunit.rsdchighlighted","sourcebytes":[72,105,103,104,108,105,103,104,116,101,100],"value":"Highlighted"},
+{"hash":253780521,"name":"frmmemviewpreferencesunit.rsdchighlightedsecondary","sourcebytes":[72,105,103,104,108,105,103,104,116,101,100,32,115,101,99,111,110,100,97,114,121],"value":"Highlighted secondary"},
+{"hash":136562916,"name":"frmmemviewpreferencesunit.rsdcbreakpoint","sourcebytes":[66,114,101,97,107,112,111,105,110,116],"value":"Breakpoint"},
+{"hash":74250388,"name":"frmmemviewpreferencesunit.rsdchighlightedbreakpoint","sourcebytes":[72,105,103,104,108,105,103,104,116,101,100,32,98,114,101,97,107,112,111,105,110,116],"value":"Highlighted breakpoint"},
+{"hash":47627737,"name":"frmmemviewpreferencesunit.rsdchighlightedbreakpointsecondary","sourcebytes":[72,105,103,104,108,105,103,104,116,101,100,32,98,114,101,97,107,112,111,105,110,116,32,115,101,99,111,110,100,97,114,121],"value":"Highlighted breakpoint secondary"},
+{"hash":61881842,"name":"frmmemviewpreferencesunit.rsdcultimap2","sourcebytes":[85,108,116,105,109,97,112,50],"value":"Ultimap2"},
+{"hash":64779938,"name":"frmmemviewpreferencesunit.rsdchighlightedultimap2","sourcebytes":[72,105,103,104,108,105,103,104,116,101,100,32,85,108,116,105,109,97,112,50],"value":"Highlighted Ultimap2"},
+{"hash":16977225,"name":"frmmemviewpreferencesunit.rsdchighlightedultimap2secondary","sourcebytes":[72,105,103,104,108,105,103,104,116,101,100,32,85,108,116,105,109,97,112,50,32,115,101,99,111,110,100,97,114,121],"value":"Highlighted Ultimap2 secondary"},
+{"hash":248429380,"name":"frmmemviewpreferencesunit.rshexedit","sourcebytes":[72,101,120,101,100,105,116],"value":"Hexedit"}
+]}

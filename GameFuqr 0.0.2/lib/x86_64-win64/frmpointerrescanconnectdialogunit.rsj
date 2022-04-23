@@ -1,0 +1,4 @@
+{"version":1,"strings":[
+{"hash":7301754,"name":"frmpointerrescanconnectdialogunit.rshost","sourcebytes":[104,111,115,116,58],"value":"host:"},
+{"hash":116020276,"name":"frmpointerrescanconnectdialogunit.rscouldnotberesolved","sourcebytes":[32,99,111,117,108,100,32,110,111,116,32,98,101,32,114,101,115,111,108,118,101,100],"value":" could not be resolved"}
+]}

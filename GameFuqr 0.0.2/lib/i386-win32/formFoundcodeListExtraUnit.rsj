@@ -1,0 +1,4 @@
+{"version":1,"strings":[
+{"hash":34942643,"name":"formfoundcodelistextraunit.rsthevalueofthepointerneededtofindthisaddressisproba","sourcebytes":[84,104,101,32,118,97,108,117,101,32,111,102,32,116,104,101,32,112,111,105,110,116,101,114,32,110,101,101,100,101,100,32,116,111,32,102,105,110,100,32,116,104,105,115,32,97,100,100,114,101,115,115,32,105,115,32,112,114,111,98,97,98,108,121,32,37,115],"value":"The value of the pointer needed to find this address is probably %s"},
+{"hash":139620067,"name":"formfoundcodelistextraunit.rsprobablebasepointer","sourcebytes":[80,114,111,98,97,98,108,101,32,98,97,115,101,32,112,111,105,110,116,101,114,32,61,37,115],"value":"Probable base pointer =%s"}
+]}

@@ -1,0 +1,5 @@
+{"version":1,"strings":[
+{"hash":197466261,"name":"frmchangedaddressescommonalityscannerunit.rsdblclicklaunchcomp","sourcebytes":[68,111,117,98,108,101,99,108,105,99,107,32,116,111,32,108,97,117,110,99,104,32,115,116,114,117,99,116,117,114,101,32,99,111,109,112,97,114,101],"value":"Doubleclick to launch structure compare"},
+{"hash":243100883,"name":"frmchangedaddressescommonalityscannerunit.rsshowresults","sourcebytes":[68,111,117,98,108,101,99,108,105,99,107,32,116,111,32,115,104,111,119,32,115,99,97,110,110,101,114,47,114,101,115,117,108,116,115],"value":"Doubleclick to show scanner\/results"},
+{"hash":52632547,"name":"frmchangedaddressescommonalityscannerunit.rsbaseaddress","sourcebytes":[66,97,115,101,32,65,100,100,114,101,115,115],"value":"Base Address"}
+]}

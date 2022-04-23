@@ -1,0 +1,4 @@
+{"version":1,"strings":[
+{"hash":132591173,"name":"dissectcodethread.rsinvaliddissectcodefile","sourcebytes":[73,110,118,97,108,105,100,32,100,105,115,115,101,99,116,32,99,111,100,101,32,102,105,108,101],"value":"Invalid dissect code file"},
+{"hash":10126868,"name":"dissectcodethread.rstdissectcodethreadgetcalllistcalledwithanonemptylist","sourcebytes":[84,68,105,115,115,101,99,116,67,111,100,101,84,104,114,101,97,100,46,103,101,116,67,97,108,108,76,105,115,116,32,99,97,108,108,101,100,32,119,105,116,104,32,97,32,110,111,110,32,101,109,112,116,121,32,108,105,115,116],"value":"TDissectCodeThread.getCallList called with a non empty list"}
+]}

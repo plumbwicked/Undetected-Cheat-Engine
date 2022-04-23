@@ -1,0 +1,5 @@
+{"version":1,"strings":[
+{"hash":62978096,"name":"luatablefile.rserrorraisedwithmessage","sourcebytes":[32,101,114,114,111,114,32,114,97,105,115,101,100,32,119,105,116,104,32,109,101,115,115,97,103,101,58,32],"value":" error raised with message: "},
+{"hash":91109552,"name":"luatablefile.rstabledileentryalreadyexistsforfilename","sourcebytes":[84,97,98,108,101,32,102,105,108,101,32,101,110,116,114,121,32,97,108,114,101,97,100,121,32,101,120,105,115,116,115,32,102,111,114,32,102,105,108,101,110,97,109,101,58,32],"value":"Table file entry already exists for filename: "},
+{"hash":152235890,"name":"luatablefile.rscreatetablefilerequiresatleastoneparameter","sourcebytes":[99,114,101,97,116,101,84,97,98,108,101,70,105,108,101,32,114,101,113,117,105,114,101,115,32,97,116,32,108,101,97,115,116,32,111,110,101,32,112,97,114,97,109,101,116,101,114],"value":"createTableFile requires at least one parameter"}
+]}

@@ -1,0 +1,5 @@
+{"version":1,"strings":[
+{"hash":40894675,"name":"frmmodifyregistersunit.rsmodifyregisterssat","sourcebytes":[77,111,100,105,102,121,32,114,101,103,105,115,116,101,114,115,40,115,41,32,97,116,32,37,115],"value":"Modify registers(s) at %s"},
+{"hash":259529106,"name":"frmmodifyregistersunit.rspleasefillinavalidvaluefor","sourcebytes":[80,108,101,97,115,101,32,102,105,108,108,32,105,110,32,97,32,118,97,108,105,100,32,118,97,108,117,101,32,102,111,114],"value":"Please fill in a valid value for"},
+{"hash":188304500,"name":"frmmodifyregistersunit.rsfailuresettingdbvmchangeregonbp","sourcebytes":[70,97,105,108,117,114,101,32,115,101,116,116,105,110,103,32,97,32,68,66,86,77,32,67,104,97,110,103,101,82,101,103,79,110,66,80,32,98,114,101,97,107,112,111,105,110,116],"value":"Failure setting a DBVM ChangeRegOnBP breakpoint"}
+]}

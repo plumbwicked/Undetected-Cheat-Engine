@@ -1,0 +1,5 @@
+{"version":1,"strings":[
+{"hash":308805,"name":"frmdisassemblyscanunit.rsdone","sourcebytes":[68,111,110,101],"value":"Done"},
+{"hash":7013090,"name":"frmdisassemblyscanunit.rsdsscanerror","sourcebytes":[115,99,97,110,32,101,114,114,111,114],"value":"scan error"},
+{"hash":4863637,"name":"frmdisassemblyscanunit.rsdsclose","sourcebytes":[67,108,111,115,101],"value":"Close"}
+]}

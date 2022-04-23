@@ -1,0 +1,101 @@
+object frmPointerrescanConnectDialog: TfrmPointerrescanConnectDialog
+  Left = 373
+  Height = 93
+  Top = 318
+  Width = 261
+  AutoSize = True
+  Caption = 'Join rescan'
+  ClientHeight = 93
+  ClientWidth = 261
+  OnCreate = FormCreate
+  Position = poScreenCenter
+  LCLVersion = '1.6.0.4'
+  object lblHost: TLabel
+    AnchorSideLeft.Control = edtHost
+    AnchorSideTop.Control = Owner
+    AnchorSideBottom.Control = edtHost
+    Left = 8
+    Height = 15
+    Top = 3
+    Width = 25
+    BorderSpacing.Top = 3
+    Caption = 'Host'
+    ParentColor = False
+  end
+  object lblPort: TLabel
+    AnchorSideLeft.Control = edtPort
+    AnchorSideBottom.Control = edtPort
+    Left = 175
+    Height = 15
+    Top = 3
+    Width = 22
+    Anchors = [akLeft, akBottom]
+    Caption = 'Port'
+    ParentColor = False
+  end
+  object edtPort: TEdit
+    AnchorSideLeft.Control = edtHost
+    AnchorSideLeft.Side = asrBottom
+    AnchorSideTop.Control = edtHost
+    Left = 175
+    Height = 23
+    Top = 18
+    Width = 80
+    BorderSpacing.Left = 15
+    TabOrder = 0
+    Text = '52739'
+  end
+  object edtHost: TEdit
+    AnchorSideTop.Control = lblHost
+    AnchorSideTop.Side = asrBottom
+    Left = 8
+    Height = 23
+    Top = 18
+    Width = 152
+    TabOrder = 1
+    Text = 'localhost'
+  end
+  object Panel1: TPanel
+    AnchorSideLeft.Control = Owner
+    AnchorSideLeft.Side = asrCenter
+    AnchorSideTop.Control = edtHost
+    AnchorSideTop.Side = asrBottom
+    Left = 52
+    Height = 25
+    Top = 47
+    Width = 156
+    AutoSize = True
+    BorderSpacing.Top = 6
+    BorderSpacing.Bottom = 3
+    BevelOuter = bvNone
+    ClientHeight = 25
+    ClientWidth = 156
+    TabOrder = 2
+    object btnOK: TButton
+      Left = 0
+      Height = 25
+      Top = 0
+      Width = 75
+      AutoSize = True
+      Caption = 'Connect'
+      Constraints.MinWidth = 75
+      Default = True
+      OnClick = btnOKClick
+      TabOrder = 0
+    end
+    object btnCancel: TButton
+      AnchorSideLeft.Control = btnOK
+      AnchorSideLeft.Side = asrBottom
+      Left = 81
+      Height = 25
+      Top = 0
+      Width = 75
+      AutoSize = True
+      BorderSpacing.Left = 6
+      Cancel = True
+      Caption = 'Cancel'
+      Constraints.MinWidth = 75
+      TabOrder = 1
+    end
+  end
+end

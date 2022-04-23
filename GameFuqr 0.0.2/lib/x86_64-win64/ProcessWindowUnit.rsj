@@ -1,0 +1,20 @@
+{"version":1,"strings":[
+{"hash":75042340,"name":"processwindowunit.rsisntavalidprocessid","sourcebytes":[37,115,32,105,115,110,39,116,32,97,32,118,97,108,105,100,32,112,114,111,99,101,115,115,73,68],"value":"%s isn't a valid processID"},
+{"hash":94766713,"name":"processwindowunit.rsphysicalmemory","sourcebytes":[80,104,121,115,105,99,97,108,32,77,101,109,111,114,121],"value":"Physical Memory"},
+{"hash":18890563,"name":"processwindowunit.rsyoucanonlyloadexefiles","sourcebytes":[89,111,117,32,99,97,110,32,111,110,108,121,32,108,111,97,100,32,69,88,69,32,102,105,108,101,115],"value":"You can only load EXE files"},
+{"hash":256720723,"name":"processwindowunit.rscreateprocess","sourcebytes":[67,114,101,97,116,101,32,80,114,111,99,101,115,115],"value":"Create Process"},
+{"hash":142159683,"name":"processwindowunit.rsoptionallaunchparameters","sourcebytes":[79,112,116,105,111,110,97,108,32,108,97,117,110,99,104,32,112,97,114,97,109,101,116,101,114,115],"value":"Optional launch parameters"},
+{"hash":150956457,"name":"processwindowunit.rsattachdebuggerornot","sourcebytes":[65,114,101,32,121,111,117,32,115,117,114,101,32,121,111,117,32,119,97,110,116,32,116,111,32,97,116,116,97,99,104,32,116,104,101,32,100,101,98,117,103,103,101,114,32,97,110,100,32,110,111,116,32,106,117,115,116,32,111,112,101,110,32,116,104,105,115,32,112,114,111,99,101,115,115,63,32,40,89,111,117,32,99,97,110,32,108,97,116,101,114,32,111,110,32,97,108,119,97,121,115,32,97,116,116,97,99,104,32,116,104,101,32,100,101,98,117,103,103,101,114,41],"value":"Are you sure you want to attach the debugger and not just open this process? (You can later on always attach the debugger)"},
+{"hash":62754595,"name":"processwindowunit.rspleaseselectanotherprocess","sourcebytes":[80,108,101,97,115,101,32,115,101,108,101,99,116,32,97,110,111,116,104,101,114,32,112,114,111,99,101,115,115],"value":"Please select another process"},
+{"hash":84620849,"name":"processwindowunit.rsfirstselectaprocess","sourcebytes":[70,105,114,115,116,32,115,101,108,101,99,116,32,97,32,112,114,111,99,101,115,115,33],"value":"First select a process!"},
+{"hash":192638084,"name":"processwindowunit.rsmanualpid","sourcebytes":[77,97,110,117,97,108,32,80,73,68],"value":"Manual PID"},
+{"hash":52507668,"name":"processwindowunit.rsentertheprocessid","sourcebytes":[69,110,116,101,114,32,116,104,101,32,80,114,111,99,101,115,115,73,68],"value":"Enter the ProcessID"},
+{"hash":80755394,"name":"processwindowunit.rsfilter","sourcebytes":[70,105,108,116,101,114],"value":"Filter"},
+{"hash":5953343,"name":"processwindowunit.rswhatareyoulookingfor","sourcebytes":[87,104,97,116,32,97,114,101,32,121,111,117,32,108,111,111,107,105,110,103,32,102,111,114,63],"value":"What are you looking for?"},
+{"hash":139716729,"name":"processwindowunit.rsscanningclicktostop","sourcebytes":[83,99,97,110,110,105,110,103,32,40,67,108,105,99,107,32,116,111,32,115,116,111,112,41],"value":"Scanning (Click to stop)"},
+{"hash":165539321,"name":"processwindowunit.rsprocesslistlong","sourcebytes":[80,114,111,99,101,115,115,32,76,105,115,116,40,108,111,110,103,41],"value":"Process List(long)"},
+{"hash":254708068,"name":"processwindowunit.rsprocesslist","sourcebytes":[80,114,111,99,101,115,115,32,76,105,115,116],"value":"Process List"},
+{"hash":218994851,"name":"processwindowunit.rsapplications","sourcebytes":[65,112,112,108,105,99,97,116,105,111,110,115],"value":"Applications"},
+{"hash":94174803,"name":"processwindowunit.rsprocesses","sourcebytes":[80,114,111,99,101,115,115,101,115],"value":"Processes"},
+{"hash":235189939,"name":"processwindowunit.rswindows","sourcebytes":[87,105,110,100,111,119,115],"value":"Windows"}
+]}

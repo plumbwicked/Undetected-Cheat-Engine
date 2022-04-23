@@ -1,0 +1,6 @@
+{"version":1,"strings":[
+{"hash":154139239,"name":"frmbranchmapperunit.rsstartmapping","sourcebytes":[83,116,97,114,116,32,77,97,112,112,105,110,103],"value":"Start Mapping"},
+{"hash":371552,"name":"frmbranchmapperunit.rsstop","sourcebytes":[83,116,111,112],"value":"Stop"},
+{"hash":113534564,"name":"frmbranchmapperunit.rsfoundnr","sourcebytes":[70,111,117,110,100,32,37,100],"value":"Found %d"},
+{"hash":160565253,"name":"frmbranchmapperunit.rssaveresultstofile","sourcebytes":[83,97,118,101,32,114,101,115,117,108,116,115,32,116,111,32,102,105,108,101],"value":"Save results to file"}
+]}

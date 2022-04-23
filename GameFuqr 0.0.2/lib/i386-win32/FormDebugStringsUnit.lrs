@@ -1,0 +1,16 @@
+LazarusResources.Add('TFormDebugStrings','FORMDATA',[
+  'TPF0'#17'TFormDebugStrings'#16'FormDebugStrings'#4'Left'#3#142#2#6'Height'#3
+  +#221#0#3'Top'#3'@'#1#5'Width'#3'A'#1#7'Caption'#6#13'Debug strings'#12'Clien'
+  +'tHeight'#3#221#0#11'ClientWidth'#3'A'#1#8'Position'#7#17'poOwnerFormCenter'
+  +#10'LCLVersion'#6#7'1.6.4.0'#0#8'TListBox'#8'ListBox1'#4'Left'#2#0#6'Height'
+  +#3#188#0#3'Top'#2#0#5'Width'#3'A'#1#5'Align'#7#8'alClient'#10'ItemHeight'#2#0
+  +#8'TabOrder'#2#0#0#0#6'TPanel'#6'Panel1'#4'Left'#2#0#6'Height'#2'!'#3'Top'#3
+  +#188#0#5'Width'#3'A'#1#5'Align'#7#8'alBottom'#8'AutoSize'#9#10'BevelOuter'#7
+  +#6'bvNone'#12'ClientHeight'#2'!'#11'ClientWidth'#3'A'#1#8'TabOrder'#2#1#0#7
+  +'TButton'#7'Button1'#22'AnchorSideLeft.Control'#7#6'Panel1'#19'AnchorSideLef'
+  +'t.Side'#7#9'asrCenter'#21'AnchorSideTop.Control'#7#6'Panel1'#4'Left'#2'{'#6
+  +'Height'#2#25#3'Top'#2#4#5'Width'#2'K'#8'AutoSize'#9#17'BorderSpacing.Top'#2
+  +#4#20'BorderSpacing.Bottom'#2#4#7'Caption'#6#2'OK'#21'Constraints.MinHeight'
+  +#2#25#20'Constraints.MinWidth'#2'K'#11'ModalResult'#2#1#7'OnClick'#7#12'Butt'
+  +'on1Click'#8'TabOrder'#2#0#0#0#0#0
+]);

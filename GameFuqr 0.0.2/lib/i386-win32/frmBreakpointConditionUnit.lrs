@@ -1,0 +1,55 @@
+LazarusResources.Add('TfrmBreakpointCondition','FORMDATA',[
+  'TPF0'#23'TfrmBreakpointCondition'#22'frmBreakpointCondition'#4'Left'#3's'#1#6
+  +'Height'#3#232#0#3'Top'#3'l'#1#5'Width'#3#21#2#8'AutoSize'#9#7'Caption'#6#20
+  +'Breakpoint condition'#12'ClientHeight'#3#232#0#11'ClientWidth'#3#21#2#8'OnC'
+  +'reate'#7#10'FormCreate'#9'OnDestroy'#7#11'FormDestroy'#6'OnShow'#7#8'FormSh'
+  +'ow'#8'Position'#7#14'poScreenCenter'#10'LCLVersion'#6#7'2.0.6.0'#0#7'TButto'
+  +'n'#7'Button1'#21'AnchorSideTop.Control'#7#12'PageControl1'#24'AnchorSideBot'
+  +'tom.Control'#7#5'Owner'#21'AnchorSideBottom.Side'#7#9'asrBottom'#4'Left'#2#8
+  +#6'Height'#2#25#3'Top'#3#204#0#5'Width'#2'K'#7'Anchors'#11#6'akLeft'#8'akBot'
+  +'tom'#0#8'AutoSize'#9#20'BorderSpacing.Bottom'#2#3#7'Caption'#6#2'OK'#20'Con'
+  +'straints.MinWidth'#2'K'#7'Default'#9#11'ModalResult'#2#1#8'TabOrder'#2#0#0#0
+  +#7'TButton'#7'Button2'#24'AnchorSideBottom.Control'#7#7'Button1'#21'AnchorSi'
+  +'deBottom.Side'#7#9'asrBottom'#4'Left'#2'`'#6'Height'#2#25#3'Top'#3#204#0#5
+  +'Width'#2'K'#7'Anchors'#11#6'akLeft'#8'akBottom'#0#8'AutoSize'#9#6'Cancel'#9
+  +#7'Caption'#6#6'Cancel'#20'Constraints.MinWidth'#2'K'#11'ModalResult'#2#2#8
+  +'TabOrder'#2#1#0#0#12'TPageControl'#12'PageControl1'#22'AnchorSideLeft.Contr'
+  +'ol'#7#6'rbEasy'#21'AnchorSideTop.Control'#7#6'rbEasy'#18'AnchorSideTop.Side'
+  +#7#9'asrBottom'#24'AnchorSideBottom.Control'#7#7'Button1'#4'Left'#2#8#6'Heig'
+  +'ht'#3#179#0#3'Top'#2#20#5'Width'#3#8#2#10'ActivePage'#7#9'TabSheet1'#7'Anch'
+  +'ors'#11#5'akTop'#6'akLeft'#7'akRight'#8'akBottom'#0#20'BorderSpacing.Bottom'
+  +#2#5#8'TabIndex'#2#0#8'TabOrder'#2#2#0#9'TTabSheet'#9'TabSheet1'#7'Caption'#6
+  +#12'Easy formula'#12'ClientHeight'#3#151#0#11'ClientWidth'#3#0#2#0#5'TEdit'#7
+  +'edtEasy'#22'AnchorSideLeft.Control'#7#6'Label2'#21'AnchorSideTop.Control'#7
+  +#6'Label2'#18'AnchorSideTop.Side'#7#9'asrBottom'#4'Left'#2#4#6'Height'#2#23#3
+  +'Top'#2'%'#5'Width'#3#247#1#7'Anchors'#11#5'akTop'#6'akLeft'#7'akRight'#0#17
+  +'BorderSpacing.Top'#2#2#20'BorderSpacing.Bottom'#2#10#8'TabOrder'#2#0#0#0#6
+  +'TLabel'#6'Label1'#22'AnchorSideLeft.Control'#7#9'TabSheet1'#21'AnchorSideTo'
+  +'p.Control'#7#9'TabSheet1'#23'AnchorSideRight.Control'#7#9'TabSheet1'#20'Anc'
+  +'horSideRight.Side'#7#9'asrBottom'#4'Left'#2#4#6'Height'#2#15#3'Top'#2#5#5'W'
+  +'idth'#3#169#1#18'BorderSpacing.Left'#2#4#17'BorderSpacing.Top'#2#5#19'Borde'
+  +'rSpacing.Right'#2#4#7'Caption'#6'RGive a formula that must return true if y'
+  +'ou want the breakpoint to trigger a break'#11'ParentColor'#8#8'WordWrap'#9#0
+  +#0#6'TLabel'#6'Label2'#22'AnchorSideLeft.Control'#7#6'Label1'#21'AnchorSideT'
+  +'op.Control'#7#6'Label1'#18'AnchorSideTop.Side'#7#9'asrBottom'#23'AnchorSide'
+  +'Right.Control'#7#9'TabSheet1'#20'AnchorSideRight.Side'#7#9'asrBottom'#4'Lef'
+  +'t'#2#4#6'Height'#2#15#3'Top'#2#20#5'Width'#3#157#1#19'BorderSpacing.Right'#2
+  +#4#7'Caption'#6'NExample: EAX == 0x1234  (case sensitive and hexadecimal sta'
+  +'rts with 0x ) (Lua)'#11'ParentColor'#8#8'WordWrap'#9#0#0#0#9'TTabSheet'#9'T'
+  +'abSheet2'#7'Caption'#6#16'Complex function'#12'ClientHeight'#3#151#0#11'Cli'
+  +'entWidth'#3#0#2#0#5'TMemo'#8'mComplex'#4'Left'#2#0#6'Height'#3#151#0#3'Top'
+  +#2#0#5'Width'#3#0#2#5'Align'#7#8'alClient'#13'Lines.Strings'#1#6'9--the regi'
+  +'ster values like EAX and EBX can be read here. '#6'$--Changing them has no '
+  +'effect though'#6'5--Note: Keep in mind hexadecimal values start with 0x'#6#0
+  +#6'@return (conditon) --return a non-zero value if you want to break'#0#10'S'
+  +'crollBars'#7#6'ssBoth'#8'TabOrder'#2#0#0#0#0#0#12'TRadioButton'#6'rbEasy'#22
+  +'AnchorSideLeft.Control'#7#5'Owner'#21'AnchorSideTop.Control'#7#5'Owner'#4'L'
+  +'eft'#2#8#6'Height'#2#19#3'Top'#2#1#5'Width'#2'+'#18'BorderSpacing.Left'#2#8
+  +#17'BorderSpacing.Top'#2#1#7'Caption'#6#4'Easy'#7'Checked'#9#8'OnChange'#7#12
+  +'rbEasyChange'#7'OnClick'#7#12'rbEasyChange'#8'TabOrder'#2#3#7'TabStop'#9#0#0
+  +#12'TRadioButton'#9'rbComplex'#22'AnchorSideLeft.Control'#7#6'rbEasy'#19'Anc'
+  +'horSideLeft.Side'#7#9'asrBottom'#21'AnchorSideTop.Control'#7#6'rbEasy'#4'Le'
+  +'ft'#2'8'#6'Height'#2#19#3'Top'#2#1#5'Width'#2'D'#18'BorderSpacing.Left'#2#5
+  +#7'Caption'#6#7'Complex'#8'OnChange'#7#12'rbEasyChange'#7'OnClick'#7#12'rbEa'
+  +'syChange'#8'TabOrder'#2#4#0#0#0
+]);

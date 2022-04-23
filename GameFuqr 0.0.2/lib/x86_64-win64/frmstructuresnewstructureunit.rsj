@@ -1,0 +1,7 @@
+{"version":1,"strings":[
+{"hash":225699429,"name":"frmstructuresnewstructureunit.rswindowtitle","sourcebytes":[78,101,119,32,83,116,114,117,99,116,117,114,101],"value":"New Structure"},
+{"hash":1231925,"name":"frmstructuresnewstructureunit.rsuseautotypesifavailable","sourcebytes":[85,115,101,32,65,117,116,111,32,84,121,112,101,115,32,73,102,32,65,118,97,105,108,97,98,108,101],"value":"Use Auto Types If Available"},
+{"hash":56249923,"name":"frmstructuresnewstructureunit.rsguessfieldtypes","sourcebytes":[71,117,101,115,115,32,70,105,101,108,100,32,84,121,112,101,115],"value":"Guess Field Types"},
+{"hash":252618170,"name":"frmstructuresnewstructureunit.rsstructurename","sourcebytes":[83,116,114,117,99,116,117,114,101,32,78,97,109,101,58],"value":"Structure Name:"},
+{"hash":5902474,"name":"frmstructuresnewstructureunit.rssize","sourcebytes":[83,105,122,101,58],"value":"Size:"}
+]}

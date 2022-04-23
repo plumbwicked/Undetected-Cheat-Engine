@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CONFIG>
-  <Compiler Value="F:\lazarus\fpc\3.2.0\bin\x86_64-win64\fpc.exe" Date="1357350767"/>
-  <Params Value=" -Twin64 -Px86_64 -Rintel -MObjFPC -Scghi -O1 -g -gl -WG -l -vewnhibq -FuF:\lazarus\lcl\units\x86_64-win64\win32 -FuF:\lazarus\lcl\units\x86_64-win64 -FuF:\lazarus\components\lazutils\lib\x86_64-win64 -FuF:\lazarus\packager\units\x86_64-win64 &quot;-FuD:\Dev Projects\GameFuqR\Cheat Engine\debuggertest\&quot; &quot;-FUD:\Dev Projects\GameFuqR\Cheat Engine\debuggertest\unitbin\&quot; &quot;-FED:\Dev Projects\GameFuqR\Cheat Engine\bin\&quot; &quot;-oD:\Dev Projects\GameFuqR\Cheat Engine\bin\DebuggerTest-x86_64.exe&quot; -dLCL -dLCLwin32 debuggertest.lpr"/>
-</CONFIG>

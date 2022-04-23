@@ -1,0 +1,6 @@
+{"version":1,"strings":[
+{"hash":92822512,"name":"iconstuff.rsfailureopen","sourcebytes":[70,97,105,108,117,114,101,32,111,112,101,110,105,110,103,32],"value":"Failure opening "},
+{"hash":177045006,"name":"iconstuff.rsunhandledext","sourcebytes":[85,110,104,97,110,100,108,101,100,32,102,105,108,101,32,101,120,116,101,110,115,105,111,110],"value":"Unhandled file extension"},
+{"hash":119556034,"name":"iconstuff.rsiconpicker","sourcebytes":[73,99,111,110,32,112,105,99,107,101,114],"value":"Icon picker"},
+{"hash":17797573,"name":"iconstuff.rsnoiconfound","sourcebytes":[78,111,32,105,99,111,110,32,102,111,117,110,100,32,105,110,32,116,104,105,115,32,102,105,108,101],"value":"No icon found in this file"}
+]}

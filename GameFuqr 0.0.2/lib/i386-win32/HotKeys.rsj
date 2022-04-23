@@ -1,0 +1,18 @@
+{"version":1,"strings":[
+{"hash":263966211,"name":"hotkeys.rshotkeyid","sourcebytes":[72,111,116,107,101,121,32,73,68,61,37,115],"value":"Hotkey ID=%s"},
+{"hash":214397524,"name":"hotkeys.rstogglescript","sourcebytes":[84,111,103,103,108,101,32,115,99,114,105,112,116],"value":"Toggle script"},
+{"hash":199041604,"name":"hotkeys.rsenablescript","sourcebytes":[69,110,97,98,108,101,32,115,99,114,105,112,116],"value":"Enable script"},
+{"hash":118302388,"name":"hotkeys.rsdisablescript","sourcebytes":[68,105,115,97,98,108,101,32,115,99,114,105,112,116],"value":"Disable script"},
+{"hash":226844453,"name":"hotkeys.rstogglefreeze","sourcebytes":[84,111,103,103,108,101,32,102,114,101,101,122,101],"value":"Toggle freeze"},
+{"hash":160414389,"name":"hotkeys.rstogglefreezeandallowincrease","sourcebytes":[84,111,103,103,108,101,32,102,114,101,101,122,101,32,97,110,100,32,97,108,108,111,119,32,105,110,99,114,101,97,115,101],"value":"Toggle freeze and allow increase"},
+{"hash":110082773,"name":"hotkeys.rstogglefreezeandallowdecrease","sourcebytes":[84,111,103,103,108,101,32,102,114,101,101,122,101,32,97,110,100,32,97,108,108,111,119,32,100,101,99,114,101,97,115,101],"value":"Toggle freeze and allow decrease"},
+{"hash":81313029,"name":"hotkeys.rsfreeze","sourcebytes":[70,114,101,101,122,101],"value":"Freeze"},
+{"hash":81312453,"name":"hotkeys.rsunfreeze","sourcebytes":[85,110,102,114,101,101,122,101],"value":"Unfreeze"},
+{"hash":175179546,"name":"hotkeys.rssetvalueto","sourcebytes":[83,101,116,32,118,97,108,117,101,32,116,111,58],"value":"Set value to:"},
+{"hash":195745082,"name":"hotkeys.rsdecreasevaluewith","sourcebytes":[68,101,99,114,101,97,115,101,32,118,97,108,117,101,32,119,105,116,104,58],"value":"Decrease value with:"},
+{"hash":78304410,"name":"hotkeys.rsincreasevaluewith","sourcebytes":[73,110,99,114,101,97,115,101,32,118,97,108,117,101,32,119,105,116,104,58],"value":"Increase value with:"},
+{"hash":131074628,"name":"hotkeys.rsspeaktext","sourcebytes":[83,112,101,97,107,32,84,101,120,116],"value":"Speak Text"},
+{"hash":21040084,"name":"hotkeys.rstexttospeechhint","sourcebytes":[84,104,101,32,116,101,120,116,32,116,111,32,115,112,101,97,107,13,10,123,68,101,115,99,114,105,112,116,105,111,110,125,32,61,32,84,104,101,32,100,101,115,99,114,105,112,116,105,111,110,32,111,102,32,116,104,101,32,104,111,116,107,101,121,13,10,123,77,82,68,101,115,99,114,105,112,116,105,111,110,125,32,61,32,84,104,101,32,100,101,115,99,114,105,112,116,105,111,110,32,102,105,101,108,100,32,111,102,32,116,104,101,32,109,101,109,111,114,121,32,114,101,99,111,114,100,13,10,123,77,82,86,97,108,117,101,125,32,61,32,84,104,101,32,118,97,108,117,101,32,111,102,32,116,104,101,32,109,101,109,111,114,121,32,114,101,99,111,114,100],"value":"The text to speak\r\n{Description} = The description of the hotkey\r\n{MRDescription} = The description field of the memory record\r\n{MRValue} = The value of the memory record"},
+{"hash":164220180,"name":"hotkeys.rsdefaultactivated","sourcebytes":[37,115,32,65,99,116,105,118,97,116,101,100],"value":"%s Activated"},
+{"hash":4603844,"name":"hotkeys.rsdefaultdeactivated","sourcebytes":[37,115,32,68,101,97,99,116,105,118,97,116,101,100],"value":"%s Deactivated"}
+]}

@@ -1,0 +1,573 @@
+object AnchorDesigner: TAnchorDesigner
+  Left = 262
+  Height = 361
+  Top = 223
+  Width = 544
+  ActiveControl = TopAnchoredCheckBox
+  Caption = 'AnchorDesigner'
+  ClientHeight = 361
+  ClientWidth = 544
+  Constraints.MinHeight = 361
+  Constraints.MinWidth = 544
+  OnCreate = FormCreate
+  OnDeactivate = FormDeactivate
+  OnDestroy = FormDestroy
+  OnShow = FormShow
+  LCLVersion = '1.7'
+  object BorderSpaceGroupBox: TGroupBox
+    AnchorSideLeft.Control = Owner
+    AnchorSideLeft.Side = asrCenter
+    AnchorSideTop.Control = TopGroupBox
+    AnchorSideTop.Side = asrBottom
+    AnchorSideBottom.Control = BottomGroupBox
+    Left = 174
+    Height = 139
+    Top = 110
+    Width = 196
+    Anchors = [akTop, akLeft, akBottom]
+    BorderSpacing.Top = 2
+    BorderSpacing.Bottom = 2
+    Caption = 'BorderSpaceGroupBox'
+    ClientHeight = 121
+    ClientWidth = 192
+    TabOrder = 2
+    object LeftBorderSpaceSpinEdit: TSpinEdit
+      AnchorSideTop.Control = AroundBorderSpaceSpinEdit
+      AnchorSideRight.Control = AroundBorderSpaceSpinEdit
+      Left = 6
+      Height = 21
+      Top = 50
+      Width = 56
+      Anchors = [akTop, akRight]
+      BorderSpacing.Right = 6
+      MaxValue = 2048
+      OnChange = BorderSpaceSpinEditChange
+      ParentShowHint = False
+      ShowHint = True
+      TabOrder = 1
+      Value = 1
+    end
+    object RightBorderSpaceSpinEdit: TSpinEdit
+      AnchorSideLeft.Control = AroundBorderSpaceSpinEdit
+      AnchorSideLeft.Side = asrBottom
+      AnchorSideTop.Control = AroundBorderSpaceSpinEdit
+      Left = 130
+      Height = 21
+      Top = 50
+      Width = 56
+      BorderSpacing.Left = 6
+      MaxValue = 2048
+      OnChange = BorderSpaceSpinEditChange
+      ParentShowHint = False
+      ShowHint = True
+      TabOrder = 3
+      Value = 1
+    end
+    object TopBorderSpaceSpinEdit: TSpinEdit
+      AnchorSideLeft.Control = AroundBorderSpaceSpinEdit
+      AnchorSideBottom.Control = AroundBorderSpaceSpinEdit
+      Left = 68
+      Height = 21
+      Top = 23
+      Width = 56
+      Anchors = [akLeft, akBottom]
+      BorderSpacing.Bottom = 6
+      MaxValue = 2048
+      OnChange = BorderSpaceSpinEditChange
+      ParentShowHint = False
+      ShowHint = True
+      TabOrder = 0
+      Value = 1
+    end
+    object BottomBorderSpaceSpinEdit: TSpinEdit
+      AnchorSideLeft.Control = AroundBorderSpaceSpinEdit
+      AnchorSideTop.Control = AroundBorderSpaceSpinEdit
+      AnchorSideTop.Side = asrBottom
+      Left = 68
+      Height = 21
+      Top = 77
+      Width = 56
+      BorderSpacing.Top = 6
+      MaxValue = 2048
+      OnChange = BorderSpaceSpinEditChange
+      ParentShowHint = False
+      ShowHint = True
+      TabOrder = 4
+      Value = 1
+    end
+    object AroundBorderSpaceSpinEdit: TSpinEdit
+      AnchorSideLeft.Control = BorderSpaceGroupBox
+      AnchorSideLeft.Side = asrCenter
+      AnchorSideTop.Control = BorderSpaceGroupBox
+      AnchorSideTop.Side = asrCenter
+      Left = 68
+      Height = 21
+      Top = 50
+      Width = 56
+      MaxValue = 2048
+      OnChange = BorderSpaceSpinEditChange
+      ParentShowHint = False
+      ShowHint = True
+      TabOrder = 2
+      Value = 1
+    end
+  end
+  object TopGroupBox: TGroupBox
+    AnchorSideTop.Control = Owner
+    Left = 174
+    Height = 106
+    Top = 2
+    Width = 196
+    Anchors = [akTop, akLeft, akRight]
+    AutoSize = True
+    BorderSpacing.Top = 2
+    Caption = 'TopGroupBox'
+    ClientHeight = 88
+    ClientWidth = 192
+    TabOrder = 0
+    object TopRefTopSpeedButton: TSpeedButton
+      AnchorSideTop.Control = TopGroupBox
+      AnchorSideRight.Control = TopGroupBox
+      AnchorSideRight.Side = asrBottom
+      AnchorSideBottom.Side = asrBottom
+      Left = 162
+      Height = 24
+      Top = 2
+      Width = 24
+      AllowAllUp = True
+      Anchors = [akTop, akRight]
+      BorderSpacing.Top = 2
+      BorderSpacing.Right = 6
+      GroupIndex = 1
+      Transparent = False
+      OnClick = ReferenceSideButtonClicked
+      ShowHint = True
+      ParentShowHint = False
+    end
+    object TopRefBottomSpeedButton: TSpeedButton
+      AnchorSideTop.Control = TopRefCenterSpeedButton
+      AnchorSideTop.Side = asrBottom
+      AnchorSideRight.Control = TopRefTopSpeedButton
+      AnchorSideRight.Side = asrBottom
+      AnchorSideBottom.Side = asrBottom
+      Left = 162
+      Height = 24
+      Top = 58
+      Width = 24
+      AllowAllUp = True
+      Anchors = [akTop, akRight]
+      BorderSpacing.Top = 4
+      BorderSpacing.Bottom = 6
+      GroupIndex = 3
+      Transparent = False
+      OnClick = ReferenceSideButtonClicked
+      ShowHint = True
+      ParentShowHint = False
+    end
+    object TopRefCenterSpeedButton: TSpeedButton
+      AnchorSideTop.Control = TopRefTopSpeedButton
+      AnchorSideTop.Side = asrBottom
+      AnchorSideRight.Control = TopRefTopSpeedButton
+      AnchorSideRight.Side = asrBottom
+      AnchorSideBottom.Side = asrBottom
+      Left = 162
+      Height = 24
+      Top = 30
+      Width = 24
+      AllowAllUp = True
+      Anchors = [akTop, akRight]
+      BorderSpacing.Top = 4
+      GroupIndex = 2
+      Transparent = False
+      OnClick = ReferenceSideButtonClicked
+      ShowHint = True
+      ParentShowHint = False
+    end
+    object TopSiblingLabel: TLabel
+      AnchorSideLeft.Control = TopSiblingComboBox
+      AnchorSideTop.Side = asrCenter
+      AnchorSideBottom.Control = TopSiblingComboBox
+      Left = 6
+      Height = 13
+      Top = 47
+      Width = 30
+      Anchors = [akLeft, akBottom]
+      Caption = 'Sibling'
+      ParentColor = False
+    end
+    object TopAnchoredCheckBox: TCheckBox
+      AnchorSideLeft.Control = TopSiblingComboBox
+      AnchorSideTop.Control = TopRefTopSpeedButton
+      AnchorSideTop.Side = asrCenter
+      Left = 6
+      Height = 17
+      Top = 6
+      Width = 56
+      Caption = 'Enabled'
+      OnChange = AnchorEnabledCheckBoxChange
+      TabOrder = 0
+    end
+    object TopSiblingComboBox: TComboBox
+      AnchorSideLeft.Control = TopGroupBox
+      AnchorSideTop.Control = TopRefBottomSpeedButton
+      AnchorSideTop.Side = asrCenter
+      AnchorSideRight.Control = TopRefTopSpeedButton
+      Left = 6
+      Height = 21
+      Top = 60
+      Width = 150
+      Anchors = [akTop, akLeft, akRight]
+      BorderSpacing.Left = 6
+      BorderSpacing.Right = 6
+      ItemHeight = 13
+      OnEditingDone = SiblingComboBoxChange
+      ParentShowHint = False
+      ShowHint = True
+      TabOrder = 1
+      Text = 'TopSiblingComboBox'
+    end
+  end
+  object BottomGroupBox: TGroupBox
+    AnchorSideBottom.Control = Owner
+    AnchorSideBottom.Side = asrBottom
+    Left = 174
+    Height = 106
+    Top = 251
+    Width = 196
+    Anchors = [akLeft, akRight, akBottom]
+    AutoSize = True
+    BorderSpacing.Bottom = 4
+    Caption = 'BottomGroupBox'
+    ClientHeight = 88
+    ClientWidth = 192
+    TabOrder = 4
+    object BottomRefTopSpeedButton: TSpeedButton
+      AnchorSideTop.Control = BottomGroupBox
+      AnchorSideRight.Control = BottomGroupBox
+      AnchorSideRight.Side = asrBottom
+      Left = 160
+      Height = 24
+      Top = 2
+      Width = 24
+      AllowAllUp = True
+      Anchors = [akTop, akRight]
+      BorderSpacing.Top = 2
+      BorderSpacing.Right = 8
+      GroupIndex = 1
+      Transparent = False
+      OnClick = ReferenceSideButtonClicked
+      ShowHint = True
+      ParentShowHint = False
+    end
+    object BottomRefBottomSpeedButton: TSpeedButton
+      AnchorSideTop.Control = BottomRefCenterSpeedButton
+      AnchorSideTop.Side = asrBottom
+      AnchorSideRight.Control = BottomRefTopSpeedButton
+      AnchorSideRight.Side = asrBottom
+      Left = 160
+      Height = 24
+      Top = 58
+      Width = 24
+      AllowAllUp = True
+      Anchors = [akTop, akRight]
+      BorderSpacing.Top = 4
+      BorderSpacing.Bottom = 6
+      GroupIndex = 3
+      Transparent = False
+      OnClick = ReferenceSideButtonClicked
+      ShowHint = True
+      ParentShowHint = False
+    end
+    object BottomRefCenterSpeedButton: TSpeedButton
+      AnchorSideTop.Control = BottomRefTopSpeedButton
+      AnchorSideTop.Side = asrBottom
+      AnchorSideRight.Control = BottomRefTopSpeedButton
+      AnchorSideRight.Side = asrBottom
+      AnchorSideBottom.Side = asrBottom
+      Left = 160
+      Height = 24
+      Top = 30
+      Width = 24
+      AllowAllUp = True
+      Anchors = [akTop, akRight]
+      BorderSpacing.Top = 4
+      GroupIndex = 2
+      Transparent = False
+      OnClick = ReferenceSideButtonClicked
+      ShowHint = True
+      ParentShowHint = False
+    end
+    object BottomSiblingLabel: TLabel
+      AnchorSideLeft.Control = BottomSiblingComboBox
+      AnchorSideTop.Side = asrBottom
+      AnchorSideBottom.Control = BottomSiblingComboBox
+      Left = 6
+      Height = 13
+      Top = 47
+      Width = 30
+      Anchors = [akLeft, akBottom]
+      Caption = 'Sibling'
+      ParentColor = False
+    end
+    object BottomAnchoredCheckBox: TCheckBox
+      AnchorSideLeft.Control = BottomSiblingComboBox
+      AnchorSideTop.Control = BottomRefTopSpeedButton
+      AnchorSideTop.Side = asrCenter
+      Left = 6
+      Height = 17
+      Top = 6
+      Width = 56
+      Caption = 'Enabled'
+      OnChange = AnchorEnabledCheckBoxChange
+      TabOrder = 0
+    end
+    object BottomSiblingComboBox: TComboBox
+      AnchorSideLeft.Control = BottomGroupBox
+      AnchorSideTop.Control = BottomRefBottomSpeedButton
+      AnchorSideTop.Side = asrCenter
+      AnchorSideRight.Control = BottomRefTopSpeedButton
+      Left = 6
+      Height = 21
+      Top = 60
+      Width = 148
+      Anchors = [akTop, akLeft, akRight]
+      BorderSpacing.Left = 6
+      BorderSpacing.Right = 6
+      ItemHeight = 13
+      OnEditingDone = SiblingComboBoxChange
+      ParentShowHint = False
+      ShowHint = True
+      TabOrder = 1
+      Text = 'BottomSiblingComboBox'
+    end
+  end
+  object RightGroupBox: TGroupBox
+    AnchorSideLeft.Control = BorderSpaceGroupBox
+    AnchorSideLeft.Side = asrBottom
+    AnchorSideTop.Control = BorderSpaceGroupBox
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    AnchorSideBottom.Control = BorderSpaceGroupBox
+    AnchorSideBottom.Side = asrBottom
+    Left = 374
+    Height = 139
+    Top = 110
+    Width = 166
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    BorderSpacing.Left = 4
+    BorderSpacing.Right = 4
+    Caption = 'RightGroupBox'
+    ClientHeight = 121
+    ClientWidth = 162
+    TabOrder = 3
+    object RightRefLeftSpeedButton: TSpeedButton
+      AnchorSideLeft.Control = RightSiblingComboBox
+      AnchorSideTop.Control = RightSiblingComboBox
+      AnchorSideTop.Side = asrBottom
+      Left = 6
+      Height = 24
+      Top = 75
+      Width = 24
+      AllowAllUp = True
+      BorderSpacing.Top = 4
+      GroupIndex = 1
+      Transparent = False
+      OnClick = ReferenceSideButtonClicked
+      ShowHint = True
+      ParentShowHint = False
+    end
+    object RightRefRightSpeedButton: TSpeedButton
+      AnchorSideLeft.Control = RightRefCenterSpeedButton
+      AnchorSideLeft.Side = asrBottom
+      AnchorSideTop.Control = RightRefLeftSpeedButton
+      Left = 62
+      Height = 24
+      Top = 75
+      Width = 24
+      AllowAllUp = True
+      BorderSpacing.Left = 4
+      GroupIndex = 3
+      Transparent = False
+      OnClick = ReferenceSideButtonClicked
+      ShowHint = True
+      ParentShowHint = False
+    end
+    object RightRefCenterSpeedButton: TSpeedButton
+      AnchorSideLeft.Control = RightRefLeftSpeedButton
+      AnchorSideLeft.Side = asrBottom
+      AnchorSideTop.Control = RightRefLeftSpeedButton
+      AnchorSideRight.Side = asrBottom
+      Left = 34
+      Height = 24
+      Top = 75
+      Width = 24
+      AllowAllUp = True
+      BorderSpacing.Left = 4
+      GroupIndex = 2
+      Transparent = False
+      OnClick = ReferenceSideButtonClicked
+      ShowHint = True
+      ParentShowHint = False
+    end
+    object RightSiblingLabel: TLabel
+      AnchorSideLeft.Control = RightSiblingComboBox
+      AnchorSideTop.Side = asrBottom
+      AnchorSideBottom.Control = RightSiblingComboBox
+      Left = 6
+      Height = 13
+      Top = 37
+      Width = 30
+      Anchors = [akLeft, akBottom]
+      Caption = 'Sibling'
+      ParentColor = False
+    end
+    object RightAnchoredCheckBox: TCheckBox
+      AnchorSideLeft.Control = RightSiblingComboBox
+      AnchorSideTop.Side = asrBottom
+      AnchorSideBottom.Control = RightSiblingLabel
+      Left = 6
+      Height = 17
+      Top = 16
+      Width = 56
+      Anchors = [akLeft, akBottom]
+      BorderSpacing.Bottom = 4
+      Caption = 'Enabled'
+      OnChange = AnchorEnabledCheckBoxChange
+      TabOrder = 0
+    end
+    object RightSiblingComboBox: TComboBox
+      AnchorSideLeft.Control = RightGroupBox
+      AnchorSideTop.Control = RightGroupBox
+      AnchorSideTop.Side = asrCenter
+      AnchorSideRight.Control = RightGroupBox
+      AnchorSideRight.Side = asrBottom
+      Left = 6
+      Height = 21
+      Top = 50
+      Width = 150
+      Anchors = [akTop, akLeft, akRight]
+      BorderSpacing.Left = 6
+      BorderSpacing.Right = 6
+      ItemHeight = 13
+      OnEditingDone = SiblingComboBoxChange
+      ParentShowHint = False
+      ShowHint = True
+      TabOrder = 1
+      Text = 'RightSiblingComboBox'
+    end
+  end
+  object LeftGroupBox: TGroupBox
+    AnchorSideLeft.Control = Owner
+    AnchorSideTop.Control = BorderSpaceGroupBox
+    AnchorSideRight.Control = BorderSpaceGroupBox
+    AnchorSideBottom.Control = BorderSpaceGroupBox
+    AnchorSideBottom.Side = asrBottom
+    Left = 4
+    Height = 139
+    Top = 110
+    Width = 166
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    BorderSpacing.Left = 4
+    BorderSpacing.Right = 4
+    Caption = 'LeftGroupBox'
+    ClientHeight = 121
+    ClientWidth = 162
+    TabOrder = 1
+    object LeftRefLeftSpeedButton: TSpeedButton
+      AnchorSideTop.Control = LeftRefRightSpeedButton
+      AnchorSideRight.Control = LeftRefCenterSpeedButton
+      Left = 76
+      Height = 24
+      Top = 75
+      Width = 24
+      AllowAllUp = True
+      Anchors = [akTop, akRight]
+      BorderSpacing.Right = 4
+      GroupIndex = 1
+      Transparent = False
+      OnClick = ReferenceSideButtonClicked
+      ShowHint = True
+      ParentShowHint = False
+    end
+    object LeftRefRightSpeedButton: TSpeedButton
+      AnchorSideLeft.Side = asrBottom
+      AnchorSideTop.Control = LeftSiblingComboBox
+      AnchorSideTop.Side = asrBottom
+      AnchorSideRight.Control = LeftSiblingComboBox
+      AnchorSideRight.Side = asrBottom
+      Left = 132
+      Height = 24
+      Top = 75
+      Width = 24
+      AllowAllUp = True
+      Anchors = [akTop, akRight]
+      BorderSpacing.Top = 4
+      GroupIndex = 3
+      Transparent = False
+      OnClick = ReferenceSideButtonClicked
+      ShowHint = True
+      ParentShowHint = False
+    end
+    object LeftRefCenterSpeedButton: TSpeedButton
+      AnchorSideLeft.Side = asrBottom
+      AnchorSideTop.Control = LeftRefRightSpeedButton
+      AnchorSideRight.Control = LeftRefRightSpeedButton
+      Left = 104
+      Height = 24
+      Top = 75
+      Width = 24
+      AllowAllUp = True
+      Anchors = [akTop, akRight]
+      BorderSpacing.Right = 4
+      GroupIndex = 2
+      Transparent = False
+      OnClick = ReferenceSideButtonClicked
+      ShowHint = True
+      ParentShowHint = False
+    end
+    object LeftSiblingLabel: TLabel
+      AnchorSideLeft.Control = LeftSiblingComboBox
+      AnchorSideBottom.Control = LeftSiblingComboBox
+      Left = 6
+      Height = 13
+      Top = 37
+      Width = 30
+      Anchors = [akLeft, akBottom]
+      Caption = 'Sibling'
+      ParentColor = False
+    end
+    object LeftAnchoredCheckBox: TCheckBox
+      AnchorSideLeft.Control = LeftSiblingComboBox
+      AnchorSideBottom.Control = LeftSiblingLabel
+      Left = 6
+      Height = 17
+      Top = 16
+      Width = 56
+      Anchors = [akLeft, akBottom]
+      BorderSpacing.Bottom = 4
+      Caption = 'Enabled'
+      OnChange = AnchorEnabledCheckBoxChange
+      TabOrder = 0
+    end
+    object LeftSiblingComboBox: TComboBox
+      AnchorSideLeft.Control = LeftGroupBox
+      AnchorSideTop.Control = LeftGroupBox
+      AnchorSideTop.Side = asrCenter
+      AnchorSideRight.Control = LeftGroupBox
+      AnchorSideRight.Side = asrBottom
+      Left = 6
+      Height = 21
+      Top = 50
+      Width = 150
+      Anchors = [akTop, akLeft, akRight]
+      BorderSpacing.Left = 6
+      BorderSpacing.Right = 6
+      ItemHeight = 13
+      OnEditingDone = SiblingComboBoxChange
+      ParentShowHint = False
+      ShowHint = True
+      TabOrder = 1
+      Text = 'LeftSiblingComboBox'
+    end
+  end
+end

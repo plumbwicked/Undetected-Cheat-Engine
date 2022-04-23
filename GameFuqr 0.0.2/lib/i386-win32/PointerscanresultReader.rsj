@@ -1,0 +1,5 @@
+{"version":1,"strings":[
+{"hash":5563013,"name":"pointerscanresultreader.rspsrcorruptedpointerscanfile","sourcebytes":[67,111,114,114,117,112,116,101,100,32,112,111,105,110,116,101,114,115,99,97,110,32,102,105,108,101],"value":"Corrupted pointerscan file"},
+{"hash":69583598,"name":"pointerscanresultreader.rspsrinvalidpointerscanfileversion","sourcebytes":[73,110,118,97,108,105,100,32,112,111,105,110,116,101,114,115,99,97,110,32,102,105,108,101,32,118,101,114,115,105,111,110],"value":"Invalid pointerscan file version"},
+{"hash":230542196,"name":"pointerscanresultreader.rsbuggedlist","sourcebytes":[66,117,103,103,101,100,76,105,115,116],"value":"BuggedList"}
+]}

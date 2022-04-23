@@ -1,0 +1,5 @@
+{"version":1,"strings":[
+{"hash":267717001,"name":"luaobject.rsthisisaninvalidclassormethodproperty","sourcebytes":[84,104,105,115,32,105,115,32,97,110,32,105,110,118,97,108,105,100,32,99,108,97,115,115,32,111,114,32,109,101,116,104,111,100,32,112,114,111,112,101,114,116,121],"value":"This is an invalid class or method property"},
+{"hash":180277930,"name":"luaobject.rsthistypeofmethod","sourcebytes":[84,104,105,115,32,116,121,112,101,32,111,102,32,109,101,116,104,111,100,58],"value":"This type of method:"},
+{"hash":233152772,"name":"luaobject.rsisnotyetsupported","sourcebytes":[32,105,115,32,110,111,116,32,121,101,116,32,115,117,112,112,111,114,116,101,100],"value":" is not yet supported"}
+]}

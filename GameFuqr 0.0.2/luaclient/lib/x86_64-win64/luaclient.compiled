@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <Compiler Value="F:\lazarus\fpc\3.2.0\bin\x86_64-win64\fpc.exe" Date="1357350767"/>
+  <Params Value=" -Twin64 -Px86_64 -MObjFPC -Scghi -WR -O3 -OoREGVAR -Xs -l -vewnhibq &quot;-FiD:\Dev Projects\GameFuqR\Game Fuqr\luaclient\lib\x86_64-win64&quot; &quot;-FuD:\Dev Projects\GameFuqR\Game Fuqr\luaclient\&quot; &quot;-FUD:\Dev Projects\GameFuqR\Game Fuqr\luaclient\lib\x86_64-win64\&quot; &quot;-FED:\Dev Projects\GameFuqR\Game Fuqr\bin\&quot; &quot;-oD:\Dev Projects\GameFuqR\Game Fuqr\bin\luaclient-x86_64.dll&quot; luaclient.lpr"/>
+</CONFIG>

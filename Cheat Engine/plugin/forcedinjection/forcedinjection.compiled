@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CONFIG>
-  <Compiler Value="F:\lazarus\fpc\3.2.0\bin\x86_64-win64\fpc.exe" Date="1357350767"/>
-  <Params Value=" -Twin64 -Px86_64 -Rintel -MDelphi -Scghi -WR -OoREGVAR -g -gl -XX -l -vewnhibq &quot;-FuD:\Dev Projects\GameFuqR\Cheat Engine\plugin&quot; &quot;-FuD:\Dev Projects\GameFuqR\Cheat Engine\lua&quot; &quot;-FuD:\Dev Projects\GameFuqR\Cheat Engine\plugin\forcedinjection\&quot; &quot;-FED:\Dev Projects\GameFuqR\Cheat Engine\bin\&quot; &quot;-oD:\Dev Projects\GameFuqR\Cheat Engine\bin\forcedinjection-x86_64.dll&quot; forcedinjection.dpr"/>
-</CONFIG>

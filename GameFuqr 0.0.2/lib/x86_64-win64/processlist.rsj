@@ -1,0 +1,3 @@
+{"version":1,"strings":[
+{"hash":49735985,"name":"processlist.rsicantgettheprocesslistyouarepropablyusingwindowsnt","sourcebytes":[73,32,99,97,110,39,116,32,103,101,116,32,116,104,101,32,112,114,111,99,101,115,115,32,108,105,115,116,46,32,89,111,117,32,97,114,101,32,112,114,111,112,97,98,108,121,32,117,115,105,110,103,32,119,105,110,100,111,119,115,32,78,84,46,32,85,115,101,32,116,104,101,32,119,105,110,100,111,119,32,108,105,115,116,32,105,110,115,116,101,97,100,33],"value":"I can't get the process list. You are propably using windows NT. Use the window list instead!"}
+]}

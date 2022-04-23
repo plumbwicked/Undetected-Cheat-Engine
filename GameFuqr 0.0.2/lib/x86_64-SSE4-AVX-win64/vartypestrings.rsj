@@ -1,0 +1,19 @@
+{"version":1,"strings":[
+{"hash":18476,"name":"vartypestrings.rs_vtall","sourcebytes":[65,108,108],"value":"All"},
+{"hash":76564633,"name":"vartypestrings.rs_vtbinary","sourcebytes":[66,105,110,97,114,121],"value":"Binary"},
+{"hash":220081045,"name":"vartypestrings.rs_vtbytearray","sourcebytes":[65,114,114,97,121,32,111,102,32,98,121,116,101],"value":"Array of byte"},
+{"hash":303269,"name":"vartypestrings.rs_vtbyte","sourcebytes":[66,121,116,101],"value":"Byte"},
+{"hash":71961331,"name":"vartypestrings.rs_vtword","sourcebytes":[50,32,66,121,116,101,115],"value":"2 Bytes"},
+{"hash":105515763,"name":"vartypestrings.rs_vtdword","sourcebytes":[52,32,66,121,116,101,115],"value":"4 Bytes"},
+{"hash":172624627,"name":"vartypestrings.rs_vtqword","sourcebytes":[56,32,66,121,116,101,115],"value":"8 Bytes"},
+{"hash":5059972,"name":"vartypestrings.rs_vtsingle","sourcebytes":[70,108,111,97,116],"value":"Float"},
+{"hash":79083813,"name":"vartypestrings.rs_vtdouble","sourcebytes":[68,111,117,98,108,101],"value":"Double"},
+{"hash":95129671,"name":"vartypestrings.rs_vtstring","sourcebytes":[83,116,114,105,110,103],"value":"String"},
+{"hash":212750823,"name":"vartypestrings.rs_vtwidestring","sourcebytes":[87,105,100,101,115,116,114,105,110,103],"value":"Widestring"},
+{"hash":22139383,"name":"vartypestrings.rs_vtunicodestring","sourcebytes":[85,110,105,99,111,100,101,32,83,116,114,105,110,103],"value":"Unicode String"},
+{"hash":252557671,"name":"vartypestrings.rs_vtcodepagestring","sourcebytes":[67,111,100,101,80,97,103,101,32,83,116,114,105,110,103],"value":"CodePage String"},
+{"hash":123755154,"name":"vartypestrings.rs_vtpointer","sourcebytes":[80,111,105,110,116,101,114],"value":"Pointer"},
+{"hash":79134308,"name":"vartypestrings.rs_vtautoassembler","sourcebytes":[65,117,116,111,32,65,115,115,101,109,98,108,101,114,32,83,99,114,105,112,116],"value":"Auto Assembler Script"},
+{"hash":78424925,"name":"vartypestrings.rs_vtcustom","sourcebytes":[67,117,115,116,111,109],"value":"Custom"},
+{"hash":244762356,"name":"vartypestrings.rs_vtgrouped","sourcebytes":[71,114,111,117,112,101,100],"value":"Grouped"}
+]}

@@ -1,0 +1,38 @@
+LazarusResources.Add('TfrmSymbolEventTakingLong','FORMDATA',[
+  'TPF0'#25'TfrmSymbolEventTakingLong'#24'frmSymbolEventTakingLong'#4'Left'#3
+  +#253#1#6'Height'#3#240#0#3'Top'#3#157#0#5'Width'#3'm'#1#8'AutoSize'#9#7'Capt'
+  +'ion'#6#25'Symbol lookup taking long'#12'ClientHeight'#3#240#0#11'ClientWidt'
+  +'h'#3'm'#1#12'OnCloseQuery'#7#14'FormCloseQuery'#8'Position'#7#14'poScreenCe'
+  +'nter'#10'LCLVersion'#6#7'2.0.6.0'#0#6'TLabel'#6'Label1'#4'Left'#2#0#6'Heigh'
+  +'t'#2'-'#3'Top'#2#0#5'Width'#3'm'#1#5'Align'#7#5'alTop'#7'Caption'#6#159'The'
+  +' symbolloader is still busy enumerating the symbols and the current symbol '
+  +'being looked up is taking a while (and taking away time to enumerate the sy'
+  +'mbols)'#11'ParentColor'#8#8'WordWrap'#9#0#0#7'TButton'#7'Button1'#22'Anchor'
+  +'SideLeft.Control'#7#5'Owner'#19'AnchorSideLeft.Side'#7#9'asrCenter'#21'Anch'
+  +'orSideTop.Control'#7#7'lblType'#18'AnchorSideTop.Side'#7#9'asrBottom'#4'Lef'
+  +'t'#2'c'#6'Height'#2#25#3'Top'#2'I'#5'Width'#3#166#0#8'AutoSize'#9#17'Border'
+  +'Spacing.Top'#2#8#7'Caption'#6#25'Cancel this symbol lookup'#7'OnClick'#7#12
+  +'Button1Click'#8'TabOrder'#2#0#0#0#9'TCheckBox'#16'cbSkipThisSymbol'#22'Anch'
+  +'orSideLeft.Control'#7#5'Owner'#19'AnchorSideLeft.Side'#7#9'asrCenter'#21'An'
+  +'chorSideTop.Control'#7#7'Button1'#18'AnchorSideTop.Side'#7#9'asrBottom'#4'L'
+  +'eft'#2'T'#6'Height'#2#19#3'Top'#2'f'#5'Width'#3#196#0#17'BorderSpacing.Top'
+  +#2#4#7'Caption'#6'!And skip this symbol until loaded'#7'Checked'#9#5'State'#7
+  +#9'cbChecked'#8'TabOrder'#2#1#0#0#6'TLabel'#6'Label2'#21'AnchorSideTop.Contr'
+  +'ol'#7#16'cbSkipAllSymbols'#18'AnchorSideTop.Side'#7#9'asrBottom'#4'Left'#2
+  +#16#6'Height'#2#15#3'Top'#3#150#0#5'Width'#3'I'#1#17'BorderSpacing.Top'#2#10
+  +#20'BorderSpacing.Bottom'#2#8#7'Caption'#6'9This window will autoclose once '
+  +'the symbol has been found'#10'Font.Style'#11#6'fsBold'#0#11'ParentColor'#8
+  +#10'ParentFont'#8#0#0#9'TCheckBox'#16'cbSkipAllSymbols'#22'AnchorSideLeft.Co'
+  +'ntrol'#7#16'cbSkipThisSymbol'#21'AnchorSideTop.Control'#7#16'cbSkipThisSymb'
+  +'ol'#18'AnchorSideTop.Side'#7#9'asrBottom'#4'Left'#2'T'#6'Height'#2#19#3'Top'
+  +#2'y'#5'Width'#3#194#0#7'Caption'#6'!And skip all symbols until loaded'#8'Ta'
+  +'bOrder'#2#2#0#0#6'TLabel'#7'lblType'#22'AnchorSideLeft.Control'#7#5'Owner'
+  +#21'AnchorSideTop.Control'#7#6'Label1'#18'AnchorSideTop.Side'#7#9'asrBottom'
+  +#4'Left'#2#10#6'Height'#2#15#3'Top'#2'2'#5'Width'#2'+'#18'BorderSpacing.Left'
+  +#2#10#17'BorderSpacing.Top'#2#5#7'Caption'#6#7'Symbol:'#11'ParentColor'#8#0#0
+  +#6'TLabel'#9'lblSymbol'#22'AnchorSideLeft.Control'#7#7'lblType'#19'AnchorSid'
+  +'eLeft.Side'#7#9'asrBottom'#21'AnchorSideTop.Control'#7#7'lblType'#4'Left'#2
+  +';'#6'Height'#2#15#3'Top'#2'2'#5'Width'#2'5'#18'BorderSpacing.Left'#2#6#7'Ca'
+  +'ption'#6#9'lblSymbol'#11'ParentColor'#8#0#0#6'TTimer'#6'Timer1'#8'Interval'
+  +#2'd'#7'OnTimer'#7#11'Timer1Timer'#4'Left'#2'x'#3'Top'#3#179#0#0#0#0
+]);

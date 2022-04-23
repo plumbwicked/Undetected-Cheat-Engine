@@ -1,0 +1,14 @@
+{"version":1,"strings":[
+{"hash":183244165,"name":"frmcodefilterunit.rsopenanaddressfile","sourcebytes":[79,112,101,110,32,97,110,32,97,100,100,114,101,115,115,32,102,105,108,101],"value":"Open an address file"},
+{"hash":82515317,"name":"frmcodefilterunit.rssaveanaddressfile","sourcebytes":[83,97,118,101,32,97,110,32,97,100,100,114,101,115,115,32,102,105,108,101],"value":"Save an address file"},
+{"hash":109072873,"name":"frmcodefilterunit.rsaddresslist","sourcebytes":[65,100,100,114,101,115,115,32,76,105,115,116,32,40,37,100,41],"value":"Address List (%d)"},
+{"hash":75915442,"name":"frmcodefilterunit.rscodefilter","sourcebytes":[67,111,100,101,32,70,105,108,116,101,114],"value":"Code Filter"},
+{"hash":202425177,"name":"frmcodefilterunit.rsxisaninvalidrange","sourcebytes":[37,115,32,105,115,32,97,110,32,105,110,118,97,108,105,100,32,114,97,110,103,101,32,40,120,120,120,120,45,120,120,120,120,41],"value":"%s is an invalid range (xxxx-xxxx)"},
+{"hash":47701699,"name":"frmcodefilterunit.rssettingbreakpoints","sourcebytes":[83,101,116,116,105,110,103,32,98,114,101,97,107,112,111,105,110,116,115],"value":"Setting breakpoints"},
+{"hash":147219107,"name":"frmcodefilterunit.rsfilteringaddresses","sourcebytes":[70,105,108,116,101,114,105,110,103,32,97,100,100,114,101,115,115,101,115],"value":"Filtering addresses"},
+{"hash":101298536,"name":"frmcodefilterunit.rscancel","sourcebytes":[67,97,110,99,101,108,32,76,105,115,116,32,82,101,102,114,101,115,104],"value":"Cancel List Refresh"},
+{"hash":24515,"name":"frmcodefilterunit.rsyes","sourcebytes":[89,101,115],"value":"Yes"},
+{"hash":1359,"name":"frmcodefilterunit.rsno","sourcebytes":[78,111],"value":"No"},
+{"hash":204408932,"name":"frmcodefilterunit.rsshowrefreshlist","sourcebytes":[82,101,102,114,101,115,104,32,108,105,115,116],"value":"Refresh list"},
+{"hash":149116996,"name":"frmcodefilterunit.rsassemblyscanpleasewait","sourcebytes":[65,115,115,101,109,98,108,121,32,83,99,97,110,46,32,80,108,101,97,115,101,32,119,97,105,116],"value":"Assembly Scan. Please wait"}
+]}
